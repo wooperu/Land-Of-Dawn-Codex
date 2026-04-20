@@ -1,0 +1,85 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(to right, #7c2730 0%, #704727 100%);
+    color: #fffefd;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.txt{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+}
+
+.actions button{
+    padding: 8px 16px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #e3a426;
+    color:#fffefd;
+}
+
+.gridContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(3, calc(140px / 2 *3));
+    grid-gap: 16px;
+}
+
+.card{
+    height: calc(140px/2*3);
+    width: 140px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+
+.front-image{
+    width: 60px;
+    height: 60px;
+}
+
+.card.flipped{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card .back{
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='36' height='36' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%232a2a35ff'/><path d='M3.86 18.709a5.457 5.457 0 0 1-7.72 0l-14.848-14.85a5.458 5.458 0 0 1 0-7.719L-3.86-18.708a5.459 5.459 0 0 1 7.719 0L18.708-3.86a5.458 5.458 0 0 1 0 7.72zm36 0a5.457 5.457 0 0 1-7.72 0L17.292 3.859a5.458 5.458 0 0 1 0-7.719L32.14-18.708a5.459 5.459 0 0 1 7.72 0L54.707-3.86a5.458 5.458 0 0 1 0 7.72zm-36 36a5.457 5.457 0 0 1-7.72 0l-14.848-14.85a5.458 5.458 0 0 1 0-7.719L-3.86 17.292a5.458 5.458 0 0 1 7.719 0L18.708 32.14a5.458 5.458 0 0 1 0 7.72zm36 0a5.457 5.457 0 0 1-7.72 0l-14.848-14.85a5.458 5.458 0 0 1 0-7.719L32.14 17.292a5.458 5.458 0 0 1 7.72 0L54.707 32.14a5.458 5.458 0 0 1 0 7.72z'  stroke-width='1.5' stroke='%237c2730ff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+}
