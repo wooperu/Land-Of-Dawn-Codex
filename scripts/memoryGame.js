@@ -8,14 +8,18 @@ let score = 0;
 document.querySelector(".score").textContent = score;
 document.querySelector(".turns").textContent = turns;
 
-fetch("./data/cards.json")
-    .then((res) => res.json())
-    .then((data) => {
-        const selected = pickRandom(data, 9);
-        cards = [...selected, ...selected];
-        shuffleCards();
-        generateCards();
-    });
+loadGame();
+
+function loadGame() {
+    fetch("./data/cards.json")
+        .then((res) => res.json())
+        .then((data) => {
+            const selected = pickRandom(data, 9);
+            cards = [...selected, ...selected];
+            shuffleCards();
+            generateCards();
+        });
+}
 
 function pickRandom(data, pair) {
     const shuffled = [...data].sort(() => Math.random() - 0.5);
@@ -104,12 +108,10 @@ function resetBoard() {
 
 function restart() {
     resetBoard();
-    shuffleCards();
     score = 0;
     turns = 0;
     document.querySelector(".score").textContent = score;
     document.querySelector(".turns").textContent = turns;
     gridContainer.innerHTML = '';
-    generateCards();
+    loadGame();
 }
-
