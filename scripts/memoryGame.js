@@ -78,6 +78,11 @@ function checkForMatch() {
     const isMatch = firstCard.getAttribute('dataName') === secondCard.getAttribute('dataName'); 
     if (isMatch) {
         score++;
+        if(score == 9){
+            setTimeout(() => {
+                alert("goodboy!");
+            }, 1000);
+        }
         document.querySelector(".score").textContent = score;
         disableCards();
     }
