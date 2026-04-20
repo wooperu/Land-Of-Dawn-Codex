@@ -1,0 +1,50 @@
+[
+    {
+    "image": "../images/Items/Antique Cuirass.png",
+    "name": "Antique Cuirass"
+    },
+    {
+    "image": "../images/Items/Athenas Shield.png",
+    "name": "Athenas Shield"
+    },
+    {
+    "image": "../images/Items/Berserkers Fury.png",
+    "name": "Berserkers Fury"
+    },
+    {
+    "image": "../images/items/Blade Armor.png",
+    "name": "Blade Armor"
+    },
+    {
+    "image": "../images/Items/Blade of Despair.png",
+    "name": "Blade of Despair"
+    },
+    {
+    "image": "../images/Items/Blade of the Heptaseas.png",
+    "name": "Blade of the Heptaseas"
+    },
+    {
+    "image": "../images/Items/Blood Wings.png",
+    "name": "Blood Wings"
+    },
+    {
+    "image": "../images/Items/Brute Force Breastplate.png",
+    "name": "Brute Force Breastplate"
+    },
+    {
+    "image": "../images/Items/Chastise Pauldron.png",
+    "name": "Chastise Pauldron"
+    },
+    {
+    "image": "../images/Items/Clock of Destiny.png",
+    "name": "Clock of Destiny"
+    },
+    {
+    "image": "../images/Items/Concentrated Energy.png",
+    "name": "Concentrated Energy"
+    },
+    {
+    "image": "../images/Items/Corrosion Scythe.png",
+    "name": "Corrosion Scythe"
+    }
+]
