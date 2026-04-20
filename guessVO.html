@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Guess the VO</title>
+    <link rel="stylesheet" href="styles/guessVO.css">
+    <script src="scripts/guessVO.js" defer></script>
+</head>
+<body>
+
+    <h1>Guess Who Said It!</h1>
+    
+    <h2>Which hero says this?</h2>
+
+    <div class = "play">
+    <button onclick="playVO()">▶ Play</button>
+    </div>
+    
+    <div class = "text">   
+        <input type = "text" class = "input" placeholder="Type hero name ...">
+        <button onclick = "submit()">Submit</button>
+    </div>
+
+    <p>Streak: <span class = "streak"></span></p>
+</body>
+</html>
