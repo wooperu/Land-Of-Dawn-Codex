@@ -1,6 +1,6 @@
-body{
+html{
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 99vw;
     background-image: linear-gradient(to right, #7c2730 0%, #704727 100%);
     color: #fffefd;
 }
@@ -36,7 +36,6 @@ h1{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(6, 140px);
-    grid-template-rows: repeat(3, calc(140px / 2 *3));
     grid-gap: 16px;
 }
 
