@@ -1,11 +1,13 @@
 const frameContainer = document.querySelector(".frameContainer");
 let vos = [];
 let streak = 0;
+let highestStreak = 0;
 
 let answer = '';
 let audio = null;
 
 document.querySelector(".streak").textContent = streak;
+document.querySelector(".highstreak").textContent = highestStreak;
 
 fetch("./data/vo.json")
     .then((res) => res.json())
@@ -31,6 +33,10 @@ function submit(){
      if (guess == answer.toLowerCase()) {
         streak++;
         document.querySelector(".streak").textContent = streak;
+        if (streak > highestStreak) {
+            highestStreak = streak;
+            document.querySelector(".highstreak").textContent = highestStreak;
+        }
         alert("temporary correct notif because im stupid rn!");
     } else {
         streak = 0;
