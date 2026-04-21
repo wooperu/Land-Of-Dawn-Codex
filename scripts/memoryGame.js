@@ -1,3 +1,59 @@
+const cardData = [
+    { "image": "images/Items/Antique Cuirass.png", "name": "Antique Cuirass" },
+    { "image": "images/Items/Athenas Shield.png", "name": "Athenas Shield" },
+    { "image": "images/Items/Berserkers Fury.png", "name": "Berserkers Fury" },
+    { "image": "images/items/Blade Armor.png", "name": "Blade Armor" },
+    { "image": "images/Items/Blade of Despair.png", "name": "Blade of Despair" },
+    { "image": "images/Items/Blade of the Heptaseas.png", "name": "Blade of the Heptaseas" },
+    { "image": "images/Items/Blood Wings.png", "name": "Blood Wings" },
+    { "image": "images/Items/Brute Force Breastplate.png", "name": "Brute Force Breastplate" },
+    { "image": "images/Items/Chastise Pauldron.png", "name": "Chastise Pauldron" },
+    { "image": "images/Items/Clock of Destiny.png", "name": "Clock of Destiny" },
+    { "image": "images/Items/Concentrated Energy.png", "name": "Concentrated Energy" },
+    { "image": "images/Items/Corrosion Scythe.png", "name": "Corrosion Scythe" },
+    { "image": "images/Items/Cursed Helmet.png", "name": "Cursed Helmet" },
+    { "image": "images/Items/Demon Hunter Sword.png", "name": "Demon Hunter Sword" },
+    { "image": "images/Items/Demon Shoes.png", "name": "Demon Shoes" },
+    { "image": "images/Items/Divine Glaive.png", "name": "Divine Glaive" },
+    { "image": "images/Items/Dominance Ice.png", "name": "Dominance Ice" },
+    { "image": "images/Items/Enchanted Talisman.png", "name": "Enchanted Talisman" },
+    { "image": "images/Items/Endless Battle.png", "name": "Endless Battle" },
+    { "image": "images/Items/Feather of Heaven.png", "name": "Feather of Heaven" },
+    { "image": "images/Items/Flask of the Oasis.png", "name": "Flask of the Oasis" },
+    { "image": "images/Items/Fleeting Time.png", "name": "Fleeting Time" },
+    { "image": "images/Items/Genius Wand.png", "name": "Genius Wand" },
+    { "image": "images/Items/Glowing Wand.png", "name": "Glowing Wand" },
+    { "image": "images/Items/Golden Staff.png", "name": "Golden Staff" },
+    { "image": "images/Items/Great Dragon Spear.png", "name": "Great Dragon Spear" },
+    { "image": "images/Items/Guardian Helmet.png", "name": "Guardian Helmet" },
+    { "image": "images/Items/Haas Claws.png", "name": "Haas Claws" },
+    { "image": "images/Items/Holy Crystal.png", "name": "Holy Crystal" },
+    { "image": "images/Items/Hunter Strike.png", "name": "Hunter Strike" },
+    { "image": "images/Items/Ice Queen Wand.png", "name": "Ice Queen Wand" },
+    { "image": "images/Items/Immortality.png", "name": "Immortality" },
+    { "image": "images/Items/Lightning Truncheon.png", "name": "Lightning Truncheon" },
+    { "image": "images/Items/Malefic Gun.png", "name": "Malefic Gun" },
+    { "image": "images/Items/Malefic Roar.png", "name": "Malefic Roar" },
+    { "image": "images/Items/Oracle.png", "name": "Oracle" },
+    { "image": "images/Items/Queens Wings.png", "name": "Queens Wings" },
+    { "image": "images/Items/Radiant Armor.png", "name": "Radiant Armor" },
+    { "image": "images/Items/Rapid Boots.png", "name": "Rapid Boots" },
+    { "image": "images/Items/Rose Gold Meteor.png", "name": "Rose Gold Meteor" },
+    { "image": "images/Items/Sea Halberd.png", "name": "Sea Halberd" },
+    { "image": "images/Items/Sky Piercer.png", "name": "Sky Piercer" },
+    { "image": "images/Items/Starlium Scythe.png", "name": "Starlium Scythe" },
+    { "image": "images/Items/Swift Boots.png", "name": "Swift Boots" },
+    { "image": "images/Items/Thunder Belt.png", "name": "Thunder Belt" },
+    { "image": "images/Items/Tough Boots.png", "name": "Tough Boots" },
+    { "image": "images/Items/Twilight Armor.png", "name": "Twilight Armor" },
+    { "image": "images/Items/War Axe.png", "name": "War Axe" },
+    { "image": "images/Items/Warrior Boots.png", "name": "Warrior Boots" },
+    { "image": "images/Items/Wind of Nature.png", "name": "Wind of Nature" },
+    { "image": "images/Items/Windtalker.png", "name": "Windtalker" },
+    { "image": "images/Items/Winter Crown.png", "name": "Winter Crown" },
+    { "image": "images/Items/Wishing Lantern.png", "name": "Wishing Lantern" }
+];
+
 const gridContainer = document.querySelector('.gridContainer');
 let cards = [];
 let firstCard, secondCard;
@@ -11,14 +67,10 @@ document.querySelector(".turns").textContent = turns;
 loadGame();
 
 function loadGame() {
-    fetch("./data/cards.json")
-        .then((res) => res.json())
-        .then((data) => {
-            const selected = pickRandom(data, 9);
+            const selected = pickRandom(cardData, 9);
             cards = [...selected, ...selected];
             shuffleCards();
             generateCards();
-        });
 }
 
 function pickRandom(data, pair) {
@@ -120,3 +172,5 @@ function restart() {
     gridContainer.innerHTML = '';
     loadGame();
 }
+
+document.querySelector(".btnRestart").addEventListener("click", restart);
