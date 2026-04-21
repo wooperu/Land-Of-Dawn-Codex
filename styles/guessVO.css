@@ -33,7 +33,7 @@ p{
 .play{
     display: flex; 
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .play button{
@@ -46,15 +46,40 @@ p{
 
 .text button{
     height: 30px;
-    width: 132px;
+    width: 100px;
     color: rgb(255, 255, 255);
     background-color: rgb(104, 62, 189);
     border: 2px solid black;
+    font-weight: 550;
 }
 
 .frame{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(104, 62, 189);
     width: 450px;
     margin: 0 auto;
     border: 2px solid black;
+    align-items: center;
+}
+
+.slider{
+    width: 250px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+input[type="range"] {
+    accent-color: rgb(5, 80, 167);
+}
+
+input[type="text"]{
+    width: 230px;
+    background-color: rgb(104, 62, 189);
+    border: 2px solid black;
+    color: white;
+}
+
+input::placeholder {
+    color: rgb(240, 240, 240);
 }
