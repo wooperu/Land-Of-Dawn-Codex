@@ -1,0 +1,75 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #0b0e1f;
+  --deep:   #080b18;
+  --panel:  #0f1428;
+  --card:   #111830;
+  --border: #1e2d5a;
+  --gold:   #e8b84b;
+  --gold2:  #f5d47a;
+  --blue:   #3a7bd5;
+  --cyan:   #4fc3f7;
+  --text:   #c8d6f0;
+  --muted:  #6b7fa8;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: var(--deep);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 999;
+  background: linear-gradient(180deg, #050813f8 0%, #050813d8 100%);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #2a3a6a;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2.5rem; height: 72px;
+}
+
+.nav-logo {
+  display: flex; align-items: center;
+}
+
+.nav-logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(232,184,75,0.6));
+}
+
+.nav-links {
+  display: flex; gap: 0; list-style: none;
+}
+
+.nav-links li a {
+  display: block; padding: 0 1.1rem; line-height: 72px;
+  font-family: 'Cinzel', serif; font-size: 0.80rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #9aafd4; text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: ''; position: absolute; bottom: 0; left: 50%; right: 50%;
+  height: 2px; background: var(--gold);
+  transition: left 0.2s, right 0.2s;
+}
+.nav-links li a:hover,
+.nav-links li a.active { color: var(--gold); }
+.nav-links li a:hover::after,
+.nav-links li a.active::after { left: 0.6rem; right: 0.6rem; }
+
+.nav-search {
+  background: none; border: none; cursor: pointer;
+  color: #9aafd4; font-size: 1.7rem; padding: 0.4rem;
+  transition: color 0.2s;
+}
+.nav-search:hover { color: var(--gold); }
