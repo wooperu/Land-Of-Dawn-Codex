@@ -324,3 +324,13 @@ nav {
 .card-arrow:hover { background: rgba(255,255,255,0.2); }
 .card-arrow.left  { left: 0.7rem; }
 .card-arrow.right { right: 0.7rem; }
+
+/* SKINS CARD (large, right) */
+.skins-card {
+  grid-column: 2; grid-row: 1;
+  min-height: 280px;
+}
+.skins-card .card-bg {
+  background-color: #1a0d00;
+  background-position: center top;
+}
