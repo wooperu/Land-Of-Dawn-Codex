@@ -41,6 +41,10 @@ h1 {
   padding: 2rem 0 1.7rem;
 }
 
+.page-content {
+  padding-top: 58px;
+}
+
 .gridContainer {
   display: grid;
   justify-content: center;
