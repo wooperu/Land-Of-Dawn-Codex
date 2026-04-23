@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap');
 
-:root {
-  --navy:   #0b0e1f;
-  --deep:   #080b18;
-  --panel:  #0f1428;
-  --card:   #111830;
-  --border: #1e2d5a;
-  --gold:   #e8b84b;
-  --gold2:  #f5d47a;
-  --blue:   #3a7bd5;
-  --cyan:   #4fc3f7;
-  --text:   #c8d6f0;
-  --muted:  #6b7fa8;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
