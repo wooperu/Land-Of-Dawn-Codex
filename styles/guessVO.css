@@ -1,164 +1,389 @@
-html{
-    min-height: 100vh;
-    min-width: 99vw;
-    background-image: linear-gradient(to left, #27238b 0%, #271745 100%);
-    color: #fffefd;
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap');
+
+:root {
+  --navy:   #0b0e1f;
+  --deep:   #080b18;
+  --panel:  #0f1428;
+  --card:   #111830;
+  --border: #1e2d5a;
+  --gold:   #e8b84b;
+  --gold2:  #f5d47a;
+  --blue:   #3a7bd5;
+  --cyan:   #4fc3f7;
+  --text:   #c8d6f0;
+  --muted:  #6b7fa8;
 }
 
-.text{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    padding-top: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-    text-align: center;
-    font-weight: 700;
-    font-size: 50px;
+html {
+  min-height: 100vh;
+  background-color: var(--deep);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(58, 123, 213, 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 80%, rgba(232, 184, 75, 0.07) 0%, transparent 60%);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
 }
 
-h2{
-    text-align: center;
-    font-weight: 450;
-    font-size: 25px;
-    padding-top: 20px;
+
+h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 2.6rem;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(232, 184, 75, 0.35);
+  padding: 2rem 0 0.4rem;
 }
 
-p{
-    text-align: center;
-    font-size: 20px;
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding-top: 16px;
 }
 
-.play{
-    display: flex; 
-    justify-content: center;
-    padding-bottom: 10px;
+p {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  text-transform: uppercase;
 }
 
-.play button{
-    height: 40px;
-    width: 150px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(94, 169, 255);
-    border: 2px solid black;
+p span {
+  color: var(--cyan);
+  font-weight: 700;
 }
 
-.text button{
-    height: 30px;
-    width: 100px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(104, 62, 189);
-    border: 2px solid black;
-    font-weight: 550;
-}
-
-.frame{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(104, 62, 189);
-    width: 450px;
-    margin: 0 auto;
-    border: 2px solid black;
-    align-items: center;
-}
-
-.slider{
-    width: 250px;
-    margin-bottom: 20px;
-    display: none;
-}
-
-input[type="range"] {
-    accent-color: rgb(5, 80, 167);
-}
-
-input[type="text"]{
-    width: 230px;
-    background-color: rgb(104, 62, 189);
-    border: 2px solid black;
-    color: white;
-}
-
-input::placeholder {
-    color: rgb(240, 240, 240);
-}
-
-.modeOverlay{
-    position: fixed; 
-    inset: 0;
-    background: rgba(0, 0, 0, 1);
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    z-index: 100;
+.modeOverlay {
+  position: fixed;
+  inset: 0;
+  background: var(--deep);
+  background-image: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(58, 123, 213, 0.15) 0%, transparent 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
 .modeCard {
-    background: rgb(104, 62, 189);
-    border: 2px solid black;
-    border-radius: 12px;
-    padding: 40px;
-    text-align: center;
-    display: flex; flex-direction: column; gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 48px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 360px;
+  box-shadow: 0 0 60px rgba(58, 123, 213, 0.12), inset 0 1px 0 rgba(255,255,255,0.04);
+  position: relative;
+}
+
+.modeCard::before,
+.modeCard::after {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  border-color: var(--gold);
+  border-style: solid;
+}
+.modeCard::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.modeCard::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+.modeCard h2 {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.modeCard h2:first-child {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(232, 184, 75, 0.3);
 }
 
 .btnMode {
-    padding: 16px 32px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    background: rgb(94, 169, 255);
-    color: white; border: 2px solid black;
+  padding: 16px 32px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--blue);
+  transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnMode:hover {
+  background: rgba(58, 123, 213, 0.15);
+  border-color: var(--cyan);
+  box-shadow: 0 0 16px rgba(79, 195, 247, 0.2);
+  color: #fff;
+}
+
+.btnMode small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
 }
 
 .btnSwitchMode {
-    position: fixed; top: 16px; right: 16px;
-    padding: 8px 14px;
-    background: rgb(94, 169, 255);
-    color: white; border: 2px solid black;
-    border-radius: 8px; cursor: pointer;
-    z-index: 99;
+  position: fixed;
+  top: 16px; right: 16px;
+  padding: 7px 14px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--panel);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 99;
+  transition: color 0.2s, border-color 0.2s;
 }
 
-.modeCard h2 {
-    margin: 0;
-    padding: 0;
+.btnSwitchMode:hover {
+  color: var(--cyan);
+  border-color: var(--blue);
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 450px;
+  margin: 1.6rem auto 0;
+  align-items: center;
+  padding-bottom: 0;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.03);
+  position: relative;
+}
+
+.frame::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--blue), var(--cyan), transparent);
+  border-radius: 4px 4px 0 0;
+}
+
+.frame h2 {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 20px 0 4px;
+  letter-spacing: 0.14em;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 14px;
+}
+
+.play button {
+  height: 44px;
+  width: 160px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--deep);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s, transform 0.1s;
+  box-shadow: 0 2px 16px rgba(232, 184, 75, 0.3);
+}
+
+.play button:hover {
+  opacity: 0.92;
+  box-shadow: 0 4px 24px rgba(232, 184, 75, 0.45);
+}
+
+.play button:active {
+  transform: scale(0.97);
+}
+
+
+.slider {
+  width: 240px;
+  margin-bottom: 20px;
+  display: none;
+  accent-color: var(--blue);
+}
+
+input[type="range"] {
+  accent-color: var(--blue);
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 20px;
+}
+
+input[type="text"] {
+  width: 230px;
+  height: 34px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0 10px;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.15);
+}
+
+input::placeholder {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.text button {
+  height: 34px;
+  width: 90px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.text button:hover {
+  border-color: var(--blue);
+  background: rgba(58, 123, 213, 0.12);
+  color: #fff;
+}
+
+.btnSubmit {
+  border-color: var(--blue) !important;
+  color: var(--cyan) !important;
+}
+
+.btnSubmit:hover {
+  background: rgba(58, 123, 213, 0.2) !important;
+  box-shadow: 0 0 12px rgba(79, 195, 247, 0.15);
 }
 
 .feedback {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    min-height: 32px;
-    margin-top: 12px;
-    transition: opacity 0.3s;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  min-height: 32px;
+  margin-top: 14px;
+  transition: opacity 0.3s;
 }
 
-.feedback.correct { color: #6dff6d; }
-.feedback.wrong   { color: #ff6d6d; }
-.feedback.info    { color: #ffd96d; }
+.feedback.correct { color: #56e88a; text-shadow: 0 0 12px rgba(86, 232, 138, 0.4); }
+.feedback.wrong   { color: #f2506e; text-shadow: 0 0 12px rgba(242, 80, 110, 0.35); }
+.feedback.info    { color: var(--gold); }
 
 .gameOverPanel {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 0;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.542);
-    border-radius: 10px;
-    width: 450px;
-    margin-inline: auto;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 24px 32px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 450px;
+  margin-inline: auto;
+  box-shadow: 0 0 40px rgba(242, 80, 110, 0.08);
+  position: relative;
 }
 
-.gameOverPanel p { font-size: 22px; font-weight: bold; }
+.gameOverPanel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f2506e, transparent);
+}
+
+.gameOverPanel p {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  text-transform: none;
+}
 
 .btnRetry {
-    padding: 10px 24px;
-    font-size: 18px;
-    background: rgb(94,169,255);
-    color: white; border: 2px solid black;
-    border-radius: 8px; cursor: pointer;
+  padding: 10px 28px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
 }
 
+.btnRetry:hover {
+  background: rgba(58, 123, 213, 0.15);
+  box-shadow: 0 0 16px rgba(79, 195, 247, 0.2);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 20px;
+  padding-bottom: 32px;
+}
