@@ -9,6 +9,17 @@
 </head>
 <body>
 
+    <div class = "modeOverlay" id = "modeOverlay"> 
+        <div class = "modeCard">
+            <h2>Who Said It?</h2>
+            <h2> Select a gamemode:</h2>
+            <button class = "btnMode" id = "btnFreePlay"> Free Play <br> <small>Unlimited Guess Per Hero</small></button>
+            <button class = "btnMode" id = "btnClassic"> Classic <br> <small>5 Guesses Per Hero</small></button>
+        </div>
+    </div>
+
+    <button class="btnSwitchMode" id="btnSwitchMode">Switch Mode</button>
+
     <h1>Guess Who Said It!</h1>
 
     <div class = "frame">
@@ -22,6 +33,14 @@
         <button class="btnSubmit">Submit</button>
         <button class="btnGiveUp">Give Up</button>
     </div>
+
+    <div class="feedback" id="feedback"></div>
+
+    <div class="gameOverPanel" id="gameOverPanel">
+    <p id="gameOverMsg"></p>
+    <button class="btnRetry" id="btnRetry">Try Again</button>
+    </div>
+
     <p>Guesses: <span class = "guess"></span></p>
     <p>Streak: <span class = "streak"></span></p>
     <p>Highest Streak: <span class = "highstreak"></span></p>

@@ -134,20 +134,45 @@ const vos = [
 ];
 
 const volume = document.querySelector(".slider");
+const maxGuess = 5;
 
 let guesses = 0;
 let streak = 0;
 let highestStreak = 0;
 let firstTime = true;
-
+let gameMode = null;
 let answer = '';
 let audio = null;
+let feedbackTimer = null;
 
 document.querySelector(".streak").textContent = streak;
 document.querySelector(".highstreak").textContent = highestStreak;
 document.querySelector(".guess").textContent = guesses;
 
-loadQuestion();
+function selectMode(mode){
+    gameMode = mode;
+    document.getElementById("modeOverlay").style.display = "none";
+    guesses = 0; streak = 0;
+    updateGuess()
+    loadQuestion();
+}
+
+document.getElementById("btnFreePlay").addEventListener("click", () => selectMode("free"));
+document.getElementById("btnClassic").addEventListener("click", () => selectMode("classic"));
+document.getElementById("btnSwitchMode").addEventListener("click", () => {
+    audio.pause(); audio.currentTime = 0;
+    document.getElementById("modeOverlay").style.display = "flex";
+});
+
+function showFeedback(message, type = 'info', persist = false) {
+    const fb = document.getElementById('feedback');
+    fb.textContent = message;
+    fb.className = `feedback ${type}`;
+    if (feedbackTimer) clearTimeout(feedbackTimer);
+    if (!persist) {
+        feedbackTimer = setTimeout(() => { fb.textContent = ''; fb.className = 'feedback'; }, 2500);
+    }
+}
 
 function loadQuestion() {
     const randomIndex = Math.floor(Math.random() * vos.length);
@@ -185,7 +210,7 @@ function submit(){
     audio.currentTime = 0;
     document.querySelector(".btnPlay").textContent = "▶ Play";
 
-     if (guess == answer.toLowerCase()) {
+     if (heroName(input.value) === heroName(answer)) {
         streak++;
         document.querySelector(".streak").textContent = streak;
 
@@ -195,14 +220,14 @@ function submit(){
         }
         
         if(guesses == 0){
-            alert("Incredible! You got it on the first try!");
+            showFeedback("Incredible! First try!", 'correct')
         }
         else{
-            alert("Correct! It only took you " + (guesses+1) + " guesses!");
+            showFeedback("Correct! It only took you " + (guesses+1) + " guesses!", 'correct')
         }
 
         guesses = 0;
-        document.querySelector(".guess").textContent = guesses;
+        updateGuess()
 
         input.value = '';
         loadQuestion();
@@ -212,34 +237,74 @@ function submit(){
         document.querySelector(".streak").textContent = streak;
 
         if(guess.length > 0){
-            alert(`${input.value} is Wrong! Try again.`);
+            showFeedback("Wrong! Try again.", 'wrong');
             input.value = '';
             guesses++;
-            document.querySelector(".guess").textContent = guesses;
+            updateGuess()
+
+            if(gameMode == "classic" && guesses >= maxGuess){
+            gameOver();
+            }
         }
         else{
-            alert(`Please enter a guess!`);
+            showFeedback("Please enter a guess!", 'info');
         }
-
     }
 }
 
-function giveUp() {
+function gameOver(){
+    audio.pause(); 
+    audio.currentTime = 0;
 
+    document.querySelector(".btnSubmit").disabled = true;
+    document.querySelector(".btnGiveUp").disabled = true;
+    document.querySelector(".input").disabled = true;
+
+    const panel = document.getElementById('gameOverPanel');
+    document.getElementById('gameOverMsg').textContent = `You ran out of guesses! It was: ${answer}`;
+    panel.style.display = 'flex';
+
+    streak = 0;
+    document.querySelector(".streak").textContent = streak;
+}
+
+function giveUp() {
     audio.pause();
     audio.currentTime = 0;
     document.querySelector(".btnPlay").textContent = "▶ Play";
-
-    alert(`Too bad! The correct answer was: ${answer}`);
-
     
     guesses = 0;
-    document.querySelector(".guess").textContent = guesses;
+    updateGuess();
     streak = 0;
+
     document.querySelector(".streak").textContent = streak;
     document.querySelector(".input").value = '';
+    showFeedback(`The answer was: ${answer}`, 'info');
     loadQuestion();
 }
+
+function updateGuess(){
+    const g = document.querySelector(".guess");
+    g.textContent = gameMode == 'classic' ? `${guesses} / ${maxGuess}` : guesses;
+}
+
+function heroName(str){
+    return str
+        .toLowerCase()
+        .trim()
+        .replace(/['\-\.]/g, '')
+        .replace(/\s+/g, '')
+}
+
+document.getElementById('btnRetry').addEventListener('click', () => {
+    document.getElementById('gameOverPanel').style.display = 'none';
+    document.querySelector(".btnSubmit").disabled = false;
+    document.querySelector(".btnGiveUp").disabled = false;
+    document.querySelector(".input").disabled = false;
+    guesses = 0;
+    updateGuess()
+    loadQuestion();
+});
 
 document.querySelector(".btnPlay").addEventListener("click", playVO);
 document.querySelector(".btnSubmit").addEventListener("click", submit);
@@ -248,3 +313,4 @@ document.querySelector(".btnGiveUp").addEventListener("click", giveUp);
 volume.addEventListener("input", () =>{
     audio.volume = volume.value;
 });
+
