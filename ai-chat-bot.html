@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="styles/pages/home.css">
+  </head>
+  <body>
+    
+    <nav>
+      <div class="nav-logo">
+        <img src="images/home/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="skins.html">Skins</a></li>
+        <li><a href="preparation.html">Preparation</a></li>
+        <li><a href="in-game-guide.html">In-Game Guides</a></li>
+        <li><a href="game-modes.html">Game Modes</a></li>
+        <li><a href="mini-games.html">Mini-Games</a></li>
+        <li><a href="ai-chat-bot.html" class="active">AI Chat Bot</a></li>
+      </ul>
+
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <script src="scripts/search-overlay.js"></script>
+  </body>
+</html>

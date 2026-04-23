@@ -1,0 +1,150 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #0b0e1f;
+  --deep:   #080b18;
+  --panel:  #0f1428;
+  --card:   #111830;
+  --border: #1e2d5a;
+  --gold:   #e8b84b;
+  --gold2:  #f5d47a;
+  --blue:   #3a7bd5;
+  --cyan:   #4fc3f7;
+  --text:   #c8d6f0;
+  --muted:  #6b7fa8;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: var(--deep);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(180deg, #070a18 0%, #040610 100%);
+  border-top: 1px solid #1a2850;
+  padding: 3rem 2.5rem 1.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1.2fr;
+  gap: 2.5rem;
+  max-width: 1200px; margin: 0 auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1a2850;
+}
+
+.footer-brand {}
+.footer-logo {
+  margin-bottom: 1rem;
+}
+.footer-mlbb-logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(232,184,75,0.25));
+}
+.footer-brand p {
+  font-size: 0.88rem; color: #8fa3cc; line-height: 1.7;
+}
+
+.footer-col h4 {
+  font-family: 'Cinzel', serif; font-size: 0.85rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: #dce8ff; margin-bottom: 1.1rem;
+  border-bottom: 1px solid #1e2d5a; padding-bottom: 0.5rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.55rem; }
+.footer-col ul li a {
+  font-size: 0.87rem; color: #8fa3cc; text-decoration: none;
+  transition: color 0.2s;
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.footer-col ul li a::before {
+  content: '›'; color: var(--gold); font-size: 1.1rem;
+}
+.footer-col ul li a:hover { color: var(--gold); }
+
+.footer-col p { font-size: 0.87rem; color: #8fa3cc; line-height: 1.7; }
+.contact-item {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.87rem; color: #8fa3cc; margin-bottom: 0.55rem;
+}
+.contact-icon { color: var(--gold); font-size: 1rem; }
+
+.moonton-badge {
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.moonton-logo-img {
+  height: 95px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.15) drop-shadow(0 0 8px rgba(255,200,60,0.2));
+  border-radius: 6px;
+}
+
+.footer-bottom {
+  text-align: center; padding-top: 1.4rem;
+  font-size: 0.8rem; color: #6b7fa8;
+  font-family: 'Cinzel', serif; letter-spacing: 0.06em;
+}
+
+/* DIAMOND DIVIDER */
+.divider {
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem 0;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border));
+}
+.divider::after {
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+.divider-gem {
+  width: 10px; height: 10px; margin: 0 1rem;
+  background: var(--gold);
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px var(--gold);
+}
+
+/* SEARCH OVERLAY */
+.search-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(5,8,18,0.95); backdrop-filter: blur(10px);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding-top: 12vh;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s;
+}
+.search-overlay.open { opacity: 1; pointer-events: all; }
+.search-box {
+  width: 100%; max-width: 600px; position: relative;
+}
+.search-input {
+  width: 100%;
+  background: #0f1428; border: 2px solid #3a7bd5;
+  color: #fff; font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem; padding: 1rem 1.5rem;
+  outline: none; border-radius: 6px;
+  box-shadow: 0 0 30px #3a7bd530;
+}
+.search-close {
+  position: absolute; right: 1rem; top: 50%;
+  transform: translateY(-50%);
+  background: none; border: none; color: var(--muted);
+  font-size: 1.5rem; cursor: pointer;
+}
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.reveal.visible { opacity: 1; transform: none; }

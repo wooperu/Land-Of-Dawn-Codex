@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="styles/pages/home.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="images/home/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="skins.html">Skins</a></li>
+        <li><a href="preparation.html">Preparation</a></li>
+        <li><a href="in-game-guide.html">In-Game Guides</a></li>
+        <li><a href="game-modes.html">Game Modes</a></li>
+        <li><a href="mini-games.html">Mini-Games</a></li>
+        <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
+      </ul>
+
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="stars" id="stars"></div>
+
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <p class="welcome-text">Welcome to</p>
+        <img
+          src="images/home/mobile-legends-logo.png"
+          alt="Mobile Legends: Bang Bang"
+          class="hero-logo-img"
+        >
+        <p class="hero-desc">Team up, strategize, and claim victory in every battle! Your ultimate 5v5 MOBA experience.</p>
+        <a href="#" class="btn-play">
+          <span>&#9654; Play Now</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <div class="divider reveal"><div class="divider-gem"></div></div>
+
+      <div class="grid-main">
+
+        <a href="heroes.html" class="card heroes-card reveal">
+          <div class="card-bg" style="background-image: url('images/home/heroes-img.png');"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <div class="card-tag gold">Heroes</div>
+            <div class="card-desc">100+ Heroes.<br>Find your main.</div>
+            <div class="carousel-dots">
+              <div class="dot"></div>
+              <div class="dot inactive"></div>
+              <div class="dot inactive"></div>
+            </div>
+          </div>
+          <div class="card-arrow left">&#8249;</div>
+          <div class="card-arrow right">&#8250;</div>
+        </a>
+
+        <a href="skins.html" class="card skins-card reveal">
+          <div class="card-bg" style="background-image: url('images/home/skins-img.png');"></div>
+          <div class="card-overlay" style="background:linear-gradient(135deg,rgba(8,11,24,0.75) 0%,rgba(8,11,24,0.3) 50%,transparent 100%)"></div>
+          <div style="position:absolute;top:1.5rem;right:2rem;font-size:1.4rem;color:#fbbf24;opacity:0.7;animation:twinkle 2s infinite">&#10022;</div>
+          <div style="position:absolute;top:3rem;right:5rem;font-size:0.9rem;color:#fbbf24;opacity:0.4;animation:twinkle 3s 1s infinite">&#10022;</div>
+          <div class="card-content">
+            <div class="card-tag" style="color:#fbbf24">Skins</div>
+            <div class="card-desc">Stunning Skins.<br>Show your style!</div>
+          </div>
+        </a>
+
+        <div class="small-cards-row">
+
+          <a href="preparation.html" class="card small-card reveal">
+            <div class="card-bg" style="background-image: url('images/home/preparation-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.1rem;color:#86efac">Preparation</div>
+              <div class="card-desc" style="font-size:0.76rem">Build the perfect setup for every battle.</div>
+            </div>
+          </a>
+
+          <a href="in-game-guide.html" class="card small-card reveal">
+            <div class="card-bg" style="background-image: url('images/home/in-game-guide-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.1rem;color:#93c5fd">In-Game Guides</div>
+              <div class="card-desc" style="font-size:0.76rem">Learn. Improve. Dominate.</div>
+            </div>
+          </a>
+
+          <a href="game-modes.html" class="card small-card reveal">
+            <div class="card-bg" style="background-image: url('images/home/game-modes-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.1rem;color:#c4b5fd">Game Modes</div>
+              <div class="card-desc" style="font-size:0.76rem">Explore all game modes and maps.</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="wide-cards-row">
+
+          <a href="mini-games.html" class="card wide-card mini-card reveal">
+            <div class="card-bg" style="background-image: url('images/home/mini-game-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.25rem;color:#93c5fd">Mini-Games</div>
+              <div class="card-desc">Fun games related to the game. Play now!</div>
+            </div>
+          </a>
+
+          <a href="ai-chat-bot.html" class="card wide-card ai-card reveal">
+            <div class="card-bg" style="background-image: url('images/home/ai-chat-bot-img.png');"></div>
+            <div class="card-overlay" style="background:linear-gradient(135deg,rgba(2,12,24,0.85) 0%,rgba(2,12,24,0.4) 60%,transparent 100%)"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.25rem;color:#7dd3fc">AI Chat Bot</div>
+              <div class="card-desc">Battle Assistant.<br>Get tips. Win more.</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="divider reveal" style="margin-top:1.5rem"><div class="divider-gem"></div></div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/home/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="skins.html">Skins</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="in-game-guide.html">In-Game Guides</a></li>
+            <li><a href="game-modes.html">Game Modes</a></li>
+            <li><a href="mini-games.html">Mini-Games</a></li>
+            <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="images/home/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="scripts/stars.js"></script>
+    <script src="scripts/search-overlay.js"></script>
+    <script src="scripts/scroll-reveal.js"></script>
+    <script src="scripts/carousel-dots.js"></script>
+  </body>
+</html>
