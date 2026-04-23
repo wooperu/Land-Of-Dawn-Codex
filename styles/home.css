@@ -36,7 +36,6 @@ nav {
 .nav-logo {
   display: flex; align-items: center;
 }
-
 .nav-logo-img {
   height: 68px;
   width: auto;
@@ -47,7 +46,6 @@ nav {
 .nav-links {
   display: flex; gap: 0; list-style: none;
 }
-
 .nav-links li a {
   display: block; padding: 0 1.1rem; line-height: 72px;
   font-family: 'Cinzel', serif; font-size: 0.90rem; font-weight: 600;
@@ -56,7 +54,6 @@ nav {
   transition: color 0.2s;
   position: relative;
 }
-
 .nav-links li a::after {
   content: ''; position: absolute; bottom: 0; left: 50%; right: 50%;
   height: 2px; background: var(--gold);
@@ -268,10 +265,6 @@ nav {
 .heroes-card {
   grid-column: 1; grid-row: 1;
   min-height: 280px;
-}
-/* override fallback gradient - image is set inline */
-.heroes-card .card-bg {
-  background-color: #0a1628;
 }
 
 .carousel-dots {
