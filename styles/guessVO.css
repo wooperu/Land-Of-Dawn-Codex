@@ -380,7 +380,7 @@ input::placeholder {
   box-shadow: 0 0 16px rgba(79, 195, 247, 0.2);
 }
 
-.stats-row {
+.stats {
   display: flex;
   justify-content: center;
   gap: 32px;
