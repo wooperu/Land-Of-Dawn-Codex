@@ -12,18 +12,18 @@
 
     <nav>
       <div class="nav-logo">
-         <img src="images/home/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+        <img src="images/home/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
       </div>
 
       <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#heroes">Heroes</a></li>
-        <li><a href="#skins">Skins</a></li>
-        <li><a href="#prep">Preparation</a></li>
-        <li><a href="#guides">In-Game Guides</a></li>
-        <li><a href="#modes">Game Modes</a></li>
-        <li><a href="#mini">Mini-Games</a></li>
-        <li><a href="#aibot">AI Chat Bot</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="skins.html">Skins</a></li>
+        <li><a href="preparation.html">Preparation</a></li>
+        <li><a href="in-game-guide.html">In-Game Guides</a></li>
+        <li><a href="game-modes.html">Game Modes</a></li>
+        <li><a href="mini-games.html">Mini-Games</a></li>
+        <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
       </ul>
 
       <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
@@ -31,7 +31,7 @@
 
     <div class="search-overlay" id="searchOverlay">
       <div class="search-box">
-        <input class="search-input" type="text" placeholder="Search heroes, skins, guides..." id="searchInput" />
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
         <button class="search-close" id="searchClose">&#x2715;</button>
       </div>
     </div>
@@ -48,7 +48,7 @@
 
       <div class="hero-content">
         <p class="welcome-text">Welcome to</p>
-        <img 
+        <img
           src="images/home/mobile-legends-logo.png"
           alt="Mobile Legends: Bang Bang"
           class="hero-logo-img"
@@ -65,7 +65,7 @@
 
       <div class="grid-main">
 
-        <div class="card heroes-card reveal" id="heroes">
+        <a href="heroes.html" class="card heroes-card reveal">
           <div class="card-bg" style="background-image: url('images/home/heroes-img.png');"></div>
           <div class="card-overlay"></div>
           <div class="card-content">
@@ -79,9 +79,9 @@
           </div>
           <div class="card-arrow left">&#8249;</div>
           <div class="card-arrow right">&#8250;</div>
-        </div>
+        </a>
 
-        <div class="card skins-card reveal" id="skins">
+        <a href="skins.html" class="card skins-card reveal">
           <div class="card-bg" style="background-image: url('images/home/skins-img.png');"></div>
           <div class="card-overlay" style="background:linear-gradient(135deg,rgba(8,11,24,0.75) 0%,rgba(8,11,24,0.3) 50%,transparent 100%)"></div>
           <div style="position:absolute;top:1.5rem;right:2rem;font-size:1.4rem;color:#fbbf24;opacity:0.7;animation:twinkle 2s infinite">&#10022;</div>
@@ -90,56 +90,57 @@
             <div class="card-tag" style="color:#fbbf24">Skins</div>
             <div class="card-desc">Stunning Skins.<br>Show your style!</div>
           </div>
-        </div>
+        </a>
 
         <div class="small-cards-row">
-          <div class="card small-card reveal" id="prep">
+
+          <a href="preparation.html" class="card small-card reveal">
             <div class="card-bg" style="background-image: url('images/home/preparation-img.png');"></div>
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="card-tag" style="font-size:1.1rem;color:#86efac">Preparation</div>
               <div class="card-desc" style="font-size:0.76rem">Build the perfect setup for every battle.</div>
             </div>
-          </div>
+          </a>
 
-          <div class="card small-card reveal" id="guides">
+          <a href="in-game-guide.html" class="card small-card reveal">
             <div class="card-bg" style="background-image: url('images/home/in-game-guide-img.png');"></div>
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="card-tag" style="font-size:1.1rem;color:#93c5fd">In-Game Guides</div>
               <div class="card-desc" style="font-size:0.76rem">Learn. Improve. Dominate.</div>
             </div>
-          </div>
+          </a>
 
-          <div class="card small-card modes-card reveal" id="modes">
+          <a href="game-modes.html" class="card small-card reveal">
             <div class="card-bg" style="background-image: url('images/home/game-modes-img.png');"></div>
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="card-tag" style="font-size:1.1rem;color:#c4b5fd">Game Modes</div>
               <div class="card-desc" style="font-size:0.76rem">Explore all game modes and maps.</div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div class="wide-cards-row">
 
-          <div class="card wide-card mini-card reveal" id="mini">
+          <a href="mini-games.html" class="card wide-card mini-card reveal">
             <div class="card-bg" style="background-image: url('images/home/mini-game-img.png');"></div>
             <div class="card-overlay"></div>
             <div class="card-content">
               <div class="card-tag" style="font-size:1.25rem;color:#93c5fd">Mini-Games</div>
               <div class="card-desc">Fun games related to the game. Play now!</div>
             </div>
-          </div>
+          </a>
 
-          <div class="card wide-card ai-card reveal" id="aibot">
+          <a href="ai-chat-bot.html" class="card wide-card ai-card reveal">
             <div class="card-bg" style="background-image: url('images/home/ai-chat-bot-img.png');"></div>
             <div class="card-overlay" style="background:linear-gradient(135deg,rgba(2,12,24,0.85) 0%,rgba(2,12,24,0.4) 60%,transparent 100%)"></div>
             <div class="card-content">
               <div class="card-tag" style="font-size:1.25rem;color:#7dd3fc">AI Chat Bot</div>
               <div class="card-desc">Battle Assistant.<br>Get tips. Win more.</div>
             </div>
-          </div>
+          </a>
         </div>
 
       </div>
@@ -160,13 +161,14 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Heroes</a></li>
-            <li><a href="#">Skins</a></li>
-            <li><a href="#">Preparation</a></li>
-            <li><a href="#">In-Game Guides</a></li>
-            <li><a href="#">Game Modes</a></li>
-            <li><a href="#">AI Chat Bot</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="skins.html">Skins</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="in-game-guide.html">In-Game Guides</a></li>
+            <li><a href="game-modes.html">Game Modes</a></li>
+            <li><a href="mini-games.html">Mini-Games</a></li>
+            <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
           </ul>
         </div>
 
@@ -202,8 +204,8 @@
       </div>
     </footer>
 
-    <script src="scripts/search-overlay.js"></script>
     <script src="scripts/stars.js"></script>
+    <script src="scripts/search-overlay.js"></script>
     <script src="scripts/scroll.js"></script>
     <script src="scripts/carousel-dots.js"></script>
   </body>
