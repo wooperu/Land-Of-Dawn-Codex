@@ -10,7 +10,6 @@
   </head>
   <body>
 
-    <!-- NAVBAR -->
     <nav>
       <div class="nav-logo">
          <img src="images/home/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
@@ -29,7 +28,6 @@
       <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
     </nav>
 
-    <!-- SEARCH OVERLAY -->
     <div class="search-overlay" id="searchOverlay">
       <div class="search-box">
         <input class="search-input" type="text" placeholder="Search heroes, skins, guides..." id="searchInput" />
@@ -37,7 +35,6 @@
       </div>
     </div>
 
-    <!-- HERO BANNER -->
     <section class="hero">
       <div class="hero-bg"></div>
 
@@ -62,13 +59,11 @@
       </div>
     </section>
 
-    <!-- SECTION GRID -->
     <section class="section-grid">
       <div class="divider reveal"><div class="divider-gem"></div></div>
 
       <div class="grid-main"></div>
 
-      <!-- HEROES (large left) -->
         <div class="card heroes-card reveal" id="heroes">
           <div class="card-bg" style="background-image: url('images/home/heroes-img.png');"></div>
           <div class="card-overlay"></div>
@@ -85,7 +80,6 @@
           <div class="card-arrow right">&#8250;</div>
         </div>
 
-        <!-- SKINS (large right) -->
         <div class="card skins-card reveal" id="skins">
           <div class="card-bg" style="background-image: url('images/home/skins-img.png');"></div>
           <div class="card-overlay" style="background:linear-gradient(135deg,rgba(8,11,24,0.75) 0%,rgba(8,11,24,0.3) 50%,transparent 100%)"></div>
@@ -97,6 +91,35 @@
           </div>
         </div>
 
+        <div class="small-cards-row">
+          <div class="card small-card reveal" id="prep">
+            <div class="card-bg" style="background-image: url('images/home/preparation-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.1rem;color:#86efac">Preparation</div>
+              <div class="card-desc" style="font-size:0.76rem">Build the perfect setup for every battle.</div>
+            </div>
+          </div>
+
+          <div class="card small-card reveal" id="guides">
+            <div class="card-bg" style="background-image: url('images/home/in-game-guide-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.1rem;color:#93c5fd">In-Game Guides</div>
+              <div class="card-desc" style="font-size:0.76rem">Learn. Improve. Dominate.</div>
+            </div>
+          </div>
+
+          <div class="card small-card modes-card reveal" id="modes">
+            <div class="card-bg" style="background-image: url('images/home/game-modes-img.png');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <div class="card-tag" style="font-size:1.1rem;color:#c4b5fd">Game Modes</div>
+              <div class="card-desc" style="font-size:0.76rem">Explore all game modes and maps.</div>
+            </div>
+          </div>
+        </div>
+        
     </section>
 
     <script src="scripts/search-overlay.js"></script>

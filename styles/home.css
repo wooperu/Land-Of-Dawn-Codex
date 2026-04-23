@@ -292,7 +292,7 @@ nav {
 }
 .card-tag.gold { color: var(--gold); }
 
-/* HEROES CARD (large, left) */
+/* HEROES CARD */
 .heroes-card {
   grid-column: 1; grid-row: 1;
   min-height: 280px;
@@ -325,7 +325,7 @@ nav {
 .card-arrow.left  { left: 0.7rem; }
 .card-arrow.right { right: 0.7rem; }
 
-/* SKINS CARD (large, right) */
+/* SKINS CARD */
 .skins-card {
   grid-column: 2; grid-row: 1;
   min-height: 280px;
@@ -334,3 +334,12 @@ nav {
   background-color: #1a0d00;
   background-position: center top;
 }
+
+/* THREE SMALL CARDS */
+.small-cards-row {
+  grid-column: 1 / -1; grid-row: 2;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem;
+}
+
+.small-card { min-height: 160px; }
+
