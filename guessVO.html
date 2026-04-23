@@ -2,19 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the VO</title>
     <link rel="stylesheet" href="styles/guessVO.css">
     <script src="scripts/guessVO.js" defer></script>
 </head>
 <body>
 
-    <div class = "modeOverlay" id = "modeOverlay"> 
-        <div class = "modeCard">
+    <div class="modeOverlay" id="modeOverlay">
+        <div class="modeCard">
             <h2>Who Said It?</h2>
-            <h2> Select a gamemode:</h2>
-            <button class = "btnMode" id = "btnFreePlay"> Free Play <br> <small>Unlimited Guess Per Hero</small></button>
-            <button class = "btnMode" id = "btnClassic"> Classic <br> <small>5 Guesses Per Hero</small></button>
+            <h2>Select a gamemode</h2>
+            <button class="btnMode" id="btnFreePlay">Free Play<br><small>Unlimited Guesses Per Hero</small></button>
+            <button class="btnMode" id="btnClassic">Classic<br><small>5 Guesses Per Hero</small></button>
         </div>
     </div>
 
@@ -22,14 +22,16 @@
 
     <h1>Guess Who Said It!</h1>
 
-    <div class = "frame">
-    <h2>Which hero says this?</h2>
-    <div class = "play"> <button class="btnPlay">▶ Play</button> </div>
-    <input type = "range" class = "slider" min = "0" max = "1" step = "0.01" value ="1">
+    <div class="frame">
+        <h2>Which hero says this?</h2>
+        <div class="play">
+            <button class="btnPlay">▶ Play</button>
+        </div>
+        <input type="range" class="slider" min="0" max="1" step="0.01" value="1">
     </div>
 
-    <div class = "text">   
-        <input type = "text" class = "input" placeholder="Type hero name ...">
+    <div class="text">
+        <input type="text" class="input" placeholder="Type hero name ...">
         <button class="btnSubmit">Submit</button>
         <button class="btnGiveUp">Give Up</button>
     </div>
@@ -37,13 +39,15 @@
     <div class="feedback" id="feedback"></div>
 
     <div class="gameOverPanel" id="gameOverPanel">
-    <p id="gameOverMsg"></p>
-    <button class="btnRetry" id="btnRetry">Try Again</button>
+        <p id="gameOverMsg"></p>
+        <button class="btnRetry" id="btnRetry">Try Again</button>
     </div>
 
-    <p>Guesses: <span class = "guess"></span></p>
-    <p>Streak: <span class = "streak"></span></p>
-    <p>Highest Streak: <span class = "highstreak"></span></p>
-    
+    <div class="stats-row">
+        <p>Guesses <span class="guess"></span></p>
+        <p>Streak <span class="streak"></span></p>
+        <p>Highest Streak <span class="highstreak"></span></p>
+    </div>
+
 </body>
 </html>
