@@ -343,3 +343,44 @@ nav {
 
 .small-card { min-height: 160px; }
 
+/* WIDE CARDS */
+.wide-cards-row {
+  grid-column: 1 / -1; grid-row: 3;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem;
+}
+
+.wide-card { min-height: 170px; }
+
+.mini-card .card-bg {
+  background-color: #050d1e;
+}
+.ai-card .card-bg {
+  background-color: #020c18;
+  background-position: center center;
+}
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* DIAMOND DIVIDER */
+.divider {
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem 0;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border));
+}
+.divider::after {
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+.divider-gem {
+  width: 10px; height: 10px; margin: 0 1rem;
+  background: var(--gold);
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px var(--gold);
+}
