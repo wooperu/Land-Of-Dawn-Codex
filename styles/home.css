@@ -450,3 +450,23 @@ footer {
   transition: opacity 0.6s, transform 0.6s;
 }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* SCROLL MARGIN */
+#heroes, #skins, #prep, #guides, #modes, #mini, #aibot {
+  scroll-margin-top: 84px;
+}
+
+/* SECTION HIGHLIGHT */
+@keyframes sectionGlow {
+  0%   { box-shadow: 0 0 0px transparent, inset 0 0 0px transparent; border-color: var(--border); }
+  15%  { box-shadow: 0 0 35px rgba(232,184,75,0.55), 0 0 80px rgba(232,184,75,0.18),
+                     inset 0 0 30px rgba(232,184,75,0.08); border-color: var(--gold); }
+  50%  { box-shadow: 0 0 20px rgba(58,123,213,0.45), 0 0 50px rgba(58,123,213,0.15),
+                     inset 0 0 20px rgba(58,123,213,0.06); border-color: #3a7bd5; }
+  100% { box-shadow: 0 0 0px transparent, inset 0 0 0px transparent; border-color: var(--border); }
+}
+
+.section-highlight {
+  animation: sectionGlow 1.8s ease-out forwards !important;
+  z-index: 5;
+}
