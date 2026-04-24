@@ -28,7 +28,15 @@ h1 {
 }
 
 .page-content {
-  padding-top: 58px;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  padding-bottom: 7%;
+  padding-top: 7%;
+}
+
+.game-hidden {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .gridContainer {
@@ -38,7 +46,6 @@ h1 {
   gap: 14px;
   padding: 0 16px 24px;
 }
-
 
 .card {
   height: calc(140px / 2 * 3);
@@ -121,7 +128,6 @@ h1 {
 .actions {
   display: flex;
   justify-content: center;
-  padding-bottom: 36px;
 }
 
 .actions button {
@@ -147,4 +153,234 @@ h1 {
 
 .actions button:active {
   transform: scale(0.97);
+}
+
+.win {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 11, 24, 0.92);
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.win.active {
+  display: flex;
+}
+
+.winCard {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 48px 56px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.winCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.winCard h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--gold);
+  font-size: 2rem;
+  text-shadow: 0 0 24px rgba(232, 184, 75, 0.4);
+}
+
+.winCard p {
+  color: var(--muted);
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+.btnPlayAgain {
+  padding: 12px 32px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btnPlayAgain:hover {
+  background: rgba(58, 123, 213, 0.15);
+  box-shadow: 0 0 16px rgba(79, 195, 247, 0.2);
+}
+
+.modeOverlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--deep);
+  background-image: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(58, 123, 213, 0.15) 0%, transparent 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.modeCard {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 48px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 450px;
+  position: relative;
+}
+
+.modeCard::before,
+.modeCard::after {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  border-color: var(--gold);
+  border-style: solid;
+}
+
+.modeCard::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.modeCard::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+.modeCard h2 {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.modeCard h2:first-child {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(232, 184, 75, 0.3);
+}
+
+.modeGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btnDiff,
+.btnGameMode {
+  flex: 1;
+  padding: 14px 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.btnDiff small,
+.btnGameMode small {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.btnDiff.active,
+.btnGameMode.active {
+  color: var(--cyan);
+  border-color: var(--blue);
+  background: rgba(58, 123, 213, 0.12);
+}
+
+.btnDiff:hover,
+.btnGameMode:hover {
+  border-color: var(--blue);
+  color: var(--text);
+}
+
+.btnStartGame {
+  margin-top: 8px;
+  padding: 14px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color: var(--deep);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.btnStartGame:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(232, 184, 75, 0.35);
+}
+
+.btnSwitchMode {
+  position: fixed;
+  top: 10%; right: 20px;
+  padding: 7px 14px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--panel);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 99;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btnSwitchMode:hover {
+  color: var(--cyan);
+  border-color: var(--blue);
+}
+
+@keyframes overlayFadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(1.03); }
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.modeOverlay.fade-out {
+  animation: overlayFadeOut 0.45s ease forwards;
+  pointer-events: none;
+}
+
+.modeOverlay.fade-in {
+  animation: overlayFadeIn 0.35s ease forwards;
 }

@@ -39,19 +39,62 @@
     </div>
   </div>
 
-  <main class="page-content">
-    <h1>Mobile Legends Memory Game</h1>
-
-    <div class="gridContainer"></div>
-
-    <div class="txt">
+ <main class="page-content">
+ 
+    <div class="modeOverlay" id="modeOverlay">
+      <div class="modeCard">
+        <h2>Memory Game</h2>
+        <h2>Select Difficulty</h2>
+        <div class="modeGroup">
+          <button class="btnDiff active" data-diff="easy">Easy<br><small>6 × 3 — 9 pairs</small></button>
+          <button class="btnDiff" data-diff="medium">Medium<br><small>8 × 3 — 12 pairs</small></button>
+          <button class="btnDiff" data-diff="hard">Hard<br><small>8 × 4 — 16 pairs</small></button>
+        </div>
+        <h2>Select Mode</h2>
+        <div class="modeGroup">
+          <button class="btnGameMode active" data-mode="standard">Standard<br><small>No time limit</small></button>
+          <button class="btnGameMode" data-mode="trial">Time Trial<br><small>5 minutes</small></button>
+        </div>
+        <button class="btnStartGame" id="btnStartGame">Start Game</button>
+      </div>
+    </div>
+ 
+    <div class="win" id="winModal">
+      <div class="winCard">
+        <h2>Victory!</h2>
+        <p id="winMsg"></p>
+        <button class="btnPlayAgain" id="btnPlayAgain">Play Again</button>
+      </div>
+    </div>
+ 
+    <div class="win" id="timeUpModal">
+      <div class="winCard">
+        <h2 style="color: var(--cyan)">Time's Up!</h2>
+        <p id="timeUpMsg"></p>
+        <button class="btnPlayAgain" id="btnTimeUpRetry">Try Again</button>
+      </div>
+    </div>
+ 
+    <div id="gameContent" class="hide">
+ 
+      <button class="btnSwitchMode" id="btnSwitchMode">Change Mode</button>
+ 
+      <h1>Mobile Legends Memory Game</h1>
+ 
+      <div class="gridContainer"></div>
+ 
+      <div class="txt">
         <p>Score <span class="score"></span></p>
         <p>Turns <span class="turns"></span></p>
-    </div>
-
-    <div class="actions">
+        <p>Time <span class="timer">0:00</span></p>
+      </div>
+ 
+      <div class="actions">
         <button class="btnRestart">Restart</button>
+      </div>
+ 
     </div>
+ 
   </main>
 
   <footer>

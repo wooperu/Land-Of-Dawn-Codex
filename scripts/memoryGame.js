@@ -60,17 +60,30 @@ let firstCard, secondCard;
 let lockBoard = false;
 let turns = 0;
 let score = 0;
+let pairs = 9;
+
+let timerInterval = null;
+let elapsed = 0;
+let timeLimit = null;
+
+const difficulty = {
+    easy:   { cols: 6, rows: 3, pairs: 9  },
+    medium: { cols: 8, rows: 3, pairs: 12 },
+    hard:   { cols: 8, rows: 4, pairs: 16 }
+};
+
+let selectedDiff = 'easy';
+let selectedMode = 'standard';
 
 document.querySelector(".score").textContent = score;
 document.querySelector(".turns").textContent = turns;
 
-loadGame();
-
 function loadGame() {
-            const selected = pickRandom(cardData, 9);
-            cards = [...selected, ...selected];
-            shuffleCards();
-            generateCards();
+    const selected = pickRandom(cardData, pairs);
+    cards = [...selected, ...selected];
+    shuffleCards();
+    generateCards();
+    startTimer();
 }
 
 function pickRandom(data, pair) {
@@ -78,9 +91,8 @@ function pickRandom(data, pair) {
     return shuffled.slice(0, pair);
 }
 
-function shuffleCards(){
+function shuffleCards() {
     let currentIndex = cards.length, temporaryValue, randomIndex;
-
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
@@ -91,21 +103,58 @@ function shuffleCards(){
 }
 
 function generateCards() {
-    for (let card of cards){
+    for (let card of cards) {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
         cardElement.setAttribute('dataName', card.name);
         cardElement.innerHTML = `
             <div class="front">
-                <img class = "front-image" src="${card.image}" alt="${card.name}">
+                <img class="front-image" src="${card.image}" alt="${card.name}">
             </div>
             <div class="back">
+                <img class="back-image" src="${card.image}" alt="${card.name}">
             </div>
         `;
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener('click', flipCard);
     }
 }
+
+
+function formatTime(seconds) {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
+function startTimer() {
+    clearInterval(timerInterval);
+    elapsed = 0;
+
+    if (selectedMode === 'trial') {
+        document.querySelector(".timer").textContent = formatTime(timeLimit);
+        timerInterval = setInterval(() => {
+            elapsed++;
+            const remaining = timeLimit - elapsed;
+            document.querySelector(".timer").textContent = formatTime(remaining);
+            if (remaining <= 0) {
+                clearInterval(timerInterval);
+                triggerTimeUp();
+            }
+        }, 1000);
+    } else {
+        document.querySelector(".timer").textContent = formatTime(0);
+        timerInterval = setInterval(() => {
+            elapsed++;
+            document.querySelector(".timer").textContent = formatTime(elapsed);
+        }, 1000);
+    }
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
 
 function flipCard() {
     if (lockBoard) return;
@@ -127,18 +176,13 @@ function flipCard() {
 }
 
 function checkForMatch() {
-    const isMatch = firstCard.getAttribute('dataName') === secondCard.getAttribute('dataName'); 
+    const isMatch = firstCard.getAttribute('dataName') === secondCard.getAttribute('dataName');
     if (isMatch) {
         score++;
-        if(score == 9){
-            setTimeout(() => {
-                alert("goodboy!");
-            }, 1000);
-        }
         document.querySelector(".score").textContent = score;
         disableCards();
-    }
-    else{
+        havetheyWon();
+    } else {
         unflipCards();
     }
 }
@@ -165,7 +209,30 @@ function resetBoard() {
     lockBoard = false;
 }
 
+function havetheyWon() {
+    if (score === pairs) {
+        stopTimer();
+        setTimeout(() => {
+            const timeDisplay = selectedMode === 'trial'
+                ? formatTime(timeLimit - elapsed)
+                : formatTime(elapsed);
+            document.getElementById('winMsg').textContent =
+                `Solved in ${turns} turns with ${timeDisplay} remaining!`.replace('remaining', selectedMode === 'trial' ? 'remaining' : 'elapsed');
+            document.getElementById('winModal').classList.add('active');
+        }, 600);
+    }
+}
+
+function triggerTimeUp() {
+    document.getElementById('timeUpMsg').textContent = `You matched ${score} of ${pairs} pairs.`;
+    document.getElementById('timeUpModal').classList.add('active');
+    lockBoard = true;
+}
+
+
 function restart() {
+    stopTimer();
+    elapsed = 0;
     resetBoard();
     score = 0;
     turns = 0;
@@ -175,4 +242,62 @@ function restart() {
     loadGame();
 }
 
+
 document.querySelector(".btnRestart").addEventListener("click", restart);
+
+document.getElementById('btnPlayAgain').addEventListener('click', () => {
+    document.getElementById('winModal').classList.remove('active');
+    restart();
+});
+
+document.getElementById('btnTimeUpRetry').addEventListener('click', () => {
+    document.getElementById('timeUpModal').classList.remove('active');
+    lockBoard = false;
+    restart();
+});
+
+document.querySelectorAll('.btnDiff').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.btnDiff').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedDiff = btn.dataset.diff;
+    });
+});
+
+document.querySelectorAll('.btnGameMode').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.btnGameMode').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedMode = btn.dataset.mode;
+    });
+});
+
+document.getElementById('btnStartGame').addEventListener('click', () => {
+    const config = difficulty[selectedDiff];
+    pairs = config.pairs;
+    timeLimit = selectedMode === 'trial' ? 300 : null;
+
+    gridContainer.style.gridTemplateColumns = `repeat(${config.cols}, 140px)`;
+
+    const overlay = document.getElementById('modeOverlay');
+    overlay.classList.add('fade-out');
+    document.getElementById('gameContent').classList.remove('game-hidden');
+    loadGame();
+
+    setTimeout(() => {
+        overlay.style.display = 'none';
+        overlay.classList.remove('fade-out');
+    }, 450);
+});
+
+document.getElementById('btnSwitchMode').addEventListener('click', () => {
+    stopTimer();
+    gridContainer.innerHTML = '';
+    document.getElementById('gameContent').classList.add('game-hidden');
+
+    const overlay = document.getElementById('modeOverlay');
+    overlay.style.display = 'flex';
+    overlay.classList.remove('fade-out');
+    overlay.classList.add('fade-in');
+    setTimeout(() => overlay.classList.remove('fade-in'), 350);
+});
