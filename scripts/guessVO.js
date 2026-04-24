@@ -157,7 +157,8 @@ function selectMode(mode){
         overlay.style.display = "none";
         overlay.classList.remove("fade-out");
     }, 450);
-    guesses = 0; streak = 0;
+    guesses = 0; streak = 0; 
+    document.querySelector(".btnPlay").textContent = "▶ Play";
     updateGuess();
     loadQuestion();
 }
