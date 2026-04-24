@@ -151,9 +151,14 @@ document.querySelector(".guess").textContent = guesses;
 
 function selectMode(mode){
     gameMode = mode;
-    document.getElementById("modeOverlay").style.display = "none";
+    const overlay = document.getElementById("modeOverlay");
+    overlay.classList.add("fade-out");
+    setTimeout(() => {
+        overlay.style.display = "none";
+        overlay.classList.remove("fade-out");
+    }, 450);
     guesses = 0; streak = 0;
-    updateGuess()
+    updateGuess();
     loadQuestion();
 }
 
@@ -161,7 +166,11 @@ document.getElementById("btnFreePlay").addEventListener("click", () => selectMod
 document.getElementById("btnClassic").addEventListener("click", () => selectMode("classic"));
 document.getElementById("btnSwitchMode").addEventListener("click", () => {
     audio.pause(); audio.currentTime = 0;
-    document.getElementById("modeOverlay").style.display = "flex";
+    const overlay = document.getElementById("modeOverlay");
+    overlay.style.display = "flex";
+    overlay.classList.remove("fade-out");
+    overlay.classList.add("fade-in");
+    setTimeout(() => overlay.classList.remove("fade-in"), 350);
 });
 
 function showFeedback(message, type = 'info', persist = false) {
@@ -313,4 +322,3 @@ document.querySelector(".btnGiveUp").addEventListener("click", giveUp);
 volume.addEventListener("input", () =>{
     audio.volume = volume.value;
 });
-
