@@ -52,14 +52,36 @@ p span {
   font-weight: 700;
 }
 
+@keyframes overlayFadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(1.03); }
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
 .modeOverlay {
-  inset: 0;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  bottom: 0;
+  min-height: 100%;
   background: var(--deep);
   background-image: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(58, 123, 213, 0.15) 0%, transparent 70%);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 58px;;
+  z-index: 100;
+}
+
+.modeOverlay.fade-out {
+  animation: overlayFadeOut 0.45s ease forwards;
+  pointer-events: none;
+}
+
+.modeOverlay.fade-in {
+  animation: overlayFadeIn 0.35s ease forwards;
 }
 
 .modeCard {
@@ -138,8 +160,9 @@ p span {
 
 .btnSwitchMode {
   position: fixed;
-  top: 16px; right: 16px;
+  top: 10%; right: 20px;
   padding: 7px 14px;
+  margin: 0px auto;
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
@@ -374,5 +397,8 @@ input::placeholder {
 }
 
 .page-content {
-  padding-top: 58px;
+  position: relative;
+  padding-top: 10%;
+  min-height: calc(100vh - 200px);
+  padding-bottom: 10%;
 }
