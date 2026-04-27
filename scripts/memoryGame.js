@@ -112,7 +112,6 @@ function generateCards() {
                 <img class="front-image" src="${card.image}" alt="${card.name}">
             </div>
             <div class="back">
-                <img class="back-image" src="${card.image}" alt="${card.name}">
             </div>
         `;
         gridContainer.appendChild(cardElement);
