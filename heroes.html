@@ -8,7 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
-    <link rel="stylesheet" href="styles/pages/home.css">
+    <link rel="stylesheet" href="styles/pages/heroes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     
@@ -38,6 +44,85 @@
       </div>
     </div>
 
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="stars" id="stars"></div>
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+      <div class="hero-content">
+        <img
+          src="images/heroes/line.png"
+          alt="Mobile Legends: Bang Bang"
+          class="line-img"
+        >
+        <p class="description">Discover all heroes of the Land of Dawn</p>
+        <p class="description">Learn thei strengths, roles, and specialties</p>
+        <p class="description">Master your hero, dominate the battlefield!</p>
+        <button class="btn-explore">EXPLORE HEROES <span>&#8680;</span></button>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/home/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="skins.html">Skins</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="in-game-guide.html">In-Game Guides</a></li>
+            <li><a href="game-modes.html">Game Modes</a></li>
+            <li><a href="mini-games.html">Mini-Games</a></li>
+            <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="images/home/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
     <script src="scripts/search-overlay.js"></script>
+    <script src="scripts/stars.js"></script>
+    <script src="scripts/scroll-reveal.js"></script>
+    <script src="scripts/carousel-dots.js"></script>
   </body>
 </html>
