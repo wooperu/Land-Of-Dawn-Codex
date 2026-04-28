@@ -274,7 +274,7 @@ document.querySelectorAll('.btnGameMode').forEach(btn => {
 document.getElementById('btnStartGame').addEventListener('click', () => {
     const config = difficulty[selectedDiff];
     pairs = config.pairs;
-    timeLimit = selectedMode === 'trial' ? 300 : null;
+    timeLimit = selectedMode === 'trial' ? 120 : null;
 
     gridContainer.style.gridTemplateColumns = `repeat(${config.cols}, 140px)`;
 
