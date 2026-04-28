@@ -31,7 +31,7 @@ const vos = [
     {"audio": "audio/vo/clint.ogg", "name": "Clint"},
     {"audio": "audio/vo/cyclops.ogg", "name": "Cyclops"},
     {"audio": "audio/vo/diggie.ogg", "name": "Diggie"},
-    {"audio": "audio/vo/dyrroth.ogg", "name": "Dyrroth"},
+    {"audio": "audio/vo/dyroth.ogg", "name": "Dyrroth"},
     {"audio": "audio/vo/edith.ogg", "name": "Edith"},
     {"audio": "audio/vo/esmeralda.ogg", "name": "Esmeralda"},
     {"audio": "audio/vo/estes.ogg", "name": "Estes"},
