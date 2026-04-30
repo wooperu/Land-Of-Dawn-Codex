@@ -6,7 +6,7 @@
 }
 
 .hero-bg {
-  position: absolute; 
+  position: absolute;
   inset: 0;
   background-image: url('../../images/heroes/main-image.png');
   background-size: cover;
@@ -16,10 +16,15 @@
 
 .hero-bg::after {
   content: '';
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(90deg, rgba(5,8,18,0.88) 0%, rgba(5,8,18,0.6) 45%, rgba(5,8,18,0.1) 100%),
-    linear-gradient(180deg, rgba(5,8,18,0.3) 0%, transparent 40%, rgba(5,8,18,0.5) 100%);
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 28, 62, 0) 80%,
+    rgba(26, 28, 62, 0.9) 96%,
+    rgba(26, 28, 62, 1) 100%
+  );
 }
 
 .stars {
@@ -68,21 +73,16 @@
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative; z-index: 10;
   padding: 0 3.5rem; max-width: 480px;
-}
-.hero-logo-img {
-  display: block;
-  width: 340px;
-  max-width: 100%;
-  filter: drop-shadow(0 0 24px rgba(232,184,75,0.4));
-  margin-bottom: 1.2rem;
-  opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
+  gap: 0.5 rem;
 }
 .description{
-  font-size: 0.9rem; color: var(--text); 
+  font-size: 1rem; color: var(--text); 
   font-family: "Crimson Text", serif;
   font-weight: 700;
   font-style: bold;
@@ -96,6 +96,7 @@
     padding-right: 2rem;
     padding-left: 2rem;
     text-align: center;
+    cursor: pointer;
     font-size: small;
     font-family: Roboto Serif, sans-serif;
     border-radius: 42px;
@@ -103,19 +104,37 @@
     background: linear-gradient(135deg, #B58030, #5E4422);
     backdrop-filter: blur(6px);
 }
-.btn-explore::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-
-  background: radial-gradient(circle at 80% 50%,
-    rgba(255,180,100,0.4), transparent 50%);
-
-  opacity: 0.8;
-  pointer-events: none;
+.title{
+  font-family: "Crimson Text", serif;
+  padding-bottom: 5px;
+  font-size: clamp(12px, 3.5vw, 50px);
+  font-weight: bold;
+  background: linear-gradient(180deg, #DBA000, #BAAC96);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-explore{
+  border-radius: 16px;
+    background: linear-gradient(
+    90deg,
+    rgba(181, 128, 48, 0.15),
+    rgba(94, 68, 34, 0.15)
+  );
+  color: var(--text);
+  font-weight: bold;
 }
 .btn-explore span{
     font-size: 1rem;
 }
+.btn-explore:active{
+  
+}
 
+.card-container{
+  border-color: #FFBB00;
+  min-width: 100% dvw;
+}
+
+.card{
+
+}
