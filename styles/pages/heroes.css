@@ -76,10 +76,12 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative; z-index: 10;
-  padding: 0 3.5rem; max-width: 480px;
-  gap: 0.5 rem;
+  align-items: start;
+  position: relative; 
+  z-index: 10;
+  padding: 5rem; 
+  max-width: 500px;
+
 }
 .description{
   font-size: 1rem; color: var(--text); 
@@ -90,6 +92,17 @@
   margin-bottom: 0.6rem; max-width: 320px;
   opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
 }
+.title{
+  font-family: "Crimson Text", serif;
+  padding-bottom: 5px;
+  font-size: clamp(12px, 3.5vw, 50px);
+  font-weight: bold;
+  background: linear-gradient(180deg, #DBA000, #BAAC96);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
+}
 .btn-explore {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -99,42 +112,114 @@
     cursor: pointer;
     font-size: small;
     font-family: Roboto Serif, sans-serif;
-    border-radius: 42px;
+    border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.2);
-    background: linear-gradient(135deg, #B58030, #5E4422);
-    backdrop-filter: blur(6px);
-}
-.title{
-  font-family: "Crimson Text", serif;
-  padding-bottom: 5px;
-  font-size: clamp(12px, 3.5vw, 50px);
-  font-weight: bold;
-  background: linear-gradient(180deg, #DBA000, #BAAC96);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.btn-explore{
-  border-radius: 16px;
-    background: linear-gradient(
-    90deg,
-    rgba(181, 128, 48, 0.15),
-    rgba(94, 68, 34, 0.15)
-  );
-  color: var(--text);
-  font-weight: bold;
+    background: linear-gradient(90deg, rgba(181, 128, 48, 0.4), rgba(94, 68, 34, 0.4));
+    animation: fadeUp 0.5s 1.1s forwards;
+    color: var(--text);
+    font-weight: bold;
+    opacity: 0; animation: fadeUp 0.7s 1s forwards;
 }
 .btn-explore span{
     font-size: 1rem;
 }
-.btn-explore:active{
-  
-}
-
 .card-container{
+  background-color: #1A1C3E;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-color: #FFBB00;
-  min-width: 100% dvw;
+  min-width: 100dvw;
+  min-height: 120dvh;
+  overflow:hidden; 
+  padding: 20px;
 }
 
 .card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: start;
+  justify-content: center;
+  width: 90%;
+  min-height: 40dvh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2%;
+  border-radius: 1rem;
+  border: 1px;
+  gap: 2em;
+  border: 2px solid rgba(181, 128, 48, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+  pointer-events: none;
+}
+.card-title{
+  color: white;
+  font-family: "Crimson Text";
+  font-size: clamp(12px, 30px, 60px);
+  z-index: 1;
+}
+
+.card span{
+    font-size: clamp(16px, 50px, 80px);
+    font-weight: 800;
+      z-index: 1;
+}
+.bg1{
+  background-image: url(../../images/heroes/list-of-heroes.png);
+    background-position:top;
+}
+
+.bg2{
+  background-image: url(../../images/heroes/hero-roles.png);
+    background-position:center;
+}
+
+.bg3{
+  background-image: url(../../images/heroes/hero-specialties.png);
+    background-position:center;
+}
+
+.diamond{
+  animation: fadeUp 0.6s 0.3s forwards;
+}
+
+.card-p{
+  width: 20%;
+  color: white;
+  font-weight: 200;
+  font-size: clamp();
+  font-family: "Crimson Text";
+  z-index: 1;
+  font-size: clamp(11px, 20px, 30px);
+}
+
+.card-btn{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: small;
+    font-family: Roboto Serif, sans-serif;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: linear-gradient(90deg, rgba(181, 128, 48, 0.4), rgba(94, 68, 34, 0.4));
+    color: var(--text);
+    font-weight: bold;
+    z-index: 1;
 }
