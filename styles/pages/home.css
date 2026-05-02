@@ -133,6 +133,7 @@
 .section-grid {
   padding: 2.5rem 2rem;
   background-color: #1A1C3E;
+  scroll-margin-top: 80px;
 }
 
 .grid-main {
