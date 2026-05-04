@@ -12,6 +12,8 @@
   --cyan:   #4fc3f7;
   --text:   #c8d6f0;
   --muted:  #6b7fa8;
+  --nav-height: 72px;
+  -bg: #1A1C3E;
 }
 
 html { scroll-behavior: smooth; }
