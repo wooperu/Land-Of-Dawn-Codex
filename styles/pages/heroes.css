@@ -8,7 +8,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('../../images/heroes/main-image.png');
+  background-image: url('../../images/pages/heroes-page/main-image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -123,6 +123,15 @@
 .btn-explore span{
     font-size: 1rem;
 }
+
+.btn-explore:hover{
+  border-color: var(--blue);
+}
+.anchor:hover{
+  transform: translateY(-1px);
+  transition: 0.35s;
+}
+
 .card-container{
   background-color: #1A1C3E;
   gap: 20px;
@@ -156,6 +165,12 @@
   overflow: hidden;
 }
 
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 50px #00000080, 0 0 0 1px #3a7bd540;
+  transition: .35s;
+}
+
 .card::after {
   content: "";
   position: absolute;
@@ -179,17 +194,17 @@
       z-index: 1;
 }
 .bg1{
-  background-image: url(../../images/heroes/list-of-heroes.png);
+  background-image: url(../../images/pages/heroes-page/list-of-heroes.png);
     background-position:top;
 }
 
 .bg2{
-  background-image: url(../../images/heroes/hero-roles.png);
+  background-image: url(../../images/pages/heroes-page/hero-roles.png);
     background-position:center;
 }
 
 .bg3{
-  background-image: url(../../images/heroes/hero-specialties.png);
+  background-image: url(../../images/pages/heroes-page/hero-specialties.png);
     background-position:center;
 }
 
@@ -222,4 +237,11 @@
     color: var(--text);
     font-weight: bold;
     z-index: 1;
+}
+
+.card-btn:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 50px #00000080, 0 0 0 1px #3a7bd540;
+  border-color: var(--gold);
+  transition: .35s;
 }
