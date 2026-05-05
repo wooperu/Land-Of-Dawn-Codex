@@ -166,7 +166,7 @@ function render() {
 
     card.innerHTML = 
     `
-     <img src="/images/heroes/${hero.name.toLowerCase()}.png" alt="${hero.name}">
+     <img src="images/heroes/${hero.name.toLowerCase()}.png" alt="${hero.name}">
      <p class="hero-name">${hero.name}</p>
     `
     container.append(card);
