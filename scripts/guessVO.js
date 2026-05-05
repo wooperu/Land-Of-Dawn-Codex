@@ -1,3 +1,4 @@
+// array of objects where each entry contains the file path to a hero's voice line audio and the hero's display name, used to load questions and validate answers
 const vos = [
     {"audio": "audio/vo/aamon.ogg", "name": "Aamon"},
     {"audio": "audio/vo/akai.ogg", "name": "Akai"},
@@ -133,22 +134,24 @@ const vos = [
     {"audio": "audio/vo/zilong.ogg", "name": "Zilong"}
 ];
 
-const volume = document.querySelector(".slider");
-const maxGuess = 5;
+const volume = document.querySelector(".slider"); // the volume slider element, whose value is read directly whenever the audio plays or the slider changes
+const maxGuess = 5; // the maximum number of wrong guesses allowed before the game ends in Classic mode
 
-let guesses = 0;
-let streak = 0;
-let highestStreak = 0;
-let firstTime = true;
-let gameMode = null;
-let answer = '';
-let audio = null;
-let feedbackTimer = null;
+let guesses = 0; // tracks how many wrong guesses the player has made for the current hero
+let streak = 0; // tracks how many heroes the player has correctly identified consecutively
+let highestStreak = 0; // tracks the highest streak reached during the session, updated whenever streak surpasses it
+let firstTime = true; // boolean that hides the volume slider until the player clicks Play for the first time, so it doesn't appear before any audio has been loaded
+let gameMode = null; // stores the currently active game mode, either 'classic' (guess limit) or 'free' (unlimited guesses), set when the player selects a mode from the overlay
+let answer = ''; // stores the correct hero name for the current question, compared against the player's input on submit
+let audio = null; // stores the Audio object for the currently loaded voice line so it can be played, paused, and reset
+let feedbackTimer = null; // stores the timeout ID for clearing feedback messages, so a new message can cancel the previous one before starting its own timer
 
+// initializes the stat display elements on page load so they show 0 before the player starts playing
 document.querySelector(".streak").textContent = streak;
 document.querySelector(".highstreak").textContent = highestStreak;
 document.querySelector(".guess").textContent = guesses;
 
+// hides the mode overlay with a fade-out animation and starts the game in the selected mode, resetting guesses and streak since a fresh mode selection always begins a new session
 function selectMode(mode){
     gameMode = mode;
     const overlay = document.getElementById("modeOverlay");
@@ -163,8 +166,11 @@ function selectMode(mode){
     loadQuestion();
 }
 
+// attaches click listeners to the mode selection buttons, each calling selectMode with the corresponding mode string
 document.getElementById("btnFreePlay").addEventListener("click", () => selectMode("free"));
 document.getElementById("btnClassic").addEventListener("click", () => selectMode("classic"));
+
+// pauses and resets the current audio before showing the mode overlay again with a fade-in animation, allowing the player to switch modes mid-session
 document.getElementById("btnSwitchMode").addEventListener("click", () => {
     audio.pause(); audio.currentTime = 0;
     const overlay = document.getElementById("modeOverlay");
@@ -174,6 +180,7 @@ document.getElementById("btnSwitchMode").addEventListener("click", () => {
     setTimeout(() => overlay.classList.remove("fade-in"), 350);
 });
 
+// displays a feedback message in the feedback element with the given type (e.g. 'correct', 'wrong', 'info') and automatically clears it after 2.5 seconds unless persist is true. cancels any existing timer first so that rapid submissions don't stack multiple clear callbacks.
 function showFeedback(message, type = 'info', persist = false) {
     const fb = document.getElementById('feedback');
     fb.textContent = message;
@@ -184,16 +191,18 @@ function showFeedback(message, type = 'info', persist = false) {
     }
 }
 
+// picks a random hero from the vos array, stores their name as the answer, and creates a new Audio object for their voice line. the volume is set immediately from the slider so it matches whatever the player has already set.
 function loadQuestion() {
     const randomIndex = Math.floor(Math.random() * vos.length);
     answer = vos[randomIndex].name;
     audio = new Audio(vos[randomIndex].audio);
     audio.volume = volume.value;
     audio.onended = () => {
-        document.querySelector(".btnPlay").textContent = "▶ Play";
+        document.querySelector(".btnPlay").textContent = "▶ Play"; // resets the button label when the audio finishes on its own so the player knows they can play it again
     };
 }
 
+// toggles playback of the current voice line. shows the volume slider on the very first play since the player needs to have started the game before it makes sense to display it. if the audio is already playing, it pauses and resets it instead so the player can replay from the beginning.
 function playVO() {
 
     if(firstTime){
@@ -212,6 +221,7 @@ function playVO() {
     }
 }
 
+// handles the player's guess submission. stops any playing audio first, then compares the input against the answer using heroName() to normalize both strings before comparing. a correct guess updates the streak and loads the next question, while a wrong guess increments the guess counter and triggers game over in Classic mode if the limit is reached.
 function submit(){
     const input = document.querySelector(".input");
     const guess = input.value.trim().toLowerCase();
@@ -220,15 +230,17 @@ function submit(){
     audio.currentTime = 0;
     document.querySelector(".btnPlay").textContent = "▶ Play";
 
-     if (heroName(input.value) === heroName(answer)) {
+    if (heroName(input.value) === heroName(answer)) {
         streak++;
         document.querySelector(".streak").textContent = streak;
 
+        // updates the highest streak display only when the current streak surpasses the previous best
         if (streak > highestStreak) {
             highestStreak = streak;
             document.querySelector(".highstreak").textContent = highestStreak;
         }
         
+        // shows a special message if the player got it on the first try, otherwise shows how many guesses it took
         if(guesses == 0){
             showFeedback("Incredible! First try!", 'correct')
         }
@@ -237,7 +249,7 @@ function submit(){
         }
 
         guesses = 0;
-        updateGuess()
+        updateGuess();
 
         input.value = '';
         loadQuestion();
@@ -250,18 +262,20 @@ function submit(){
             showFeedback("Wrong! Try again.", 'wrong');
             input.value = '';
             guesses++;
-            updateGuess()
+            updateGuess();
 
+            // ends the game in Classic mode once the player has used all of their allowed guesses
             if(gameMode == "classic" && guesses >= maxGuess){
-            gameOver();
+                gameOver();
             }
         }
         else{
-            showFeedback("Please enter a guess!", 'info');
+            showFeedback("Please enter a guess!", 'info'); // prevents submitting an empty input
         }
     }
 }
 
+// ends the game in Classic mode when the player runs out of guesses. disables all inputs and buttons to prevent further interaction, reveals the correct answer, and resets the streak since the player failed to identify the hero.
 function gameOver(){
     audio.pause(); 
     audio.currentTime = 0;
@@ -278,6 +292,7 @@ function gameOver(){
     document.querySelector(".streak").textContent = streak;
 }
 
+// skips the current hero without counting it as correct, revealing the answer in the feedback bar and immediately loading a new question. also resets the streak since the player gave up on that hero.
 function giveUp() {
     audio.pause();
     audio.currentTime = 0;
@@ -293,11 +308,13 @@ function giveUp() {
     loadQuestion();
 }
 
+// updates the guess counter display. in Classic mode it shows the current guesses out of the maximum allowed, in Free mode it just shows the raw number since there is no limit.
 function updateGuess(){
     const g = document.querySelector(".guess");
     g.textContent = gameMode == 'classic' ? `${guesses} / ${maxGuess}` : guesses;
 }
 
+// normalizes a hero name string for comparison by converting it to lowercase, trimming whitespace, and stripping apostrophes, hyphens, dots, and spaces. this allows names like "Chang'e", "Lapu-Lapu", and "Yi Sun-shin" to match player input regardless of how punctuation and spacing are typed.
 function heroName(str){
     return str
         .toLowerCase()
@@ -306,20 +323,23 @@ function heroName(str){
         .replace(/\s+/g, '')
 }
 
+// re-enables all inputs and loads a new question when the player clicks the retry button on the game over panel, allowing them to continue playing after a Classic mode loss
 document.getElementById('btnRetry').addEventListener('click', () => {
     document.getElementById('gameOverPanel').style.display = 'none';
     document.querySelector(".btnSubmit").disabled = false;
     document.querySelector(".btnGiveUp").disabled = false;
     document.querySelector(".input").disabled = false;
     guesses = 0;
-    updateGuess()
+    updateGuess();
     loadQuestion();
 });
 
+// attaches click listeners to the main action buttons
 document.querySelector(".btnPlay").addEventListener("click", playVO);
 document.querySelector(".btnSubmit").addEventListener("click", submit);
 document.querySelector(".btnGiveUp").addEventListener("click", giveUp);
 
+// updates the volume of the currently loaded audio whenever the slider is moved, so the change takes effect immediately even if the audio is already playing
 volume.addEventListener("input", () =>{
     audio.volume = volume.value;
 });
