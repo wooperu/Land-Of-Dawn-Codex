@@ -136,10 +136,10 @@ const heroes =
 
 const container = document.getElementById("container");
 
-var role = "tank";
+var currentRole = "tank";
 
 function setRole(role){
-    this.role = role;
+    currentRole = role;
     render();
 
     document.querySelectorAll(".nav-links a").forEach(a => {
@@ -155,9 +155,8 @@ function render() {
     heroes.forEach(hero => {
 
     var heroRoles = hero.role.split("/").map(r => r.toLowerCase().trim());
-    console.log(role)
 
-    if(!heroRoles.includes(role)){
+    if(!heroRoles.includes(currentRole)){
         return;
     }
 
