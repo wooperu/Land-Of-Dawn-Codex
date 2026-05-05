@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap');
+
+:root {
+    --sq: 64px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    letter-spacing: 0.06em;
+    color: var(--gold);
+    text-shadow: 0 0 30px rgba(232, 184, 75, 0.3);
+    padding: 2rem 0 1.7rem;
+}
+
+.page-content {
+    position: relative;
+    min-height: calc(100vh - 80px);
+    padding-bottom: 4%;
+    padding-top: 5%;
+}
+
+.gameWrap {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+
+.boardSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boardOuter {
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.rankLabel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+.rankLabel span {
+    width: 18px;
+    height: var(--sq);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    padding-right: 4px;
+}
+
+.fileLabel {
+    display: flex;
+    margin-left: 0;
+}
+
+.fileLabel span {
+    width: var(--sq);
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, var(--sq));
+    grid-template-rows: repeat(8, var(--sq));
+    border: 1px solid var(--border);
+    box-shadow: 0 0 40px rgba(58, 123, 213, 0.12), 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+#board div {
+    width: var(--sq);
+    height: var(--sq);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: filter 0.1s;
+}
+
+#board div:hover {
+    filter: brightness(1.12);
+}
+
+.light { background: var(--gold2); }
+.dark  { background: #4762b2; }
+
+.selected          { background: rgba(76, 249, 114, 0.75) !important; }
+.last-move-light   { background: rgba(0, 255, 162, 0.75)    !important; } 
+.last-move-dark { background: rgba(0, 223, 141, 0.75) !important; }
+
+.inCheck::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(220, 50, 50, 0.65) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.legalDot {
+    position: absolute;
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 2;
+}
+ 
+.legalRing {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.sidebar {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 0;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 14px 16px;
+    position: relative;
+}
+
+.panelLabel {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+#statusText {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+}
+
+#statusText.danger {
+    color: #e05555;
+}
+
+.turnIndicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.turnDot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    transition: background 0.2s;
+}
+
+.turnDot.white { background: #293aa5; }
+.turnDot.black { background: #8f1d1d; }
+
+.turnLabel {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.capturedRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    min-height: 24px;
+    font-size: 19px;
+    line-height: 1;
+}
+
+.moveList {
+    max-height: 180px;
+    overflow-y: auto;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.moveList::-webkit-scrollbar { width: 3px; }
+.moveList::-webkit-scrollbar-track { background: transparent; }
+.moveList::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.moveRow {
+    display: flex;
+    gap: 6px;
+    padding: 2px 0;
+}
+
+.moveNum {
+    color: var(--gold);
+    min-width: 22px;
+    font-weight: 700;
+}
+
+.moveW,
+.moveB {
+    min-width: 54px;
+    letter-spacing: 0.04em;
+}
+
+.moveW.current,
+.moveB.current {
+    color: var(--cyan);
+}
+
+.btnRow {
+    display: flex;
+    gap: 8px;
+}
+
+.btnRow button {
+    flex: 1;
+    padding: 10px 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.btnRow button:hover {
+    color: var(--cyan);
+    border-color: var(--blue);
+    background: rgba(58, 123, 213, 0.08);
+}
+
+.btnRow button:active {
+    transform: scale(0.97);
+}
+
+#promoModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 11, 24, 0.88);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+
+#promoModal.open {
+    display: flex;
+}
+
+.promoBox {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 32px 28px;
+    text-align: center;
+    position: relative;
+}
+
+.promoBox::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.promoBox h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    text-shadow: 0 0 16px rgba(232, 184, 75, 0.3);
+}
+
+.promoOptions {
+    display: flex;
+    gap: 10px;
+}
+
+.promoPiece {
+    width: 68px;
+    height: 68px;
+    background: var(--deep);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.promoPiece:hover {
+    border-color: var(--gold);
+    background: rgba(232, 184, 75, 0.08);
+    box-shadow: 0 0 16px rgba(232, 184, 75, 0.2);
+}
+
+#board div {
+    color: black;
+}
+
+.captured-img {
+    width: 15% ;
+    height: 15%;
+    object-fit: contain;
+}
+
+.promoPiece .pieceImg {
+    width: 35%;
+    height: 35%;
+}
+
+.pieceImg {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+.gameEndModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 11, 24, 0.92);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.gameEndModal.active {
+    display: flex;
+}
+ 
+.gameEndCard {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 48px 56px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+ 
+.gameEndCard::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+ 
+.gameEndCard h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--gold);
+    font-size: 2rem;
+    text-shadow: 0 0 24px rgba(232, 184, 75, 0.4);
+}
+ 
+.gameEndCard p {
+    color: var(--muted);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+ 
+.btnPlayAgain {
+    padding: 12px 32px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--cyan);
+    border: 1px solid var(--blue);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+ 
+.btnPlayAgain:hover {
+    background: rgba(58, 123, 213, 0.15);
+    box-shadow: 0 0 16px rgba(79, 195, 247, 0.2);
+}
