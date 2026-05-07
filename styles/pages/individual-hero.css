@@ -1,0 +1,224 @@
+#container{
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    font-family: "Crimson Text";
+}
+
+#container img{
+
+    width: 100%;
+    height: 100%;
+}
+
+#container::after{
+      content: '';
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(26, 28, 62, 1) 0%,
+      rgba(26, 28, 62, 0.7) 5%,
+      rgba(26, 28, 62, 0) 20%
+    ),
+    linear-gradient(
+      to top,
+      rgba(26, 28, 62, 1) 0%,
+      rgba(26, 28, 62, 0.7) 20%,
+      rgba(26, 28, 62, 0) 40%
+    ),
+     linear-gradient(
+      to right,
+      rgba(26, 28, 62, 0.7) 5%,
+      rgba(26, 28, 62, 0) 20%
+    ),
+    linear-gradient(
+      to left,
+      rgba(26, 28, 62, 0.7) 5%,
+      rgba(26, 28, 62, 0) 20%
+    );
+}
+
+.name{
+    color: white;
+    text-shadow:
+    0 1px 0 #000,
+    0 2px 2px rgba(0,0,0,0.8),
+    0 4px 6px rgba(0,0,0,0.7),
+    0 8px 14px rgba(0,0,0,0.6);
+    font-size: clamp(40px, 60px, 70px);
+    font-weight: 600;
+}
+
+.lane-section{
+    position: absolute;
+    bottom: 50px;
+    z-index: 10;
+    right: 100px;
+}
+
+.details-section{
+    position: absolute;
+    bottom: 50px;
+    z-index: 10;
+    left: 100px;
+}
+
+.alias{
+    font-style: italic;
+    color: var(--gold);
+    text-shadow:
+    0 1px 0 #000,
+    0 2px 2px rgba(0,0,0,0.8),
+    0 4px 6px rgba(0,0,0,0.7),
+    0 8px 14px rgba(0,0,0,0.6);
+    font-size: clamp(25px, 40px, 50px);
+    font-weight: 600;
+}
+
+.role{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.role img{
+    max-width: 5rem;
+    display: block;
+}
+
+.specs{
+    display: flex;
+        align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+        font-size: 1.5rem;
+}
+
+.role-name{
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.spec-name{
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.specs{
+    margin-top: 2rem;
+}
+
+.lane-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.lane-section img{
+    max-width: 5rem;
+}
+
+.lane-spec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lane-text{
+    color: white;
+    font-weight: bolder;
+        font-size: 2rem;
+}
+
+.lane-reco{
+    font-size: clamp(15px, 25px, 35px);
+    color: white;
+}
+
+.bread-crumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    z-index: 100;
+    left: 40px;
+    gap: .5rem;
+    font-size: clamp(15px, 20px, 25px);
+}
+
+.bread-crumbs img{
+    max-width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.info-section{
+    background-color: var(--bg);
+    font-family: "Crimson Text";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-info{
+    max-width: 90dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    border: 2px solid rgba(181, 128, 48, 0.4);
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.left-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.right-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.child-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price img{
+    max-width: 2rem;
+}
+
+

@@ -162,14 +162,17 @@ function render() {
 
     var card = document.createElement("button");
 
-    card.classList.add("card")
+    card.classList.add("card");
 
     card.innerHTML = 
     `
-     <img src="/Land-Of-Dawn-Codex/images/heroes/${hero.name.toLowerCase()}.png" alt="${hero.name}">
+     <img src="Land-Of-Dawn-Codex/images/heroes/${hero.name.toLowerCase()}.png" alt="${hero.name}">
      <p class="hero-name">${hero.name}</p>
     `
     container.append(card);
+
+    
+    card.onclick = () => (window.location.href=`individual-hero.html?name=${hero.name.toLowerCase()}`);
 })};
 
 window.setRole = setRole;
