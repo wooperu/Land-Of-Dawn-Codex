@@ -166,7 +166,7 @@ function render() {
 
     card.innerHTML = 
     `
-     <img src="/Land-Of-Dawn-Codex/images/heroes/${hero.name.toLowerCase()}.png" alt="${hero.name}">
+     <img src="Land-Of-Dawn-Codex/tree/mainimages/heroes/${hero.name.toLowerCase()}.png" alt="${hero.name}">
      <p class="hero-name">${hero.name}</p>
     `
     container.append(card);
