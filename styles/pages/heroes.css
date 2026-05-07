@@ -242,16 +242,15 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   border-radius: 16px;
-  border: 1px solid rgba(58,123,213,0.5);
-  background: rgba(58,123,213,0.12);
-  color: var(--cyan);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, rgba(181, 128, 48, 0.4), rgba(94, 68, 34, 0.4));
+  color: var(--text);
   z-index: 1;
   transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, color 0.2s, transform 0.2s;
 }
 .card-btn:hover {
-  background: rgba(58,123,213,0.25);
-  border-color: var(--cyan);
-  box-shadow: 0 0 14px rgba(79,195,247,0.25);
-  color: #fff;
+  border-color: var(--gold);
+  box-shadow: 0 16px 50px #00000080, 0 0 0 1px #3a7bd540;
   transform: translateY(-2px);
+  transition: .35s;
 }
