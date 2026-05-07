@@ -8,7 +8,7 @@
 
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('../../images/home/hero-background-img.png');
+  background-image: url('../../images/pages/home-page/hero-background-img.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
