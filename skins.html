@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
+    <title>Skins &ndash; Land of Dawn Codex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
     <link rel="stylesheet" href="styles/pages/skins.css">
   </head>
   <body>
-    
+
     <nav>
       <div class="nav-logo">
         <img src="images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
       </div>
-
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="heroes.html">Heroes</a></li>
@@ -27,7 +26,6 @@
         <li><a href="mini-games.html">Mini-Games</a></li>
         <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
       </ul>
-
       <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
     </nav>
 
@@ -38,35 +36,123 @@
       </div>
     </div>
 
-    <section class="skins">
+    <section class="skins-hero">
       <div class="skins-bg"></div>
-
       <div class="stars" id="stars"></div>
-
       <div class="lightning"></div>
       <div class="lightning2"></div>
-
       <div class="skins-glow"></div>
-
       <div class="skins-content">
-        <p class="welcome-text">SKINS</p>
-        <p class="skins-desc">Discover all available hero skins, including collab skins from your favorite animes.</p>
-        <a href="#explore" class="btn-play">
-          <span>Explore Skins</span>
+        <p class="skins-label">Skins</p>
+        <p class="skins-desc">Discover all available hero skins — from Starlight exclusives to rare Collector pieces and crossover collabs from your favourite franchises.</p>
+        <a href="#skin-tiers" class="btn-play">
+          <span>Browse Skins</span>
         </a>
       </div>
     </section>
 
+    <section class="skin-container" id="skin-tiers">
+
+      <a href="skins-pages/starlight-skins.html" class="skin-card bg-starlight reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge starlight-badge">★ STARLIGHT</div>
+          <p class="skin-card-title">Starlight <span>Skins</span></p>
+          <p class="skin-card-desc">Exclusive monthly and annual Starlight skins available through the Starlight membership. New skin every month!</p>
+          <button class="skin-card-btn">EXPLORE STARLIGHT</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/collector-skins.html" class="skin-card bg-collector reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge collector-badge">◆ COLLECTOR</div>
+          <p class="skin-card-title">Collector <span>Skins</span></p>
+          <p class="skin-card-desc">The rarest and most premium skins in the game. Limited availability with stunning effects and exclusive animations.</p>
+          <button class="skin-card-btn">EXPLORE COLLECTOR</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/mythic-skins.html" class="skin-card bg-mythic reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge mythic-badge">⬡ MYTHIC</div>
+          <p class="skin-card-title">Mythic <span>Skins</span></p>
+          <p class="skin-card-desc">High-tier limited skins with transforming effects and unique recall animations. A symbol of prestige on the battlefield.</p>
+          <button class="skin-card-btn">EXPLORE MYTHIC</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/legend-skins.html" class="skin-card bg-legend reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge legend-badge">⬟ LEGEND</div>
+          <p class="skin-card-title">Legend <span>Skins</span></p>
+          <p class="skin-card-desc">Premium permanent skins with enhanced visual effects, custom skill animations, and unique entrance effects.</p>
+          <button class="skin-card-btn">EXPLORE LEGEND</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/epic-skins.html" class="skin-card bg-epic reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge epic-badge">◈ EPIC</div>
+          <p class="skin-card-title">Epic <span>Skins</span></p>
+          <p class="skin-card-desc">The most popular tier in MLBB. Epic skins feature full model redesigns, custom skill effects, and unique voice lines.</p>
+          <button class="skin-card-btn">EXPLORE EPIC</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/special-skins.html" class="skin-card bg-special reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge special-badge">✦ SPECIAL</div>
+          <p class="skin-card-title">Special <span>Skins</span></p>
+          <p class="skin-card-desc">Mid-tier skins featuring redesigned hero appearances with updated textures and some skill effect changes.</p>
+          <button class="skin-card-btn">EXPLORE SPECIAL</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/elite-skins.html" class="skin-card bg-elite reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge elite-badge">▲ ELITE</div>
+          <p class="skin-card-title">Elite <span>Skins</span></p>
+          <p class="skin-card-desc">Entry-level paid skins with refreshed looks and minor visual improvements. A great starting point for new collectors.</p>
+          <button class="skin-card-btn">EXPLORE ELITE</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/basic-skins.html" class="skin-card bg-basic reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge basic-badge">● Basic</div>
+          <p class="skin-card-title">Basic <span>Skins</span></p>
+          <p class="skin-card-desc">Small redesigned version of the base model. Usually costs 50 diamonds or less during the first day.</p>
+          <button class="skin-card-btn">EXPLORE BASIC8</button>
+        </div>
+      </a>
+
+      <a href="skins-pages/collab-skins.html" class="skin-card bg-collab reveal">
+        <div class="skin-card-overlay"></div>
+        <div class="skin-card-content">
+          <div class="skin-tier-badge collab-badge">✕ COLLAB</div>
+          <p class="skin-card-title">Collab <span>Skins</span></p>
+          <p class="skin-card-desc">Limited crossover skins from iconic franchises — KOF, Transformers, JJK, and more.</p>
+          <button class="skin-card-btn">EXPLORE COLLABS</button>
+        </div>
+      </a>
+
+    </section>
+
     <footer>
       <div class="footer-grid">
-
         <div class="footer-brand">
           <div class="footer-logo">
             <img src="images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
           </div>
           <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
         </div>
-
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
@@ -77,14 +163,13 @@
             <li><a href="in-game-guide.html">In-Game Guides</a></li>
             <li><a href="game-modes.html">Game Modes</a></li>
             <li><a href="mini-games.html">Mini-Games</a></li>
+            <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h4>About</h4>
           <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
         </div>
-
         <div class="footer-col">
           <h4>Contact</h4>
           <div class="contact-item">
@@ -96,7 +181,6 @@
             <span>0968-370-2244</span>
           </div>
         </div>
-
         <div class="footer-col">
           <h4>Disclaimer</h4>
           <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
@@ -105,7 +189,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
         <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
         &copy; 2026 Land of Dawn Codex. All rights reserved.
@@ -115,6 +198,5 @@
     <script src="scripts/stars.js"></script>
     <script src="scripts/search-overlay.js"></script>
     <script src="scripts/scroll-reveal.js"></script>
-    <script src="scripts/carousel-dots.js"></script>
   </body>
 </html>
