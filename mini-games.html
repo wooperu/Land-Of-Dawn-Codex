@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
+    <title>Mini-Games &ndash; Land of Dawn Codex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
     <link rel="stylesheet" href="styles/pages/mini-games.css">
@@ -16,7 +16,6 @@
       <div class="nav-logo">
         <img src="images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
       </div>
-
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="heroes.html">Heroes</a></li>
@@ -26,7 +25,6 @@
         <li><a href="game-modes.html">Game Modes</a></li>
         <li><a href="mini-games.html" class="active">Mini-Games</a></li>
       </ul>
-
       <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
     </nav>
 
@@ -37,56 +35,53 @@
       </div>
     </div>
 
-    <section class="section-grid">
-      <div class="divider reveal"><div class="divider-gem"></div></div>
-
-      <div class="grid-main">
-
-        <a href="guessVO.html" class="card heroes-card reveal">
-          <div class="card-bg" style="background-image: url('images/pages/home-page/heroes-img.png');"></div>
-          <div class="card-overlay"></div>
-          <div class="card-content">
-            <div class="card-tag gold">Guess the Character</div>
-            <div class="card-desc">100+ Heroes.<br>Find your main.</div>
-            <div class="carousel-dots">
-              <div class="dot"></div>
-              <div class="dot inactive"></div>
-              <div class="dot inactive"></div>
-            </div>
-          </div>
-          <div class="card-arrow left">&#8249;</div>
-          <div class="card-arrow right">&#8250;</div>
+    <section class="mini-game-hero">
+      <div class="mini-game-bg"></div>
+      <div class="stars" id="stars"></div>
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+      <div class="glow"></div>
+      <div class="mini-game-content">
+        <p class="mini-game-label">Mini-Games</p>
+        <p class="mini-game-desc">Discover our mini-games.</p>
+        <a href="#mini-games" class="btn-play">
+          <span>Browse Mini-Games</span>
         </a>
-
-<!--       <a href="memoryGame.html" class="card skins-card reveal">
-          <div class="card-bg" style="background-image: url('images/home/skins-img.png');"></div>
-          <div class="card-overlay" style="background:linear-gradient(135deg,rgba(8,11,24,0.75) 0%,rgba(8,11,24,0.3) 50%,transparent 100%)"></div>
-          <div style="position:absolute;top:1.5rem;right:2rem;font-size:1.4rem;color:#fbbf24;opacity:0.7;animation:twinkle 2s infinite">&#10022;</div>
-          <div style="position:absolute;top:3rem;right:5rem;font-size:0.9rem;color:#fbbf24;opacity:0.4;animation:twinkle 3s 1s infinite">&#10022;</div>
-          <div class="card-content">
-            <div class="card-tag" style="color:#fbbf24">Memory Game!</div>
-            <div class="card-desc">Stunning Braincell.<br>Show me your motivation!</div>
-          </div>
-        </a> -->
-
-        <a href="chessGame.html" class="card skins-card reveal">
-          <div class="card-bg" style="background-image: url('images/chess/sample img www.jpeg');"></div>
-          <div class="card-overlay" style="background:linear-gradient(135deg,rgba(8,11,24,0.75) 0%,rgba(8,11,24,0.3) 50%,transparent 100%)"></div>
-          <div style="position:absolute;top:1.5rem;right:2rem;font-size:1.4rem;color:#fbbf24;opacity:0.7;animation:twinkle 2s infinite">&#10022;</div>
-          <div style="position:absolute;top:3rem;right:5rem;font-size:0.9rem;color:#fbbf24;opacity:0.4;animation:twinkle 3s 1s infinite">&#10022;</div>
-          <div class="card-content">
-            <div class="card-tag" style="color:#fbbf24">Chess Minigame</div>
-            <div class="card-desc">wow chess.<br>the pawn who can't be moved</div>
-          </div>
-        </a>
-
-
       </div>
-
-      <div class="divider reveal" style="margin-top:1.5rem"><div class="divider-gem"></div></div>
     </section>
 
-    <footer>
+    <section class="mini-game-container" id="mini-games">
+
+      <a href="guessVO.html" class="mini-game-card bg-guess-vo reveal">
+        <div class="mini-game-card-overlay"></div>
+        <div class="mini-game-card-content">
+          <p class="mini-game-card-title">Guess VO <span>Game</span></p>
+          <p class="mini-game-card-desc">Guess the character by listening.</p>
+          <button class="mini-game-card-btn">PLAY GAME</button>
+        </div>
+      </a>
+
+      <a href="chessGame.html" class="mini-game-card bg-chess-game reveal">
+        <div class="mini-game-card-overlay"></div>
+        <div class="mini-game-card-content">
+          <p class="mini-game-card-title">Chess <span>Game</span></p>
+          <p class="mini-game-card-desc">Yasss Queen.</p>
+          <button class="mini-game-card-btn">PLAY GAME</button>
+        </div>
+      </a>
+
+      <a href="memoryGame.html" class="mini-game-card bg-memory-game reveal">
+        <div class="mini-game-card-overlay"></div>
+        <div class="mini-game-card-content">
+          <p class="mini-game-card-title">Memory <span>Game</span></p>
+          <p class="mini-game-card-desc">Test if you have a goldfish memory.</p>
+          <button class="mini-game-card-btn">PLAY GAME</button>
+        </div>
+      </a>
+
+    </section>
+
+  <footer>
     <div class="footer-grid">
 
       <div class="footer-brand">
@@ -106,7 +101,6 @@
           <li><a href="in-game-guide.html">In-Game Guides</a></li>
           <li><a href="game-modes.html">Game Modes</a></li>
           <li><a href="mini-games.html">Mini-Games</a></li>
-          <li><a href="ai-chat-bot.html">AI Chat Bot</a></li>
         </ul>
       </div>
 
@@ -145,6 +139,5 @@
     <script src="scripts/stars.js"></script>
     <script src="scripts/search-overlay.js"></script>
     <script src="scripts/scroll-reveal.js"></script>
-    <script src="scripts/carousel-dots.js"></script>
   </body>
 </html>
