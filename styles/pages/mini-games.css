@@ -8,7 +8,7 @@
 
 .mini-game-bg {
   position: absolute; inset: 0;
-  background-image: url('../../images/pages/mini-game-page/mini-game-banner-bg.png');
+  background-image: url('../../images/pages/mini-games-page/mini-game-banner-bg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -236,6 +236,6 @@
   transform: translateY(-2px);
 }
 
-.bg-guess-vo { background-image: url('../../images/pages/mini-game-page/sample-bg.jpeg'); }
-.bg-chess-game { background-image: url('../../images/pages/mini-game-page/sample-bg.jpeg'); }
-.bg-memory-game    { background-image: url('../../images/pages/mini-game-page/sample-bg.jpeg'); }
+.bg-guess-vo { background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg'); }
+.bg-chess-game { background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg'); }
+.bg-memory-game    { background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg'); }

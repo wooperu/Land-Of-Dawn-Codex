@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
+    <title>Game Modes &ndash; Land of Dawn Codex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
-    <link rel="stylesheet" href="styles/pages/home.css">
+    <link rel="stylesheet" href="styles/pages/game-modes.css">
   </head>
   <body>
     
@@ -16,17 +16,15 @@
       <div class="nav-logo">
         <img src="images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
       </div>
-
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="heroes.html">Heroes</a></li>
         <li><a href="skins.html">Skins</a></li>
         <li><a href="preparation.html">Preparation</a></li>
-        <li><a href="in-game-guide.html">In-Game Guides</a></li>
+        <li><a href="in-game-guides.html">In-Game Guides</a></li>
         <li><a href="game-modes.html" class="active">Game Modes</a></li>
         <li><a href="mini-games.html">Mini-Games</a></li>
       </ul>
-
       <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
     </nav>
 
@@ -37,6 +35,23 @@
       </div>
     </div>
 
+    <section class="game-modes-hero">
+      <div class="game-modes-bg"></div>
+      <div class="stars" id="stars"></div>
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+      <div class="glow"></div>
+      <div class="game-modes-content">
+        <p class="game-modes-label">Game Modes</p>
+        <p class="game-modes-desc">Discover uhhh yes Game Modes!</p>
+        <a href="#game-modes" class="btn-play">
+          <span>Browse Game Modes</span>
+        </a>
+      </div>
+    </section>
+
+    <script src="scripts/stars.js"></script>
     <script src="scripts/search-overlay.js"></script>
+    <script src="scripts/scroll-reveal.js"></script>
   </body>
 </html>
