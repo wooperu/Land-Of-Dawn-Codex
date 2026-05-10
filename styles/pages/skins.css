@@ -271,3 +271,50 @@
 .bg-elite     { background-image: url('../../images/pages/skins-page/elite-bg.webp'); }
 .bg-basic     { background-image: url('../../images/pages/skins-page/basic-bg.webp'); }
 .bg-collab    { background-image: url('../../images/pages/skins-page/collab-bg.webp'); }
+
+/* RESPONSIVE */
+
+/* Small desktop */
+@media (max-width: 1024px) {
+  .skins-content {
+    padding: 0 2.5rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+
+  /* Hero */
+  .skins-content {
+    padding: 0 1.8rem;
+    max-width: 100%;
+  }
+
+  .skins-desc     { max-width: 100%; }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .skins-content { padding: 0 1.2rem; }
+  .skins-desc     { font-size: 0.82rem; }
+  .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand { grid-column: 1; }
+}
