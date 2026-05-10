@@ -259,3 +259,108 @@
 .guides-card .card-bg { background-image: url('../../images/pages/home-page/in-game-guides-img.png'); }
 .modes-card .card-bg  { background-image: url('../../images/pages/home-page/game-modes-img.png'); }
 .mini-card .card-bg   { background-image: url('../../images/pages/home-page/mini-game-img.png'); background-color: #050d1e; }
+
+/* RESPONSIVE */
+
+/* Small desktop */
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 0 2.5rem;
+  }
+
+  .section-grid {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+
+  /* Hero */
+  .hero-content {
+    padding: 0 1.8rem;
+    max-width: 100%;
+  }
+
+  .hero-logo-img { width: 260px; }
+  .hero-desc     { max-width: 100%; }
+
+  /* Grid collapses to single column */
+  .grid-main {
+    grid-template-columns: 1fr;
+  }
+
+  .heroes-card {
+    grid-column: 1; grid-row: auto;
+    min-height: 260px;
+  }
+
+  .skins-card {
+    grid-column: 1; grid-row: auto;
+    min-height: 260px;
+  }
+
+  /* Small cards */
+  .small-cards-row {
+    grid-column: 1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .small-cards-row .card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .wide-card-row { grid-column: 1; }
+
+  .wide-card { min-height: 180px; }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .hero-content { padding: 0 1.2rem; }
+  .hero-logo-img { width: 200px; }
+  .welcome-text  { font-size: 0.68rem; }
+  .hero-desc     { font-size: 0.82rem; }
+  .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+  /* Section grid */
+  .section-grid { padding: 1.5rem 0.8rem; }
+
+  .heroes-card,
+  .skins-card   { min-height: 220px; }
+
+  /* Small cards */
+  .small-cards-row {
+    grid-template-columns: 1fr;
+  }
+
+  .small-cards-row .card:last-child {
+    grid-column: 1;
+  }
+
+  .small-card { min-height: 180px; }
+  .wide-card  { min-height: 180px; }
+
+  /* Card text */
+  .card-tag  { font-size: 1.1rem; }
+  .card-desc { font-size: 0.78rem; }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand { grid-column: 1; }
+}
