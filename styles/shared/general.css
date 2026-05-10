@@ -150,3 +150,28 @@ footer {
   transition: opacity 0.6s, transform 0.6s;
 }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* RESPONSIVE */
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand { grid-column: 1; }
+}

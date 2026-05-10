@@ -313,16 +313,6 @@
   .wide-card-row { grid-column: 1; }
 
   .wide-card { min-height: 180px; }
-
-  /* Footer */
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
 }
 
 /* Mobile */
@@ -356,11 +346,4 @@
   /* Card text */
   .card-tag  { font-size: 1.1rem; }
   .card-desc { font-size: 0.78rem; }
-
-  /* Footer */
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-brand { grid-column: 1; }
 }

@@ -298,16 +298,6 @@
   .skins-desc     { max-width: 100%; }
   .skin-card      { min-height: 260px; }
   .skin-card-desc { max-width: 70%; }
-
-  /* Footer */
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
 }
 
 /* Mobile */
@@ -323,11 +313,4 @@
   .skin-container { padding: 1.5rem 0.8rem; }
   .skin-card      { min-height: 220px; }
   .skin-card-desc { max-width: 85%; }
-
-  /* Footer */
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-brand { grid-column: 1; }
 }
