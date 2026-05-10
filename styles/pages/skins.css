@@ -271,3 +271,46 @@
 .bg-elite     { background-image: url('../../images/pages/skins-page/elite-bg.webp'); }
 .bg-basic     { background-image: url('../../images/pages/skins-page/basic-bg.webp'); }
 .bg-collab    { background-image: url('../../images/pages/skins-page/collab-bg.webp'); }
+
+/* RESPONSIVE */
+
+/* Small desktop */
+@media (max-width: 1024px) {
+  .skins-content {
+    padding: 0 2.5rem;
+  }
+
+  .skin-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+
+  /* Hero */
+  .skins-content {
+    padding: 0 1.8rem;
+    max-width: 100%;
+  }
+
+  /* Skins Container */
+  .skins-desc     { max-width: 100%; }
+  .skin-card      { min-height: 260px; }
+  .skin-card-desc { max-width: 70%; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .skins-content { padding: 0 1.2rem; }
+  .skins-label   { font-size: 2rem; }
+  .skins-desc    { font-size: 0.82rem; }
+  .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+  /* Skins Container */
+  .skin-container { padding: 1.5rem 0.8rem; }
+  .skin-card      { min-height: 220px; }
+  .skin-card-desc { max-width: 85%; }
+}
