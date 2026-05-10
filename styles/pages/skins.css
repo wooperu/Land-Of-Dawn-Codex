@@ -279,6 +279,10 @@
   .skins-content {
     padding: 0 2.5rem;
   }
+
+  .skin-container {
+    padding: 2rem 1.5rem;
+  }
 }
 
 /* Tablet portrait */
@@ -290,7 +294,17 @@
     max-width: 100%;
   }
 
-  .skins-desc     { max-width: 100%; }
+  .skins-desc { max-width: 100%; }
+
+  /* Skin container collapses to single column */
+  .skin-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .skin-card {
+    grid-column: 1; grid-row: auto;
+    min-height: 260px;
+  }
 
   /* Footer */
   .footer-grid {
@@ -310,6 +324,11 @@
   .skins-content { padding: 0 1.2rem; }
   .skins-desc     { font-size: 0.82rem; }
   .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+  /* Skins Container */
+  .skin-container { padding: 1.5rem 0.8rem; }
+
+  .skin-card   { min-height: 220px; }
 
   /* Footer */
   .footer-grid {
