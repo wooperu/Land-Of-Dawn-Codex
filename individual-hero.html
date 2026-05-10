@@ -61,7 +61,7 @@
     </main>
 
     <section class="info-section">
-        <div class="game-info">
+        <div class="game-info reveal">
             <div class="left-info">
                 <div class="row">
                     <div class="child-row">
@@ -83,8 +83,15 @@
                         <p class="label">PRICE</p>
                     </div>
                     <div class="price">
-                        <img src="images/game-info/battle-points.png" alt="">
-                        <p class="value">32000</p>
+                        <div>   
+                            <img src="images/game-info/battle-points.png" alt="">
+                            <p>32000</p>
+                        </div>
+                        <p>|</p>
+                        <div>
+                            <img src="images/game-info/diamond.png" alt="">
+                            <p>599</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,6 +121,45 @@
                 </div>
             </div>
         </div>
+            <div class="story reveal">
+                <div class="title">            
+                    <p>STORY</p>          
+                    <div style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>
+                </div>
+                <p class="desc">“Prodigal son and genius swordsman of House Baroque.” </p>
+                <p>
+                    As the eldest son of Duke Baroque, Lancelot was born rebellious. Dead set on resisting the political marriage arranged for him by his father, he traveled the country and led a licentious life instead. After being wounded at a drunken brawl in a tavern, Lancelot was rescued by Odette and finally came to realize what his heart truly yearned for. The prodigal son made a repentant return and thus began his adventure across the Land of Dawn.
+                </p>
+            </div>
+        <div class="abilities reveal">
+            <div class="title">            
+                <p>ABILITIES</p>          
+                <div style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>
+            </div>
+                <div class="outer">
+                    <div class="img-text">
+                        <img src="images/try.png" alt="">
+                        <div class="text-div">
+                            <div class="upper">
+                                <p class="sequence">
+                                    PASSIVE
+                                </p>
+                                <p class="category">
+                                    BUFF
+                                </p>
+                            </div>
+                            <div class="lower">
+                                <p class="skill-name">
+                                    Soul Cutter
+                                </p>
+                                <p class="skill-desc">
+                                    Lancelot charges in a designated direction, dealing 100–250 (+50% Total Physical Attack) Physical Damage to enemies along the way and applying a Sword Mark to the first unmarked enemy hit. The Sword Mark lasts 3 seconds. If Lancelot successfully applies a Sword Mark to an enemy, the cooldown of this will reset.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <footer>
       <div class="footer-grid">
@@ -172,5 +218,6 @@
     </footer>
 
     <script src="/scripts/individual-hero.js"></script>
+    <script src="/scripts/scroll-reveal.js"></script>
 </body>
 </html>
