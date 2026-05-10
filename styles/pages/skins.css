@@ -294,17 +294,10 @@
     max-width: 100%;
   }
 
-  .skins-desc { max-width: 100%; }
-
-  /* Skin container collapses to single column */
-  .skin-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .skin-card {
-    grid-column: 1; grid-row: auto;
-    min-height: 260px;
-  }
+  /* Skins Container */
+  .skins-desc     { max-width: 100%; }
+  .skin-card      { min-height: 260px; }
+  .skin-card-desc { max-width: 70%; }
 
   /* Footer */
   .footer-grid {
@@ -322,13 +315,14 @@
 
   /* Hero */
   .skins-content { padding: 0 1.2rem; }
-  .skins-desc     { font-size: 0.82rem; }
+  .skins-label   { font-size: 2rem; }
+  .skins-desc    { font-size: 0.82rem; }
   .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
 
   /* Skins Container */
   .skin-container { padding: 1.5rem 0.8rem; }
-
-  .skin-card   { min-height: 220px; }
+  .skin-card      { min-height: 220px; }
+  .skin-card-desc { max-width: 85%; }
 
   /* Footer */
   .footer-grid {
