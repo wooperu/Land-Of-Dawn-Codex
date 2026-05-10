@@ -230,9 +230,11 @@
   grid-column: 2; grid-row: 1;
   min-height: 280px;
 }
-.skins-card .card-bg {
-  background-color: #1a0d00;
-  background-position: center top;
+.skins-card .card-overlay {
+  background: linear-gradient(135deg,
+    rgba(8,11,24,0.75) 0%,
+    rgba(8,11,24,0.3) 50%,
+    transparent 100%);
 }
 
 /* THREE SMALL CARDS */
@@ -251,4 +253,9 @@
 
 .wide-card { min-height: 200px; }
 
-.mini-card .card-bg { background-color: #050d1e; }
+.heroes-card .card-bg { background-image: url('../../images/pages/home-page/heroes-img.png'); }
+.skins-card .card-bg  { background-image: url('../../images/pages/home-page/skins-img.png'); background-color: #1a0d00; background-position: center top; }
+.prep-card .card-bg   { background-image: url('../../images/pages/home-page/preparation-img.png'); }
+.guides-card .card-bg { background-image: url('../../images/pages/home-page/in-game-guides-img.png'); }
+.modes-card .card-bg  { background-image: url('../../images/pages/home-page/game-modes-img.png'); }
+.mini-card .card-bg   { background-image: url('../../images/pages/home-page/mini-game-img.png'); background-color: #050d1e; }
