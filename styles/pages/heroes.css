@@ -252,3 +252,32 @@
   box-shadow: 0 0 14px rgba(232,184,75,0.3);
   transform: translateY(-2px);
 }
+
+/* RESPONSIVE */
+
+/* Small desktop */
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 0 2.5rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+
+  /* Hero */
+  .hero-content {
+    padding: 0 1.8rem;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .hero-content { padding: 0 1.2rem; }
+  .title        { font-size: 2rem; }
+  .description  { font-size: 0.82rem; }
+  .btn-explore  { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+}
