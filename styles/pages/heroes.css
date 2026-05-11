@@ -94,15 +94,14 @@
   opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
 }
 .heroes-desc {
+  font-size: 1rem; color: var(--text);
   font-family: 'Crimson Text', serif;
-  font-size: 1rem; font-weight: 700;
-  color: var(--text);
+  font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 0.6rem; max-width: 320px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.95);
   opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
 }
-
 .btn-explore {
   display: inline-flex;
   align-items: center;
