@@ -1,19 +1,19 @@
 /* HERO BANNER */
-.hero {
+.home-hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
   overflow: hidden;
   padding-top: 72px;
 }
 
-.hero-bg {
+.home-bg {
   position: absolute; inset: 0;
   background-image: url('../../images/pages/home-page/hero-background-img.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
-.hero-bg::after {
+.home-bg::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -63,7 +63,7 @@
 }
 
 /* glow orb */
-.hero-glow {
+.glow {
   position: absolute; right: 10%; top: 20%; z-index: 1;
   width: 500px; height: 500px;
   background: radial-gradient(circle, #1a3a9022 0%, #0d1a4a11 50%, transparent 70%);
@@ -75,7 +75,7 @@
   50%       { transform: scale(1.08); opacity: 1; }
 }
 
-.hero-content {
+.home-content {
   position: relative; z-index: 10;
   padding: 0 3.5rem; max-width: 480px;
 }
@@ -87,7 +87,7 @@
   opacity: 0;
   animation: fadeUp 0.6s 0.3s forwards;
 }
-.hero-logo-img {
+.mlbb-logo-img {
   display: block;
   width: 340px;
   max-width: 100%;
@@ -95,7 +95,7 @@
   margin-bottom: 1.2rem;
   opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
 }
-.hero-desc {
+.home-desc {
   font-size: 0.9rem; color: var(--muted); line-height: 1.65;
   margin-bottom: 1.8rem; max-width: 320px;
   opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
@@ -264,7 +264,7 @@
 
 /* Small desktop */
 @media (max-width: 1024px) {
-  .hero-content {
+  .home-content {
     padding: 0 2.5rem;
   }
 
@@ -277,13 +277,13 @@
 @media (max-width: 900px) {
 
   /* Hero */
-  .hero-content {
+  .home-content {
     padding: 0 1.8rem;
     max-width: 100%;
   }
 
-  .hero-logo-img { width: 260px; }
-  .hero-desc     { max-width: 100%; }
+  .mlbb-logo-img { width: 260px; }
+  .home-desc     { max-width: 100%; }
 
   /* Grid collapses to single column */
   .grid-main {
@@ -319,10 +319,10 @@
 @media (max-width: 480px) {
 
   /* Hero */
-  .hero-content { padding: 0 1.2rem; }
-  .hero-logo-img { width: 200px; }
+  .home-content { padding: 0 1.2rem; }
+  .mlbb-logo-img { width: 200px; }
   .welcome-text  { font-size: 0.68rem; }
-  .hero-desc     { font-size: 0.82rem; }
+  .home-desc     { font-size: 0.82rem; }
   .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
 
   /* Section grid */
