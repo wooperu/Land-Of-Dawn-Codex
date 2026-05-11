@@ -1,20 +1,19 @@
 /* HERO BANNER */
-.hero {
+.heroes-hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
   overflow: hidden;
   padding-top: 72px;
 }
 
-.hero-bg {
+.heroes-bg {
   position: absolute; inset: 0;
   background-image: url('../../images/pages/heroes-page/main-image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
-
-.hero-bg::after {
+.heroes-bg::after {
   content: '';
   position: absolute; inset: 0;
   background: linear-gradient(
@@ -79,15 +78,14 @@
   background: radial-gradient(ellipse at left, rgba(5,8,18,0.5) 0%, transparent 75%);
   border-radius: 12px;
 }
-
 .diamond {
   opacity: 0; animation: fadeUp 0.6s 0.3s forwards;
 }
-
-.title {
-  font-family: "Crimson Text", serif;
+.heroes-label {
+  font-family: 'Crimson Text', serif;
   padding-bottom: 5px;
   font-size: clamp(12px, 3.5vw, 50px);
+  text-transform: uppercase;
   font-weight: bold;
   background: linear-gradient(180deg, #DBA000, #BAAC96);
   -webkit-background-clip: text;
@@ -95,15 +93,14 @@
   -webkit-text-fill-color: transparent;
   opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
 }
-
-.description {
-  font-size: 1rem; color: var(--text);
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
+.heroes-desc {
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--text);
   letter-spacing: 0.03em;
-  margin-bottom: 0.3rem; max-width: 320px;
-  opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
+  margin-bottom: 0.6rem; max-width: 320px;
   text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+  opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
 }
 
 .btn-explore {
@@ -209,7 +206,7 @@
 
 /* CARD TITLE */
 .card-title {
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-size: clamp(18px, 2.5vw, 42px);
   font-weight: 700;
   line-height: 1.1;
@@ -234,7 +231,7 @@
 .card-p {
   width: 22%;
   color: #c8d6f0cc;
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-size: clamp(11px, 1.1vw, 18px);
   font-weight: 400;
   z-index: 1;
@@ -248,7 +245,7 @@
   text-align: center;
   cursor: pointer;
   font-size: 0.8rem;
-  font-family: "Roboto Serif", sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
   font-weight: bold;
   border-radius: 16px;
   border: 1px solid rgba(181,128,48,0.5);
@@ -287,7 +284,7 @@
 
   /* Hero */
   .hero-content { padding: 0 1.2rem; }
-  .title        { font-size: 2rem; }
-  .description  { font-size: 0.82rem; }
+  .heroes-label { font-size: 2rem; }
+  .heroes-desc  { font-size: 0.82rem; }
   .btn-explore  { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
 }

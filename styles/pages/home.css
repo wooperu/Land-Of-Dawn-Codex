@@ -96,32 +96,42 @@
   opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
 }
 .home-desc {
-  font-size: 0.9rem; color: var(--muted); line-height: 1.65;
-  margin-bottom: 1.8rem; max-width: 320px;
+  font-size: 1rem; color: var(--text);
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.8rem; max-width: 320px;
   opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.95);
 }
-.btn-play {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  background: linear-gradient(135deg, #e8b84b, #c07a10);
-  color: #0b0e1f; font-family: 'Cinzel', serif;
-  font-size: 0.8rem; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  padding: 0.75rem 2rem; border: none; cursor: pointer;
-  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-  text-decoration: none;
-  position: relative; overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px #e8b84b50;
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: "Roboto Serif", sans-serif;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
+  color: var(--text);
+  font-weight: bold;
   opacity: 0; animation: fadeUp 0.7s 1s forwards;
+  transition: border-color 0.2s, transform 0.2s;
+  width: fit-content;
 }
-.btn-play::before {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(135deg, #f5d47a, #e8b84b);
-  opacity: 0; transition: opacity 0.2s;
+.btn-explore svg {
+  transition: transform 0.2s;
 }
-.btn-play:hover { transform: translateY(-2px); box-shadow: 0 8px 30px #e8b84b70; }
-.btn-play:hover::before { opacity: 1; }
-.btn-play span { position: relative; z-index: 1; }
+.btn-explore:hover svg {
+  transform: translateX(3px);
+}
+.btn-explore:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
