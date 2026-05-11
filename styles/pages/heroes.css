@@ -110,7 +110,7 @@
   text-align: center;
   cursor: pointer;
   font-size: 0.85rem;
-  font-family: "Roboto Serif", sans-serif;
+  font-family: 'Roboto Serif', sans-serif;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.2);
   background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
