@@ -178,7 +178,10 @@
 
 /* card button */
 .skin-card-btn {
-  padding: 0.5rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
   font-size: 0.8rem;
   font-family: 'Cinzel', serif;
@@ -188,13 +191,17 @@
   border: 1px solid rgba(255,255,255,0.2);
   background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
   color: var(--text);
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: border-color 0.2s;
   width: fit-content;
+}
+.skin-card-btn svg {
+  transition: transform 0.2s;
 }
 .skin-card-btn:hover {
   border-color: var(--gold);
-  box-shadow: 0 0 14px rgba(232,184,75,0.3);
-  transform: translateY(-2px);
+}
+.skin-card-btn:hover svg {
+  transform: translateX(3px);
 }
 
 .bg-starlight { background-image: url('../../images/pages/skins-page/starlight-bg.webp'); }
