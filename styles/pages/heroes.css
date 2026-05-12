@@ -166,24 +166,33 @@
 }
 
 /* CARD BUTTON */
-.card-btn {
-  padding: 0.5rem 2rem;
-  text-align: center;
+.heroes-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
   font-size: 0.8rem;
   font-family: 'Roboto Serif', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   border-radius: 16px;
   border: 1px solid rgba(181,128,48,0.5);
   background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
   color: var(--text);
+  transition: border-color 0.2s;
+  width: fit-content;
+  position: relative;
   z-index: 1;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
-.card-btn:hover {
+.heroes-card-btn svg {
+  transition: transform 0.2s;
+}
+.heroes-card-btn:hover {
   border-color: var(--gold);
-  box-shadow: 0 0 14px rgba(232,184,75,0.3);
-  transform: translateY(-2px);
+}
+.heroes-card-btn:hover svg {
+  transform: translateX(3px);
 }
 
 /* RESPONSIVE */
