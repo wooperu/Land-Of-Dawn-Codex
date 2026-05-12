@@ -6,8 +6,11 @@
     <title>Skins &ndash; Land of Dawn Codex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="styles/shared/page-banner.css">
     <link rel="stylesheet" href="styles/pages/skins.css">
   </head>
   <body>
@@ -45,13 +48,25 @@
       <div class="stars" id="stars"></div>
       <div class="lightning"></div>
       <div class="lightning2"></div>
-      <div class="skins-glow"></div>
+      <div class="glow"></div>
       <div class="skins-content">
+        <div class="diamond">
+          <div class="diamond-line diamond-line--left"></div>
+          <svg width="40" height="30" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; margin:0 8px;">
+            <polygon points="40,6 62,38 40,74 18,38" fill="#e6a817" stroke="#f5c842" stroke-width="1.5"/>
+            <polygon points="40,6 18,38 40,28" fill="#f5d060"/>
+            <polygon points="40,6 62,38 40,28" fill="#d4920f"/>
+            <polygon points="40,28 18,38 40,74" fill="#a8650a"/>
+            <polygon points="40,28 62,38 40,74" fill="#8f520a"/>
+            <polygon points="40,14 56,34 40,28 24,34" fill="#fce97a" opacity="0.3"/>
+          </svg>
+          <div class="diamond-line diamond-line--right"></div>
+        </div>
         <p class="skins-label">Skins</p>
         <p class="skins-desc">Discover all available hero skins — from Starlight exclusives to rare Collector pieces and crossover collabs from your favourite franchises.</p>
-        <a href="#skin-tiers" class="btn-play">
-          <span>Browse Skins</span>
-        </a>
+        <a href="#skin-tiers"><button class="btn-explore" >EXPLORE SKINS <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 6l6 6-6 6"/>
+        </svg></button></a>
       </div>
     </section>
 
@@ -63,7 +78,12 @@
           <div class="skin-tier-badge starlight-badge">★ STARLIGHT</div>
           <p class="skin-card-title">Starlight <span>Skins</span></p>
           <p class="skin-card-desc">Exclusive monthly and annual Starlight skins available through the Starlight membership. New skin every month!</p>
-          <button class="skin-card-btn">EXPLORE STARLIGHT</button>
+          <button class="skin-card-btn">
+            EXPLORE STARLIGHT
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -73,7 +93,12 @@
           <div class="skin-tier-badge collector-badge">◆ COLLECTOR</div>
           <p class="skin-card-title">Collector <span>Skins</span></p>
           <p class="skin-card-desc">The rarest and most premium skins in the game. Limited availability with stunning effects and exclusive animations.</p>
-          <button class="skin-card-btn">EXPLORE COLLECTOR</button>
+          <button class="skin-card-btn">
+            EXPLORE COLLECTOR
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -83,7 +108,12 @@
           <div class="skin-tier-badge mythic-badge">⬡ MYTHIC</div>
           <p class="skin-card-title">Mythic <span>Skins</span></p>
           <p class="skin-card-desc">High-tier limited skins with transforming effects and unique recall animations. A symbol of prestige on the battlefield.</p>
-          <button class="skin-card-btn">EXPLORE MYTHIC</button>
+          <button class="skin-card-btn">
+            EXPLORE MYTHIC
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -93,7 +123,12 @@
           <div class="skin-tier-badge legend-badge">⬟ LEGEND</div>
           <p class="skin-card-title">Legend <span>Skins</span></p>
           <p class="skin-card-desc">Premium permanent skins with enhanced visual effects, custom skill animations, and unique entrance effects.</p>
-          <button class="skin-card-btn">EXPLORE LEGEND</button>
+          <button class="skin-card-btn">
+            EXPLORE LEGEND
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -103,7 +138,12 @@
           <div class="skin-tier-badge epic-badge">◈ EPIC</div>
           <p class="skin-card-title">Epic <span>Skins</span></p>
           <p class="skin-card-desc">The most popular tier in MLBB. Epic skins feature full model redesigns, custom skill effects, and unique voice lines.</p>
-          <button class="skin-card-btn">EXPLORE EPIC</button>
+          <button class="skin-card-btn">
+            EXPLORE EPIC
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -113,7 +153,12 @@
           <div class="skin-tier-badge special-badge">✦ SPECIAL</div>
           <p class="skin-card-title">Special <span>Skins</span></p>
           <p class="skin-card-desc">Mid-tier skins featuring redesigned hero appearances with updated textures and some skill effect changes.</p>
-          <button class="skin-card-btn">EXPLORE SPECIAL</button>
+          <button class="skin-card-btn">
+            EXPLORE SPECIAL
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -123,7 +168,12 @@
           <div class="skin-tier-badge elite-badge">▲ ELITE</div>
           <p class="skin-card-title">Elite <span>Skins</span></p>
           <p class="skin-card-desc">Entry-level paid skins with refreshed looks and minor visual improvements. A great starting point for new collectors.</p>
-          <button class="skin-card-btn">EXPLORE ELITE</button>
+          <button class="skin-card-btn">
+            EXPLORE ELITE
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -133,7 +183,12 @@
           <div class="skin-tier-badge basic-badge">● Basic</div>
           <p class="skin-card-title">Basic <span>Skins</span></p>
           <p class="skin-card-desc">Small redesigned version of the base model. Usually costs 50 diamonds or less during the first day.</p>
-          <button class="skin-card-btn">EXPLORE BASIC8</button>
+          <button class="skin-card-btn">
+            EXPLORE BASIC
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 
@@ -143,7 +198,12 @@
           <div class="skin-tier-badge collab-badge">✕ COLLAB</div>
           <p class="skin-card-title">Collab <span>Skins</span></p>
           <p class="skin-card-desc">Limited crossover skins from iconic franchises — KOF, Transformers, JJK, and more.</p>
-          <button class="skin-card-btn">EXPLORE COLLABS</button>
+          <button class="skin-card-btn">
+            EXPLORE COLLABS
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
         </div>
       </a>
 

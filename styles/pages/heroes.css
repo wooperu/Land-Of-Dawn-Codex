@@ -1,20 +1,19 @@
 /* HERO BANNER */
-.hero {
+.heroes-hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
   overflow: hidden;
   padding-top: 72px;
 }
 
-.hero-bg {
+.heroes-bg {
   position: absolute; inset: 0;
   background-image: url('../../images/pages/heroes-page/main-image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
-
-.hero-bg::after {
+.heroes-bg::after {
   content: '';
   position: absolute; inset: 0;
   background: linear-gradient(
@@ -25,67 +24,23 @@
   );
 }
 
-.stars {
-  position: absolute; inset: 0; pointer-events: none; z-index: 10;
-}
-.star {
-  position: absolute; border-radius: 50%;
-  background: white; opacity: 0;
-  animation: twinkle var(--dur, 3s) var(--delay, 0s) infinite;
-}
-@keyframes twinkle {
-  0%, 100% { opacity: 0; transform: scale(0.5); }
-  50% { opacity: var(--op, 0.6); transform: scale(1); }
-}
-
-.lightning {
-  position: absolute; right: 15%; top: 10%; z-index: 2;
-  width: 3px; height: 180px;
-  background: linear-gradient(180deg, transparent, #7eb8ff, #4fc3f7, transparent);
-  filter: blur(1px);
-  animation: flash 4s 1s infinite;
-  clip-path: polygon(50% 0%, 100% 30%, 60% 30%, 100% 70%, 50% 70%, 80% 100%, 20% 50%, 55% 50%, 20% 20%);
-  opacity: 0;
-}
-.lightning2 {
-  position: absolute; right: 25%; top: 5%; z-index: 2;
-  width: 2px; height: 120px;
-  background: linear-gradient(180deg, transparent, #a0c8ff, transparent);
-  animation: flash 5s 2.5s infinite;
-  opacity: 0;
-}
-@keyframes flash {
-  0%, 100% { opacity: 0; }
-  10%, 14% { opacity: 1; }
-  12%       { opacity: 0.3; }
-}
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.7; }
-  50%       { transform: scale(1.08); opacity: 1; }
-}
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
+/* banner content */
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: start;
   position: relative; z-index: 10;
-  padding: 5rem;
+  padding: 1.5rem 3.5rem;
   max-width: 500px;
   gap: 5px;
+  background: radial-gradient(ellipse at left, rgba(5,8,18,0.5) 0%, transparent 75%);
+  border-radius: 12px;
 }
-
-.diamond {
-  opacity: 0; animation: fadeUp 0.6s 0.3s forwards;
-}
-
-.title {
-  font-family: "Crimson Text", serif;
+.heroes-label {
+  font-family: 'Crimson Text', serif;
   padding-bottom: 5px;
   font-size: clamp(12px, 3.5vw, 50px);
+  text-transform: uppercase;
   font-weight: bold;
   background: linear-gradient(180deg, #DBA000, #BAAC96);
   -webkit-background-clip: text;
@@ -93,37 +48,15 @@
   -webkit-text-fill-color: transparent;
   opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
 }
-
-.description {
+.heroes-desc {
   font-size: 1rem; color: var(--text);
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-bottom: 0.3rem; max-width: 320px;
+  margin-bottom: 0.6rem; max-width: 320px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.95);
   opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
 }
-
-.btn-explore {
-  padding: 0.5rem 2rem;
-  text-align: center;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-family: "Roboto Serif", sans-serif;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
-  color: var(--text);
-  font-weight: bold;
-  opacity: 0; animation: fadeUp 0.7s 1s forwards;
-  transition: border-color 0.2s, transform 0.2s;
-}
-.btn-explore span { font-size: 1rem; }
-.btn-explore:hover {
-  border-color: var(--gold);
-  transform: translateY(-2px);
-}
-
-.anchor { text-decoration: none; }
 
 /* CARD CONTAINER */
 .card-container {
@@ -199,7 +132,7 @@
 
 /* CARD TITLE */
 .card-title {
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-size: clamp(18px, 2.5vw, 42px);
   font-weight: 700;
   line-height: 1.1;
@@ -224,7 +157,7 @@
 .card-p {
   width: 22%;
   color: #c8d6f0cc;
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-size: clamp(11px, 1.1vw, 18px);
   font-weight: 400;
   z-index: 1;
@@ -233,24 +166,33 @@
 }
 
 /* CARD BUTTON */
-.card-btn {
-  padding: 0.5rem 2rem;
-  text-align: center;
+.heroes-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
   font-size: 0.8rem;
-  font-family: "Roboto Serif", sans-serif;
-  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   border-radius: 16px;
   border: 1px solid rgba(181,128,48,0.5);
   background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
   color: var(--text);
+  transition: border-color 0.2s;
+  width: fit-content;
+  position: relative;
   z-index: 1;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
-.card-btn:hover {
+.heroes-card-btn svg {
+  transition: transform 0.2s;
+}
+.heroes-card-btn:hover {
   border-color: var(--gold);
-  box-shadow: 0 0 14px rgba(232,184,75,0.3);
-  transform: translateY(-2px);
+}
+.heroes-card-btn:hover svg {
+  transform: translateX(3px);
 }
 
 /* RESPONSIVE */
@@ -277,7 +219,7 @@
 
   /* Hero */
   .hero-content { padding: 0 1.2rem; }
-  .title        { font-size: 2rem; }
-  .description  { font-size: 0.82rem; }
+  .heroes-label { font-size: 2rem; }
+  .heroes-desc  { font-size: 0.82rem; }
   .btn-explore  { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
 }

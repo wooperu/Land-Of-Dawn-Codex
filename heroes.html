@@ -6,15 +6,16 @@
     <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/shared/general.css">
-    <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
-    <link rel="stylesheet" href="styles/pages/heroes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="styles/shared/page-banner.css">
+    <link rel="stylesheet" href="styles/pages/heroes.css">
   </head>
   <body>
     
@@ -48,14 +49,14 @@
       </div>
     </div>
 
-    <section class="hero">
-      <div class="hero-bg"></div>
+    <section class="heroes-hero">
+      <div class="heroes-bg"></div>
       <div class="stars" id="stars"></div>
       <div class="lightning"></div>
       <div class="lightning2"></div>
       <div class="hero-content">
-        <div class="diamond" style="width:60%; display:flex; align-items:center; padding:0px;">
-          <div style="flex:1; height:3px; width: 100%; background:linear-gradient(to right, transparent, #f0b429);"></div>
+        <div class="diamond">
+          <div class="diamond-line diamond-line--left"></div>
           <svg width="40" height="30" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; margin:0 8px;">
             <polygon points="40,6 62,38 40,74 18,38" fill="#e6a817" stroke="#f5c842" stroke-width="1.5"/>
             <polygon points="40,6 18,38 40,28" fill="#f5d060"/>
@@ -64,27 +65,30 @@
             <polygon points="40,28 62,38 40,74" fill="#8f520a"/>
             <polygon points="40,14 56,34 40,28 24,34" fill="#fce97a" opacity="0.3"/>
           </svg>
-          <div style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>
+          <div class="diamond-line diamond-line--right"></div>
         </div>
-        <p class="title">HEROES</p>
-        <p class="description">Discover all heroes of the Land of Dawn</p>
-        <p class="description">Learn their strengths, roles, and specialties</p>
-        <p class="description">Master your hero, dominate the battlefield!</p>
-        <a href="#bg1" class="anchor"><button class="btn-explore" >EXPLORE HEROES <span>&#8680;</span></button></a>
+        <p class="heroes-label">Heroes</p>
+        <p class="heroes-desc">Discover all heroes of the Land of Dawn Learn their strengths, roles, and specialties Master your hero, dominate the battlefield!</p>
+        <a href="#explore"><button class="btn-explore" >EXPLORE HEROES <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 6l6 6-6 6"/>
+        </svg></button></a>
       </div>
     </section>
 
-    <section class="card-container">
-      <div id="bg1" class="card bg1 reveal">
+    <section class="card-container" id="explore">
+      <div class="card bg1 reveal">
         <p class="card-title">LIST OF <br>
           <span>HEROES</span>
         </p>
         <p class="card-p">
           Browse the complete collection of heroes in Mobile Legends. Find detailed profiles, skills, and background stories
         </p>
-        <button onclick="window.location.href='hero-list.html'" class="card-btn">
+        <button onclick="window.location.href='hero-list.html'" class="heroes-card-btn">
           VIEW FULL LIST
-        </button class="card-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6"/>
+          </svg>
+        </button class="heroes-card-btn">
       </div>
       <div class="card bg2 reveal">
         <p class="card-title">HERO<br>
@@ -93,8 +97,11 @@
         <p class="card-p">
           Understand the different roles in the battlefield and how they contribute to victory
         </p>
-        <button class="card-btn">
+        <button class="heroes-card-btn">
           DISCOVER ROLES
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6"/>
+          </svg>
         </button>
       </div>
       <div class="card bg3 reveal">
@@ -104,8 +111,11 @@
         <p class="card-p">
           Each hero has unique specialties that define their strength and playstyles. Find the perfect hero for you!
         </p>
-        <button class="card-btn">
+        <button class="heroes-card-btn">
           VIEW SPECIALTIES
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6"/>
+          </svg>
         </button>
       </div> 
     </section>
