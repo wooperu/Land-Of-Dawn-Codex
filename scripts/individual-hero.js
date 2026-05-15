@@ -53,7 +53,7 @@ function displayTemplate(){
             <div class="lane-section">
                 <p class="lane-reco">Lane Recommendation</p>
                 <div class="lane-spec">
-                    <img src="images/images/lane/${heroObject.lane.toLowerCase()}.png" alt="">
+                    <img src="images/lane/${heroObject.lane.toLowerCase()}.png" alt="">
                     <p class="lane-text">${heroObject.lane}</p>
                 </div>
             </div>
