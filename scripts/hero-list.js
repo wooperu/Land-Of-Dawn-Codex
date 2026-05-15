@@ -124,7 +124,7 @@ const heroes =
     { "name": "Wanwan", "role": "Marksman" },
     { "name": "X.Borg", "role": "Fighter" },
     { "name": "Xavier", "role": "Mage" },
-    { "name": "Yi-Sun-Shin", "role": "Assassin/Marksman" },
+    { "name": "Yi Sun-Shin", "role": "Assassin/Marksman" },
     { "name": "Yin", "role": "Fighter/Assassin" },
     { "name": "Yu Zhong", "role": "Fighter" },
     { "name": "Yve", "role": "Mage" },
