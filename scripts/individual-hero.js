@@ -36,7 +36,7 @@ function displayTemplate(){
 
                 <div class="specs">
                     <div class="role">
-                        <img src="images/role/${heroObject.role.split("/")[0]}.png" alt="">
+                        <img src="images/role/${heroObject.role.split("/")[0].toLowerCase()}.png" alt="">
                         <div>
                         <p>Role</p>
                         <p class="role-name">${heroObject.role}</p>
@@ -53,7 +53,7 @@ function displayTemplate(){
             <div class="lane-section">
                 <p class="lane-reco">Lane Recommendation</p>
                 <div class="lane-spec">
-                    <img src="images/lane/${heroObject.lane}.png" alt="">
+                    <img src="images/images/lane/${heroObject.lane.toLowerCase()}.png" alt="">
                     <p class="lane-text">${heroObject.lane}</p>
                 </div>
             </div>
