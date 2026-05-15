@@ -124,7 +124,7 @@ const heroes =
     { "name": "Wanwan", "role": "Marksman" },
     { "name": "X.Borg", "role": "Fighter" },
     { "name": "Xavier", "role": "Mage" },
-    { "name": "Yi Sun-shin", "role": "Assassin/Marksman" },
+    { "name": "Yi-Sun-Shin", "role": "Assassin/Marksman" },
     { "name": "Yin", "role": "Fighter/Assassin" },
     { "name": "Yu Zhong", "role": "Fighter" },
     { "name": "Yve", "role": "Mage" },
@@ -162,7 +162,7 @@ function render() {
 
     var card = document.createElement("button");
 
-    card.classList.add("card");
+    card.classList.add("card", "reveal");
 
     card.innerHTML = 
     `
@@ -173,7 +173,10 @@ function render() {
 
     
     card.onclick = () => (window.location.href=`individual-hero.html?name=${hero.name.toLowerCase()}`);
+
+    window.initReveal();
 })};
 
 window.setRole = setRole;
 render();
+
