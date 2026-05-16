@@ -8,7 +8,7 @@
 
 .skins-bg {
   position: absolute; inset: 0;
-  background-image: url('../../../images/pages/skins-page/collab-skins-banner/naruto-shippuden-bg.webp');
+  background-image: url('../../../images/pages/skins-page/collab-skins-banner/naruto-shippuden-bg.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -147,16 +147,10 @@
   border: 1px solid;
   width: fit-content;
 }
-.pale-violet-badge { color: #c8a4ff; border-color: #c8a4ff55; background: rgba(200,164,255,0.1); }
-.collector-badge { color: #ff9d4d; border-color: #ff9d4d55; background: rgba(255,157,77,0.1); }
 .red-badge    { color: #ff6b6b; border-color: #ff6b6b55; background: rgba(255,107,107,0.1); }
 .jjk-badge { color: #ff4d6d; border-color: rgba(255, 77, 109, 0.35); background: rgba(255, 77, 109, 0.1); }
 .gold-badge    { color: #ffd700; border-color: #ffd70055; background: rgba(255,215,0,0.1); }
 .purple-badge      { color: #a78bfa; border-color: #a78bfa55; background: rgba(167,139,250,0.1); }
-.blue-badge   { color: #60a5fa; border-color: #60a5fa55; background: rgba(96,165,250,0.1); }
-.green-badge     { color: #34d399; border-color: #34d39955; background: rgba(52,211,153,0.1); }
-.basic-badge     { color: #6daefd; border-color: #7db7fe55; background: rgba(119, 180, 253, 0.1); }
-.pink-badge    { color: #f472b6; border-color: #f472b655; background: rgba(244,114,182,0.1); }
 .white-badge { color: #ffffff; border-color: rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.08); }
 .orange-badge { color: #ffb347; border-color: rgba(255, 179, 71, 0.3); background: rgba(255, 179, 71, 0.08); }
 
@@ -165,11 +159,11 @@
   width: 320px;
   flex-shrink: 0;
 }
-.kof-logo{
+.king-of-fighters-logo{
   width: 100%;
   height: auto;
 }
-.skin-card:hover .kof-logo {
+.skin-card:hover .king-of-fighters-logo {
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(177, 72, 222, 0.6));
 }
 .star-wars-logo{
@@ -284,7 +278,7 @@
   transform: translateX(3px);
 }
 
-.bg-kof { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kof-bg.webp'); }
+.bg-king-of-fighters { background-image: url('../../../images/pages/skins-page/collab-skins-banner/king-of-fighters-bg.webp'); }
 .bg-star-wars { background-image: url('../../../images/pages/skins-page/collab-skins-banner/star-wars-bg.jpg'); }
 .bg-transformers    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/transformers-bg.webp'); }
 .bg-sanrio    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/sanrio-bg.webp'); }
@@ -295,7 +289,7 @@
 .bg-ducati     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/ducati-bg.jpg'); }
 .bg-attack-on-titan    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/attack-on-titan-bg.webp'); }
 .bg-hunter-x-hunter    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/hunter-x-hunter-bg.jpg'); }
-.bg-naruto-shippuden    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/naruto-shippuden-bg.webp'); }
+.bg-naruto-shippuden    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/naruto-shippuden-bg.jpg'); }
 .bg-naruto-shippuden { background-position: center }
 
 /* RESPONSIVE */
