@@ -179,6 +179,13 @@
 .skin-card:hover .sanrio-logo {
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(219, 219, 219, 0.6));
 }
+.kung-fu-panda-logo{
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .kung-fu-panda-logo {
+  filter: brightness(1.2) contrast(1.15) drop-shadow(0 0 14px rgba(255, 200, 60, 0.65));
+}
 
 /* card description */
 .skin-card-desc {
@@ -223,7 +230,7 @@
 .bg-star-wars { background-image: url('../../../images/pages/skins-page/collab-skins-banner/star-wars-bg.jpg'); }
 .bg-transformers    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/transformers-bg.webp'); }
 .bg-sanrio    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/sanrio-bg.webp'); }
-.bg-epic      { background-image: url('../../../images/pages/skins-page/epic-bg.webp'); }
+.bg-kung-fu-panda      { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kung-fu-panda-bg.webp'); }
 .bg-special   { background-image: url('../../../images/pages/skins-page/special-bg.webp'); }
 .bg-elite     { background-image: url('../../../images/pages/skins-page/elite-bg.webp'); }
 .bg-basic     { background-image: url('../../../images/pages/skins-page/basic-bg.webp'); }
