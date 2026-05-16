@@ -138,6 +138,7 @@
 .pale-violet-badge { color: #c8a4ff; border-color: #c8a4ff55; background: rgba(200,164,255,0.1); }
 .collector-badge { color: #ff9d4d; border-color: #ff9d4d55; background: rgba(255,157,77,0.1); }
 .red-badge    { color: #ff6b6b; border-color: #ff6b6b55; background: rgba(255,107,107,0.1); }
+.jjk-badge { color: #ff4d6d; border-color: rgba(255, 77, 109, 0.35); background: rgba(255, 77, 109, 0.1); }
 .gold-badge    { color: #ffd700; border-color: #ffd70055; background: rgba(255,215,0,0.1); }
 .purple-badge      { color: #a78bfa; border-color: #a78bfa55; background: rgba(167,139,250,0.1); }
 .blue-badge   { color: #60a5fa; border-color: #60a5fa55; background: rgba(96,165,250,0.1); }
@@ -192,6 +193,13 @@
 }
 .skin-card:hover .saint-seiya-logo {
   filter: brightness(1.2) contrast(1.15) drop-shadow(0 0 14px rgba(255, 200, 60, 0.65));
+} 
+.jujutsu-kaisen-logo{
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .jujutsu-kaisen-logo {
+  filter: brightness(1.15) contrast(1.2) drop-shadow(0 0 12px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(255, 30, 60, 0.35));
 }
 
 /* card description */
@@ -239,7 +247,8 @@
 .bg-sanrio    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/sanrio-bg.webp'); }
 .bg-kung-fu-panda      { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kung-fu-panda-bg.webp'); }
 .bg-saint-seiya   { background-image: url('../../../images/pages/skins-page/collab-skins-banner/saint-seiya-bg.jpg'); }
-.bg-elite     { background-image: url('../../../images/pages/skins-page/elite-bg.webp'); }
+.bg-jujutsu-kaisen     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/jujutsu-kaisen-bg.webp'); }
+.bg-jujutsu-kaisen { background-position: center }
 .bg-basic     { background-image: url('../../../images/pages/skins-page/basic-bg.webp'); }
 .bg-collab    { background-image: url('../../../images/pages/skins-page/collab-bg.webp'); }
 
