@@ -8,7 +8,7 @@
 
 .skins-bg {
   position: absolute; inset: 0;
-  background-image: url('../../../images/pages/skins-page/skins-banner-bg.webp');
+  background-image: url('../../../images/pages/skins-page/collab-skins-banner/naruto-shippuden-bg.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -22,6 +22,18 @@
     rgba(26, 28, 62, 0.9) 96%,
     rgba(26, 28, 62, 1) 100%
   );
+}
+
+.glow {
+  position: absolute; left: 0; top: 0; z-index: 1;
+  width: 60%; height: 100%;
+  background: radial-gradient(circle, #1a3a9022 0%, #0d1a4a11 50%, transparent 70%);
+  border-radius: 50%;
+  animation: pulse 4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50%       { transform: scale(1.08); opacity: 1; }
 }
 
 /* banner content */
@@ -146,6 +158,7 @@
 .basic-badge     { color: #6daefd; border-color: #7db7fe55; background: rgba(119, 180, 253, 0.1); }
 .pink-badge    { color: #f472b6; border-color: #f472b655; background: rgba(244,114,182,0.1); }
 .white-badge { color: #ffffff; border-color: rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.08); }
+.orange-badge { color: #ffb347; border-color: rgba(255, 179, 71, 0.3); background: rgba(255, 179, 71, 0.08); }
 
 /* card logo */
 .collab-logo {
@@ -222,6 +235,15 @@
 .skin-card:hover .hunter-x-hunter-logo {
   filter: brightness(1.2) contrast(1.25) drop-shadow(0 0 10px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 8px rgba(220, 20, 60, 0.45));
 }
+.naruto-shippuden-logo {
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .naruto-shippuden-logo {
+  filter: brightness(1.2) contrast(1.2)
+          drop-shadow(0 0 10px rgba(0, 0, 0, 0.55))
+          drop-shadow(0 0 10px rgba(255, 122, 0, 0.45));
+}
 
 /* card description */
 .skin-card-desc {
@@ -273,7 +295,8 @@
 .bg-ducati     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/ducati-bg.jpg'); }
 .bg-attack-on-titan    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/attack-on-titan-bg.webp'); }
 .bg-hunter-x-hunter    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/hunter-x-hunter-bg.jpg'); }
-.bg-collab    { background-image: url('../../../images/pages/skins-page/collab-bg.webp'); }
+.bg-naruto-shippuden    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/naruto-shippuden-bg.webp'); }
+.bg-naruto-shippuden { background-position: center }
 
 /* RESPONSIVE */
 
