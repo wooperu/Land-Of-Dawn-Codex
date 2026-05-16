@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Land of Dawn Codex &ndash; Mobile Legends: Bang Bang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="styles/shared/page-banner.css">
+    <link rel="stylesheet" href="styles/pages/emblems.css">
+  </head>
+
+<body>
+    <nav>
+      <div class="nav-logo">
+        <img src="images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="skins.html">Skins</a></li>
+        <li><a href="preparation.html"class="active">Preparation</a></li>
+        <li><a href="in-game-guides.html">In-Game Guides</a></li>
+        <li><a href="game-modes.html">Game Modes</a></li>
+        <li><a href="mini-games.html">Mini-Games</a></li>
+      </ul>
+
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="emblems-hero">
+      <div class="emblems-bg"></div>
+      <div class="stars" id="stars"></div>
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+      
+      <div class="page-breadcrumb">
+        <a href="preparation.html" class="back-btn" aria-label="Go back">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#DBA000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="20" y1="12" x2="4" y2="12"/>
+            <polyline points="10 18 4 12 10 6"/>
+          </svg>
+        </a>
+        <span class="breadcrumb-divider">|</span>
+        <div class="breadcrumb-path">
+          <a href="preparation.html">Preparation</a>
+          <span class="chevron">&rsaquo;</span>
+          <span class="current-page">Emblems</span>
+        </div>
+      </div>
+      
+      <div class="hero-content">
+        <div class="diamond">
+          <div class="diamond-line diamond-line--left"></div>
+          <svg width="40" height="30" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; margin:0 8px;">
+            <polygon points="40,6 62,38 40,74 18,38" fill="#e6a817" stroke="#f5c842" stroke-width="1.5"/>
+            <polygon points="40,6 18,38 40,28" fill="#f5d060"/>
+            <polygon points="40,6 62,38 40,28" fill="#d4920f"/>
+            <polygon points="40,28 18,38 40,74" fill="#a8650a"/>
+            <polygon points="40,28 62,38 40,74" fill="#8f520a"/>
+            <polygon points="40,14 56,34 40,28 24,34" fill="#fce97a" opacity="0.3"/>
+          </svg>
+          <div class="diamond-line diamond-line--right"></div>
+        </div>
+        <p class="emblems-label">Emblems</p>
+        <p class="emblems-desc">Emblems are hero enhancements that grant additional buffs or effects as well as bonus attributes. 
+            <br><br> In the preparation tab or during the hero pick phase, players can choose their preferred emblem sets.
+        </p>
+        <a href="#emblems-list"><button class="btn-explore">LEARN MORE <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 6l6 6-6 6"/>
+        </svg></button></a>
+      </div>
+    </section>
+
+    <section class="emblems-container" id="emblems-list">
+      
+        <!-- BASIC COMMON EMBLEM -->
+      <article class="emblem-card basic-common reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/basic-common-icon.png" alt="Basic Common Emblem" class="emblem-main-icon">
+          <h2>BASIC COMMON EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">Hybrid Regen</span>
+              <span class="attr-value">+12</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">HP</span>
+              <span class="attr-value">+275</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Adaptive Attack</span>
+              <span class="attr-value">+22</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/thrill-icon.png" alt="Thrill" class="talent-icon">
+              <div class="talent-text">
+                <h4>Thrill</h4>
+                <p>Gain 16 Adaptive Attack.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/swift-icon.png" alt="Swift" class="talent-icon">
+              <div class="talent-text">
+                <h4>Swift</h4>
+                <p>Gain 10% Extra Attack Speed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/impure-rage-icon.png" alt="Impure Rage" class="talent-icon">
+              <div class="talent-text">
+                <h4>Impure Rage</h4>
+                <p>Dealing damage with skills deals 4% of target's Max HP extra Adaptive Damage and restores 2% Mana on hit. (If the hero does not use Mana, restores 1% HP instead. The extra Adaptive Damage dealt to non-hero units is up to 120. Cooldown: 5 seconds.)</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/quantum-charge-icon.png" alt="Quantum Charge" class="talent-icon">
+              <div class="talent-text">
+                <h4>Quantum Charge</h4>
+                <p>Dealing damage with Basic Attacks increases Movement Speed by 30% for 1.5s and restores 75-180 HP (scales with level). Cooldown: 10 seconds.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/war-cry-icon.png" alt="War Cry" class="talent-icon">
+              <div class="talent-text">
+                <h4>War Cry</h4>
+                <p>The next Ultimate cast decreases other active skills' remaining cooldowns by 1.5 times within 4 seconds. This effect is extended by 2 seconds after getting hero kills or assists. (This only applies to the hero themselves. Cooldown: 20 seconds.)</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/temporal-reign-icon.png" alt="Temporal Reign" class="talent-icon">
+              <div class="talent-text">
+                <h4>Temporal Reign</h4>
+                <p>The next Ultimate cast decreases other active skills' remaining cooldowns by 1.5 times within 4 seconds. This effect is extended by 2 seconds after getting hero kills or assists. (This only applies to the hero themselves. Cooldown: 20 seconds.)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+        <!-- TANK EMBLEM -->
+      <article class="emblem-card tank reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/tank-icon.png" alt="Tank Emblem" class="emblem-main-icon">
+          <h2>TANK EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">HP</span>
+              <span class="attr-value">+500</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Hybrid Defense</span>
+              <span class="attr-value">+10</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">HP Regen</span>
+              <span class="attr-value">+4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/vitality-icon.png" alt="Vitality" class="talent-icon">
+              <div class="talent-text">
+                <h4>Vitality</h4>
+                <p>Gain 225 extra max HP.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/tenacity-icon.png" alt="Tenacity" class="talent-icon">
+              <div class="talent-text">
+                <h4>Tenacity</h4>
+                <p>When HP is below 50%, Damage Reduction is increased by 5%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/concussive-blast-icon.png" alt="Impure Rage" class="talent-icon">
+              <div class="talent-text">
+                <h4>Concussive Blast</h4>
+                <p>After the next Basic Attack, deal 100(+7% Total HP) Magic Damage to nearby enemies. Cooldown: 15s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ASSASSIN EMBLEM -->
+      <article class="emblem-card assassin reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/assassin-icon.webp" alt="Assassin Emblem" class="emblem-main-icon">
+          <h2>ASSASSIN EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">Adaptive Penetration</span>
+              <span class="attr-value">+14</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Adaptive Attack</span>
+              <span class="attr-value">+10</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Movement Speed</span>
+              <span class="attr-value">+3%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/rupture-icon.webp" alt="Rupture" class="talent-icon">
+              <div class="talent-text">
+                <h4>Rupture</h4>
+                <p>Gain 5 Adaptive Penetration. Gain Physical Penetration if extra Physical Attack is higher than extra Magic Power; otherwise, gain Magic Penetration.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/master-assassin-icon.webp" alt="Master Assassin" class="talent-icon">
+              <div class="talent-text">
+                <h4>Master Assassin</h4>
+                <p>If there is only one enemy hero nearby, damage dealt to them is increased by 7%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/killing-spree-icon.webp" alt="Killing Spree" class="talent-icon">
+              <div class="talent-text">
+                <h4>Killing Spree</h4>
+                <p>When damaging heroes below 30% HP, instantly recover 15% of Lost HP and gains 20% Movement Speed. Additional Effect: Reset cooldown upon killing an enemy hero. Duration: 3 seconds. Cooldown: 30 seconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MAGE EMBLEM -->
+      <article class="emblem-card mage reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/mage-icon.webp" alt="Mage Emblem" class="emblem-main-icon">
+          <h2>MAGE EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">Magic Power</span>
+              <span class="attr-value">+30</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Cooldown Reduction</span>
+              <span class="attr-value">+5%</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Magic Penetration</span>
+              <span class="attr-value">+8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/inspire-icon.webp" alt="Inspire" class="talent-icon">
+              <div class="talent-text">
+                <h4>Inspire</h4>
+                <p>Cooldown Reduction is increased by 5% and Mana Regen by 2.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/bargain-hunter-icon.webp" alt="Bargain Hunter" class="talent-icon">
+              <div class="talent-text">
+                <h4>Bargain Hunter</h4>
+                <p>Equipment can be purchased at 95% of their base price.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/lethal-ignition-icon.webp" alt="Lethal Ignition" class="talent-icon">
+              <div class="talent-text">
+                <h4>Lethal Ignition</h4>
+                <p>Dealing damage greater than 7% of an enemy hero's Max HP 3 times within 5s will scorch the target for an additional 162-750 Adaptive Damage (scales with level). Cooldown 15 seconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FIGHTER EMBLEM -->
+      <article class="emblem-card fighter reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/fighter-icon.webp" alt="Fighter Emblem" class="emblem-main-icon">
+          <h2>FIGHTER EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">Hybrid Lifesteal</span>
+              <span class="attr-value">+10%</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Adaptive Attack</span>
+              <span class="attr-value">+16</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Hybrid Defense</span>
+              <span class="attr-value">+8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/firmness-icon.webp" alt="Firmness" class="talent-icon">
+              <div class="talent-text">
+                <h4>Firmness</h4>
+                <p>Gain 8 extra Physical & Magic Defense.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/festival-of-blood-icon.webp" alt="Festival of Blood" class="talent-icon">
+              <div class="talent-text">
+                <h4>Festival of Blood</h4>
+                <p>Gain 6% Spell Vamp. Each hero kill or assist grants an additional 0.5% Spell Vamp, up to 12 stacks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/brave-smite-icon.webp" alt="Brave Smite" class="talent-icon">
+              <div class="talent-text">
+                <h4>Brave Smite</h4>
+                <p>Brave Smite: Dealing skill damage to an enemy hero recovers 5% Max HP. CD: 6 seconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SUPPORT EMBLEM -->
+      <article class="emblem-card support reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/support-icon.webp" alt="Support Emblem" class="emblem-main-icon">
+          <h2>SUPPORT EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">Healing Effect</span>
+              <span class="attr-value">+12%</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Cooldown Reduction</span>
+              <span class="attr-value">+10%</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Movement Speed</span>
+              <span class="attr-value">+6%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/agility-icon.webp" alt="Agility" class="talent-icon">
+              <div class="talent-text">
+                <h4>Agility</h4>
+                <p>Gain 4% extra Movement Speed.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/pull-yourself-together-icon.webp" alt="Pull Yourself Together" class="talent-icon">
+              <div class="talent-text">
+                <h4>Pull Yourself Together</h4>
+                <p>Cooldowns of Battle Spells and equipment's active skills are reduced by 12% initially. Each hero kill or assist grants an additional 1% reduction, up to 8 stacks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/focusing-mark-icon.webp" alt="Focusing Mark" class="talent-icon">
+              <div class="talent-text">
+                <h4>Focusing Mark</h4>
+                <p>After damaging an enemy hero, allied heroes deal 6% more damage to them and gain 10% Movement Speed. Duration: 3 seconds. Cooldown: 4 seconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MARKSMAN EMBLEM -->
+      <article class="emblem-card marksman reveal">
+        <header class="emblem-header">
+          <img src="images/pages/emblems-page/marksman-icon.webp" alt="Marksman Emblem" class="emblem-main-icon">
+          <h2>MARKSMAN EMBLEM</h2>
+        </header>
+
+        <div class="emblem-section">
+          <h3 class="section-title">ATTRIBUTES</h3>
+          <div class="attributes-grid">
+            <div class="attr-item">
+              <span class="attr-name">Attack Speed</span>
+              <span class="attr-value">+15%</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Adaptive Attack</span>
+              <span class="attr-value">+16</span>
+            </div>
+            <div class="attr-item">
+              <span class="attr-name">Adaptive Penetration</span>
+              <span class="attr-value">+10%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section">
+          <h3 class="section-title">STANDARD TALENTS</h3>
+          <div class="talents-grid">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/fatal-icon.webp" alt="Fatal" class="talent-icon">
+              <div class="talent-text">
+                <h4>Fatal</h4>
+                <p>Gain 5% Crit Chance and 5% extra Crit Damage.</p>
+              </div>
+            </div>
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/weapon-master-icon.webp" alt="Weapon Master" class="talent-icon">
+              <div class="talent-text">
+                <h4>Weapon Master</h4>
+                <p>Physical Attack and Magic Power gained from equipment, emblem, talents, and skills are increased by 8%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="emblem-section no-border-bottom">
+          <h3 class="section-title">CORE TALENTS</h3>
+          <div class="talents-list">
+            <div class="talent-item">
+              <img src="images/pages/emblems-page/weakness-finder-icon.webp" alt="Weakness Finder" class="talent-icon">
+              <div class="talent-text">
+                <h4>Weakness Finder</h4>
+                <p>Basic Attacks slow enemies by 50% and reduce their Attack Speed by 30%. Duration: 1 second. Cooldown: 10 seconds (each Basic Attack reduces it bv 1 seconds, down to 3 seconds).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  
+
+    
+    <footer>
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="skins.html">Skins</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="game-modes.html">Game Modes</a></li>
+            <li><a href="mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="scripts/stars.js"></script>
+    <script src="scripts/search-overlay.js"></script>
+    <script src="scripts/scroll-reveal.js"></script>
+    <script src="scripts/carousel-dots.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+    
