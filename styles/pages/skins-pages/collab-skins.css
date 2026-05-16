@@ -125,7 +125,7 @@
 }
 
 /* tier badge */
-.skin-tier-badge {
+.skin-badge {
   display: inline-block;
   font-family: 'Cinzel', serif;
   font-size: 0.72rem; font-weight: 700;
@@ -144,6 +144,7 @@
 .green-badge     { color: #34d399; border-color: #34d39955; background: rgba(52,211,153,0.1); }
 .basic-badge     { color: #6daefd; border-color: #7db7fe55; background: rgba(119, 180, 253, 0.1); }
 .pink-badge    { color: #f472b6; border-color: #f472b655; background: rgba(244,114,182,0.1); }
+.white-badge { color: #ffffff; border-color: rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.08); }
 
 /* card logo */
 .collab-logo {
@@ -165,11 +166,18 @@
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(219, 219, 219, 0.6));
 }
 .transformers-logo{
-  width: 58%;
+  width: 50%;
   height: auto;
 }
 .skin-card:hover .transformers-logo {
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(188, 46, 46, 0.6));
+}
+.sanrio-logo{
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .sanrio-logo {
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(219, 219, 219, 0.6));
 }
 
 /* card description */
@@ -214,7 +222,7 @@
 .bg-kof { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kof-bg.webp'); }
 .bg-star-wars { background-image: url('../../../images/pages/skins-page/collab-skins-banner/star-wars-bg.jpg'); }
 .bg-transformers    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/transformers-bg.webp'); }
-.bg-legend    { background-image: url('../../../images/pages/skins-page/legend-bg.webp'); }
+.bg-sanrio    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/sanrio-bg.webp'); }
 .bg-epic      { background-image: url('../../../images/pages/skins-page/epic-bg.webp'); }
 .bg-special   { background-image: url('../../../images/pages/skins-page/special-bg.webp'); }
 .bg-elite     { background-image: url('../../../images/pages/skins-page/elite-bg.webp'); }
