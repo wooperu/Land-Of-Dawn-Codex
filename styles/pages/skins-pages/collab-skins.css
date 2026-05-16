@@ -208,6 +208,13 @@
 .skin-card:hover .ducati-logo {
   filter: brightness(1.2) contrast(1.25) drop-shadow(0 0 10px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 8px rgba(220, 20, 60, 0.45));
 }
+.attack-on-titan-logo{
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .attack-on-titan-logo {
+  filter: brightness(1.15) contrast(1.1) drop-shadow(0 0 10px rgba(180, 150, 90, 0.35));
+}
 
 /* card description */
 .skin-card-desc {
@@ -257,6 +264,8 @@
 .bg-jujutsu-kaisen     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/jujutsu-kaisen-bg.webp'); }
 .bg-jujutsu-kaisen { background-position: center }
 .bg-ducati     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/ducati-bg.jpg'); }
+.bg-attack-on-titan    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/attack-on-titan-bg.webp'); }
+.bg-collab    { background-image: url('../../../images/pages/skins-page/collab-bg.webp'); }
 .bg-collab    { background-image: url('../../../images/pages/skins-page/collab-bg.webp'); }
 
 /* RESPONSIVE */
