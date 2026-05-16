@@ -201,6 +201,13 @@
 .skin-card:hover .jujutsu-kaisen-logo {
   filter: brightness(1.15) contrast(1.2) drop-shadow(0 0 12px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(255, 30, 60, 0.35));
 }
+.ducati-logo{
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .ducati-logo {
+  filter: brightness(1.2) contrast(1.25) drop-shadow(0 0 10px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 8px rgba(220, 20, 60, 0.45));
+}
 
 /* card description */
 .skin-card-desc {
@@ -249,7 +256,7 @@
 .bg-saint-seiya   { background-image: url('../../../images/pages/skins-page/collab-skins-banner/saint-seiya-bg.jpg'); }
 .bg-jujutsu-kaisen     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/jujutsu-kaisen-bg.webp'); }
 .bg-jujutsu-kaisen { background-position: center }
-.bg-basic     { background-image: url('../../../images/pages/skins-page/basic-bg.webp'); }
+.bg-ducati     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/ducati-bg.jpg'); }
 .bg-collab    { background-image: url('../../../images/pages/skins-page/collab-bg.webp'); }
 
 /* RESPONSIVE */
