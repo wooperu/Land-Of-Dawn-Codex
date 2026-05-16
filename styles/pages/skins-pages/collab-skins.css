@@ -1,0 +1,266 @@
+/* BANNER */
+.skins-hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.skins-bg {
+  position: absolute; inset: 0;
+  background-image: url('../../../images/pages/skins-page/skins-banner-bg.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.skins-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 28, 62, 0) 80%,
+    rgba(26, 28, 62, 0.9) 96%,
+    rgba(26, 28, 62, 1) 100%
+  );
+}
+
+/* banner content */
+.skins-content {
+  background: radial-gradient(ellipse at left, rgba(5,8,18,0.5) 0%, transparent 75%);
+  border-radius: 12px;
+  position: relative; z-index: 10;
+  padding: 1.5rem 3.5rem;
+}
+.skins-label {
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem; font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(232,184,75,0.4), 0 2px 12px rgba(0,0,0,0.9);
+  margin-bottom: 0.3rem; max-width: 320px;
+  opacity: 0; animation: fadeUp 0.6s 0.3s forwards;
+}
+.skins-desc {
+  font-size: 1rem; color: var(--text);
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.6rem; max-width: 320px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.95);
+  opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
+}
+
+/* SKIN TIER CARDS */
+.skin-container {
+  background-color: #1A1C3E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 50px 20px;
+  min-width: 100vw;
+  scroll-margin-top: 80px;
+}
+
+/* CARD BASE */
+.skin-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  min-height: 38dvh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 2% 3%;
+  border: 1px solid #1e2d5a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s, box-shadow 0.3s, border-color 0.3s;
+}
+.skin-card:nth-child(1) { transition-delay: 0s; }
+.skin-card:nth-child(2) { transition-delay: 0.08s; }
+.skin-card:nth-child(3) { transition-delay: 0.16s; }
+.skin-card:nth-child(4) { transition-delay: 0.24s; }
+.skin-card:nth-child(5) { transition-delay: 0.32s; }
+.skin-card:nth-child(6) { transition-delay: 0.40s; }
+.skin-card:nth-child(7) { transition-delay: 0.48s; }
+.skin-card:nth-child(8) { transition-delay: 0.56s; }
+
+.skin-card.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+/* hover lift */
+.skin-card:hover,
+.skin-card.reveal.visible:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.6), 0 0 0 1px rgba(58,123,213,0.4);
+  border-color: var(--gold);
+}
+
+/* dark overlay so text stays readable */
+.skin-card-overlay {
+  position: absolute; top: 0; left: 0;
+  width: 55%; height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+  pointer-events: none;
+  transition: width 0.4s;
+}
+.skin-card:hover .skin-card-overlay { width: 62%; }
+
+/* content sits above overlay */
+.skin-card-content {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; gap: 0.8rem;
+}
+
+/* tier badge */
+.skin-tier-badge {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  border: 1px solid;
+  width: fit-content;
+}
+.pale-violet-badge { color: #c8a4ff; border-color: #c8a4ff55; background: rgba(200,164,255,0.1); }
+.collector-badge { color: #ff9d4d; border-color: #ff9d4d55; background: rgba(255,157,77,0.1); }
+.red-badge    { color: #ff6b6b; border-color: #ff6b6b55; background: rgba(255,107,107,0.1); }
+.gold-badge    { color: #ffd700; border-color: #ffd70055; background: rgba(255,215,0,0.1); }
+.purple-badge      { color: #a78bfa; border-color: #a78bfa55; background: rgba(167,139,250,0.1); }
+.blue-badge   { color: #60a5fa; border-color: #60a5fa55; background: rgba(96,165,250,0.1); }
+.green-badge     { color: #34d399; border-color: #34d39955; background: rgba(52,211,153,0.1); }
+.basic-badge     { color: #6daefd; border-color: #7db7fe55; background: rgba(119, 180, 253, 0.1); }
+.pink-badge    { color: #f472b6; border-color: #f472b655; background: rgba(244,114,182,0.1); }
+
+/* card logo */
+.collab-logo {
+  width: 320px;
+  flex-shrink: 0;
+}
+.kof-logo{
+  width: 100%;
+  height: auto;
+}
+.skin-card:hover .kof-logo {
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(177, 72, 222, 0.6));
+}
+.star-wars-logo{
+  width: 95%;
+  height: auto;
+}
+.skin-card:hover .star-wars-logo {
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(219, 219, 219, 0.6));
+}
+.transformers-logo{
+  width: 58%;
+  height: auto;
+}
+.skin-card:hover .transformers-logo {
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(188, 46, 46, 0.6));
+}
+
+/* card description */
+.skin-card-desc {
+  font-family: "Crimson Text", serif;
+  font-size: clamp(11px, 1.1vw, 17px);
+  font-weight: 400;
+  color: #c8d6f0cc;
+  max-width: 38%;
+  line-height: 1.55;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+}
+
+/* card button */
+.skin-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
+  color: var(--text);
+  transition: border-color 0.2s;
+  width: fit-content;
+}
+.skin-card-btn svg {
+  transition: transform 0.2s;
+}
+.skin-card-btn:hover {
+  border-color: var(--gold);
+}
+.skin-card-btn:hover svg {
+  transform: translateX(3px);
+}
+
+.bg-kof { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kof-bg.webp'); }
+.bg-star-wars { background-image: url('../../../images/pages/skins-page/collab-skins-banner/star-wars-bg.jpg'); }
+.bg-transformers    { background-image: url('../../../images/pages/skins-page/collab-skins-banner/transformers-bg.webp'); }
+.bg-legend    { background-image: url('../../../images/pages/skins-page/legend-bg.webp'); }
+.bg-epic      { background-image: url('../../../images/pages/skins-page/epic-bg.webp'); }
+.bg-special   { background-image: url('../../../images/pages/skins-page/special-bg.webp'); }
+.bg-elite     { background-image: url('../../../images/pages/skins-page/elite-bg.webp'); }
+.bg-basic     { background-image: url('../../../images/pages/skins-page/basic-bg.webp'); }
+.bg-collab    { background-image: url('../../../images/pages/skins-page/collab-bg.webp'); }
+
+/* RESPONSIVE */
+
+/* Small desktop */
+@media (max-width: 1024px) {
+  .skins-content {
+    padding: 0 2.5rem;
+  }
+
+  .skin-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+
+  /* Hero */
+  .skins-content {
+    padding: 0 1.8rem;
+    max-width: 100%;
+  }
+
+  /* Skins Container */
+  .skins-desc     { max-width: 100%; }
+  .skin-card      { min-height: 260px; }
+  .skin-card-desc { max-width: 70%; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .skins-content { padding: 0 1.2rem; }
+  .diamond { width: 85%; }
+  .skins-label   { font-size: 2rem; }
+  .skins-desc    { font-size: 0.82rem; }
+  .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+  /* Skins Container */
+  .skin-container { padding: 1.5rem 0.8rem; }
+  .skin-card      { min-height: 220px; }
+  .skin-card-desc { max-width: 85%; }
+}
