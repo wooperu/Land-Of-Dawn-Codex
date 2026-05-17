@@ -1,0 +1,32 @@
+[
+  {
+    "hero": "Badang",
+    "skin": "Pegasus Seiya",
+    "image": "badang-pegasus.webp"
+  },
+  {
+    "hero": "Chou",
+    "skin": "Dragon Shiryu",
+    "image": "chou-dragon.webp"
+  },
+  {
+    "hero": "Valir",
+    "skin": "Phoenix Ikki",
+    "image": "valir-phoenix.webp"
+  },
+  {
+    "hero": "Badang",
+    "skin": "Sagittarius Aiolos",
+    "image": "badang-sagittarius.webp"
+  },
+  {
+    "hero": "Chou",
+    "skin": "Libra Dohko",
+    "image": "chou-libra.webp"
+  },
+  {
+    "hero": "Valir",
+    "skin": "Leo Aiolia",
+    "image": "valir-leo.webp"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "hero": "Alucard",
+    "skin": "Obi-Wan Kenobi",
+    "image": "alucard-obi-wan.webp"
+  },
+  {
+    "hero": "Argus",
+    "skin": "Darth Vader",
+    "image": "argus-darth-vader.webp"
+  },
+  {
+    "hero": "Cyclops",
+    "skin": "Master Yoda",
+    "image": "cyclops-master-yoda.webp"
+  }
+]

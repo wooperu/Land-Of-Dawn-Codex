@@ -1,0 +1,17 @@
+[
+  {
+    "hero": "Granger",
+    "skin": "Megatron",
+    "image": "granger-megatron.webp"
+  },
+  {
+    "hero": "Johnson",
+    "skin": "Optimus Prime",
+    "image": "johnson-optimus.webp"
+  },
+  {
+    "hero": "X.Borg",
+    "skin": "Bumblebee",
+    "image": "x-borg-bumblebee.webp"
+  }
+]
