@@ -1,0 +1,22 @@
+[
+  {
+    "hero": "Angela",
+    "skin": "My Melody",
+    "image": "angela-heartstring.webp"
+  },
+  {
+    "hero": "Chang'e",
+    "skin": "Cinnamoroll",
+    "image": "chang-e-moon-artist.webp"
+  },
+  {
+    "hero": "Claude",
+    "skin": "Bad Badtz-Maru",
+    "image": "claude-bad-bro.webp"
+  },
+  {
+    "hero": "Floryn",
+    "skin": "Pompompurin",
+    "image": "floryn-fluffy-dream.webp"
+  }
+]
