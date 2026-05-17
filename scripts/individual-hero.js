@@ -19,7 +19,10 @@ function displayTemplate(){
         <img src="images/landscape/${heroObject.name.toLowerCase()}.png" alt="${heroObject.name.toLowerCase()}">
 
             <div class="bread-crumbs">
-                <img id="btn" src="images/pages/hero-list/back-btn.png" alt="">
+                <svg id="btn" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="#d6a115" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" />
+                </svg>
                 <p>| Heroes</p>
                 <p class="sign">&#8250;</p>
                 <p>Hero List</p>
@@ -30,31 +33,31 @@ function displayTemplate(){
             <div class="details-section">
 
                 <div>
-                    <p class="name">${heroObject.name.toUpperCase()}</p>
-                    <p class="alias">"${heroObject.nickname}"</p>
+                    <p class="name reveal">${heroObject.name.toUpperCase()}</p>
+                    <p class="alias reveal">"${heroObject.nickname}"</p>
                 </div>
 
                 <div class="specs">
                     <div class="role">
-                        <img src="images/role/${heroObject.role.split("/")[0].toLowerCase()}.png" alt="">
+                        <img class="reveal" src="images/role/${heroObject.role.split("/")[0].toLowerCase()}.png" alt="">
                         <div>
-                        <p>Role</p>
-                        <p class="role-name">${heroObject.role}</p>
+                        <p class="reveal">Role</p>
+                        <p class="role-name reveal">${heroObject.role}</p>
                         </div>
                     </div>
                     <div class="specialty">
-                        <p>Specialty</p>
-                        <p class="spec-name">${heroObject.specialty}</p>
+                        <p class="reveal">Specialty</p>
+                        <p class="spec-name reveal">${heroObject.specialty}</p>
                     </div>
                 </div>
 
             </div>
 
             <div class="lane-section">
-                <p class="lane-reco">Lane Recommendation</p>
+                <p class="lane-reco reveal">Lane Recommendation</p>
                 <div class="lane-spec">
-                    <img src="images/lane/${heroObject.lane.toLowerCase()}.png" alt="">
-                    <p class="lane-text">${heroObject.lane}</p>
+                    <img class="reveal" src="images/lane/${heroObject.lane.toLowerCase()}.png" alt="">
+                    <p class="lane-text reveal">${heroObject.lane}</p>
                 </div>
             </div>
     `    
@@ -65,32 +68,32 @@ function displayTemplate(){
             <div class="left-info">
                 <div class="row">
                     <div class="child-row">
-                        <img src="images/game-info/hero-num.png" alt="">
-                        <p class="label">HERO NUMBER</p>
+                        <img class="reveal" src="images/game-info/hero-num.png" alt="">
+                        <p class="label reveal">HERO NUMBER</p>
                     </div>
-                    <p class="value">#${heroObject['hero_number']}</p>
+                    <p class="value reveal">#${heroObject['hero_number']}</p>
                 </div>
                 <div class="row">
                     <div class="child-row">
-                        <img src="images/game-info/release-date.png" alt="">
-                        <p class="label">RELEASE DATE</p>
+                        <img class="reveal" src="images/game-info/release-date.png" alt="">
+                        <p class="label reveal">RELEASE DATE</p>
                     </div>
-                    <p class="value">${heroObject['release_year']}</p>
+                    <p class="value reveal">${heroObject['release_year']}</p>
                 </div>
                 <div class="row">
                     <div class="child-row">
-                        <img src="images/game-info/price.png" alt="">
-                        <p class="label">PRICE</p>
+                        <img class="reveal" src="images/game-info/price.png" alt="">
+                        <p class="label reveal">PRICE</p>
                     </div>
                     <div class="price">
                         <div>   
-                            <img src="images/game-info/battle-points.png" alt="">
-                            <p>${heroObject['price_bp']}</p>
+                            <img class="reveal" src="images/game-info/battle-points.png" alt="">
+                            <p class="reveal">${heroObject['price_bp']}</p>
                         </div>
                         <p>|</p>
                         <div>
-                            <img src="images/game-info/diamond.png" alt="">
-                            <p>${heroObject['price_diamonds']}</p>
+                            <img class="reveal" src="images/game-info/diamond.png" alt="">
+                            <p class="reveal">${heroObject['price_diamonds']}</p>
                         </div>
                     </div>
                 </div>
@@ -98,24 +101,24 @@ function displayTemplate(){
             <div class="right-info">
                 <div class="row">
                     <div class="child-row">
-                        <img src="images/game-info/skill-resource.png" alt="">
-                        <p class="label">SKILL RESOURCE</p>
+                        <img class="reveal" src="images/game-info/skill-resource.png" alt="">
+                        <p class="label reveal">SKILL RESOURCE</p>
                     </div>
-                    <p class="value">${heroObject['skill-resource']}</p>
+                    <p class="value reveal">${heroObject['skill-resource']}</p>
                 </div>
                 <div class="row">
                     <div class="child-row">
-                        <img src="images/game-info/damage-type.png" alt="">
-                        <p class="label">DAMAGE TYPE</p>
+                        <img class="reveal" src="images/game-info/damage-type.png" alt="">
+                        <p class="label reveal">DAMAGE TYPE</p>
                     </div>
-                    <p class="value">${heroObject['damage-type']}</p>
+                    <p class="value reveal">${heroObject['damage-type']}</p>
                 </div>
                 <div class="row">
                     <div class="child-row">
-                        <img src="images/game-info/b-attack-type.png" alt="">
-                        <p class="label">BASIC ATTACK <br> TYPE</p>
+                        <img class="reveal" src="images/game-info/b-attack-type.png" alt="">
+                        <p class="label reveal">BASIC ATTACK <br> TYPE</p>
                     </div>
-                    <p class="value">
+                    <p class="value reveal">
                         ${heroObject['basic-attack-type']}
                     </p>
                 </div>
@@ -123,11 +126,11 @@ function displayTemplate(){
         </div>
             <div class="story reveal">
                 <div class="title">            
-                    <p>STORY</p>          
-                    <div style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>
+                    <p class="reveal">STORY</p>          
+                    <div class="reveal" style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>
                 </div>
-                <p class="desc">“${heroObject.story.title}” </p>
-                <p>
+                <p class="desc reveal">“${heroObject.story.title}” </p>
+                <p class="reveal">
                     ${heroObject.story.lore}
                 </p>
             </div>
@@ -147,8 +150,8 @@ function displayTemplate(){
 
     header.innerHTML = 
     `
-        <p>ABILITIES</p>          
-        <div style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>   
+        <p class="reveal">ABILITIES</p>          
+        <div class="reveal" style="flex:1; height:3px; background:linear-gradient(to left, transparent, #f0b429);"></div>   
     `
 
     abilities.append(header);
@@ -161,23 +164,23 @@ function displayTemplate(){
         outer.innerHTML = 
         `
             <div class="img-text">
-                        <img src="images/skills/${heroObject.name}/${ability.ability}.webp" alt="">
+                        <img class="reveal" src="images/skills/${heroObject.name}/${ability.ability}.webp" alt="">
                         <div class="text-div">
                             <div class="upper">
-                                <p class="sequence">
+                                <p class="sequence reveal">
                                     ${ability.ability}
                                 </p>
-                                <div class="category-div">
+                                <div class="category-div reveal">
                                      ${ability['ability-type'].map(type => `
                                     <p class="category">${type.toUpperCase()}</p>
                                     `).join("")}
                                 </div>
                             </div>
                             <div class="lower">
-                                <p class="skill-name">
+                                <p class="skill-name reveal">
                                     ${ability['ability-name']}
                                 </p>
-                                <p class="skill-desc">
+                                <p class="skill-desc reveal">
                                     ${ability.desc}
                                 </p>
                             </div>
