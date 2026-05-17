@@ -1,0 +1,37 @@
+[
+  {
+    "hero": "Lukas",
+    "skin": "Naruto Uzumaki",
+    "image": "lukas-naruto.webp"
+  },
+  {
+    "hero": "Suyou",
+    "skin": "Sasuke Uchiha",
+    "image": "suyou-sasuke.webp"
+  },
+  {
+    "hero": "Kalea",
+    "skin": "Sakura Haruno",
+    "image": "kalea-sakura.webp"
+  },
+  {
+    "hero": "Hayabusa",
+    "skin": "Kakashi Hatake",
+    "image": "hayabusa-kakashi.webp"
+  },
+  {
+    "hero": "Vale",
+    "skin": "Gaara",
+    "image": "vale-gaara.webp"
+  },
+  {
+    "hero": "Julian",
+    "skin": "Itachi Uchiha",
+    "image": "julian-itachi.webp"
+  },
+  {
+    "hero": "Gusion",
+    "skin": "Minato Namikaze",
+    "image": "gusion-minato.webp"
+  }
+]
