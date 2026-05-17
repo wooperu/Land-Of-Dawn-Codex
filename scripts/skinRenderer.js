@@ -15,7 +15,7 @@ function buildCard(skinData, config) {
   const alt = `${hero} — ${skin}`;
 
   const card = document.createElement("div");
-  card.className = "portrait-card";
+  card.className = "portrait-card reveal";
 
   const img = document.createElement("img");
   img.src     = src;
@@ -82,6 +82,20 @@ function renderSkins(data, config) {
 }
 
 function renderSkinsFromFile(jsonPath, config) {
+  const grid = document.getElementById(config.gridId);
+
+  if (grid) {
+    const count = config.skeletonCount || 5;
+    const fragment = document.createDocumentFragment();
+    for (var i = 0; i < count; i++) {
+      var skeleton = document.createElement("div");
+      skeleton.className = "portrait-skeleton";
+      fragment.appendChild(skeleton);
+    }
+    grid.innerHTML = "";
+    grid.appendChild(fragment);
+  }
+
   fetch(jsonPath)
     .then(function (res) {
       if (!res.ok) throw new Error(`Failed to load: ${jsonPath} (${res.status})`);
@@ -92,5 +106,6 @@ function renderSkinsFromFile(jsonPath, config) {
     })
     .catch(function (err) {
       console.error("[renderSkinsFromFile] Error:", err.message);
+      if (grid) grid.innerHTML = "";
     });
 }

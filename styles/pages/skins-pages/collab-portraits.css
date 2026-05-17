@@ -108,6 +108,26 @@
   border: 1px dashed var(--border);
 }
 
+/* SKELETON */
+
+.portrait-skeleton {
+  border-radius: 12px;
+  aspect-ratio: 9 / 16;
+  background: linear-gradient(
+    90deg,
+    #22254a 25%,
+    #2e3260 50%,
+    #22254a 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 /* RESPONSIVENESS */
 
 /* Tablet */
