@@ -1,0 +1,17 @@
+[
+  {
+    "hero": "Akai",
+    "skin": "Po",
+    "image": "akai-po.webp"
+  },
+  {
+    "hero": "Ling",
+    "skin": "Lord Shen",
+    "image": "ling-shen.webp"
+  },
+  {
+    "hero": "Thamuz",
+    "skin": "Kai",
+    "image": "thamuz-kai.webp"
+  }
+]
