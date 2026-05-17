@@ -1,0 +1,17 @@
+[
+  {
+    "hero": "Benedetta",
+    "skin": "Panigale V4",
+    "image": "benedetta-panigale.webp"
+  },
+  {
+    "hero": "Irithel",
+    "skin": "Monster",
+    "image": "irithel-monster.webp"
+  },
+  {
+    "hero": "Leomord",
+    "skin": "Diavel",
+    "image": "leomord-diavel.webp"
+  }
+]
