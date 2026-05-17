@@ -3,5 +3,6 @@ renderSkinsFromFile("../../data/collab/transformers.json", {
   category  : "collab",
   subfolder : "transformers",
   gridId    : "portraitGrid",
+  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

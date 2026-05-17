@@ -3,5 +3,6 @@ renderSkinsFromFile("../../data/collab/naruto.json", {
   category  : "collab",
   subfolder : "naruto",
   gridId    : "portraitGrid",
+  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

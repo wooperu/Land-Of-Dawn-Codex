@@ -3,5 +3,6 @@ renderSkinsFromFile("../../data/collab/sanrio.json", {
   category  : "collab",
   subfolder : "sanrio",
   gridId    : "portraitGrid",
+  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

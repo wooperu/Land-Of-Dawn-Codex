@@ -3,5 +3,6 @@ renderSkinsFromFile("../../data/collab/aot.json", {
   category  : "collab",
   subfolder : "aot",
   gridId    : "portraitGrid",
+  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

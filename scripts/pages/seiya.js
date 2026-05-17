@@ -3,5 +3,6 @@ renderSkinsFromFile("../../data/collab/seiya.json", {
   category  : "collab",
   subfolder : "seiya",
   gridId    : "portraitGrid",
+  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });
