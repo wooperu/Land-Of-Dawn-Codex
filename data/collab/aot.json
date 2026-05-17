@@ -1,0 +1,17 @@
+[
+  {
+    "hero": "Fanny",
+    "skin": "Mikasa Ackerman",
+    "image": "fanny-mikasa.webp"
+  },
+  {
+    "hero": "Martis",
+    "skin": "Levi Ackerman",
+    "image": "martis-levi.webp"
+  },
+  {
+    "hero": "Yin",
+    "skin": "Eren Yeager",
+    "image": "yin-eren.webp"
+  }
+]
