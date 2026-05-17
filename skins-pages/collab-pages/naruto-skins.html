@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../../styles/shared/page-banner.css">
     <link rel="stylesheet" href="../../styles/pages/skins-pages/collab-skins.css">
     <link rel="stylesheet" href="../../../styles/pages/skins-pages/collab-portraits.css">
+    <script src="../../scripts/collab-renderer.js"></script>
+    <script src="../../data/collab/naruto.js"></script>
   </head>
   <body>
 
@@ -79,25 +81,7 @@
         <p>Legendary shinobi arrive in the Land of Dawn.</p>
       </div>
 
-      <div class="portrait-grid">
-
-        <div class="portrait-card">
-          <img src="../../images/pages/skins-page/skins/portrait/collab/naruto/lukas-naruto.webp" alt="Lukas Naruto">
-          <div class="portrait-overlay">
-            <h3>Naruto Uzumaki</h3>
-            <p>Lukas</p>
-          </div>
-        </div>
-
-        <div class="portrait-card">
-          <img src="../../images/pages/skins-page/skins/portrait/collab/naruto/kalea-sakura.webp" alt="Kalea Sakura">
-          <div class="portrait-overlay">
-            <h3>Sakura Haruno</h3>
-            <p>Kalea</p>
-          </div>
-        </div>
-
-      </div>
+      <div class="portrait-grid" id="portraitGrid"></div>
 
     </section>
 
@@ -154,5 +138,6 @@
     <script src="../../scripts/search-overlay.js"></script>
     <script src="../../scripts/scroll-reveal.js"></script>
     <script src="../../scripts/hamburger.js"></script>
+    <script>loadCollab("naruto", "naruto");</script>
   </body>
 </html>

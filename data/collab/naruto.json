@@ -23,15 +23,5 @@
     "hero": "Vale",
     "skin": "Gaara",
     "image": "vale-gaara.webp"
-  },
-  {
-    "hero": "Julian",
-    "skin": "Itachi Uchiha",
-    "image": "julian-itachi.webp"
-  },
-  {
-    "hero": "Gusion",
-    "skin": "Minato Namikaze",
-    "image": "gusion-minato.webp"
   }
 ]
