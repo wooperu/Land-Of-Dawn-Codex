@@ -1,0 +1,151 @@
+#hero{
+    background-image: url(../../images/pages/hero-specialties/specialties-banner.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 28, 62, 0) 85%,
+    rgba(26, 28, 62, 0.9) 95%,
+    rgba(26, 28, 62, 1) 100%
+  );
+}
+
+.bread-crumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    z-index: 100;
+    left: 40px;
+    gap: .5rem;
+    font-size: clamp(15px, 20px, 25px);
+    font-family: "Crimson Text";
+}
+
+.bread-crumbs svg{
+    cursor: pointer;
+}
+
+.content{
+    z-index: 100;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: "Crimson Text";
+    width: 40%;
+}
+
+.title{
+    color: #DBA000;
+    font-size: clamp(20px, 70px, 80px);
+    font-weight: bold;
+    
+}
+
+.desc{
+    font-size: clamp(20px, 30px, 40px);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-family: "Crimson Text";
+    max-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--bg);
+    z-index: 100;
+}
+
+.specialty{
+    font-size: clamp(20px, 30px, 40px);
+    color: #DBA000;
+    font-weight: bold;
+     background: linear-gradient(
+        to bottom,
+        #fff3b0 0%,
+        #f7d774 35%,
+        #dba000 70%,
+        #8a5a00 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.explanation{
+    font-size: clamp(10px, 20px, 30px);
+}
+
+.categ{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 85%;
+}
+
+#image-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#image-div img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+}
+
+.fancy-line {
+    height: 1px;
+    width: 100%;
+    margin-top: 2rem;
+    background: linear-gradient(
+    to right,
+    transparent,
+    #c9a86a,
+    #e6c98f,
+    #c9a86a,
+    transparent
+  );
+}
+
+.img-txt{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    font-family: Roboto serif;
+    font-weight: 200;
+    font-size: clamp(10px, 12px, 15px);
+    gap: 0.5rem;
+}
+
+.btn:hover{
+  transform: translateX(-4px);
+}
+
+.hero:hover{
+  color: var(--gold); 
+  text-shadow: 0 0 8px rgba(232, 184, 75, 0.4);
+  cursor: pointer;
+}
+

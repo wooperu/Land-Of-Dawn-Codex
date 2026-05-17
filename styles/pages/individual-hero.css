@@ -324,3 +324,24 @@
     flex-direction: row;
     gap: 0.5rem;
 }
+
+#btn{
+    cursor: pointer;
+}
+
+#hero:hover{
+  color: var(--gold); 
+  text-shadow: 0 0 8px rgba(232, 184, 75, 0.4);
+  cursor: pointer;
+}
+
+#hero-list:hover{
+  color: var(--gold); 
+  text-shadow: 0 0 8px rgba(232, 184, 75, 0.4);
+  cursor: pointer;
+}
+
+#btn:hover{
+    transform: translateX(-4px);
+}
+
