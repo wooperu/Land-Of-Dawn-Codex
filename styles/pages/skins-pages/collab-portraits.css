@@ -30,18 +30,31 @@
   gap: 1.5rem;
 }
 
+/* REVEAL */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* CARD */
 
 .portrait-card {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  transform: scale(0.95);
+  transform: none;
   transform-origin: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .portrait-card:hover {
-  transform: scale(1.04);
+  transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 .portrait-card img {
@@ -88,6 +101,11 @@
   text-transform: uppercase;
   letter-spacing: .12em;
   opacity: 0.8;
+}
+.portrait-missing {
+  min-height: 280px;
+  background: var(--panel);
+  border: 1px dashed var(--border);
 }
 
 /* RESPONSIVENESS */

@@ -77,6 +77,8 @@ function renderSkins(data, config) {
 
   grid.innerHTML = "";
   grid.appendChild(fragment);
+
+  if (typeof config.onRender === "function") config.onRender(grid);
 }
 
 function renderSkinsFromFile(jsonPath, config) {
