@@ -68,15 +68,23 @@ nav {
     width: 15%;
     height: 25%;
     position: relative;
-    border: 1px solid;
-    border-color: var(--gold);
+    border: 1px solid var(--gold);
+
+    transition:
+        transform 0.35s ease-in-out,
+        box-shadow 0.35s ease-in-out,
+        border-color 0.35s ease-in-out;
+
 }
 
 .card:hover{
-    transform: translateY(-4px);
-    transition: 0.35s ease;
+    transform: translateY(-12px);
     cursor: pointer;
-    box-shadow: 0 16px 50px #ffffff80, 0 0 0 1px #255daa40;
+
+    box-shadow:
+        0 16px 50px #ffffff80,
+        0 0 0 1px #255daa40;
+
     border-color: var(--bg);
 }
 

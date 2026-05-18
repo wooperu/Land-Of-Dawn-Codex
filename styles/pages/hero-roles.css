@@ -147,3 +147,29 @@
     font-weight: bold;
 }
 
+.bread-crumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    z-index: 100;
+    left: 40px;
+    gap: .5rem;
+    font-size: clamp(15px, 20px, 25px);
+    font-family: "Crimson Text";
+}
+
+.bread-crumbs svg{
+  cursor: pointer;
+}
+
+#hero:hover{
+  color: var(--gold); 
+  text-shadow: 0 0 8px rgba(232, 184, 75, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: translateX(-4px);
+}
