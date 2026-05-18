@@ -5,23 +5,6 @@
   padding: 4rem 5%;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.section-title h2 {
-  font-family: 'Cinzel', serif;
-  color: var(--gold);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.section-title p {
-  font-family: 'Crimson Text', serif;
-  color: #9fb0d4;
-}
-
 /* GRID */
 
 .portrait-grid {
