@@ -13,5 +13,10 @@
     "hero": "Cyclops",
     "skin": "Master Yoda",
     "image": "cyclops-master-yoda.webp"
+  },
+  {
+    "hero": "Kimmy",
+    "skin": "First Order Jet Trooper",
+    "image": "kimmy-jet-trooper.webp"
   }
 ]
