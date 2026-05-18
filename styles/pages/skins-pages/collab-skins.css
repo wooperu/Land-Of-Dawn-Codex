@@ -174,7 +174,7 @@
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 0 12px rgba(219, 219, 219, 0.6));
 }
 .transformers-logo{
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 .skin-card:hover .transformers-logo {
