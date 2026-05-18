@@ -10,7 +10,9 @@
 .portrait-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* REVEAL */
@@ -48,7 +50,7 @@
   transition: transform 0.3s ease;
 }
 .portrait-card:hover img {
-  transform: scale(1.08);
+  transform: translateY(-5px);
 }
 .portrait-overlay {
   position: absolute;
