@@ -1,20 +1,68 @@
 [
   {
     "hero": "Alucard",
-    "skin": "Basic",
+    "skin": "Lone Hero",
     "role": ["Fighter", "Assassin"],
-    "image": "alucard-basic.png"
+    "image": "alucard-lone-hero.png"
   },
   {
     "hero": "Balmond",
-    "skin": "Basic",
+    "skin": "Power Source",
     "role": "Fighter",
-    "image": "balmond-basic.png"
+    "image": "balmond-power-source.png"
+  },
+  {
+    "hero": "Bane",
+    "skin": "Deep Sea Monster",
+    "role": ["Fighter", "Mage"],
+    "image": "bane-deep-sea-monster.webp"
+  },
+  {
+    "hero": "Eudora",
+    "skin": "Flame Red Lips",
+    "role": "Mage",
+    "image": "eudora-flame-red-lips.webp"
+  },
+  {
+    "hero": "Franco",
+    "skin": "Bone Crusher",
+    "role": "Tank",
+    "image": "franco-bone-crusher.webp"
+  },
+  {
+    "hero": "Layla",
+    "skin": "Blue Specter",
+    "role": "Marksman",
+    "image": "layla-blue-specter.webp"
+  },
+  {
+    "hero": "Layla",
+    "skin": "Classic Malefic Gunner",
+    "role": "Marksman",
+    "image": "layla-classic-malefic-gunner.webp"
+  },
+  {
+    "hero": "Layla",
+    "skin": "Green Flash",
+    "role": "Marksman",
+    "image": "layla-green-flash.webp"
+  },
+  {
+    "hero": "Miya",
+    "skin": "Jungle Ranger",
+    "role": "Marksman",
+    "image": "miya-jungle-ranger.webp"
   },
   {
     "hero": "Saber",
-    "skin": "Basic",
+    "skin": "Golden Flash",
     "role": "Assassin",
-    "image": "saber-basic.png"
+    "image": "saber-golden-flash.png"
+  },
+  {
+    "hero": "Zilong",
+    "skin": "Loyal Spear",
+    "role": ["Fighter", "Assassin"],
+    "image": "zilong-loyal-spear.webp"
   }
 ]
