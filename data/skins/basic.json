@@ -1,0 +1,20 @@
+[
+  {
+    "hero": "Alucard",
+    "skin": "Basic",
+    "role": ["Fighter", "Assassin"],
+    "image": "alucard-basic.png"
+  },
+  {
+    "hero": "Balmond",
+    "skin": "Basic",
+    "role": "Fighter",
+    "image": "balmond-basic.png"
+  },
+  {
+    "hero": "Saber",
+    "skin": "Basic",
+    "role": "Assassin",
+    "image": "saber-basic.png"
+  }
+]
