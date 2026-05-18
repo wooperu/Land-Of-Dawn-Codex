@@ -13,5 +13,20 @@
     "hero": "X.Borg",
     "skin": "Bumblebee",
     "image": "x-borg-bumblebee.webp"
+  },
+  {
+    "hero": "Roger",
+    "skin": "Grimlock",
+    "image": "roger-grimlock.webp"
+  },
+  {
+    "hero": "Popol and Kupa",
+    "skin": "Soundwave & Ravege",
+    "image": "popol-and-kupa-soundwave-and-ravage.webp"
+  },
+  {
+    "hero": "Aldous",
+    "skin": "Starscream",
+    "image": "aldous-starscream.webp"
   }
 ]
