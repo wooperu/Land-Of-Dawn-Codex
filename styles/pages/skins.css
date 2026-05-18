@@ -204,15 +204,15 @@
   transform: translateX(3px);
 }
 
-.bg-starlight { background-image: url('../../images/pages/skins-page/starlight-bg.webp'); }
-.bg-collector { background-image: url('../../images/pages/skins-page/collector-bg.webp'); }
-.bg-mythic    { background-image: url('../../images/pages/skins-page/mythic-bg.webp'); }
-.bg-legend    { background-image: url('../../images/pages/skins-page/legend-bg.webp'); }
-.bg-epic      { background-image: url('../../images/pages/skins-page/epic-bg.webp'); }
-.bg-special   { background-image: url('../../images/pages/skins-page/special-bg.webp'); }
-.bg-elite     { background-image: url('../../images/pages/skins-page/elite-bg.webp'); }
-.bg-basic     { background-image: url('../../images/pages/skins-page/basic-bg.webp'); }
-.bg-collab    { background-image: url('../../images/pages/skins-page/collab-bg.webp'); }
+.bg-starlight { background-image: url('../../images/pages/skins-page/starlight-bg.png'); }
+.bg-collector { background-image: url('../../images/pages/skins-page/collector-bg.png'); }
+.bg-mythic    { background-image: url('../../images/pages/skins-page/mythic-bg.png'); }
+.bg-legend    { background-image: url('../../images/pages/skins-page/legend-bg.png'); }
+.bg-epic      { background-image: url('../../images/pages/skins-page/epic-bg.png'); }
+.bg-special   { background-image: url('../../images/pages/skins-page/special-bg.png'); }
+.bg-elite     { background-image: url('../../images/pages/skins-page/elite-bg.png'); }
+.bg-basic     { background-image: url('../../images/pages/skins-page/basic-bg.png'); }
+.bg-collab    { background-image: url('../../images/pages/skins-page/collab-bg.png'); }
 
 /* RESPONSIVE */
 
