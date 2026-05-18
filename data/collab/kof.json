@@ -1,8 +1,8 @@
 [
   {
-    "hero": "Aurora",
-    "skin": "Kula Diamond",
-    "image": "aurora-kula.webp"
+    "hero": "Guinevere",
+    "skin": "Athena Asamiya",
+    "image": "guinevere-athena.webp"
   },
   {
     "hero": "Chou",
@@ -10,14 +10,14 @@
     "image": "chou-iori.webp"
   },
   {
+    "hero": "Karina",
+    "skin": "Leona",
+    "image": "karina-leona.webp"
+  },
+  {
     "hero": "Dyrroth",
     "skin": "Orochi",
     "image": "dyrroth-orochi.webp"
-  },
-  {
-    "hero": "Guinevere",
-    "skin": "Athena Asamiya",
-    "image": "guinevere-athena.webp"
   },
   {
     "hero": "Gusion",
@@ -25,9 +25,14 @@
     "image": "gusion-k.webp"
   },
   {
-    "hero": "Karina",
-    "skin": "Leona",
-    "image": "karina-leona.webp"
+    "hero": "Aurora",
+    "skin": "Kula Diamond",
+    "image": "aurora-kula.webp"
+  },
+  {
+    "hero": "Valir",
+    "skin": "Kyo Kusanagi",
+    "image": "valir-kyo.webp"
   },
   {
     "hero": "Masha",
@@ -38,10 +43,5 @@
     "hero": "Paquito",
     "skin": "Terry Bogard",
     "image": "paquito-terry.webp"
-  },
-  {
-    "hero": "Valir",
-    "skin": "Kyo Kusanagi",
-    "image": "valir-kyo.webp"
   }
 ]
