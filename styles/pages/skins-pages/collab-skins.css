@@ -251,7 +251,7 @@
   transform: translateX(3px);
 }
 
-.bg-kof           { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kof-bg.webp'); }
+.bg-kof           { background-image: url('../../../images/pages/skins-page/collab-skins-banner/kof-bg.png'); }
 .bg-star-wars     { background-image: url('../../../images/pages/skins-page/collab-skins-banner/star-wars-bg.jpg'); }
 .bg-transformers  { background-image: url('../../../images/pages/skins-page/collab-skins-banner/transformers-bg.png'); }
 .bg-sanrio        { background-image: url('../../../images/pages/skins-page/collab-skins-banner/sanrio-bg.png'); }
