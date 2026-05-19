@@ -2,16 +2,16 @@
   {
     "hero": "Fanny",
     "skin": "Mikasa Ackerman",
-    "image": "fanny-mikasa.webp"
+    "image": "fanny-mikasa.png"
   },
   {
     "hero": "Martis",
     "skin": "Levi Ackerman",
-    "image": "martis-levi.webp"
+    "image": "martis-levi.png"
   },
   {
     "hero": "Yin",
     "skin": "Eren Yeager",
-    "image": "yin-eren.webp"
+    "image": "yin-eren.png"
   }
 ]
