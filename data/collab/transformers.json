@@ -2,31 +2,31 @@
   {
     "hero": "Granger",
     "skin": "Megatron",
-    "image": "granger-megatron.webp"
+    "image": "granger-megatron.png"
   },
   {
     "hero": "Johnson",
     "skin": "Optimus Prime",
-    "image": "johnson-optimus.webp"
+    "image": "johnson-optimus.png"
   },
   {
     "hero": "X.Borg",
     "skin": "Bumblebee",
-    "image": "x-borg-bumblebee.webp"
+    "image": "x-borg-bumblebee.png"
   },
   {
     "hero": "Roger",
     "skin": "Grimlock",
-    "image": "roger-grimlock.webp"
+    "image": "roger-grimlock.png"
   },
   {
     "hero": "Popol and Kupa",
     "skin": "Soundwave & Ravege",
-    "image": "popol-and-kupa-soundwave-and-ravage.webp"
+    "image": "popol-and-kupa-soundwave-and-ravage.png"
   },
   {
     "hero": "Aldous",
     "skin": "Starscream",
-    "image": "aldous-starscream.webp"
+    "image": "aldous-starscream.png"
   }
 ]
