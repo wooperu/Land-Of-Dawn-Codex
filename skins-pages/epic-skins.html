@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Epic Skins &ndash; Land of Dawn Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/shared/general.css">
+    <link rel="stylesheet" href="../styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="../styles/shared/page-banner.css">
+    <link rel="stylesheet" href="../styles/pages/skins-pages/skins-pages/epic-skins.css">
+    <link rel="stylesheet" href="../styles/pages/skins-pages/collab-portraits.css">
+    <link rel="stylesheet" href="../styles/pages/skins-pages/skin-tabs.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="../images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../heroes.html">Heroes</a></li>
+        <li><a href="../skins.html" class="active">Skins</a></li>
+        <li><a href="../preparation.html">Preparation</a></li>
+        <li><a href="../in-game-guides.html">In-Game Guides</a></li>
+        <li><a href="../game-modes.html">Game Modes</a></li>
+        <li><a href="../mini-games.html">Mini-Games</a></li>
+      </ul>
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="skins-hero">
+      <div class="skins-bg"></div>
+      <div class="stars" id="stars"></div>
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+      <div class="glow"></div>
+      <div class="skins-content">
+        <div class="diamond">
+          <div class="diamond-line diamond-line--left"></div>
+          <svg width="40" height="30" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; margin:0 8px;">
+            <polygon points="40,6 62,38 40,74 18,38" fill="#e6a817" stroke="#f5c842" stroke-width="1.5"/>
+            <polygon points="40,6 18,38 40,28" fill="#f5d060"/>
+            <polygon points="40,6 62,38 40,28" fill="#d4920f"/>
+            <polygon points="40,28 18,38 40,74" fill="#a8650a"/>
+            <polygon points="40,28 62,38 40,74" fill="#8f520a"/>
+            <polygon points="40,14 56,34 40,28 24,34" fill="#fce97a" opacity="0.3"/>
+          </svg>
+          <div class="diamond-line diamond-line--right"></div>
+        </div>
+        <p class="skins-label">Epic Skins</p>
+        <p class="skins-desc">The most popular tier in MLBB. Epic skins feature full model redesigns, custom skill effects, and unique voice lines.</p>
+        <a href="#skin-tiers"><button class="btn-explore" >EXPLORE EPIC SKINS <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 6l6 6-6 6"/>
+        </svg></button></a>
+      </div>
+    </section>
+
+    <section class="portrait-section" id="skin-tiers">
+
+      <div id="tabBar" class="tab-bar"></div>
+      <div id="portraitGrid" class="portrait-grid"></div>
+
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../heroes.html">Heroes</a></li>
+            <li><a href="../skins.html">Skins</a></li>
+            <li><a href="../preparation.html">Preparation</a></li>
+            <li><a href="../in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="../game-modes.html">Game Modes</a></li>
+            <li><a href="../mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="../images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../scripts/stars.js"></script>
+    <script src="../scripts/search-overlay.js"></script>
+    <script src="../scripts/scroll-reveal.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+    <script src="../scripts/skinRenderer.js"></script>
+    <script src="../scripts/skinTabs.js"></script>
+    <script src="../scripts/pages/epic.js"></script>
+  </body>
+</html>
