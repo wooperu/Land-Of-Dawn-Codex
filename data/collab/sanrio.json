@@ -2,21 +2,21 @@
   {
     "hero": "Angela",
     "skin": "My Melody",
-    "image": "angela-heartstring.webp"
+    "image": "angela-heartstring.png"
   },
   {
     "hero": "Chang'e",
     "skin": "Cinnamoroll",
-    "image": "chang-e-moon-artist.webp"
+    "image": "chang-e-moon-artist.png"
   },
   {
     "hero": "Claude",
     "skin": "Bad Badtz-Maru",
-    "image": "claude-bad-bro.webp"
+    "image": "claude-bad-bro.png"
   },
   {
     "hero": "Floryn",
     "skin": "Pompompurin",
-    "image": "floryn-fluffy-dream.webp"
+    "image": "floryn-fluffy-dream.png"
   }
 ]
