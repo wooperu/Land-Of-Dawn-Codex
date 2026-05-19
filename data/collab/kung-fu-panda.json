@@ -2,16 +2,16 @@
   {
     "hero": "Akai",
     "skin": "Po",
-    "image": "akai-po.webp"
+    "image": "akai-po.png"
   },
   {
     "hero": "Ling",
     "skin": "Lord Shen",
-    "image": "ling-shen.webp"
+    "image": "ling-shen.png"
   },
   {
     "hero": "Thamuz",
     "skin": "Kai",
-    "image": "thamuz-kai.webp"
+    "image": "thamuz-kai.png"
   }
 ]
