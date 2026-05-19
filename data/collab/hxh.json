@@ -2,21 +2,21 @@
   {
     "hero": "Cecilion",
     "skin": "Hisoka Morow",
-    "image": "cecilion-hisoka.webp"
+    "image": "cecilion-hisoka.png"
   },
   {
     "hero": "Dyrroth",
     "skin": "Gon Freecss",
-    "image": "dyrroth-gon.webp"
+    "image": "dyrroth-gon.png"
   },
   {
     "hero": "Harith",
     "skin": "Killua Zoldyck",
-    "image": "harith-killua.webp"
+    "image": "harith-killua.png"
   },
   {
     "hero": "Julian",
     "skin": "Kurapika",
-    "image": "julian-kurapika.webp"
+    "image": "julian-kurapika.png"
   }
 ]
