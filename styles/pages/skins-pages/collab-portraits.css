@@ -8,8 +8,9 @@
 /* GRID */
 
 .portrait-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -31,11 +32,11 @@
 /* CARD */
 
 .portrait-card {
+  width: 185px;
+  flex-shrink: 0;
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  transform: none;
-  transform-origin: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .portrait-card:hover {
@@ -117,15 +118,11 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .portrait-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .portrait-card { width: 160px; }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  .portrait-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
+  .portrait-card { width: 140px; }
+  .portrait-grid { gap: 0.75rem; }
 }
