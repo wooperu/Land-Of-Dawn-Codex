@@ -1,0 +1,320 @@
+[
+  {
+    "hero": "Aamon",
+    "skin": "Noble Crest",
+    "role": "Assassin",
+    "image": "aamon-noble-crest.png"
+  },
+  {
+    "hero": "Akai",
+    "skin": "Monk",
+    "role": "Tank",
+    "image": "akai-monk.png"
+  },
+  {
+    "hero": "Akai",
+    "skin": "Stream Recluse",
+    "role": "Tank",
+    "image": "akai-stream-recluse.png"
+  },
+  {
+    "hero": "Alice",
+    "skin": "Spirit Woman",
+    "role": ["Mage", "Tank"],
+    "image": "alice-spirit-woman.png"
+  },
+  {
+    "hero": "Argus",
+    "skin": "Catastrophe",
+    "role": "Fighter",
+    "image": "argus-catastrophe.png"
+  },
+  {
+    "hero": "Balmond",
+    "skin": "Ghoul's Fury",
+    "role": "Fighter",
+    "image": "balmond-ghoul-s-fury.png"
+  },
+  {
+    "hero": "Balmond",
+    "skin": "Savage Hunter",
+    "role": "Fighter",
+    "image": "balmond-savage-hunter.png"
+  },
+  {
+    "hero": "Bane",
+    "skin": "Underworld Outlaw",
+    "role": ["Fighter", "Mage"],
+    "image": "bane-underworld-outlaw.png"
+  },
+  {
+    "hero": "Bruno",
+    "skin": "Street Football",
+    "role": "Marksman",
+    "image": "bruno-street-football.png"
+  },
+  {
+    "hero": "Bruno",
+    "skin": "Vanguard Elite",
+    "role": "Marksman",
+    "image": "bruno-vanguard-elite.png"
+  },
+  {
+    "hero": "Chip",
+    "skin": "Badlands Hiatus",
+    "role": ["Support", "Tank"],
+    "image": "chip-badlands-hiatus.png"
+  },
+  {
+    "hero": "Chou",
+    "skin": "King of Muay Thai",
+    "role": "Fighter",
+    "image": "chou-king-of-muay-thai.png"
+  },
+  {
+    "hero": "Cyclops",
+    "skin": "Super Adventurer",
+    "role": "Mage",
+    "image": "cyclops-super-adventurer.png"
+  },
+  {
+    "hero": "Diggie",
+    "skin": "Circus Clown",
+    "role": "Support",
+    "image": "diggie-circus-clown.png"
+  },
+  {
+    "hero": "Fanny",
+    "skin": "Campus Youth",
+    "role": "Assassin",
+    "image": "fanny-campus-youth.png"
+  },
+  {
+    "hero": "Floryn",
+    "skin": "Paw Power",
+    "role": "Support",
+    "image": "floryn-paw-power.png"
+  },
+  {
+    "hero": "Fredrinn",
+    "skin": "Jewel Connoisseur",
+    "role": ["Fighter", "Tank"],
+    "image": "fredrinn-jewel-connoisseur.png"
+  },
+  {
+    "hero": "Freya",
+    "skin": "Gladiator",
+    "role": "Fighter",
+    "image": "freya-gladiator.png"
+  },
+  {
+    "hero": "Gatotkaca",
+    "skin": "Arhat King",
+    "role": ["Tank", "Fighter"],
+    "image": "gatotkaca-arhat-king.png"
+  },
+  {
+    "hero": "Gatotkaca",
+    "skin": "Spark",
+    "role": ["Tank", "Fighter"],
+    "image": "gatotkaca-spark.png"
+  },
+  {
+    "hero": "Grock",
+    "skin": "Castle Guard",
+    "role": ["Tank", "Fighter"],
+    "image": "grock-castle-guard.png"
+  },
+  {
+    "hero": "Harley",
+    "skin": "Star Magician",
+    "role": ["Mage", "Assassin"],
+    "image": "harley-star-magician.png"
+  },
+  {
+    "hero": "Hayabusa",
+    "skin": "Future Enforcer",
+    "role": "Assassin",
+    "image": "hayabusa-future-enforcer.png"
+  },
+  {
+    "hero": "Helcurt",
+    "skin": "Ice Scythe",
+    "role": "Assassin",
+    "image": "helcurt-ice-scythe.png"
+  },
+  {
+    "hero": "Hilda",
+    "skin": "Sacred Guard",
+    "role": ["Fighter", "Tank"],
+    "image": "hilda-sacred-guard.png"
+  },
+  {
+    "hero": "Hylos",
+    "skin": "Abyssal Shaman",
+    "role": "Tank",
+    "image": "hylos-abyssal-shaman.png"
+  },
+  {
+    "hero": "Johnson",
+    "skin": "Jeepney Racer",
+    "role": ["Tank", "Support"],
+    "image": "johnson-jeepney-racer.png"
+  },
+  {
+    "hero": "Joy",
+    "skin": "Royal Protector",
+    "role": "Assassin",
+    "image": "joy-royal-protector.png"
+  },
+  {
+    "hero": "Karina",
+    "skin": "Phantom Blade",
+    "role": "Assassin",
+    "image": "karina-phantom-blade.png"
+  },
+  {
+    "hero": "Karina",
+    "skin": "Spider Lily",
+    "role": "Assassin",
+    "image": "karina-spider-lily.png"
+  },
+  {
+    "hero": "Karrie",
+    "skin": "Bladed Mantis",
+    "role": "Marksman",
+    "image": "karrie-bladed-mantis.png"
+  },
+  {
+    "hero": "Lancelot",
+    "skin": "Marques of Blades",
+    "role": "Assassin",
+    "image": "lancelot-marques-of-blades.png"
+  },
+  {
+    "hero": "Lapu-Lapu",
+    "skin": "Imperial Champion",
+    "role": "Fighter",
+    "image": "lapu-lapu-imperial-champion.png"
+  },
+  {
+    "hero": "Lolita",
+    "skin": "Soldier in Training",
+    "role": ["Tank", "Support"],
+    "image": "lolita-soldier-in-training.png"
+  },
+  {
+    "hero": "Minotaur",
+    "skin": "Bursting Yama",
+    "role": ["Tank", "Support"],
+    "image": "minotaur-bursting-yama.png"
+  },
+  {
+    "hero": "Minotaur",
+    "skin": "Sacred Hammer",
+    "role": ["Tank", "Support"],
+    "image": "minotaur-sacred-hammer.png"
+  },
+  {
+    "hero": "Miya",
+    "skin": "Burning Bow",
+    "role": "Marksman",
+    "image": "miya-burning-bow.png"
+  },
+  {
+    "hero": "Moskov",
+    "skin": "Decapitator",
+    "role": "Marksman",
+    "image": "moskov-decapitator.png"
+  },
+  {
+    "hero": "Nana",
+    "skin": "Clockwork Maid",
+    "role": ["Mage", "Support"],
+    "image": "nana-clockwork-maid.png"
+  },
+  {
+    "hero": "Nana",
+    "skin": "Slumber Party",
+    "role": ["Mage", "Support"],
+    "image": "nana-slumber-party.png"
+  },
+  {
+    "hero": "Natalia",
+    "skin": "Deadly Mamba",
+    "role": ["Assassin", "Support"],
+    "image": "natalia-deadly-mamba.png"
+  },
+  {
+    "hero": "Rafaela",
+    "skin": "Fertility Goddess",
+    "role": "Support",
+    "image": "rafaela-fertility-goddess.png"
+  },
+  {
+    "hero": "Ruby",
+    "skin": "Edelweiss",
+    "role": ["Fighter", "Tank"],
+    "image": "ruby-edelweiss.png"
+  },
+  {
+    "hero": "Ruby",
+    "skin": "Hidden Orchid Butterfly",
+    "role": ["Fighter", "Tank"],
+    "image": "ruby-hidden-orchid-butterfly.png"
+  },
+  {
+    "hero": "Saber",
+    "skin": "Fullmetal Ronin",
+    "role": "Assassin",
+    "image": "saber-fullmetal-ronin.png"
+  },
+  {
+    "hero": "Sun",
+    "skin": "Battle Buddha",
+    "role": "Fighter",
+    "image": "sun-battle-buddha.png"
+  },
+  {
+    "hero": "Tigreal",
+    "skin": "Dark Guardian",
+    "role": "Tank",
+    "image": "tigreal-dark-guardian.png"
+  },
+  {
+    "hero": "Tigreal",
+    "skin": "Fallen Guard",
+    "role": "Tank",
+    "image": "tigreal-fallen-guard.png"
+  },
+  {
+    "hero": "Valentina",
+    "skin": "Archmagister",
+    "role": "Mage",
+    "image": "valentina-archmagister.png"
+  },
+  {
+    "hero": "Yi Sun-shin",
+    "skin": "Apocalypse Agent",
+    "role": ["Assassin", "Marksman"],
+    "image": "yi-sun-shin-apocalypse-agent.png"
+  },
+  {
+    "hero": "Yi Sun-shin",
+    "skin": "Roguish Ranger",
+    "role": ["Assassin", "Marksman"],
+    "image": "yi-sun-shin-roguish-ranger.png"
+  },
+  {
+    "hero": "Zilong",
+    "skin": "Blazing Lancer",
+    "role": ["Fighter", "Assassin"],
+    "image": "zilong-blazing-lancer.png"
+  },
+  {
+    "hero": "Zilong",
+    "skin": "Elite Warrior",
+    "role": ["Fighter", "Assassin"],
+    "image": "zilong-elite-warrior.png"
+  }
+]
