@@ -1,9 +1,69 @@
 [
   {
+    "hero": "Aamon",
+    "skin": "Night's Edge",
+    "role": "Assassin",
+    "image": "aamon-night-s-edge.png"
+  },
+  {
+    "hero": "Aldous",
+    "skin": "Red Mantle",
+    "role": "Fighter",
+    "image": "aldous-red-mantle.png"
+  },
+  {
+    "hero": "Alpha",
+    "skin": "Fierce Dragon",
+    "role": "Fighter",
+    "image": "alpha-fierce-dragon.png"
+  },
+  {
+    "hero": "Alucard",
+    "skin": "Empire Agent",
+    "role": ["Fighter", "Assassin"],
+    "image": "alucard-empire-agent.png"
+  },
+  {
     "hero": "Alucard",
     "skin": "Lone Hero",
     "role": ["Fighter", "Assassin"],
     "image": "alucard-lone-hero.png"
+  },
+  {
+    "hero": "Angela",
+    "skin": "Dove and Love",
+    "role": "Support",
+    "image": "angela-dove-and-love.png"
+  },
+  {
+    "hero": "Argus",
+    "skin": "Light of Dawn",
+    "role": "Fighter",
+    "image": "argus-light-of-dawn.png"
+  },
+  {
+    "hero": "Arlott",
+    "skin": "Wandering Spear",
+    "role": ["Fighter", "Assassin"],
+    "image": "arlott-wandering-spear.png"
+  },
+  {
+    "hero": "Atlas",
+    "skin": "Reactor Core",
+    "role": "Tank",
+    "image": "atlas-reactor-core.png"
+  },
+  {
+    "hero": "Aurora",
+    "skin": "Nature's Throne",
+    "role": "Mage",
+    "image": "aurora-nature-s-throne.png"
+  },
+  {
+    "hero": "Badang",
+    "skin": "Ironfists",
+    "role": "Fighter",
+    "image": "badang-ironfists.png"
   },
   {
     "hero": "Balmond",
@@ -15,43 +75,523 @@
     "hero": "Bane",
     "skin": "Deep Sea Monster",
     "role": ["Fighter", "Mage"],
-    "image": "bane-deep-sea-monster.webp"
+    "image": "bane-deep-sea-monster.png"
+  },
+  {
+    "hero": "Barats",
+    "skin": "Armored Lizard",
+    "role": ["Fighter", "Tank"],
+    "image": "barats-armored-lizard.png"
+  },
+  {
+    "hero": "Baxia",
+    "skin": "Wild Totem",
+    "role": "Tank",
+    "image": "baxia-wild-totem.png"
+  },
+  {
+    "hero": "Beatrix",
+    "skin": "X-Factor",
+    "role": "Marksman",
+    "image": "beatrix-x-factor.png"
+  },
+  {
+    "hero": "Belerick",
+    "skin": "Tiger Grass",
+    "role": "Tank",
+    "image": "belerick-tiger-grass.png"
+  },
+  {
+    "hero": "Benedetta",
+    "skin": "Honor Blade",
+    "role": ["Assassin", "Fighter"],
+    "image": "benedetta-honor-blade.png"
+  },
+  {
+    "hero": "Brody",
+    "skin": "Nameless Stray",
+    "role": "Marksman",
+    "image": "brody-nameless-stray.png"
+  },
+  {
+    "hero": "Carmilla",
+    "skin": "Wisteria Countess",
+    "role": ["Tank", "Support"],
+    "image": "carmilla-wisteria-countess.png"
+  },
+  {
+    "hero": "Cecilion",
+    "skin": "Wisteria Count",
+    "role": "Mage",
+    "image": "cecilion-wisteria-count.png"
+  },
+  {
+    "hero": "Chang'e",
+    "skin": "Moonstruck",
+    "role": "Mage",
+    "image": "chang-e-moonstruck.png"
+  },
+  {
+    "hero": "Chip",
+    "skin": "Nexus Engineer",
+    "role": ["Support", "Tank"],
+    "image": "chip-nexus-engineer.png"
+  },
+  {
+    "hero": "Chou",
+    "skin": "Hip Hop Boy",
+    "role": "Fighter",
+    "image": "chou-hip-hop-boy.png"
+  },
+  {
+    "hero": "Cici",
+    "skin": "Whimsical Carnival",
+    "role": "Fighter",
+    "image": "cici-whimsical-carnival.png"
+  },
+  {
+    "hero": "Claude",
+    "skin": "Golden Bullet",
+    "role": "Marksman",
+    "image": "claude-golden-bullet.png"
+  },
+  {
+    "hero": "Cyclops",
+    "skin": "Exorcist",
+    "role": "Mage",
+    "image": "cyclops-exorcist.png"
+  },
+  {
+    "hero": "Diggie",
+    "skin": "Pigeoneer",
+    "role": "Support",
+    "image": "diggie-pigeoneer.png"
+  },
+  {
+    "hero": "Dyrroth",
+    "skin": "Scalebore",
+    "role": "Fighter",
+    "image": "dyrroth-scalebore.png"
+  },
+  {
+    "hero": "Edith",
+    "skin": "Celestial Safeguard",
+    "role": ["Tank", "Marksman"],
+    "image": "edith-celestial-safeguard.png"
+  },
+  {
+    "hero": "Esmeralda",
+    "skin": "Ruddy Dusk",
+    "role": ["Tank", "Mage"],
+    "image": "esmeralda-ruddy-dusk.png"
+  },
+  {
+    "hero": "Estes",
+    "skin": "Holy Priest",
+    "role": "Support",
+    "image": "estes-holy-priest.png"
   },
   {
     "hero": "Eudora",
     "skin": "Flame Red Lips",
     "role": "Mage",
-    "image": "eudora-flame-red-lips.webp"
+    "image": "eudora-flame-red-lips.png"
+  },
+  {
+    "hero": "Fanny",
+    "skin": "Imperial Warrior",
+    "role": "Assassin",
+    "image": "fanny-imperial-warrior.png"
+  },
+  {
+    "hero": "Faramis",
+    "skin": "Dark Necro",
+    "role": ["Support", "Mage"],
+    "image": "faramis-dark-necro.png"
+  },
+  {
+    "hero": "Floryn",
+    "skin": "Springtide",
+    "role": "Support",
+    "image": "floryn-springtide.png"
   },
   {
     "hero": "Franco",
     "skin": "Bone Crusher",
     "role": "Tank",
-    "image": "franco-bone-crusher.webp"
+    "image": "franco-bone-crusher.png"
+  },
+  {
+    "hero": "Fredrinn",
+    "skin": "Regal Renegade",
+    "role": ["Fighter", "Tank"],
+    "image": "fredrinn-regal-renegade.png"
+  },
+  {
+    "hero": "Freya",
+    "skin": "Dark Rose",
+    "role": "Fighter",
+    "image": "freya-dark-rose.png"
+  },
+  {
+    "hero": "Gatotkaca",
+    "skin": "Mighty Guardian",
+    "role": ["Tank", "Fighter"],
+    "image": "gatotkaca-mighty-guardian.png"
+  },
+  {
+    "hero": "Gloo",
+    "skin": "Verdant Enchanter",
+    "role": "Tank",
+    "image": "gloo-verdant-enchanter.png"
+  },
+  {
+    "hero": "Gord",
+    "skin": "Professor of Hell",
+    "role": "Mage",
+    "image": "gord-professor-of-hell.png"
+  },
+  {
+    "hero": "Granger",
+    "skin": "Bardic Whisper",
+    "role": "Marksman",
+    "image": "granger-bardic-whisper.png"
+  },
+  {
+    "hero": "Grock",
+    "skin": "Grave Guardian",
+    "role": ["Tank", "Fighter"],
+    "image": "grock-grave-guardian.png"
+  },
+  {
+    "hero": "Guinevere",
+    "skin": "Fleur de Bleau",
+    "role": "Fighter",
+    "image": "guinevere-fleur-de-bleau.png"
+  },
+  {
+    "hero": "Gusion",
+    "skin": "Moonlight Sonata",
+    "role": "Assassin",
+    "image": "gusion-moonlight-sonata.png"
+  },
+  {
+    "hero": "Hanabi",
+    "skin": "Resplendent Iris",
+    "role": "Marksman",
+    "image": "hanabi-resplendent-iris.png"
+  },
+  {
+    "hero": "Hanzo",
+    "skin": "Pale Phantom",
+    "role": "Assassin",
+    "image": "hanzo-pale-phantom.png"
+  },
+  {
+    "hero": "Harith",
+    "skin": "Savannah Cat",
+    "role": "Mage",
+    "image": "harith-savannah-cat.png"
+  },
+  {
+    "hero": "Harley",
+    "skin": "Naughty Joker",
+    "role": ["Mage", "Assassin"],
+    "image": "harley-naughty-joker.png"
+  },
+  {
+    "hero": "Hayabusa",
+    "skin": "Spacetime Shadow",
+    "role": "Assassin",
+    "image": "hayabusa-spacetime-shadow.png"
+  },
+  {
+    "hero": "Helcurt",
+    "skin": "Exoracial Executioner",
+    "role": "Assassin",
+    "image": "helcurt-exoracial-executioner.png"
+  },
+  {
+    "hero": "Hilda",
+    "skin": "Power of Wildness",
+    "role": ["Fighter", "Tank"],
+    "image": "hilda-power-of-wildness.png"
+  },
+  {
+    "hero": "Irithel",
+    "skin": "Silver Cyclone",
+    "role": "Marksman",
+    "image": "irithel-silver-cyclone.png"
+  },
+  {
+    "hero": "Ixia",
+    "skin": "Shifting Sand",
+    "role": "Marksman",
+    "image": "ixia-shifting-sand.png"
+  },
+  {
+    "hero": "Jawhead",
+    "skin": "Girl Scout",
+    "role": "Fighter",
+    "image": "jawhead-girl-scout.png"
+  },
+  {
+    "hero": "Johnson",
+    "skin": "Fire Chief",
+    "role": ["Tank", "Support"],
+    "image": "johnson-fire-chief.png"
+  },
+  {
+    "hero": "Joy",
+    "skin": "Feline Ranger",
+    "role": "Assassin",
+    "image": "joy-feline-ranger.png"
+  },
+  {
+    "hero": "Julian",
+    "skin": "Silent Edge",
+    "role": ["Fighter", "Mage"],
+    "image": "julian-silent-edge.png"
+  },
+  {
+    "hero": "Kadita",
+    "skin": "Atlantean Princess",
+    "role": ["Mage", "Assassin"],
+    "image": "kadita-atlantean-princess.png"
+  },
+  {
+    "hero": "Kagura",
+    "skin": "Flower Season",
+    "role": "Mage",
+    "image": "kagura-flower-season.png"
+  },
+  {
+    "hero": "Kaja",
+    "skin": "Commandment",
+    "role": ["Fighter", "Support"],
+    "image": "kaja-commandment.png"
+  },
+  {
+    "hero": "Kalea",
+    "skin": "Shimmering Waves",
+    "role": "Support",
+    "image": "kalea-shimmering-waves.png"
+  },
+  {
+    "hero": "Karina",
+    "skin": "Blood Moon",
+    "role": "Assassin",
+    "image": "karina-blood-moon.png"
+  },
+  {
+    "hero": "Karrie",
+    "skin": "Rising Star",
+    "role": "Marksman",
+    "image": "karrie-rising-star.png"
+  },
+  {
+    "hero": "Khaleed",
+    "skin": "Prince of Sand",
+    "role": "Fighter",
+    "image": "khaleed-prince-of-sand.png"
+  },
+  {
+    "hero": "Khufra",
+    "skin": "Desert Owl",
+    "role": "Tank",
+    "image": "khufra-desert-owl.png"
+  },
+  {
+    "hero": "Kimmy",
+    "skin": "Steam Researcher",
+    "role": ["Marksman", "Mage"],
+    "image": "kimmy-steam-researcher.png"
+  },
+  {
+    "hero": "Lancelot",
+    "skin": "Masked Knight",
+    "role": "Assassin",
+    "image": "lancelot-masked-knight.png"
+  },
+  {
+    "hero": "Lapu-Lapu",
+    "skin": "Ancestral Blade",
+    "role": "Fighter",
+    "image": "lapu-lapu-ancestral-blade.png"
   },
   {
     "hero": "Layla",
     "skin": "Blue Specter",
     "role": "Marksman",
-    "image": "layla-blue-specter.webp"
+    "image": "layla-blue-specter.png"
   },
   {
     "hero": "Layla",
     "skin": "Classic Malefic Gunner",
     "role": "Marksman",
-    "image": "layla-classic-malefic-gunner.webp"
+    "image": "layla-classic-malefic-gunner.png"
   },
   {
     "hero": "Layla",
     "skin": "Green Flash",
     "role": "Marksman",
-    "image": "layla-green-flash.webp"
+    "image": "layla-green-flash.png"
+  },
+  {
+    "hero": "Leomord",
+    "skin": "Hell Knight",
+    "role": "Fighter",
+    "image": "leomord-hell-knight.png"
+  },
+  {
+    "hero": "Lesley",
+    "skin": "Royal Musketeer",
+    "role": ["Marksman", "Assassin"],
+    "image": "lesley-royal-musketeer.png"
+  },
+  {
+    "hero": "Ling",
+    "skin": "Fiery Dance",
+    "role": "Assassin",
+    "image": "ling-fiery-dance.png"
+  },
+  {
+    "hero": "Lukas",
+    "skin": "Ardent Roar",
+    "role": "Fighter",
+    "image": "lukas-ardent-roar.png"
+  },
+  {
+    "hero": "Lunox",
+    "skin": "Bloody Mary",
+    "role": "Mage",
+    "image": "lunox-bloody-mary.png"
+  },
+  {
+    "hero": "Luo Yi",
+    "skin": "Yin Yang Mage",
+    "role": "Mage",
+    "image": "luo-yi-yin-yang-mage.png"
+  },
+  {
+    "hero": "Lylia",
+    "skin": "School Idol",
+    "role": "Mage",
+    "image": "lylia-school-idol.png"
+  },
+  {
+    "hero": "Martis",
+    "skin": "Tyrant",
+    "role": "Fighter",
+    "image": "martis-tyrant.png"
+  },
+  {
+    "hero": "Masha",
+    "skin": "Winter Guard",
+    "role": ["Fighter", "Tank"],
+    "image": "masha-winter-guard.png"
+  },
+  {
+    "hero": "Mathilda",
+    "skin": "Unrestrained Delight",
+    "role": ["Support", "Assassin"],
+    "image": "mathilda-unrestrained-delight.png"
+  },
+  {
+    "hero": "Melissa",
+    "skin": "Twinge Weaver",
+    "role": "Marksman",
+    "image": "melissa-twinge-weaver.png"
+  },
+  {
+    "hero": "Minsitthar",
+    "skin": "King of War",
+    "role": "Fighter",
+    "image": "minsitthar-king-of-war.png"
   },
   {
     "hero": "Miya",
     "skin": "Jungle Ranger",
     "role": "Marksman",
-    "image": "miya-jungle-ranger.webp"
+    "image": "miya-jungle-ranger.png"
+  },
+  {
+    "hero": "Moskov",
+    "skin": "Spear of Bone Dragon",
+    "role": "Marksman",
+    "image": "moskov-spear-of-bone-dragon.png"
+  },
+  {
+    "hero": "Natalia",
+    "skin": "Glass Blade",
+    "role": "Assassin",
+    "image": "natalia-glass-blade.png"
+  },
+  {
+    "hero": "Natan",
+    "skin": "Time Wielder",
+    "role": "Marksman",
+    "image": "natan-time-wielder.png"
+  },
+  {
+    "hero": "Nolan",
+    "skin": "Voidwalker",
+    "role": "Assassin",
+    "image": "nolan-voidwalker.png"
+  },
+  {
+    "hero": "Novaria",
+    "skin": "Dark Star",
+    "role": "Mage",
+    "image": "novaria-dark-star.png"
+  },
+  {
+    "hero": "Obsidia",
+    "skin": "Undying Remnants",
+    "role": "Marksman",
+    "image": "obsidia-undying-remnants.png"
+  },
+  {
+    "hero": "Odette",
+    "skin": "Black Swan",
+    "role": "Mage",
+    "image": "odette-black-swan.png"
+  },
+  {
+    "hero": "Paquito",
+    "skin": "Death Blow",
+    "role": "Fighter",
+    "image": "paquito-death-blow.png"
+  },
+  {
+    "hero": "Pharsa",
+    "skin": "Wings of Heaven",
+    "role": "Mage",
+    "image": "pharsa-wings-of-heaven.png"
+  },
+  {
+    "hero": "Phoveus",
+    "skin": "Monolith Watcher",
+    "role": "Fighter",
+    "image": "phoveus-monolith-watcher.png"
+  },
+  {
+    "hero": "Popol and Kupa",
+    "skin": "Hunting Pals",
+    "role": "Marksman",
+    "image": "popol-and-kupa-hunting-pals.png"
+  },
+  {
+    "hero": "Roger",
+    "skin": "Dark Gent",
+    "role": ["Fighter", "Marksman"],
+    "image": "roger-dark-gent.png"
+  },
+  {
+    "hero": "Ruby",
+    "skin": "Cat Girl",
+    "role": "Fighter",
+    "image": "ruby-cat-girl.png"
   },
   {
     "hero": "Saber",
@@ -60,9 +600,141 @@
     "image": "saber-golden-flash.png"
   },
   {
+    "hero": "Saber",
+    "skin": "Silver Edge",
+    "role": "Assassin",
+    "image": "saber-silver-edge.png"
+  },
+  {
+    "hero": "Selena",
+    "skin": "Wasp Queen",
+    "role": ["Assassin", "Mage"],
+    "image": "selena-wasp-queen.png"
+  },
+  {
+    "hero": "Silvanna",
+    "skin": "Hallowed Lance",
+    "role": "Fighter",
+    "image": "silvanna-hallowed-lance.png"
+  },
+  {
+    "hero": "Sun",
+    "skin": "Celestial Outlaw",
+    "role": "Fighter",
+    "image": "sun-celestial-outlaw.png"
+  },
+  {
+    "hero": "Suyou",
+    "skin": "Venerated Vigilance",
+    "role": ["Assassin", "Fighter"],
+    "image": "suyou-venerated-vigilance.png"
+  },
+  {
+    "hero": "Terizla",
+    "skin": "Abyss Guard",
+    "role": ["Fighter", "Tank"],
+    "image": "terizla-abyss-guard.png"
+  },
+  {
+    "hero": "Thamuz",
+    "skin": "Lord of Wrath",
+    "role": "Fighter",
+    "image": "thamuz-lord-of-wrath.png"
+  },
+  {
+    "hero": "Uranus",
+    "skin": "Ancient Soul",
+    "role": "Tank",
+    "image": "uranus-ancient-soul.png"
+  },
+  {
+    "hero": "Vale",
+    "skin": "Cerulean Winds",
+    "role": "Mage",
+    "image": "vale-cerulean-winds.png"
+  },
+  {
+    "hero": "Valentina",
+    "skin": "Twilight Charmer",
+    "role": "Mage",
+    "image": "valentina-twilight-charmer.png"
+  },
+  {
+    "hero": "Valir",
+    "skin": "Pale Flame",
+    "role": "Mage",
+    "image": "valir-pale-flame.png"
+  },
+  {
+    "hero": "Vexana",
+    "skin": "Lucent Beacon",
+    "role": "Mage",
+    "image": "vexana-lucent-beacon.png"
+  },
+  {
+    "hero": "Wanwan",
+    "skin": "Darting Star",
+    "role": "Marksman",
+    "image": "wanwan-darting-star.png"
+  },
+  {
+    "hero": "X.Borg",
+    "skin": "Blue Storm",
+    "role": "Fighter",
+    "image": "x-borg-blue-storm.png"
+  },
+  {
+    "hero": "Xavier",
+    "skin": "Verdict of Light",
+    "role": "Mage",
+    "image": "xavier-verdict-of-light.png"
+  },
+  {
+    "hero": "Yi Sun-shin",
+    "skin": "Major General",
+    "role": ["Assassin", "Marksman"],
+    "image": "yi-sun-shin-major-general.png"
+  },
+  {
+    "hero": "Yin",
+    "skin": "Fists of Valor",
+    "role": "Fighter",
+    "image": "yin-fists-of-valor.png"
+  },
+  {
+    "hero": "Yu Zhong",
+    "skin": "Emerald Dragon",
+    "role": "Fighter",
+    "image": "yu-zhong-emerald-dragon.png"
+  },
+  {
+    "hero": "Yve",
+    "skin": "Forest Hymn",
+    "role": "Mage",
+    "image": "yve-forest-hymn.png"
+  },
+  {
+    "hero": "Zetian",
+    "skin": "Heavenly Splendor",
+    "role": "Mage",
+    "image": "zetian-heavenly-splendor.png"
+  },
+  {
+    "hero": "Zhask",
+    "skin": "Crystallized Predator",
+    "role": "Mage",
+    "image": "zhask-crystallized-predator.png"
+  },
+  {
+    "hero": "Zhuxin",
+    "skin": "Ethereal Serenity",
+    "role": "Mage",
+    "image": "zhuxin-ethereal-serenity.png"
+  },
+  {
     "hero": "Zilong",
     "skin": "Loyal Spear",
     "role": ["Fighter", "Assassin"],
-    "image": "zilong-loyal-spear.webp"
+    "image": "zilong-loyal-spear.png"
   }
 ]
