@@ -2,20 +2,20 @@
   {
     "hero": "Yin",
     "skin": "Yuji Itadori",
-    "image": "yin-yuji.webp"
+    "image": "yin-yuji.png"
   },{
     "hero": "Julian",
     "skin": "Megumi Fushiguro",
-    "image": "julian-megumi.webp"
+    "image": "julian-megumi.png"
   },
   {
     "hero": "Melissa",
     "skin": "Nobara Kugisaki",
-    "image": "melissa-nobara.webp"
+    "image": "melissa-nobara.png"
   },
   {
     "hero": "Xavier",
     "skin": "Satoru Gojo",
-    "image": "xavier-gojo.webp"
+    "image": "xavier-gojo.png"
   }
 ]
