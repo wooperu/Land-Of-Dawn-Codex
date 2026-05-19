@@ -1,0 +1,9 @@
+initTabs("../data/skins/starlight.json", {
+  basePath      : "../images/pages/skins-page/skins/portrait/",
+  category      : "starlight",
+  tabId         : "tabBar",
+  gridId        : "portraitGrid",
+  skeletonCount : 3,
+  onRender      : function () { initReveal(); },
+  onEmpty       : function (grid) { grid.innerHTML = ""; }
+});
