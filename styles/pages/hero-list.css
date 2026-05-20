@@ -82,7 +82,7 @@ nav {
     cursor: pointer;
 
     box-shadow:
-        0 16px 50px #ffffff80,
+        0 0 50px #ffffff80,
         0 0 0 1px #255daa40;
 
     border-color: var(--bg);
