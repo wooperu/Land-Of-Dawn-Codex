@@ -1,6 +1,7 @@
 initTabs("../data/skins/starlight.json", {
   basePath      : "../images/pages/skins-page/skins/portrait/",
   category      : "starlight",
+  subfolder     : "monthly",
   tabId         : "tabBar",
   gridId        : "portraitGrid",
   skeletonCount : 3,

@@ -20,7 +20,7 @@
   {
     "hero": "Alice",
     "skin": "Spirit Woman",
-    "role": ["Mage", "Tank"],
+    "role": ["Tank", "Mage"],
     "image": "alice-spirit-woman.png"
   },
   {
@@ -200,19 +200,19 @@
   {
     "hero": "Lolita",
     "skin": "Soldier in Training",
-    "role": ["Tank", "Support"],
+    "role": "Tank",
     "image": "lolita-soldier-in-training.png"
   },
   {
     "hero": "Minotaur",
     "skin": "Bursting Yama",
-    "role": ["Tank", "Support"],
+    "role": "Tank",
     "image": "minotaur-bursting-yama.png"
   },
   {
     "hero": "Minotaur",
     "skin": "Sacred Hammer",
-    "role": ["Tank", "Support"],
+    "role": "Tank",
     "image": "minotaur-sacred-hammer.png"
   },
   {
@@ -230,19 +230,19 @@
   {
     "hero": "Nana",
     "skin": "Clockwork Maid",
-    "role": ["Mage", "Support"],
+    "role": "Mage",
     "image": "nana-clockwork-maid.png"
   },
   {
     "hero": "Nana",
     "skin": "Slumber Party",
-    "role": ["Mage", "Support"],
+    "role": "Mage",
     "image": "nana-slumber-party.png"
   },
   {
     "hero": "Natalia",
     "skin": "Deadly Mamba",
-    "role": ["Assassin", "Support"],
+    "role": "Assassin",
     "image": "natalia-deadly-mamba.png"
   },
   {
@@ -254,13 +254,13 @@
   {
     "hero": "Ruby",
     "skin": "Edelweiss",
-    "role": ["Fighter", "Tank"],
+    "role": "Fighter",
     "image": "ruby-edelweiss.png"
   },
   {
     "hero": "Ruby",
     "skin": "Hidden Orchid Butterfly",
-    "role": ["Fighter", "Tank"],
+    "role": "Fighter",
     "image": "ruby-hidden-orchid-butterfly.png"
   },
   {

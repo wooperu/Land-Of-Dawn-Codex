@@ -1,0 +1,14 @@
+[
+  {
+    "hero": "Clint",
+    "skin": "Dragon's Maw",
+    "role": "Marksman",
+    "image": "clint-dragon-s-maw.webp"
+  },
+  {
+    "hero": "Faramis",
+    "skin": "Infernal Magister",
+    "role": ["Support", "Mage"],
+    "image": "faramis-infernal-magister.webp"
+  }
+]

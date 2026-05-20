@@ -1,0 +1,314 @@
+[
+  {
+    "hero": "Aldous",
+    "skin": "Realm Watcher",
+    "role": "Fighter",
+    "image": "aldous-realm-watcher.png"
+  },
+  {
+    "hero": "Alpha",
+    "skin": "Mecha King Perseus",
+    "role": "Fighter",
+    "image": "alpha-mecha-king-perseus.png"
+  },
+  {
+    "hero": "Angela",
+    "skin": "Floral Elf",
+    "role": "Support",
+    "image": "angela-floral-elf.png"
+  },
+  {
+    "hero": "Arlott",
+    "skin": "Aeon of Twilight",
+    "role": ["Fighter", "Assassin"],
+    "image": "arlott-aeon-of-twilight.png"
+  },
+  {
+    "hero": "Atlas",
+    "skin": "Mecha Infernus",
+    "role": "Tank",
+    "image": "atlas-mecha-infernus.png"
+  },
+  {
+    "hero": "Aurora",
+    "skin": "Veil of the Celestials",
+    "role": "Mage",
+    "image": "aurora-veil-of-the-celestials.png"
+  },
+  {
+    "hero": "Badang",
+    "skin": "Fist of Zen",
+    "role": "Fighter",
+    "image": "badang-fist-of-zen.png"
+  },
+  {
+    "hero": "Balmond",
+    "skin": "God of Mountains",
+    "role": "Fighter",
+    "image": "balmond-god-of-mountains.png"
+  },
+  {
+    "hero": "Benedetta",
+    "skin": "Death Oath",
+    "role": ["Assassin", "Fighter"],
+    "image": "benedetta-death-oath.png"
+  },
+  {
+    "hero": "Brody",
+    "skin": "Ore Chemist",
+    "role": "Marksman",
+    "image": "brody-ore-chemist.png"
+  },
+  {
+    "hero": "Cecilion",
+    "skin": "Crimson Wings",
+    "role": "Mage",
+    "image": "cecilion-crimson-wings.png"
+  },
+  {
+    "hero": "Clint",
+    "skin": "Crimson Blast",
+    "role": "Marksman",
+    "image": "clint-crimson-blast.png"
+  },
+  {
+    "hero": "Cyclops",
+    "skin": "Yokai Warlock",
+    "role": "Mage",
+    "image": "cyclops-yokai-warlock.png"
+  },
+  {
+    "hero": "Dyrroth",
+    "skin": "Naraka Flames",
+    "role": "Fighter",
+    "image": "dyrroth-naraka-flames.png"
+  },
+  {
+    "hero": "Edith",
+    "skin": "Sol Bastion",
+    "role": ["Tank", "Marksman"],
+    "image": "edith-sol-bastion.png"
+  },
+  {
+    "hero": "Esmeralda",
+    "skin": "Light Envoy",
+    "role": ["Tank", "Mage"],
+    "image": "esmeralda-light-envoy.png"
+  },
+  {
+    "hero": "Floryn",
+    "skin": "Melody of Light",
+    "role": "Support",
+    "image": "floryn-melody-of-light.png"
+  },
+  {
+    "hero": "Gusion",
+    "skin": "Night Owl",
+    "role": "Assassin",
+    "image": "gusion-night-owl.png"
+  },
+  {
+    "hero": "Hanabi",
+    "skin": "Riverland Phoenix",
+    "role": "Marksman",
+    "image": "hanabi-riverland-phoenix.png"
+  },
+  {
+    "hero": "Hanzo",
+    "skin": "Soulfire Netherlord",
+    "role": "Assassin",
+    "image": "hanzo-soulfire-netherlord.png"
+  },
+  {
+    "hero": "Harith",
+    "skin": "Psychic",
+    "role": "Mage",
+    "image": "harith-psychic.png"
+  },
+  {
+    "hero": "Harley",
+    "skin": "Dream Caster",
+    "role": ["Mage", "Assassin"],
+    "image": "harley-dream-caster.png"
+  },
+  {
+    "hero": "Jawhead",
+    "skin": "Samurai Mech",
+    "role": "Fighter",
+    "image": "jawhead-samurai-mech.png"
+  },
+  {
+    "hero": "Khufra",
+    "skin": "Volcanic Overlord",
+    "role": "Tank",
+    "image": "khufra-volcanic-overlord.png"
+  },
+  {
+    "hero": "Lapu-Lapu",
+    "skin": "Adlaw's Chosen",
+    "role": "Fighter",
+    "image": "lapu-lapu-adlaw-s-chosen.png"
+  },
+  {
+    "hero": "Layla",
+    "skin": "Paranormal Operative",
+    "role": "Marksman",
+    "image": "layla-paranormal-operative.png"
+  },
+  {
+    "hero": "Lesley",
+    "skin": "Falcon Mistress",
+    "role": ["Marksman", "Assassin"],
+    "image": "lesley-falcon-mistress.png"
+  },
+  {
+    "hero": "Ling",
+    "skin": "Serene Plume",
+    "role": "Assassin",
+    "image": "ling-serene-plume.png"
+  },
+  {
+    "hero": "Luo Yi",
+    "skin": "Elysium Guardian",
+    "role": "Mage",
+    "image": "luo-yi-elysium-guardian.png"
+  },
+  {
+    "hero": "Melissa",
+    "skin": "Umbra Bloom",
+    "role": "Marksman",
+    "image": "melissa-umbra-bloom.png"
+  },
+  {
+    "hero": "Minsitthar",
+    "skin": "Sol Invictus",
+    "role": "Fighter",
+    "image": "minsitthar-sol-invictus.png"
+  },
+  {
+    "hero": "Miya",
+    "skin": "Doom Catalyst",
+    "role": "Marksman",
+    "image": "miya-doom-catalyst.png"
+  },
+  {
+    "hero": "Nana",
+    "skin": "Aqua Pura",
+    "role": "Mage",
+    "image": "nana-aqua-pura.png"
+  },
+  {
+    "hero": "Natalia",
+    "skin": "Warrioress Paragon",
+    "role": "Assassin",
+    "image": "natalia-warrioress-paragon.png"
+  },
+  {
+    "hero": "Natan",
+    "skin": "Tidal Lord",
+    "role": "Marksman",
+    "image": "natan-tidal-lord.png"
+  },
+  {
+    "hero": "Novaria",
+    "skin": "Dragonsworn",
+    "role": "Mage",
+    "image": "novaria-dragonsworn.png"
+  },
+  {
+    "hero": "Paquito",
+    "skin": "Blazing Tiger",
+    "role": "Fighter",
+    "image": "paquito-blazing-tiger.png"
+  },
+  {
+    "hero": "Pharsa",
+    "skin": "Empress Phoenix",
+    "role": "Mage",
+    "image": "pharsa-empress-phoenix.png"
+  },
+  {
+    "hero": "Popol and Kupa",
+    "skin": "Spirit of the Brush",
+    "role": "Marksman",
+    "image": "popol-and-kupa-spirit-of-the-brush.png"
+  },
+  {
+    "hero": "Ruby",
+    "skin": "Prismatic Plume",
+    "role": "Fighter",
+    "image": "ruby-prismatic-plume.png"
+  },
+  {
+    "hero": "Silvanna",
+    "skin": "Queen Frost",
+    "role": "Fighter",
+    "image": "silvanna-queen-frost.png"
+  },
+  {
+    "hero": "Sun",
+    "skin": "Wicked Flames",
+    "role": "Fighter",
+    "image": "sun-wicked-flames.png"
+  },
+  {
+    "hero": "Terizla",
+    "skin": "Soulblight Tyrant",
+    "role": "Fighter",
+    "image": "terizla-soulblight-tyrant.png"
+  },
+  {
+    "hero": "Vale",
+    "skin": "Supernal Tempest",
+    "role": "Mage",
+    "image": "vale-supernal-tempest.png"
+  },
+  {
+    "hero": "Valentina",
+    "skin": "Celestial Judicator",
+    "role": "Mage",
+    "image": "valentina-celestial-judicator.png"
+  },
+  {
+    "hero": "Valir",
+    "skin": "Demonlord",
+    "role": "Mage",
+    "image": "valir-demonlord.png"
+  },
+  {
+    "hero": "Vexana",
+    "skin": "The Sun Empress",
+    "role": "Mage",
+    "image": "vexana-the-sun-empress.png"
+  },
+  {
+    "hero": "Wanwan",
+    "skin": "Pixel Blast",
+    "role": "Marksman",
+    "image": "wanwan-pixel-blast.png"
+  },
+  {
+    "hero": "Xavier",
+    "skin": "Sunborne Monarch",
+    "role": "Mage",
+    "image": "xavier-sunborne-monarch.png"
+  },
+  {
+    "hero": "Yi Sun-shin",
+    "skin": "Lone Destructor",
+    "role": ["Assassin", "Marksman"],
+    "image": "yi-sun-shin-lone-destructor.png"
+  },
+  {
+    "hero": "Yu Zhong",
+    "skin": "Blood Serpent",
+    "role": "Fighter",
+    "image": "yu-zhong-blood-serpent.png"
+  },
+  {
+    "hero": "Zilong",
+    "skin": "Empyrean Paladin",
+    "role": ["Fighter", "Assassin"],
+    "image": "zilong-empyrean-paladin.png"
+  }
+]
