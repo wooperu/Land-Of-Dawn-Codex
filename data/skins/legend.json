@@ -1,0 +1,86 @@
+[
+  {
+    "hero": "Alpha",
+    "skin": "Revenant of Roses",
+    "role": "Fighter",
+    "image": "alpha-revenant-of-roses.png"
+  },
+  {
+    "hero": "Alucard",
+    "skin": "Obsidian Blade",
+    "role": ["Fighter", "Assassin"],
+    "image": "alucard-obsidian-blade.png"
+  },
+  {
+    "hero": "Franco",
+    "skin": "King of Hell",
+    "role": "Tank",
+    "image": "franco-king-of-hell.png"
+  },
+  {
+    "hero": "Freya",
+    "skin": "Galactic Vanquisher",
+    "role": "Fighter",
+    "image": "freya-galactic-vanquisher.png"
+  },
+  {
+    "hero": "Gord",
+    "skin": "Conqueror",
+    "role": "Mage",
+    "image": "gord-conqueror.png"
+  },
+  {
+    "hero": "Granger",
+    "skin": "Starfall Knight",
+    "role": "Marksman",
+    "image": "granger-starfall-knight.png"
+  },
+  {
+    "hero": "Guinevere",
+    "skin": "Psion of Tomorrow",
+    "role": ["Fighter", "Mage"],
+    "image": "guinevere-psion-of-tomorrow.png"
+  },
+  {
+    "hero": "Gusion",
+    "skin": "Cosmic Gleam",
+    "role": "Assassin",
+    "image": "gusion-cosmic-gleam.png"
+  },
+  {
+    "hero": "Johnson",
+    "skin": "Sovereign of Realms",
+    "role": ["Tank", "Support"],
+    "image": "johnson-sovereign-of-realms.png"
+  },
+  {
+    "hero": "Lesley",
+    "skin": "Angelic Agent",
+    "role": ["Marksman", "Assassin"],
+    "image": "lesley-angelic-agent.png"
+  },
+  {
+    "hero": "Lunox",
+    "skin": "Divine Goddess",
+    "role": "Mage",
+    "image": "lunox-divine-goddess.png"
+  },
+  {
+    "hero": "Miya",
+    "skin": "Modena Butterfly",
+    "role": "Marksman",
+    "image": "miya-modena-butterfly.png"
+  },
+  {
+    "hero": "Saber",
+    "skin": "Codename - Storm",
+    "role": "Assassin",
+    "image": "saber-codename-storm.png"
+  },
+  {
+    "hero": "Valir",
+    "skin": "Infernal Blaze",
+    "role": "Mage",
+    "image": "valir-infernal-blaze.png"
+  }
+]
