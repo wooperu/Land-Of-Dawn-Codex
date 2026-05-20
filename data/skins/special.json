@@ -2,7 +2,7 @@
   {
     "hero": "Alice",
     "skin": "Divine Owl",
-    "role": "Mage",
+    "role": ["Tank", "Mage"],
     "image": "alice-divine-owl.png"
   },
   {

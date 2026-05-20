@@ -20,7 +20,7 @@
   {
     "hero": "Alice",
     "skin": "Spirit Woman",
-    "role": "Mage",
+    "role": ["Tank", "Mage"],
     "image": "alice-spirit-woman.png"
   },
   {

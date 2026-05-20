@@ -2,7 +2,7 @@
   {
     "hero": "Alice",
     "skin": "Darknet Temptress",
-    "role": ["Mage", "Tank"],
+    "role": ["Tank", "Mage"],
     "image": "alice-darknet-temptress.png"
   },
   {
