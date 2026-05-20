@@ -2,7 +2,7 @@
   {
     "hero": "Aldous",
     "skin": "Realm Watcher",
-    "role": ["Fighter", "Tank"],
+    "role": "Fighter",
     "image": "aldous-realm-watcher.png"
   },
   {
@@ -55,7 +55,7 @@
   },
   {
     "hero": "Brody",
-    "skin": "Ore-Chemist",
+    "skin": "Ore Chemist",
     "role": "Marksman",
     "image": "brody-ore-chemist.png"
   },
@@ -92,7 +92,7 @@
   {
     "hero": "Esmeralda",
     "skin": "Light Envoy",
-    "role": ["Mage", "Tank"],
+    "role": ["Tank", "Mage"],
     "image": "esmeralda-light-envoy.png"
   },
   {
@@ -104,7 +104,7 @@
   {
     "hero": "Gusion",
     "skin": "Night Owl",
-    "role": ["Assassin", "Mage"],
+    "role": "Assassin",
     "image": "gusion-night-owl.png"
   },
   {
@@ -122,7 +122,7 @@
   {
     "hero": "Harith",
     "skin": "Psychic",
-    "role": ["Mage", "Assassin"],
+    "role": "Mage",
     "image": "harith-psychic.png"
   },
   {
@@ -134,7 +134,7 @@
   {
     "hero": "Jawhead",
     "skin": "Samurai Mech",
-    "role": ["Fighter", "Tank"],
+    "role": "Fighter",
     "image": "jawhead-samurai-mech.png"
   },
   {
@@ -182,7 +182,7 @@
   {
     "hero": "Minsitthar",
     "skin": "Sol Invictus",
-    "role": ["Fighter", "Tank"],
+    "role": "Fighter",
     "image": "minsitthar-sol-invictus.png"
   },
   {
@@ -194,13 +194,13 @@
   {
     "hero": "Nana",
     "skin": "Aqua Pura",
-    "role": ["Mage", "Support"],
+    "role": "Mage",
     "image": "nana-aqua-pura.png"
   },
   {
     "hero": "Natalia",
     "skin": "Warrioress Paragon",
-    "role": ["Assassin", "Support"],
+    "role": "Assassin",
     "image": "natalia-warrioress-paragon.png"
   },
   {
@@ -236,13 +236,13 @@
   {
     "hero": "Ruby",
     "skin": "Prismatic Plume",
-    "role": ["Fighter", "Tank"],
+    "role": "Fighter",
     "image": "ruby-prismatic-plume.png"
   },
   {
     "hero": "Silvanna",
     "skin": "Queen Frost",
-    "role": ["Fighter", "Mage"],
+    "role": "Fighter",
     "image": "silvanna-queen-frost.png"
   },
   {
