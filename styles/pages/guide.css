@@ -1,0 +1,229 @@
+/* BANNER */
+.guide-hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.guide-bg {
+  position: absolute; inset: 0;
+  background-image: url('../../images/pages/guide-page/guide-img.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.guide-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 28, 62, 0) 80%,
+    rgba(26, 28, 62, 0.9) 96%,
+    rgba(26, 28, 62, 1) 100%
+  );
+}
+
+/* banner content */
+.guide-content {
+  background: radial-gradient(ellipse at left, rgba(5,8,18,0.5) 0%, transparent 75%);
+  border-radius: 12px;
+  position: relative; z-index: 10;
+  padding: 1.5rem 3.5rem;
+}
+.guide-label {
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem; font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(232,184,75,0.4), 0 2px 12px rgba(0,0,0,0.9);
+  margin-bottom: 0.3rem; max-width: 320px;
+  opacity: 0; animation: fadeUp 0.6s 0.3s forwards;
+}
+.guide-desc {
+  font-size: 1rem; color: var(--text);
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.6rem; max-width: 320px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.95);
+  opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
+}
+
+/* guide TIER CARDS */
+.guide-container {
+  background-color: #1A1C3E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 50px 20px;
+  min-width: 100vw;
+  scroll-margin-top: 80px;
+}
+
+/* CARD BASE */
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  min-height: 38dvh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 2% 3%;
+  border: 1px solid #1e2d5a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s, box-shadow 0.3s, border-color 0.3s;
+}
+.guide-card:nth-child(1) { transition-delay: 0s; }
+.guide-card:nth-child(2) { transition-delay: 0.08s; }
+.guide-card:nth-child(3) { transition-delay: 0.16s; }
+.guide-card:nth-child(4) { transition-delay: 0.24s; }
+.guide-card:nth-child(5) { transition-delay: 0.32s; }
+
+.guide-card.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+/* hover lift */
+.guide-card:hover,
+.guide-card.reveal.visible:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.6), 0 0 0 1px rgba(58,123,213,0.4);
+  border-color: var(--gold);
+}
+
+/* dark overlay so text stays readable */
+.guide-card-overlay {
+  position: absolute; top: 0; left: 0;
+  width: 55%; height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), transparent);
+  pointer-events: none;
+  transition: width 0.4s;
+}
+.guide-card:hover .guide-card-overlay { width: 62%; }
+
+/* content sits above overlay */
+.guide-card-content {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; gap: 0.8rem;
+}
+
+/* card title */
+.guide-card-title {
+  font-family: "Crimson Text", serif;
+  font-size: clamp(20px, 2.8vw, 46px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--gold);
+  text-shadow: 0 2px 12px rgba(232,184,75,0.35), 0 0 2px rgba(0,0,0,0.8);
+  transition: text-shadow 0.3s;
+}
+.guide-card:hover .guide-card-title {
+  text-shadow: 0 2px 20px rgba(232,184,75,0.6), 0 0 2px rgba(0,0,0,0.8);
+}
+.guide-card-title span {
+  display: block;
+  font-size: clamp(26px, 4vw, 62px);
+  font-weight: 800;
+  color: var(--gold2);
+}
+
+/* card description */
+.guide-card-desc {
+  font-family: "Crimson Text", serif;
+  font-size: clamp(11px, 1.1vw, 17px);
+  font-weight: 400;
+  color: #c8d6f0cc;
+  max-width: 38%;
+  line-height: 1.55;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+}
+
+/* card button */
+.guide-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(90deg, rgba(181,128,48,0.4), rgba(94,68,34,0.4));
+  color: var(--text);
+  transition: border-color 0.2s;
+  width: fit-content;
+}
+.guide-card-btn svg {
+  transition: transform 0.2s;
+}
+.guide-card-btn:hover {
+  border-color: var(--gold);
+}
+.guide-card-btn:hover svg {
+  transform: translateX(3px);
+}
+
+.bg-error {
+  background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg');
+}
+
+/* RESPONSIVE */
+
+/* Small desktop */
+@media (max-width: 1024px) {
+  .guide-content {
+    padding: 0 2.5rem;
+  }
+
+  .guide-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+
+  /* Hero */
+  .guide-content {
+    padding: 0 1.8rem;
+    max-width: 100%;
+  }
+
+  /* Guide Container */
+  .guide-desc     { max-width: 100%; }
+  .guide-card      { min-height: 260px; }
+  .guide-card-desc { max-width: 70%; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .guide-content { padding: 0 1.2rem; }
+  .diamond { width: 85%; }
+  .guide-label   { font-size: 2rem; }
+  .guide-desc    { font-size: 0.82rem; }
+  .btn-play      { padding: 0.65rem 1.5rem; font-size: 0.72rem; }
+
+  /* Guide Container */
+  .guide-container { padding: 1.5rem 0.8rem; }
+  .guide-card      { min-height: 220px; }
+  .guide-card-desc { max-width: 85%; }
+}

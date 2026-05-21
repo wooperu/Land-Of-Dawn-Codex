@@ -1,0 +1,701 @@
+/* HERO BANNER */
+
+.guide-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 5% 4rem;
+  background: linear-gradient(180deg, #050813 0%, #1A1C3E 100%);
+  overflow: hidden;
+}
+
+.guide-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 30% 50%,
+    rgba(232,184,75,0.07) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* BREADCRUMBS */
+
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: calc(var(--nav-height) + 1rem);
+  left: 40px;
+  z-index: 100;
+  gap: 0.5rem;
+  font-family: 'Crimson Text', serif;
+}
+
+.bread-crumbs svg {
+  cursor: pointer;
+}
+
+.bread-crumbs p {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.bread-crumbs #hero {
+  color: var(--gold);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.bread-crumbs #hero:hover {
+  opacity: 0.75;
+}
+
+.bread-crumbs .sign {
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.guide-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.guide-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.guide-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+
+.guide-subtitle {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.15rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* MAIN CONTENT WRAPPER */
+
+.guide-main {
+  background: #1A1C3E;
+}
+
+/* SECTIONS */
+
+.guide-section {
+  padding: 4rem 5%;
+}
+
+.guide-section--alt {
+  background: rgba(5, 8, 24, 0.5);
+}
+
+.guide-section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.guide-section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(232,184,75,0.2);
+}
+
+.guide-subheading {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin: 2rem 0 1rem;
+  letter-spacing: 0.05em;
+}
+
+.guide-section p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  opacity: 0.9;
+}
+
+.guide-section p strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* SPLIT LAYOUT */
+
+.guide-section--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.guide-text { order: 1; }
+.guide-media { order: 2; }
+
+/* IMAGES */
+
+.guide-img {
+  width: 100%;
+  display: block;
+}
+
+.guide-img--rounded {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  border: 1px solid rgba(232,184,75,0.15);
+}
+
+/* TIPS GRID */
+
+.guide-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.guide-tip {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.guide-tip-icon {
+  color: var(--gold);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  margin-top: 0.35rem;
+}
+
+.guide-tip p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* CALLOUT */
+
+.guide-callout {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(232,184,75,0.06);
+  border: 1px solid rgba(232,184,75,0.25);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.guide-callout-icon {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 1rem;
+  flex-shrink: 0;
+  line-height: 1.75;
+}
+
+.guide-callout p {
+  margin-bottom: 0;
+  font-size: 0.98rem;
+}
+
+/* TIMELINE */
+
+.guide-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(232,184,75,0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.guide-timeline-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.guide-timeline-item:last-child {
+  border-bottom: none;
+}
+
+.guide-timeline-time {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(232,184,75,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-right: 1px solid rgba(232,184,75,0.15);
+}
+
+.guide-timeline-events {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.85rem 1.1rem;
+}
+
+.guide-timeline-events span {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.98rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.guide-timeline-events span strong {
+  color: var(--gold);
+}
+
+/* REVEAL */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MINIMAP CAPTION */
+
+.jungle-img-caption {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* BUFF TAGS */
+
+.jungle-buff-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.jungle-buff-tag--purple {
+  background: rgba(140,60,200,0.2);
+  border: 1px solid rgba(140,60,200,0.4);
+  color: #c89cf5;
+}
+
+.jungle-buff-tag--orange {
+  background: rgba(220,100,20,0.2);
+  border: 1px solid rgba(220,100,20,0.4);
+  color: #f5a86c;
+}
+
+.jungle-buff-tag--teal {
+  background: rgba(30,160,140,0.2);
+  border: 1px solid rgba(30,160,140,0.4);
+  color: #6cf5e8;
+}
+
+.jungle-buff-tag--gold {
+  background: rgba(232,184,75,0.15);
+  border: 1px solid rgba(232,184,75,0.35);
+  color: var(--gold);
+}
+
+/* COMMON CREEPS */
+
+.jungle-creep-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.jungle-creep-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.jungle-creep-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(232,184,75,0.15);
+}
+
+.jungle-creep-img-wrap {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.jungle-creep-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.jungle-creep-info h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.jungle-creep-info p {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.8;
+  line-height: 1.55;
+  margin-bottom: 0.5rem;
+}
+
+.jungle-creep-info p strong {
+  color: var(--gold);
+}
+
+.jungle-creep-gold {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+/* ELITE CREEPS */
+
+.jungle-elite-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.jungle-elite-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.jungle-elite-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(232,184,75,0.18);
+}
+
+.jungle-elite-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.jungle-elite-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.jungle-elite-header h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.jungle-elite-card > p {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.98rem;
+  color: var(--text);
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.jungle-elite-card > p strong {
+  color: var(--gold);
+}
+
+.jungle-gold-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.jungle-gold-row span,
+.jungle-creep-gold {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+}
+
+/* LEGEND CREEPS */
+
+.jungle-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.jungle-legend-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(232,184,75,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.jungle-legend-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(232,184,75,0.3);
+}
+
+.jungle-legend-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.jungle-legend-info {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.jungle-legend-info > div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.jungle-legend-info h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.jungle-legend-info p {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.98rem;
+  color: var(--text);
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* TERRAIN FEATURES */
+
+.jungle-terrain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.jungle-terrain-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.jungle-terrain-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(232,184,75,0.15);
+}
+
+.jungle-terrain-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.jungle-terrain-info {
+  padding: 1.1rem;
+}
+
+.jungle-terrain-info h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.jungle-terrain-info p {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.98rem;
+  color: var(--text);
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* JUNGLE BUFFS */
+
+.jungle-buff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.jungle-buff-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.jungle-buff-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(232,184,75,0.15);
+}
+
+.jungle-buff-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.jungle-buff-card h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.jungle-buff-card p {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.92rem;
+  color: var(--text);
+  opacity: 0.8;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .guide-section--split {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-media { order: -1; }
+
+  .jungle-creep-grid,
+  .jungle-elite-grid,
+  .jungle-legend-grid,
+  .jungle-terrain-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jungle-buff-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .guide-tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-timeline-item {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .jungle-creep-card {
+    flex-direction: column;
+  }
+
+  .jungle-creep-img-wrap {
+    width: 100%;
+    height: 160px;
+  }
+
+  .jungle-buff-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jungle-elite-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

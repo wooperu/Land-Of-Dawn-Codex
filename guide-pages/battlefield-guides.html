@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Battlefield Guide &ndash; Land of Dawn Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/shared/general.css">
+    <link rel="stylesheet" href="../styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="../styles/pages/guides-pages/battlefield-guides.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="../images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../heroes.html">Heroes</a></li>
+        <li><a href="../skins.html">Skins</a></li>
+        <li><a href="../preparation.html">Preparation</a></li>
+        <li><a href="../in-game-guides.html" class="active">In-Game Guides</a></li>
+        <li><a href="../game-modes.html">Game Modes</a></li>
+        <li><a href="../mini-games.html">Mini-Games</a></li>
+      </ul>
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="guide-hero">
+
+      <div class="bread-crumbs">
+        <svg class="btn" onclick="window.location.href='../in-game-guides.html'" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#d6a115" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" />
+        </svg>
+        <p id="hero" onclick="window.location.href='../in-game-guides.html'">IN-GAME GUIDES</p>
+        <p class="sign">&#8250;</p>
+        <p>BATTLEFIELD GUIDE</p>
+      </div>
+
+      <div class="guide-hero-content reveal">
+        <h1 class="guide-title">Battlefield Guide</h1>
+        <p class="guide-subtitle">Master the map, control objectives, and lead your team to victory.</p>
+      </div>
+    </section>
+
+    <main class="guide-main">
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner guide-section--split">
+          <div class="guide-text">
+            <h2 class="guide-section-title">The Map</h2>
+            <p>Always keep an eye on the minimap. Tracking enemy positions and movement patterns gives your team a major tactical advantage — helping you anticipate fights, rotations, and ambushes before they happen.</p>
+            <p>The battlefield is divided into three main areas: the three lanes and the jungle in between. Every decision you make — when to push, when to rotate, when to take an objective — should be informed by what you see on the map.</p>
+          </div>
+          <div class="guide-media">
+            <img src="../images/pages/guide-page/battlefield/minimap.png" alt="MLBB Minimap" class="guide-img guide-img--rounded">
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Lanes &amp; Turrets</h2>
+          <div class="guide-map-wrap">
+            <img src="../images/pages/guide-page/battlefield/map-lanes.png" alt="MLBB Map showing Top Lane, Mid Lane, and Bottom Lane" class="guide-img guide-img--map">
+          </div>
+          <p>There are three lanes on the map — <strong>Top Lane</strong>, <strong>Mid Lane</strong>, and <strong>Bot Lane</strong>. Each lane has three turrets. Your goal is to push through enemy minions, destroy all three turrets, and eventually reach and destroy the enemy base to win.</p>
+
+          <div class="guide-tips-grid">
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p>Clear enemy minions quickly to free up time to attack turrets.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p>Let your minion wave reach the enemy turret before committing — they help soak turret damage.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p>Never charge a turret blindly. Enemies will rotate to defend and you can easily be caught out.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p>Always have an escape plan and watch the minimap for incoming enemies.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p>Once your lane is cleared, rotate to support other lanes rather than staying idle.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p>Build your minion wave by clearing enemy minions — a large wave will pressure towers on its own.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Jungle</h2>
+          <p>The jungle fills the space between the three lanes and is packed with monsters that grant gold and experience. Jungling is one of the fastest ways to scale your hero in the early game.</p>
+
+          <div class="guide-role-table">
+            <div class="guide-role-row guide-role-row--header">
+              <span>Role</span>
+              <span>Primary Gold &amp; XP Source</span>
+            </div>
+            <div class="guide-role-row">
+              <span>Jungler</span>
+              <span>Jungle monsters</span>
+            </div>
+            <div class="guide-role-row">
+              <span>Mid Laner</span>
+              <span>Minion waves</span>
+            </div>
+            <div class="guide-role-row">
+              <span>Sidelaner</span>
+              <span>Minion waves</span>
+            </div>
+            <div class="guide-role-row">
+              <span>Roamer</span>
+              <span>Roaming after purchasing roam items</span>
+            </div>
+          </div>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p>Only junglers should farm jungle camps. Taking monsters away from your jungler delays their items and rotations — putting your whole team behind.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Battlefield Timeline</h2>
+          <p>Knowing when key events happen lets you plan rotations and objectives around them.</p>
+
+          <div class="guide-timeline">
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">2 min</div>
+              <div class="guide-timeline-events">
+                <span>First Turtle spawns</span>
+                <span>Jungler's extra damage reduction removed</span>
+                <span>Crab upgraded</span>
+              </div>
+            </div>
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">5 min</div>
+              <div class="guide-timeline-events">
+                <span>All Outer Turret energy shields drop</span>
+                <span>Sidelane minion bonus rewards removed</span>
+                <span>Jungler minion penalty removed</span>
+              </div>
+            </div>
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">8 min</div>
+              <div class="guide-timeline-events">
+                <span>First Lord spawns</span>
+                <span>Inner Turret damage reduction expires</span>
+                <span>Roamer begins sharing minion rewards</span>
+              </div>
+            </div>
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">12 min</div>
+              <div class="guide-timeline-events">
+                <span>Lord enhanced</span>
+                <span>Inhibitor Turret damage reduction expires</span>
+                <span>Minion movement speed greatly increased</span>
+              </div>
+            </div>
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">18 min</div>
+              <div class="guide-timeline-events">
+                <span>Lord evolves</span>
+                <span>Death timers greatly increased</span>
+                <span>Fountain movement speed boost greatly increased</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Turtle &amp; Lord</h2>
+          <p>These two objectives are among the most impactful in the game and are frequently ignored at lower ranks.</p>
+
+          <div class="guide-objectives">
+            <div class="guide-objective-card">
+              <h3>Turtle</h3>
+              <p>Defeating the Turtle grants bonus gold to your entire team, giving you a gold lead over the enemy.</p>
+            </div>
+            <div class="guide-objective-card">
+              <h3>Lord</h3>
+              <p>After defeat, the Lord pushes a lane for you. Group with it to siege towers and the enemy base.</p>
+            </div>
+          </div>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p>Best time to take an objective: right after winning a team fight or when you catch one or two enemies out of position near the center of the map. Always clear surrounding bushes first and keep Retribution ready as a jungler.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Gold &amp; Experience Reference</h2>
+
+          <div class="guide-gold-grid">
+            <div class="guide-gold-block">
+              <h3>Minion Gold</h3>
+              <div class="guide-role-table">
+                <div class="guide-role-row guide-role-row--header">
+                  <span>Minion</span><span>Gold</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Infantry / Lancer</span><span>45 – 50</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Cannon</span><span>100 – 150</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-gold-block">
+              <h3>Hero Kill Gold</h3>
+              <div class="guide-role-table">
+                <div class="guide-role-row guide-role-row--header">
+                  <span>Kill Type</span><span>Gold</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Solo kill</span><span>200</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>2-player kill</span><span>150</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>3-player kill</span><span>100</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>4-player kill</span><span>50</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Full team kill</span><span>25</span>
+                </div>
+              </div>
+              <p class="guide-note">Kill gold is shared but XP is not — you keep full experience regardless of assists.</p>
+            </div>
+
+            <div class="guide-gold-block">
+              <h3>Objective Gold</h3>
+              <div class="guide-role-table">
+                <div class="guide-role-row guide-role-row--header">
+                  <span>Objective</span><span>Gold</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Turret</span><span>150</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Turtle</span><span>163</span>
+                </div>
+                <div class="guide-role-row">
+                  <span>Lord</span><span>213</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Combat Tips</h2>
+          <div class="guide-tips-grid">
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Protect your jungle early.</strong> If you are a roamer or mid laner, watch enemy movement in the first minute and intercept any invasion attempts on your jungler's blue buff.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Stay off the minimap.</strong> Appearing too often makes you easy to predict and ambush. Wait in a bush until the next minion wave arrives.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Roamers: keep moving.</strong> Provide vision by checking bushes and rotate with your mid laner. Avoid staying glued to your jungler unless they are under pressure.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Turret diving.</strong> Only dive an enemy turret if you are significantly ahead or fully confident you can secure the kill. A failed dive opens your lane to a counter push.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Focus on objectives, not kills.</strong> Towers win games — kills do not. Players who chase kills while ignoring turrets lose more often.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Praise your teammates.</strong> Criticizing poor plays makes things worse. Acknowledge good decisions — it builds team confidence and leads to better play.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Team Fight Positioning</h2>
+          <p>Once the laning phase ends, group up for tower sieges and team fights. Use the <strong>"Prepare for Team Fight!"</strong> ping to call your team together before engaging.</p>
+
+          <div class="guide-positioning">
+            <div class="guide-position-card">
+              <h3>Frontline</h3>
+              <p>Tanks and fighters engage first. They soak damage, initiate, and create space for your damage dealers.</p>
+            </div>
+            <div class="guide-position-card">
+              <h3>Backline</h3>
+              <p>Marksmen and assassins wait for the frontline to go in. As a squishy hero, you will rarely out-damage three opponents alone.</p>
+            </div>
+          </div>
+
+          <h3 class="guide-subheading">Quick Communication Pings</h3>
+          <div class="guide-role-table">
+            <div class="guide-role-row guide-role-row--header">
+              <span>Ping</span><span>When to use it</span>
+            </div>
+            <div class="guide-role-row"><span>Well Played</span><span>A teammate makes a good play</span></div>
+            <div class="guide-role-row"><span>Attack the Lord</span><span>Your team has a clear advantage</span></div>
+            <div class="guide-role-row"><span>Rally and Push</span><span>Calling everyone to group up</span></div>
+            <div class="guide-role-row"><span>Request Assistance</span><span>You need help in your lane</span></div>
+            <div class="guide-role-row"><span>Clear the Lane</span><span>Minion waves need clearing before a push</span></div>
+            <div class="guide-role-row"><span>Prepare for Team Fight</span><span>Time to engage 5v5</span></div>
+            <div class="guide-role-row"><span>Defend the High Ground</span><span>Enemies are attacking your base</span></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../heroes.html">Heroes</a></li>
+            <li><a href="../skins.html">Skins</a></li>
+            <li><a href="../preparation.html">Preparation</a></li>
+            <li><a href="../in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="../game-modes.html">Game Modes</a></li>
+            <li><a href="../mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="../images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../scripts/stars.js"></script>
+    <script src="../scripts/search-overlay.js"></script>
+    <script src="../scripts/scroll-reveal.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+  </body>
+</html>

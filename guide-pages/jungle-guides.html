@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jungle Guide &ndash; Land of Dawn Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/shared/general.css">
+    <link rel="stylesheet" href="../styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="../styles/pages/guides-pages/jungle-guides.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="../images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../heroes.html">Heroes</a></li>
+        <li><a href="../skins.html">Skins</a></li>
+        <li><a href="../preparation.html">Preparation</a></li>
+        <li><a href="../in-game-guides.html" class="active">In-Game Guides</a></li>
+        <li><a href="../game-modes.html">Game Modes</a></li>
+        <li><a href="../mini-games.html">Mini-Games</a></li>
+      </ul>
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="guide-hero">
+
+      <div class="bread-crumbs">
+        <svg class="btn" onclick="window.location.href='../in-game-guides.html'" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#d6a115" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" />
+        </svg>
+        <p id="hero" onclick="window.location.href='../in-game-guides.html'">IN-GAME GUIDES</p>
+        <p class="sign">&#8250;</p>
+        <p>JUNGLE GUIDE</p>
+      </div>
+
+      <div class="guide-hero-content reveal">
+        <h1 class="guide-title">Jungle Guide</h1>
+        <p class="guide-subtitle">Master the jungle with guides on monster mechanics, farming routes, rotations, and objective control.</p>
+      </div>
+    </section>
+
+    <main class="guide-main">
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner guide-section--split">
+          <div class="guide-text">
+            <h2 class="guide-section-title">What is the Jungle?</h2>
+            <p>The jungle refers to any area of the map that is not a lane or part of either team's base, including the river that divides it. In a standard 5v5 match, four players take lanes while one is designated as the <strong>Jungler</strong>.</p>
+            <p>Junglers rely on killing neutral monsters to match their laning teammates in gold and experience. The purpose of the jungle is to gain buffs, gold, and experience without interfering with your team's lane minions.</p>
+            <p>Assassins and Fighters are best suited for jungling due to their high early-game damage, allowing them to clear camps quickly and gank lanes effectively.</p>
+            <div class="guide-callout">
+              <span class="guide-callout-icon">!</span>
+              <p>A jungler equipped with <strong>Retribution</strong> and Jungling Boots is significantly faster at clearing camps than any other hero. These are essential for effective jungling.</p>
+            </div>
+          </div>
+          <div class="guide-media">
+            <img src="../images/pages/guide-page/jungle/jungle-minimap.png" alt="MLBB Jungle Minimap" class="guide-img guide-img--rounded">
+            <p class="jungle-img-caption">Minimap dot colors indicate monster types — purple for buff creeps, yellow for gold/exp, green for healing, and the paw/cross icons mark the Turtle and Lord.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Common Creeps</h2>
+          <p>These small monsters are scattered throughout the jungle. They do not grant buffs but are valuable for gold and experience. Clearing these camps frequently keeps you ahead in farm.</p>
+
+          <div class="jungle-creep-grid">
+
+            <div class="jungle-creep-card">
+              <div class="jungle-creep-img-wrap">
+                <img src="../images/pages/guide-page/jungle/lithowanderer.png" alt="Lithowanderer">
+              </div>
+              <div class="jungle-creep-info">
+                <h3>Lithowanderer</h3>
+                <p>A passive creep that won't attack you. Grants the <strong>Walkie Grass</strong> buff which provides extra movement speed in the river. A Stone Roamer will appear moving along the river after it is killed.</p>
+                <span class="jungle-creep-gold">92 Gold</span>
+              </div>
+            </div>
+
+            <div class="jungle-creep-card">
+              <div class="jungle-creep-img-wrap">
+                <img src="../images/pages/guide-page/jungle/horned-lizard.png" alt="Horned Lizard">
+              </div>
+              <div class="jungle-creep-info">
+                <h3>Horned Lizard</h3>
+                <p>Uses ranged attacks and increases its own defense when at low HP. Be prepared for it to tank more damage as you finish it off.</p>
+                <span class="jungle-creep-gold">92 Gold</span>
+              </div>
+            </div>
+
+            <div class="jungle-creep-card">
+              <div class="jungle-creep-img-wrap">
+                <img src="../images/pages/guide-page/jungle/fire-beetle.png" alt="Fire Beetle">
+              </div>
+              <div class="jungle-creep-info">
+                <h3>Fire Beetle</h3>
+                <p>Upon death, spawns a small Crammer that can survive for up to fifteen seconds. Clearing this camp contributes to reaching level 4 faster on your initial jungle rotation.</p>
+              </div>
+            </div>
+
+            <div class="jungle-creep-card">
+              <div class="jungle-creep-img-wrap">
+                <img src="../images/pages/guide-page/jungle/lava-golem.png" alt="Lava Golem">
+              </div>
+              <div class="jungle-creep-info">
+                <h3>Lava Golem</h3>
+                <p>A straightforward melee creep with no special abilities. Grants a Healing Buff on death, restoring HP and mana to the killer.</p>
+                <span class="jungle-creep-gold">81 Gold</span>
+              </div>
+            </div>
+
+            <div class="jungle-creep-card">
+              <div class="jungle-creep-img-wrap">
+                <img src="../images/pages/guide-page/jungle/scavenger-crab.png" alt="Scavenger Crab">
+              </div>
+              <div class="jungle-creep-info">
+                <h3>Scavenger Crab</h3>
+                <p>Grants a <strong>Gold Buff</strong> or <strong>EXP Buff</strong> depending on the lane. A smaller Crab spawns first, giving a lesser amount of gold and experience and respawning more frequently.</p>
+                <span class="jungle-creep-gold">36 Gold</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Elite Creeps</h2>
+          <p>Elite creeps spawn 30 seconds into the game and respawn 2 minutes after being killed. These are your priority camps — they grant powerful buffs that directly impact your damage output and ability uptime.</p>
+
+          <div class="jungle-elite-grid">
+
+            <div class="jungle-elite-card">
+              <div class="jungle-elite-header">
+                <img src="../images/pages/guide-page/jungle/thunder-fenrir.png" alt="Thunder Fenrir" class="jungle-elite-img">
+                <div>
+                  <h3>Thunder Fenrir</h3>
+                  <span class="jungle-buff-tag jungle-buff-tag--purple">Purple Buff</span>
+                </div>
+              </div>
+              <p>A duo creep. Killing them grants the <strong>Purple Buff</strong> (also called Blue Buff), which reduces all skill cooldowns by 10%, mana cost by 40%, and energy cost by 25%. Killing any enemy unit while buffed restores HP — 3% from minions, 8% from heroes, and 12% from creeps.</p>
+              <div class="jungle-gold-row">
+                <span>22 Gold (Small)</span>
+                <span>100 Gold (Large)</span>
+              </div>
+            </div>
+
+            <div class="jungle-elite-card">
+              <div class="jungle-elite-header">
+                <img src="../images/pages/guide-page/jungle/molten-fiend.png" alt="Molten Fiend" class="jungle-elite-img">
+                <div>
+                  <h3>Molten Fiend</h3>
+                  <span class="jungle-buff-tag jungle-buff-tag--orange">Orange Buff</span>
+                </div>
+              </div>
+              <p>Grants the <strong>Orange Buff</strong> (also called Red Buff). Each time you attack an enemy hero, the Soul of Lava strikes them for extra true damage and slows them for 1 second. Effect has a 3-second cooldown. Damage scales with your role — tanks and fighters deal more true damage while marksmen and mages apply a stronger slow.</p>
+              <span class="jungle-creep-gold">120 Gold</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Legend Creeps</h2>
+          <p>The most powerful creeps on the map. Both grant team-wide rewards and are the most contested objectives in any match. Always fight for these when possible.</p>
+
+          <div class="jungle-legend-grid">
+
+            <div class="jungle-legend-card">
+              <img src="../images/pages/guide-page/jungle/turtle.png" alt="Dragon Turtle" class="jungle-legend-img">
+              <div class="jungle-legend-info">
+                <div>
+                  <h3>Turtle</h3>
+                  <span class="jungle-buff-tag jungle-buff-tag--teal">Turtle Buff</span>
+                </div>
+                <p>Defeating the Turtle grants the killer a regenerating shield that absorbs damage and increases Physical Attack and Magic Power. Allies who assisted receive a one-time shield and bonus gold. Spawns at 2 minutes.</p>
+              </div>
+            </div>
+
+            <div class="jungle-legend-card">
+              <img src="../images/pages/guide-page/jungle/lord.png" alt="Elemental Lord" class="jungle-legend-img">
+              <div class="jungle-legend-info">
+                <div>
+                  <h3>Lord</h3>
+                  <span class="jungle-buff-tag jungle-buff-tag--gold">Lord Buff</span>
+                </div>
+                <p>The most powerful creep on the map. When killed, it pushes the lane with the fewest turrets for your team, enhances all minion waves across all three lanes, and charges the first turret it encounters with a true damage skill that disables it temporarily. Spawns at 8 minutes.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Terrain Features</h2>
+
+          <div class="jungle-terrain-grid">
+
+            <div class="jungle-terrain-card">
+              <img src="../images/pages/guide-page/jungle/bush.png" alt="Bush" class="jungle-terrain-img">
+              <div class="jungle-terrain-info">
+                <h3>Bush</h3>
+                <p>Entering a bush makes your hero invisible to enemies unless they are also inside the bush or have vision on it. Use bushes to ambush enemies, dodge skill shots, and set up ganks without revealing your position on the minimap.</p>
+              </div>
+            </div>
+
+            <div class="jungle-terrain-card">
+              <img src="../images/pages/guide-page/jungle/cyclone-eye.png" alt="Cyclone Eye" class="jungle-terrain-img">
+              <div class="jungle-terrain-info">
+                <h3>Cyclone Eye</h3>
+                <p>Activating a Cyclone Eye gives your hero a blink effect, propelling you forward in your current movement direction. Useful for crossing terrain quickly, escaping, or closing gaps during a chase.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Jungle Buffs</h2>
+          <p>Each buff type is granted by a specific monster. Understanding what each buff does helps you prioritize which camps to clear first based on your hero's needs.</p>
+
+          <div class="jungle-buff-grid">
+
+            <div class="jungle-buff-card">
+              <img src="../images/pages/guide-page/jungle/buff-healing.png" alt="Healing Buff" class="jungle-buff-icon">
+              <h3>Healing Buff</h3>
+              <p>Restores 350 HP and 5% Mana over 2 seconds. Granted by: Horned Lizard, Fire Beetle, Lava Golem, Little Thunder Fenrir.</p>
+            </div>
+
+            <div class="jungle-buff-card">
+              <img src="../images/pages/guide-page/jungle/buff-walkie-grass.png" alt="Walkie Grass" class="jungle-buff-icon">
+              <h3>Walkie Grass</h3>
+              <p>Increases movement speed while walking through the river area. Follows the killer for 120 seconds. Granted by: Lithowanderer.</p>
+            </div>
+
+            <div class="jungle-buff-card">
+              <img src="../images/pages/guide-page/jungle/buff-gold.png" alt="Gold Buff" class="jungle-buff-icon">
+              <h3>Gold Buff</h3>
+              <p>Provides 100 extra Gold over 30 seconds. The Little Crab version gives 30 extra Gold over 9 seconds. Granted by: Scavenger Crab.</p>
+            </div>
+
+            <div class="jungle-buff-card">
+              <img src="../images/pages/guide-page/jungle/buff-orange.png" alt="Orange Buff" class="jungle-buff-icon">
+              <h3>Orange Buff</h3>
+              <p>Attacks deal bonus true damage and slow enemies for 1 second. Effect cooldown of 3 seconds. Scales based on your role. Granted by: Molten Fiend.</p>
+            </div>
+
+            <div class="jungle-buff-card">
+              <img src="../images/pages/guide-page/jungle/buff-purple.png" alt="Purple Buff" class="jungle-buff-icon">
+              <h3>Purple Buff</h3>
+              <p>Reduces skill cooldowns by 10%, mana cost by 40%, energy cost by 25%. Killing units restores HP. Granted by: Thunder Fenrir.</p>
+            </div>
+
+            <div class="jungle-buff-card">
+              <img src="../images/pages/guide-page/jungle/buff-turtle.png" alt="Turtle Buff" class="jungle-buff-icon">
+              <h3>Turtle Buff</h3>
+              <p>Grants a regenerating shield that absorbs damage and boosts Physical Attack and Magic Power when not taking damage for 5 seconds. Granted by: Dragon Turtle.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Jungling Tips</h2>
+          <p>Jungling means leaving the lane to farm monster camps and support teammates through surprise attacks and ganks. Your team relies on you for map control and ganking — always be moving, always be looking for opportunities.</p>
+
+          <div class="guide-tips-grid">
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Equip Retribution.</strong> It is required to purchase Jungling Boots, which deal extra damage to monsters and grant more gold and exp from camps.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Stay stealthy.</strong> Never use skills on lane minions or walk near enemy lanes — it reveals your position and removes the threat of your presence.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Track the enemy jungler.</strong> Keep your team updated on enemy jungler movement. Knowing their position prevents counterjungling and surprise flanks.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Secure at least one of three early.</strong> Buffs, kills, or Turtle. Ideally all three, but never fall behind on all three simultaneously.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Save Retribution for objectives.</strong> Use it to secure Turtle or Lord if enemies are nearby and contesting — it guarantees the last hit.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Creeps deal reduced damage when outnumbered.</strong> Having an ally nearby as you start a camp reduces the damage you take from the monster.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Jungle Rotation</h2>
+          <p>A proper rotation gets you to level 4 efficiently and positions you near a lane to gank as soon as possible. Most junglers start near the EXP lane so that when their rotation ends, they are level 4 and ready to gank the Gold Lane.</p>
+
+          <div class="guide-timeline">
+
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">Route A</div>
+              <div class="guide-timeline-events">
+                <span><strong>Start: Purple Buff</strong> — Clear Thunder Fenrir, then move to Orange Buff side.</span>
+                <span>Clear the Lava Golem and the three surrounding creeps. The Fire Beetle spawns a smaller beetle — killing it guarantees level 4.</span>
+                <span>Avoid the Horned Lizard as it is on the opposite side of this rotation.</span>
+              </div>
+            </div>
+
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">Route B</div>
+              <div class="guide-timeline-events">
+                <span><strong>Start: Orange Buff</strong> — Clear Lava Golem first, then move to Purple Buff side.</span>
+                <span>Clear Thunder Fenrir and the three surrounding creeps to reach level 4.</span>
+              </div>
+            </div>
+
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">Tip</div>
+              <div class="guide-timeline-events">
+                <span>Save Retribution to secure the <strong>Lithowanderer</strong> if it is near your first buff — it speeds up your path to level 4 significantly.</span>
+              </div>
+            </div>
+
+            <div class="guide-timeline-item">
+              <div class="guide-timeline-time">After 5 min</div>
+              <div class="guide-timeline-events">
+                <span>You can begin helping allies farm lane minions. Focus primarily on Orange and Purple Buff and Turtle to maximize your gold income.</span>
+                <span>Never clear mid lane minions if your mid laner is not yet level 4 — they are heavily dependent on their ultimate at that stage.</span>
+                <span>Avoid clearing Gold Lane or EXP Lane minions while jungle camps are still available.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p>Before 2:00, your damage to minions only credits gold and experience to nearby allies — not to you. Don't waste time on lanes before this window.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../heroes.html">Heroes</a></li>
+            <li><a href="../skins.html">Skins</a></li>
+            <li><a href="../preparation.html">Preparation</a></li>
+            <li><a href="../in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="../game-modes.html">Game Modes</a></li>
+            <li><a href="../mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="../images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../scripts/stars.js"></script>
+    <script src="../scripts/search-overlay.js"></script>
+    <script src="../scripts/scroll-reveal.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+  </body>
+</html>
