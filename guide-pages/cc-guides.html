@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Crowd Control Guide &ndash; Land of Dawn Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/shared/general.css">
+    <link rel="stylesheet" href="../styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="../styles/pages/guides-pages/cc-guides.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="../images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../heroes.html">Heroes</a></li>
+        <li><a href="../skins.html">Skins</a></li>
+        <li><a href="../preparation.html">Preparation</a></li>
+        <li><a href="../in-game-guides.html" class="active">In-Game Guides</a></li>
+        <li><a href="../game-modes.html">Game Modes</a></li>
+        <li><a href="../mini-games.html">Mini-Games</a></li>
+      </ul>
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="guide-hero">
+
+      <div class="bread-crumbs">
+        <svg class="btn" onclick="window.location.href='../in-game-guides.html'" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#d6a115" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" />
+        </svg>
+        <p id="hero" onclick="window.location.href='../in-game-guides.html'">IN-GAME GUIDES</p>
+        <p class="sign">&#8250;</p>
+        <p>CROWD CONTROL GUIDE</p>
+      </div>
+
+      <div class="guide-hero-content reveal">
+        <h1 class="guide-title">Crowd Control Guide</h1>
+        <p class="guide-subtitle">A breakdown of every CC type, how they stack, how they are countered, and how to use them to your advantage.</p>
+      </div>
+    </section>
+
+    <main class="guide-main">
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">What is Crowd Control?</h2>
+          <p>Crowd control — commonly abbreviated as <strong>CC</strong> — is a catch-all term for skills and abilities that prevent or diminish a target's control over their hero, such as the ability to move, deal basic attacks, or cast abilities.</p>
+          <p>CC effects are superior forms of debuffs because they directly disable a target's combat ability rather than merely limiting it. This makes them invaluable both offensively — locking down enemies during fights — and defensively, as a means of escape or peel.</p>
+          <p>The term CC effect can refer to two things depending on scale: a <strong>control</strong> effect when it affects a single target, and a <strong>crowd control</strong> effect when it can be applied to two or more targets at once. Both terms are commonly used interchangeably.</p>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p>CC effects are organized into four severity levels: <strong>Low</strong>, <strong>Basic</strong>, <strong>High</strong>, and <strong>Ultimate</strong>. Higher-level CC tends to disable more actions and interrupt more skills — but also becomes harder to apply.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">CC Types</h2>
+          <p>There are thirteen crowd control effects in the game, split across four severity levels. Each level defines how many actions are disabled and how many skills can be interrupted when the effect is applied.</p>
+
+          <div class="cc-groups">
+
+            <div>
+              <div class="cc-group-label">
+                <span class="cc-level-tag cc-level-tag--low">Low</span>
+                <h3>Least restrictive. Cannot interrupt skills.</h3>
+              </div>
+              <div class="cc-type-grid">
+
+                <div class="cc-type-card cc-type-card--low">
+                  <div class="cc-type-card-header">
+                    <h4>Disarm</h4>
+                  </div>
+                  <p>Prevents the target from using Basic Attacks. Skills remain usable and the target can still move freely. Does not interrupt any active skills.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--low">
+                  <div class="cc-type-card-header">
+                    <h4>Restrain</h4>
+                  </div>
+                  <p>Prevents the target from leaving a defined area — typically a Circle of Light. The target can still attack and use skills. Does not interrupt active skills.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--low">
+                  <div class="cc-type-card-header">
+                    <h4>Root</h4>
+                  </div>
+                  <p>Prevents the target from using Blink or Charge skills, including Flicker. The target can still attack and use non-mobility skills. Does not interrupt active skills.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--low">
+                  <div class="cc-type-card-header">
+                    <h4>Immobilize</h4>
+                  </div>
+                  <p>Prevents the target from moving and from using Blink or Charge skills. Basic attacks and non-mobility skills remain available. Does not interrupt active skills.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div>
+              <div class="cc-group-label">
+                <span class="cc-level-tag cc-level-tag--basic">Basic</span>
+                <h3>Disables attacks and/or skills. Can interrupt some skills.</h3>
+              </div>
+              <div class="cc-type-grid">
+
+                <div class="cc-type-card cc-type-card--basic">
+                  <div class="cc-type-card-header">
+                    <h4>Stun</h4>
+                  </div>
+                  <p>The most common CC type. Prevents the target from moving, using Basic Attacks, and using skills. Can interrupt some active skills.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--basic">
+                  <div class="cc-type-card-header">
+                    <h4>Silence</h4>
+                  </div>
+                  <p>Prevents the target from using skills or Battle Spells, with the exception of Purify. Movement and Basic Attacks remain unaffected. Can interrupt some skills.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--basic">
+                  <div class="cc-type-card-header">
+                    <h4>Terrify</h4>
+                  </div>
+                  <p>Prevents Basic Attacks and skill usage, and forces the target to move in random directions. The target cannot control their movement with the joystick. Can interrupt some skills.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--basic">
+                  <div class="cc-type-card-header">
+                    <h4>Taunt</h4>
+                  </div>
+                  <p>Forces the target to chase the caster and use Basic Attacks on them. Skill usage is disabled. If the taunter dies, the target becomes stationary for the remaining duration. Can interrupt some skills.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div>
+              <div class="cc-group-label">
+                <span class="cc-level-tag cc-level-tag--high">High</span>
+                <h3>Disables all actions. Interrupts a large number of skills.</h3>
+              </div>
+              <div class="cc-type-grid">
+
+                <div class="cc-type-card cc-type-card--high">
+                  <div class="cc-type-card-header">
+                    <h4>Freeze</h4>
+                  </div>
+                  <p>Prevents the target from moving, using Basic Attacks, and using skills. Interrupts a large number of active skills. More disruptive than a standard Stun.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--high">
+                  <div class="cc-type-card-header">
+                    <h4>Petrify</h4>
+                  </div>
+                  <p>Identical in effect to Freeze — prevents movement, Basic Attacks, and skill usage, interrupting a large number of active skills. Visually distinct but mechanically the same.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--high">
+                  <div class="cc-type-card-header">
+                    <h4>Airborne</h4>
+                  </div>
+                  <p>Prevents movement, Basic Attacks, and skills. Interrupts a large number of skills as well as Blink and Charge effects. The target is lifted off the ground for the duration. Ignores Resilience.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--high">
+                  <div class="cc-type-card-header">
+                    <h4>Transform</h4>
+                  </div>
+                  <p>Converts the target into a critter, preventing Basic Attacks and skill usage. Movement is reduced by 50–70% depending on hero level. Interrupts a large number of active skills.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div>
+              <div class="cc-group-label">
+                <span class="cc-level-tag cc-level-tag--ultimate">Ultimate</span>
+                <h3>Cannot be removed by Purify or control immunity.</h3>
+              </div>
+              <div class="cc-type-grid">
+
+                <div class="cc-type-card cc-type-card--ultimate">
+                  <div class="cc-type-card-header">
+                    <h4>Frozen Moment</h4>
+                  </div>
+                  <p>Prevents movement, Basic Attacks, and skills — but uniquely does not interrupt active skills or Blink and Charge effects already in progress. Cannot be removed by Purify or control immunity.</p>
+                </div>
+
+                <div class="cc-type-card cc-type-card--ultimate">
+                  <div class="cc-type-card-header">
+                    <h4>Suppress</h4>
+                  </div>
+                  <p>The most powerful CC type. Prevents all actions and interrupts a large number of skills including Blinks and Charges. Ignores Resilience, control immunity, and cannot be purified.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">CC Effects at a Glance</h2>
+          <p>This table compares every CC effect across the key properties that determine how dangerous they are and how they can be countered. Scroll horizontally if needed.</p>
+
+          <div class="cc-table-wrap">
+            <table class="cc-table">
+              <thead>
+                <tr>
+                  <th>Level</th>
+                  <th>CC Effect</th>
+                  <th>Restricts Movement</th>
+                  <th>Disables Attacks</th>
+                  <th>Disables Skills</th>
+                  <th>Interrupts Skills</th>
+                  <th>Ignores Resilience</th>
+                  <th>Ignores CC Immunity</th>
+                  <th>Cannot Be Purified</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cc-row--low">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--low">Low</span></td>
+                  <td class="cc-td-name">Restrained</td>
+                  <td><span class="cc-partial">Partial</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--low">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--low">Low</span></td>
+                  <td class="cc-td-name">Rooted</td>
+                  <td><span class="cc-partial">Partial</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-partial">Blink / Charge only</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--low">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--low">Low</span></td>
+                  <td class="cc-td-name">Immobilized</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-partial">Blink / Charge only</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--basic">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--basic">Basic</span></td>
+                  <td class="cc-td-name">Silenced</td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Some skills</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--basic">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--basic">Basic</span></td>
+                  <td class="cc-td-name">Stunned</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Some skills</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--basic">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--basic">Basic</span></td>
+                  <td class="cc-td-name">Taunted</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Some skills</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--basic">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--basic">Basic</span></td>
+                  <td class="cc-td-name">Terrified</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Some skills</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--high">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--high">High</span></td>
+                  <td class="cc-td-name">Airborne</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Large number</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--high">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--high">High</span></td>
+                  <td class="cc-td-name">Frozen</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Large number</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--high">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--high">High</span></td>
+                  <td class="cc-td-name">Petrified</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Large number</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--high">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--high">High</span></td>
+                  <td class="cc-td-name">Transformed</td>
+                  <td><span class="cc-partial">Partial</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Large number</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                </tr>
+                <tr class="cc-row--ultimate">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--ultimate">Ultimate</span></td>
+                  <td class="cc-td-name">Frozen Moment</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-cross">✕</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                </tr>
+                <tr class="cc-row--ultimate">
+                  <td class="cc-td-level"><span class="cc-level-tag cc-level-tag--ultimate">Ultimate</span></td>
+                  <td class="cc-td-name">Suppressed</td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-partial">Large number</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                  <td><span class="cc-check">✔</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p><strong>Partial</strong> means the effect applies under specific conditions or only to certain skill types — see the individual CC type descriptions above for details on each case.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Stacking CC Effects</h2>
+          <p>CC effects <strong>cannot be stacked</strong> to extend their total duration. Applying a second CC effect to an already-controlled target does not add time — it replaces the current effect and resets the timer to the new effect's duration.</p>
+          <p>For example: a target is stunned for 1 second. Halfway through, an Airborne effect with a 2-second duration is applied. The stun is immediately replaced by the Airborne effect, and the timer resets to 2 full seconds — the remaining stun time is discarded.</p>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p>This means applying a weaker CC on top of a stronger one will downgrade the effect. Be mindful of your team's CC order — save high-level CC like Suppress or Airborne for when it will not be wasted overwriting an existing one.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Countering Crowd Control</h2>
+          <p>Several mechanics exist that allow heroes to resist, reduce, or completely negate incoming CC. Understanding these gives you options when building a hero that is vulnerable to being locked down.</p>
+
+          <div class="cc-counters-grid">
+
+            <div class="cc-counter-card">
+              <h3>Resilience</h3>
+              <p>An attribute that reduces the duration of incoming CC effects by a percentage. Does not work against Airborne, Suppress, or Frozen Moment. Buildable through certain equipment and emblems, making it useful against CC-heavy enemy compositions.</p>
+            </div>
+
+            <div class="cc-counter-card">
+              <h3>Control Immunity</h3>
+              <p>A temporary state that renders the hero immune to all control effects for its duration — with the exception of Suppress. Heroes under control immunity are highlighted in orange (green for Benedetta), and their username is replaced with "CC Immune." Note that immunity does not remove CC effects already applied before it activated.</p>
+            </div>
+
+            <div class="cc-counter-card">
+              <h3>Slowing Immunity</h3>
+              <p>A distinct state from control immunity — it only renders the hero immune to slowing effects specifically. Does not protect against stuns, roots, or other CC types. Often granted by specific skills or items.</p>
+            </div>
+
+            <div class="cc-counter-card">
+              <h3>Untargetability</h3>
+              <p>The most powerful defensive state in the game. A hero that is untargetable cannot be locked onto or affected by enemy Basic Attacks, Battle Spells, or skills — granting full immunity to both damage and CC for the duration. Superior to both control immunity and slowing immunity. Some exceptions may apply to pre-existing debuffs.</p>
+            </div>
+
+          </div>
+
+          <div class="guide-tips-grid" style="margin-top: 1.5rem;">
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Use Purify.</strong> The Battle Spell Purify immediately removes all CC effects except Suppress. A well-timed Purify can negate an enemy's entire combo.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Build Resilience items.</strong> Against lineups with multiple stuns or airborne effects, Resilience can meaningfully cut the time you spend disabled.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Use CC immunity windows wisely.</strong> Many heroes have a brief immunity window tied to their dash or ultimate. Time your mobility skills to escape CC setups.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Don't group up carelessly.</strong> High-level CC like Airborne and Freeze often have AoE. Staying spread prevents your team from being locked down simultaneously.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Trivia</h2>
+
+          <div class="cc-trivia-list">
+            <div class="cc-trivia-item">
+              <span class="cc-trivia-icon">&#9670;</span>
+              <p><strong>Fanny</strong> is the only hero in the game with no form of crowd control in her kit — not even a slow.</p>
+            </div>
+            <div class="cc-trivia-item">
+              <span class="cc-trivia-icon">&#9670;</span>
+              <p><strong>Jawhead</strong> was the first hero in the game capable of inflicting CC on his own allies, through his skill Ejector.</p>
+            </div>
+            <div class="cc-trivia-item">
+              <span class="cc-trivia-icon">&#9670;</span>
+              <p><strong>Marcel</strong> is the second hero able to CC allies, using his skill Golden Hour.</p>
+            </div>
+            <div class="cc-trivia-item">
+              <span class="cc-trivia-icon">&#9670;</span>
+              <p>The term <strong>"control"</strong> is used when a CC effect can only be applied to a single target, while <strong>"crowd control"</strong> refers to effects that can hit two or more targets. Both are used interchangeably in practice.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../heroes.html">Heroes</a></li>
+            <li><a href="../skins.html">Skins</a></li>
+            <li><a href="../preparation.html">Preparation</a></li>
+            <li><a href="../in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="../game-modes.html">Game Modes</a></li>
+            <li><a href="../mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="../images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-badge-img">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../scripts/stars.js"></script>
+    <script src="../scripts/search-overlay.js"></script>
+    <script src="../scripts/scroll-reveal.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+  </body>
+</html>
