@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hero Roles Guide &ndash; Land of Dawn Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/shared/general.css">
+    <link rel="stylesheet" href="../styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="../styles/pages/guides-pages/roles-guides.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-logo">
+        <img src="../images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../heroes.html">Heroes</a></li>
+        <li><a href="../skins.html">Skins</a></li>
+        <li><a href="../preparation.html">Preparation</a></li>
+        <li><a href="../in-game-guides.html" class="active">In-Game Guides</a></li>
+        <li><a href="../game-modes.html">Game Modes</a></li>
+        <li><a href="../mini-games.html">Mini-Games</a></li>
+      </ul>
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+
+    <section class="guide-hero">
+
+      <div class="bread-crumbs">
+        <svg class="btn" onclick="window.location.href='../in-game-guides.html'" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#d6a115" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" />
+        </svg>
+        <p id="hero" onclick="window.location.href='../in-game-guides.html'">IN-GAME GUIDES</p>
+        <p class="sign">&#8250;</p>
+        <p>HERO ROLES GUIDE</p>
+      </div>
+
+      <div class="guide-hero-content reveal">
+        <h1 class="guide-title">Hero Roles Guide</h1>
+        <p class="guide-subtitle">Understand the six hero classes, what they do on the battlefield, and how to pick the right role for your team.</p>
+      </div>
+    </section>
+
+    <main class="guide-main">
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner guide-section--split">
+          <div class="guide-text">
+            <h2 class="guide-section-title">What are Hero Roles?</h2>
+            <p>A role or class defines how a hero contributes to their team throughout a match. With <strong>132 heroes</strong> available across 6 classes, every hero has unique stats and abilities suited to a specific style of play.</p>
+            <p>Understanding roles is fundamental to building a balanced team. A well-rounded lineup typically includes a mix of frontline durability, damage output, and support — each role filling a gap the others cannot.</p>
+            <div class="guide-callout">
+              <span class="guide-callout-icon">!</span>
+              <p>You don't need to master every role. Pick one or two that fit your playstyle and learn them deeply — consistency wins more games than switching roles every match.</p>
+            </div>
+          </div>
+          <div class="guide-media">
+            <img src="../images/pages/guide-page/guide-img.png" alt="Hero Roles Overview" class="guide-img guide-img--rounded">
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">The Six Roles</h2>
+          <p>Each role occupies a distinct position in the team and excels at a different phase of the game. Click any role below to jump to its full breakdown.</p>
+
+          <div class="roles-summary-grid">
+            <a href="#role-tank" class="roles-summary-card roles-summary-card--tank">
+              <img src="../images/pages/guide-page/roles/tank-icon.png" alt="Tank">
+              <span>Tank</span>
+            </a>
+            <a href="#role-fighter" class="roles-summary-card roles-summary-card--fighter">
+              <img src="../images/pages/guide-page/roles/fighter-icon.png" alt="Fighter">
+              <span>Fighter</span>
+            </a>
+            <a href="#role-assassin" class="roles-summary-card roles-summary-card--assassin">
+              <img src="../images/pages/guide-page/roles/assassin-icon.png" alt="Assassin">
+              <span>Assassin</span>
+            </a>
+            <a href="#role-mage" class="roles-summary-card roles-summary-card--mage">
+              <img src="../images/pages/guide-page/roles/mage-icon.png" alt="Mage">
+              <span>Mage</span>
+            </a>
+            <a href="#role-marksman" class="roles-summary-card roles-summary-card--marksman">
+              <img src="../images/pages/guide-page/roles/marksman-icon.png" alt="Marksman">
+              <span>Marksman</span>
+            </a>
+            <a href="#role-support" class="roles-summary-card roles-summary-card--support">
+              <img src="../images/pages/guide-page/roles/support-icon.png" alt="Support">
+              <span>Support</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Role Breakdown</h2>
+          <p>Each role is described in full below — including what they excel at, their weaknesses, and the stats that define how they play.</p>
+
+          <div class="roles-detail-grid">
+
+            <div class="role-card role-card--tank" id="role-tank">
+              <div class="role-card-aside">
+                <img src="../images/pages/guide-page/roles/tank-icon.png" alt="Tank Icon">
+              </div>
+              <div class="role-card-body">
+                <div class="role-card-header">
+                  <h3>Tank</h3>
+                  <span class="role-tag role-tag--tank">Frontline</span>
+                </div>
+                <p>The most durable heroes on the battlefield. Tanks lead the charge, absorb damage on behalf of their team, and use crowd control to disrupt enemy formations. A well-played tank creates the space your damage dealers need to eliminate threats.</p>
+                <p>Tanks are typically found in the <strong>Gold Lane</strong> or roaming as a second frontliner. Their high HP and defense make them hard to kill, but their damage is low — they win by surviving, not by killing.</p>
+                <div class="role-stats">
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Durability</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:95%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Damage</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:25%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Mobility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:40%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Utility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:80%"></div></div>
+                  </div>
+                </div>
+                <div class="role-traits">
+                  <span class="role-trait">High HP</span>
+                  <span class="role-trait">High Armor</span>
+                  <span class="role-trait">Crowd Control</span>
+                  <span class="role-trait">Team Initiator</span>
+                  <span class="role-trait">Low Damage</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card role-card--fighter" id="role-fighter">
+              <div class="role-card-aside">
+                <img src="../images/pages/guide-page/roles/fighter-icon.png" alt="Fighter Icon">
+              </div>
+              <div class="role-card-body">
+                <div class="role-card-header">
+                  <h3>Fighter</h3>
+                  <span class="role-tag role-tag--fighter">Versatile</span>
+                </div>
+                <p>Fighters sit between the tank's durability and the assassin's damage. They can fill multiple roles depending on the team lineup — acting as a semi-tank, a crowd controller, or a sustained damage dealer. Fighters shine in the <strong>EXP Lane</strong> where they can 1v1 opponents and pressure turrets alone.</p>
+                <p>They typically grow stronger as the game goes on, becoming major threats in extended fights during the late game.</p>
+                <div class="role-stats">
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Durability</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:65%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Damage</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:65%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Mobility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:55%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Utility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:50%"></div></div>
+                  </div>
+                </div>
+                <div class="role-traits">
+                  <span class="role-trait">Semi-Tank</span>
+                  <span class="role-trait">Sustained Damage</span>
+                  <span class="role-trait">Lane Bully</span>
+                  <span class="role-trait">Late Game Scaling</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card role-card--assassin" id="role-assassin">
+              <div class="role-card-aside">
+                <img src="../images/pages/guide-page/roles/assassin-icon.png" alt="Assassin Icon">
+              </div>
+              <div class="role-card-body">
+                <div class="role-card-header">
+                  <h3>Assassin</h3>
+                  <span class="role-tag role-tag--assassin">Burst</span>
+                </div>
+                <p>Assassins are agile hunters that specialize in eliminating high-value targets quickly. They wait for the right moment to strike — no sooner, no later. Typically played as the <strong>Jungler</strong>, they use the jungle to rotate unseen and gank vulnerable lanes.</p>
+                <p>Their low HP makes positioning critical. Assassins are punished hard for mistiming their engages, making them better suited to experienced players. Lifesteal is strongly recommended to maintain sustainability in fights.</p>
+                <div class="role-stats">
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Durability</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:20%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Damage</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:95%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Mobility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:90%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Utility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:30%"></div></div>
+                  </div>
+                </div>
+                <div class="role-traits">
+                  <span class="role-trait">High Burst Damage</span>
+                  <span class="role-trait">Blink Skills</span>
+                  <span class="role-trait">Low HP</span>
+                  <span class="role-trait">Jungle Primary</span>
+                  <span class="role-trait">Timing-Dependent</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card role-card--mage" id="role-mage">
+              <div class="role-card-aside">
+                <img src="../images/pages/guide-page/roles/mage-icon.png" alt="Mage Icon">
+              </div>
+              <div class="role-card-body">
+                <div class="role-card-header">
+                  <h3>Mage</h3>
+                  <span class="role-tag role-tag--mage">Magic Damage</span>
+                </div>
+                <p>Mages deal magic damage through powerful skill combinations, often hitting multiple enemies at once with area-of-effect abilities. Most mages have either high burst damage or strong crowd control — and some have both. They are most often found in the <strong>Mid Lane</strong>, where they can rotate quickly to both sides of the map.</p>
+                <p>Their low durability makes them frequent targets in team fights. Always position behind your frontline and invest heavily in cooldown reduction to chain abilities effectively.</p>
+                <div class="role-stats">
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Durability</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:25%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Damage</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:90%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Mobility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:35%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Utility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:70%"></div></div>
+                  </div>
+                </div>
+                <div class="role-traits">
+                  <span class="role-trait">Magic Burst</span>
+                  <span class="role-trait">AoE Skills</span>
+                  <span class="role-trait">Crowd Control</span>
+                  <span class="role-trait">Low Durability</span>
+                  <span class="role-trait">CDR Dependent</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card role-card--marksman" id="role-marksman">
+              <div class="role-card-aside">
+                <img src="../images/pages/guide-page/roles/marksman-icon.png" alt="Marksman Icon">
+              </div>
+              <div class="role-card-body">
+                <div class="role-card-header">
+                  <h3>Marksman</h3>
+                  <span class="role-tag role-tag--marksman">ADC / Carry</span>
+                </div>
+                <p>Marksmen are ranged damage dealers whose power is built almost entirely on their basic attacks. Positioned safely behind their team, a farmed marksman can shred through tanks, assassins, and structures alike. They are the fastest heroes at taking down turrets and are essential for securing objectives like the Lord.</p>
+                <p>They are commonly referred to as the <strong>Carry</strong> or <strong>ADC</strong> (Attack Damage Carry). Low durability and mobility mean they rely on teammates to protect them — never engage alone and always maintain a safe distance from threats.</p>
+                <div class="role-stats">
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Durability</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:20%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Damage</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:90%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Mobility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:30%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Utility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:20%"></div></div>
+                  </div>
+                </div>
+                <div class="role-traits">
+                  <span class="role-trait">High Basic Attack</span>
+                  <span class="role-trait">Ranged</span>
+                  <span class="role-trait">Turret Destroyer</span>
+                  <span class="role-trait">Late Game Carry</span>
+                  <span class="role-trait">Escort Required</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="role-card role-card--support" id="role-support">
+              <div class="role-card-aside">
+                <img src="../images/pages/guide-page/roles/support-icon.png" alt="Support Icon">
+              </div>
+              <div class="role-card-body">
+                <div class="role-card-header">
+                  <h3>Support</h3>
+                  <span class="role-tag role-tag--support">Utility</span>
+                </div>
+                <p>Supports keep their team alive and in the fight. Whether through healing, shields, or crowd control, their value lies in amplifying their allies rather than dealing damage. A good support is often the difference between a team fight won and a team fight lost.</p>
+                <p>Supports typically pair with the Marksman in the <strong>Gold Lane</strong> or rotate through mid to wherever they are needed. Avoid farming lane minions — your carry needs that gold. Instead focus on creating kills, preventing them, and building vision across the map.</p>
+                <div class="role-stats">
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Durability</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:45%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Damage</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:30%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Mobility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:55%"></div></div>
+                  </div>
+                  <div class="role-stat-row">
+                    <span class="role-stat-label">Utility</span>
+                    <div class="role-stat-track"><div class="role-stat-fill" style="width:95%"></div></div>
+                  </div>
+                </div>
+                <div class="role-traits">
+                  <span class="role-trait">Healing / Shields</span>
+                  <span class="role-trait">Crowd Control</span>
+                  <span class="role-trait">Vision Control</span>
+                  <span class="role-trait">Team-Reliant</span>
+                  <span class="role-trait">Low Kill Priority</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--alt reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Lane Assignments</h2>
+          <p>Each role has a natural lane assignment based on where they can farm most effectively and contribute the most to early objectives. Deviating from these assignments is possible but requires coordination with your team.</p>
+
+          <div class="roles-lane-grid">
+
+            <div class="roles-lane-card">
+              <h3>Gold Lane</h3>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/marksman-icon.png" alt="Marksman">
+                <span>Marksman</span>
+              </div>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/support-icon.png" alt="Support">
+                <span>Support</span>
+              </div>
+            </div>
+
+            <div class="roles-lane-card">
+              <h3>Mid Lane</h3>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/mage-icon.png" alt="Mage">
+                <span>Mage</span>
+              </div>
+            </div>
+
+            <div class="roles-lane-card">
+              <h3>EXP Lane</h3>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/fighter-icon.png" alt="Fighter">
+                <span>Fighter</span>
+              </div>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/tank-icon.png" alt="Tank">
+                <span>Tank</span>
+              </div>
+            </div>
+
+            <div class="roles-lane-card">
+              <h3>Jungle</h3>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/assassin-icon.png" alt="Assassin">
+                <span>Assassin</span>
+              </div>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/fighter-icon.png" alt="Fighter">
+                <span>Fighter</span>
+              </div>
+            </div>
+
+            <div class="roles-lane-card">
+              <h3>Roaming</h3>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/support-icon.png" alt="Support">
+                <span>Support</span>
+              </div>
+              <div class="roles-lane-entry">
+                <img src="../images/pages/guide-page/roles/tank-icon.png" alt="Tank">
+                <span>Tank</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="guide-callout">
+            <span class="guide-callout-icon">!</span>
+            <p>The Roamer does not farm minions — they purchase Roam items and earn gold through assists and objectives. Their job is to create advantages for the rest of the team through vision, ganks, and peel.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section reveal">
+        <div class="guide-section-inner">
+          <h2 class="guide-section-title">Picking Your Role</h2>
+          <p>Not sure where to start? Use these tips to find a role that fits your preferred playstyle before diving into a specific hero.</p>
+
+          <div class="guide-tips-grid">
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>New to the game?</strong> Start with Tank or Fighter. Both are forgiving, have strong base stats, and don't punish positioning mistakes as harshly as other roles.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Want to carry games?</strong> Marksman and Assassin have the highest individual impact when played well, but require good map awareness and positioning.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Enjoy enabling teammates?</strong> Support and Tank roles are most rewarding when your team plays around you — great for coordinated squads.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Like playing solo?</strong> Fighter in the EXP Lane is one of the most independent roles — you can win your lane without relying on others and then rotate to help.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Master one, then branch out.</strong> Focusing on a single role first builds fundamental skills — farming, positioning, objective priority — that transfer to any other role.</p>
+            </div>
+            <div class="guide-tip">
+              <span class="guide-tip-icon">&#9658;</span>
+              <p><strong>Fill the gap.</strong> Before locking in, check what your team is missing. A balanced draft almost always outperforms five heroes of the same class.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../heroes.html">Heroes</a></li>
+            <li><a href="../skins.html">Skins</a></li>
+            <li><a href="../preparation.html">Preparation</a></li>
+            <li><a href="../in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="../game-modes.html">Game Modes</a></li>
+            <li><a href="../mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="../images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../scripts/stars.js"></script>
+    <script src="../scripts/search-overlay.js"></script>
+    <script src="../scripts/scroll-reveal.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+  </body>
+</html>
