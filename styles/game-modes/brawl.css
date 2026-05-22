@@ -129,7 +129,8 @@
 }
 
 .desc{
-    font-size: clamp(10px, 20px, 30px);
+    font-size: clamp(15px, 25px, 35px);
+    text-align: center;
 }
 
 .top{
@@ -142,15 +143,4 @@
     border-radius: 1rem;
     gap: 1rem;
 }
-.divided{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
 
-.child{
-    background-color: var(--border);
-    padding: 1rem;
-    width: 50%;
-    border-radius: 1rem;
-}
