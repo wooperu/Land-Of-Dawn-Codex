@@ -14,7 +14,11 @@
   --muted:  #6b7fa8;
   --nav-height: 72px;
   --green: #1d635d;
+  --green2: #46da617c;
+  --green3: #6de9837c;
+  --red: #e4100973;
   --bg: #1A1C3E;
+  --gold3:   #e8b94b89;
 }
 
 html { scroll-behavior: smooth; }
