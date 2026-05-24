@@ -63,6 +63,7 @@
 }
 
 /* CARD BASE */
+/* CARD BASE */
 .guide-card {
   display: flex;
   flex-direction: column;
@@ -73,7 +74,7 @@
   min-height: 38dvh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   padding: 2% 3%;
   border: 1px solid #1e2d5a;
   border-radius: 12px;
@@ -180,8 +181,20 @@
   transform: translateX(3px);
 }
 
-.bg-error {
-  background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg');
+.bg-battlefield {
+  background-image: url('../../images/pages/guide-page/map-bg.webp');
+}
+.bg-jungle {
+  background-image: url('../../images/pages/guide-page/map-bg.webp');
+}
+.bg-roles {
+  background-image: url('../../images/pages/heroes-page/hero-roles.png');
+}
+.bg-specialties {
+  background-image: url('../../images/pages/heroes-page/hero-specialties.png');
+}
+.bg-cc {
+  background-image: url('../../images/pages/guide-page/cc-bg.jpg');
 }
 
 /* RESPONSIVE */

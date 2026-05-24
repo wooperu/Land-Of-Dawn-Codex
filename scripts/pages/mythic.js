@@ -3,7 +3,6 @@ initTabs("../data/skins/mythic.json", {
   category      : "mythic",
   tabId         : "tabBar",
   gridId        : "portraitGrid",
-  skeletonCount : 3,
   onRender      : function () { initReveal(); },
   onEmpty       : function (grid) { grid.innerHTML = ""; }
 });

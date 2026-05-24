@@ -3,7 +3,6 @@ initTabs("../data/skins/special.json", {
   category      : "special",
   tabId         : "tabBar",
   gridId        : "portraitGrid",
-  skeletonCount : 3,
   onRender      : function () { initReveal(); },
   onEmpty       : function (grid) { grid.innerHTML = ""; }
 });

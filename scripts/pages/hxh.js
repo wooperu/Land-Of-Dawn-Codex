@@ -3,6 +3,5 @@ renderSkinsFromFile("../../data/collab/hxh.json", {
   category  : "collab",
   subfolder : "hxh",
   gridId    : "portraitGrid",
-  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

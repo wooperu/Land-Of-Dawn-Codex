@@ -29,20 +29,12 @@
         <li><a href="game-modes.html" class="active">Game Modes</a></li>
         <li><a href="mini-games.html">Mini-Games</a></li>
       </ul>
-      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </nav>
-
-    <div class="search-overlay" id="searchOverlay">
-      <div class="search-box">
-        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
-        <button class="search-close" id="searchClose">&#x2715;</button>
-      </div>
-    </div>
 
     <section class="game-modes-hero">
       <div class="game-modes-bg"></div>
@@ -65,13 +57,13 @@
         </div>
         <p class="game-modes-label">Game Modes</p>
         <p class="game-modes-desc">Discover uhhh yes Game Modes!</p>
-        <a href="#"><button class="btn-explore" >EXPLORE GAME MODES <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <a href="#explore"><button class="btn-explore" >EXPLORE GAME MODES <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 6l6 6-6 6"/>
         </svg></button></a>
       </div>
     </section>
 
-    <section class="card-container">
+    <section class="card-container" id="explore">
       <div class="card reveal">
         <img src="images/pages/game-modes-page/ranked.webp" alt="">
         <p>RANK</p>
@@ -189,7 +181,6 @@
     </footer>
 
     <script src="scripts/stars.js"></script>
-    <script src="scripts/search-overlay.js"></script>
     <script src="scripts/scroll-reveal.js"></script>
     <script src="scripts/hamburger.js"></script>
   </body>

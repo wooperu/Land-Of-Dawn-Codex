@@ -73,7 +73,7 @@
   min-height: 38dvh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   padding: 2% 3%;
   border: 1px solid #1e2d5a;
   border-radius: 12px;
@@ -178,6 +178,6 @@
   transform: translateX(3px);
 }
 
-.bg-guess-vo { background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg'); }
-.bg-chess-game { background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg'); }
-.bg-memory-game    { background-image: url('../../images/pages/mini-games-page/sample-bg.jpeg'); }
+.bg-guess-vo { background-image: url('../../images/pages/mini-games-page/guess-vo-bg.png'); }
+.bg-chess-game { background-image: url('../../images/pages/mini-games-page/chess-game-bg.png'); }
+.bg-memory-game    { background-image: url('../../images/pages/mini-games-page/memory-game-bg.png'); }

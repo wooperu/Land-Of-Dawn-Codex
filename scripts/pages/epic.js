@@ -3,7 +3,6 @@ initTabs("../data/skins/epic.json", {
   category      : "epic",
   tabId         : "tabBar",
   gridId        : "portraitGrid",
-  skeletonCount : 3,
   onRender      : function () { initReveal(); },
   onEmpty       : function (grid) { grid.innerHTML = ""; }
 });

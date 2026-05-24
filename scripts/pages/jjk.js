@@ -3,6 +3,5 @@ renderSkinsFromFile("../../data/collab/jjk.json", {
   category  : "collab",
   subfolder : "jjk",
   gridId    : "portraitGrid",
-  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

@@ -34,6 +34,41 @@ h1 {
   padding-top: 7%;
 }
 
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: calc(var(--nav-height) + 1rem);
+  left: 40px;
+  z-index: 200;
+  gap: 0.5rem;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.bread-crumbs svg { cursor: pointer; }
+
+.bread-crumbs p {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.bread-crumbs #hero {
+  color: var(--gold);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.bread-crumbs #hero:hover { opacity: 0.75; }
+
+.bread-crumbs .sign {
+  color: var(--muted);
+  opacity: 0.5;
+}
+
 .game-hidden {
   visibility: hidden;
   pointer-events: none;

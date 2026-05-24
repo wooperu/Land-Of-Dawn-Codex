@@ -130,29 +130,6 @@
   min-height: 280px;
 }
 
-.carousel-dots {
-  display: flex; gap: 6px; margin-top: 1rem;
-}
-.dot {
-  width: 20px; height: 4px; border-radius: 2px;
-  background: var(--gold); cursor: pointer;
-  transition: width 0.2s, background 0.2s;
-}
-.dot.inactive { width: 8px; background: #3a4a6a; }
-
-.card-arrow {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-  color: white; width: 32px; height: 32px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; font-size: 0.9rem;
-  transition: background 0.2s;
-  z-index: 3;
-}
-.card-arrow:hover { background: rgba(255,255,255,0.2); }
-.card-arrow.left  { left: 0.7rem; }
-.card-arrow.right { right: 0.7rem; }
-
 /* SKINS CARD */
 .skins-card {
   grid-column: 2; grid-row: 1;
