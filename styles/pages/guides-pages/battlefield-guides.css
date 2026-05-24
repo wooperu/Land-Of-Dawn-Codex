@@ -68,16 +68,6 @@
   z-index: 2;
 }
 
-.guide-eyebrow {
-  font-family: 'Cinzel', serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.75rem;
-  opacity: 0.85;
-}
-
 .guide-title {
   font-family: 'Cinzel', serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
