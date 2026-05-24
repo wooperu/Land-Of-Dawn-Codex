@@ -3,6 +3,5 @@ renderSkinsFromFile("../../data/collab/kof.json", {
   category  : "collab",
   subfolder : "kof",
   gridId    : "portraitGrid",
-  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

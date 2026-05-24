@@ -4,7 +4,6 @@ initTabs("../data/skins/starlight.json", {
   subfolder     : "monthly",
   tabId         : "tabBar",
   gridId        : "portraitGrid",
-  skeletonCount : 3,
   onRender      : function () { initReveal(); },
   onEmpty       : function (grid) { grid.innerHTML = ""; }
 });

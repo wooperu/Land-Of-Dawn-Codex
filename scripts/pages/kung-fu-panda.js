@@ -3,6 +3,5 @@ renderSkinsFromFile("../../data/collab/kung-fu-panda.json", {
   category  : "collab",
   subfolder : "kung-fu-panda",
   gridId    : "portraitGrid",
-  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

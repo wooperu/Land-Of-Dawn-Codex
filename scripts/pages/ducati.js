@@ -3,6 +3,5 @@ renderSkinsFromFile("../../data/collab/ducati.json", {
   category  : "collab",
   subfolder : "ducati",
   gridId    : "portraitGrid",
-  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });

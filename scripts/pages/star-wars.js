@@ -3,6 +3,5 @@ renderSkinsFromFile("../../data/collab/star-wars.json", {
   category  : "collab",
   subfolder : "star-wars",
   gridId    : "portraitGrid",
-  skeletonCount : 5,
   onRender  : function () { initReveal(); }
 });
