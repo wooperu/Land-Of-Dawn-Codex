@@ -50,7 +50,6 @@
   opacity: 0; animation: fadeUp 0.7s 0.75s forwards;
 }
 
-
 .card-container{
   padding-top: 6rem;
   padding-bottom: 3rem;
@@ -72,21 +71,17 @@
   padding: 2rem;
   gap: 1rem;
 
-   transition:
-        transform 0.35s ease-in-out,
-        box-shadow 0.35s ease-in-out,
-        border-color 0.35s ease-in-out;
+  transition:
+    transform 0.35s ease-in-out,
+    box-shadow 0.35s ease-in-out,
+    border-color 0.35s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-12px);
-    cursor: pointer;
-
-    box-shadow:
-        0 0 50px #c0666680,
-        0 0 0 1px #255daa40;
-
-    border-color: var(--bg);
+  cursor: pointer;
+  box-shadow: 0 16px 50px rgba(0,0,0,0.6), 0 0 0 1px rgba(58,123,213,0.4);
+  border-color: var(--gold);
 }
 
 .card img{

@@ -46,9 +46,9 @@ nav {
 }
 .nav-search:hover { color: var(--gold); }
 
-/* ─── RESPONSIVE NAV ──────────────────────────────────────── */
+/* RESPONSIVE NAV */
 
-/* Hamburger button - hidden on desktop */
+/* Hamburger button */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -84,7 +84,6 @@ nav {
     display: flex;
   }
 
-  /* Hide nav search on mobile - search is inside the menu */
   .nav-search {
     display: none;
   }
@@ -101,7 +100,6 @@ nav {
     z-index: 998;
   }
 
-  /* Slide in when open */
   .nav-links.open {
     display: flex;
   }
