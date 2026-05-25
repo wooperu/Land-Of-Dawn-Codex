@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Land of Dawn Codex &ndash; Equipment</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/land-of-dawn-codex-header.css">
+    <link rel="stylesheet" href="styles/shared/page-banner.css">
+    <link rel="stylesheet" href="styles/pages/equipment.css">
+    <link rel="icon" type="image" href="images/icon.png">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <img src="images/pages/home-page/land-of-dawn-codex-logo.png" alt="Land of Dawn Codex" class="nav-logo-img">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="skins.html">Skins</a></li>
+        <li><a href="preparation.html" class="active">Preparation</a></li>
+        <li><a href="in-game-guides.html">In-Game Guides</a></li>
+        <li><a href="game-modes.html">Game Modes</a></li>
+        <li><a href="mini-games.html">Mini-Games</a></li>
+      </ul>
+
+      <button class="nav-search" id="searchBtn" aria-label="Search">&#x2315;</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search heroes, skins, guides…" id="searchInput" />
+        <button class="search-close" id="searchClose">&#x2715;</button>
+      </div>
+    </div>
+      
+    <section class="equipment-hero">
+      <div class="equipment-bg"></div>
+      <div class="stars" id="stars"></div>
+      <div class="lightning"></div>
+      <div class="lightning2"></div>
+      
+      <div class="page-breadcrumb">
+        <a href="preparation.html" class="back-btn" aria-label="Go back">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#DBA000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="20" y1="12" x2="4" y2="12"/>
+            <polyline points="10 18 4 12 10 6"/>
+          </svg>
+        </a>
+        <span class="breadcrumb-divider">|</span>
+        <div class="breadcrumb-path">
+          <a href="preparation.html">Preparation</a>
+          <span class="chevron">&rsaquo;</span>
+          <span class="current-page">Equipment</span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="diamond">
+          <div class="diamond-line diamond-line--left"></div>
+          <svg width="40" height="30" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; margin:0 8px;">
+            <polygon points="40,6 62,38 40,74 18,38" fill="#e6a817" stroke="#f5c842" stroke-width="1.5"/>
+            <polygon points="40,6 18,38 40,28" fill="#f5d060"/>
+            <polygon points="40,6 62,38 40,28" fill="#d4920f"/>
+            <polygon points="40,28 18,38 40,74" fill="#a8650a"/>
+            <polygon points="40,28 62,38 40,74" fill="#8f520a"/>
+            <polygon points="40,14 56,34 40,28 24,34" fill="#fce97a" opacity="0.3"/>
+          </svg>
+          <div class="diamond-line diamond-line--right"></div>
+        </div>
+        <p class="equipment-label">EQUIPMENT</p>
+        <p class="equipment-desc">An equipment (sometimes known as an item) is a modular enhancement that the player can equip in-game for gold. <br><br> Regardless of where the player is, equipment can be obtained using the shop interface. Each player can keep up to six pieces of equipment.</p>
+        <a href="#equipment-main"><button class="btn-explore">LEARN MORE <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button></a>
+      </div>
+    </section>
+
+    <section class="equipment-container" id="equipment-main">
+      <div class="equipment-layout">
+        
+        <div class="equipment-box browser-col">
+          <header class="box-header">
+            <h2>EQUIPMENT BROWSER</h2>
+            <p>Browse or search equipment to find the perfect item for your strategy.</p>
+          </header>
+
+          <div class="browser-controls">
+            <div class="search-sort-row">
+              <div class="search-container">
+                <span class="search-icon">&#x2315;</span>
+                <input type="text" id="itemSearch" placeholder="Search equipment name...">
+              </div>
+
+              <div class="sort-container">
+                <select id="itemSort" class="sort-select">
+                  <option value="default" selected>Sort by: Default</option>
+                  <option value="name-asc">Sort by: Name (A-Z)</option>
+                  <option value="name-desc">Sort by: Name (Z-A)</option>
+                  <option value="price-asc">Sort by: Price (Low to High)</option>
+                  <option value="price-desc">Sort by: Price (High to Low)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="category-tabs" id="categoryTabs">
+              <button class="tab-btn active" data-category="all">SHOW ALL</button>
+              <button class="tab-btn" data-category="attack">ATTACK</button>
+              <button class="tab-btn" data-category="magic">MAGIC</button>
+              <button class="tab-btn" data-category="defense">DEFENSE</button>
+              <button class="tab-btn" data-category="movement">MOVEMENT</button>
+              <button class="tab-btn" data-category="jungling">JUNGLING</button>
+              <button class="tab-btn" data-category="roaming">ROAMING</button>
+            </div>
+          </div>
+
+          <div class="scrollable-grid-wrapper">
+            <div class="item-grid" id="itemGrid">
+              </div>
+          </div>
+        </div>
+
+        <div class="equipment-box details-col" id="equipment-details">
+          
+          <div class="details-header">
+            <h2>EQUIPMENT DETAILS</h2>
+            <button class="btn-reset" id="resetBtn">✕ Reset Selection</button>
+          </div>
+          
+          <div class="empty-state" id="emptyState">
+            <svg viewBox="0 0 24 24" width="48" height="48" stroke="rgba(200, 214, 240, 0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <p>Select an item from the browser to view its stats, passive abilities, and build path.</p>
+          </div>
+
+          <div class="details-content" id="detailsContent" style="display: none;">
+            <div class="details-inner-grid">
+              
+              <div class="details-left">
+                <div class="details-top-row">
+                  <img src="" id="detIcon" alt="Icon" class="det-main-icon">
+                  <div class="det-title-block">
+                    <h3 id="detName">Name</h3>
+                    <p id="detSubtitle" class="gold-text italic"></p>
+                    <div id="detStats" class="det-stats-list"></div>
+                  </div>
+                </div>
+
+                <div class="det-section">
+                  <h4 class="gold-heading">DESCRIPTION</h4>
+                  <p id="detDesc"></p>
+                </div>
+
+                <div class="det-section">
+                  <h4 class="gold-heading">RECIPE</h4>
+                  <div class="recipe-tree-container" id="detRecipeTree"></div>
+                </div>
+              </div>
+
+              <div class="details-right">
+                <div class="det-section">
+                  <h4 class="gold-heading">IN-DEPTH INFORMATION</h4>
+                  <div class="info-grid">
+                    <span>Type:</span> <span id="infoType" class="white-text"></span>
+                    <span>Sellable?</span> <span id="infoSellable" class="white-text"></span>
+                    <span>Available for:</span> <span id="infoAvail" class="white-text"></span>
+                    <span>Takes Slot?</span> <span id="infoSlot" class="white-text"></span>
+                  </div>
+                </div>
+
+                <div class="det-section">
+                  <h4 class="gold-heading">PRICING</h4>
+                  <div class="info-grid pricing-grid">
+                    <span>Price</span> <span class="white-text"><span class="coin">💰</span> <span id="priceBuy"></span></span>
+                    <span>Upgrade Price</span> <span class="white-text"><span class="coin">💰</span> <span id="priceUp"></span></span>
+                    <span>Sell Price</span> <span class="white-text"><span class="coin">💰</span> <span id="priceSell"></span></span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/pages/home-page/mobile-legends-logo.png" alt="Mobile Legends: Bang Bang" class="footer-mlbb-logo">
+          </div>
+          <p>The ultimate 5v5 MOBA experience on mobile. Team up, strategize, and claim victory in every battle!</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="skins.html">Skins</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="in-game-guides.html">In-Game Guides</a></li>
+            <li><a href="game-modes.html">Game Modes</a></li>
+            <li><a href="mini-games.html">Mini-Games</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <p>This website is created for educational purposes and showcases content related to Mobile Legends: Bang Bang. All assets and materials belong to their respective owners.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>landofdawncodex@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#x260E;</span>
+            <span>0968-370-2244</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disclaimer</h4>
+          <p style="margin-bottom:1rem">This is a fan-made project. Mobile Legends: Bang Bang is owned by Moonton.</p>
+          <div class="moonton-badge">
+            <img src="images/pages/home-page/moonton-logo.png" alt="Moonton" class="moonton-logo-img">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="divider-gem" style="margin:0 auto 0.8rem;"></div>
+        &copy; 2026 Land of Dawn Codex. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="scripts/stars.js"></script>
+    <script src="scripts/search-overlay.js"></script>
+    <script src="scripts/scroll-reveal.js"></script>
+    <script src="scripts/carousel-dots.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/pages/equipment.js"></script> </body>
+</html>

@@ -1,0 +1,3080 @@
+[
+  {
+    "id": "malefic-gun",
+    "name": "Malefic Gun",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/malefic-gun.webp",
+    "subtitle": "Attack Range Increase",
+    "buildsFrom": [
+      "fury-hammer",
+      "knife",
+      "knife"
+    ],
+    "stats": [
+      "+40 Physical Attack",
+      "+20% Attack Speed"
+    ],
+    "description": "Unique Passive - Armor Buster: Increase Physical Penetration by 30%.\nUnique Passive -  Malefic Energy: Increases Basic Attack range by 12%. When hitting a target, gains 10% Movement Speed for 0.5 seconds.",
+    "recipeImage": "images/pages/equipment-page/malefic-gun-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2120,
+      "upgradePrice": 730,
+      "sellPrice": 1272
+    }
+  },
+  {
+    "id": "great-dragon-spear",
+    "name": "Great Dragon Spear",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/great-dragon-spear.webp",
+    "subtitle": "CD Reduction & Crit",
+    "buildsFrom": [
+      "legion-sword",
+      "iron-hunting-bow",
+      "javelin"
+    ],
+    "stats": [
+      "+70 Physical Attack",
+      "+10% Cooldown Reduction",
+      "+20% Crit Chance"
+    ],
+    "description": "Unique Passive - Supreme Warrior: After casting an Ultimate, increase Movement Speed by 30% for 7.5 seconds. This effect has a 15 seconds cooldown.",
+    "recipeImage": "images/pages/equipment-page/great-dragon-spear-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2140,
+      "upgradePrice": 460,
+      "sellPrice": 1284
+    }
+  },
+  {
+    "id": "sea-halberd",
+    "name": "Sea Halberd",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/sea-halberd.webp",
+    "subtitle": "Healing Reduction",
+    "buildsFrom": [
+      "legion-sword",
+      "regular-spear"
+    ],
+    "stats": [
+      "+80 Physical Attack",
+      "+20% Attack Speed"
+    ],
+    "description": "Unique Passive - Lifebane: Dealing damage to a target will reduce the Shield and HP Regen effects on them to 60% of normal for 3 seconds.\nUnique Passive -  Punish: Increase damage by 8% against enemy heroes with higher extra HP.",
+    "recipeImage": "images/pages/equipment-page/sea-halberd-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2050,
+      "upgradePrice": 540,
+      "sellPrice": 1230
+    }
+  },
+  {
+    "id": "rose-gold-meteor",
+    "name": "Rose Gold Meteor",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/rose-gold-meteor.webp",
+    "subtitle": "Low-HP Shield",
+    "buildsFrom": [
+      "magic-blade",
+      "knife"
+    ],
+    "stats": [
+      "+30 Physical Attack",
+      "+20% Attack Speed",
+      "+10% Lifesteal"
+    ],
+    "description": "Unique Passive - Dragon Scale: Every 4 extra Physical Attack increases Hybrid Defense by 1, up to 50 (effect is halved if Main Role is not Fighter).\nUnique Passive -  Lifeline: When taking damage that reduces HP below 30%, gains a (120*Hero Level) shield (increases with level) and 50% Movement Speed that rapidly decays over 3 seconds. This effect has a 60 seconds cooldown.",
+    "recipeImage": "images/pages/equipment-page/rose-gold-meteor-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2030,
+      "upgradePrice": 700,
+      "sellPrice": 1218
+    }
+  },
+  {
+    "id": "hunter-strike",
+    "name": "Hunter Strike",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/hunter-strike.webp",
+    "subtitle": "Brief Speed-Up",
+    "buildsFrom": [
+      "fury-hammer",
+      "iron-hunting-bow",
+      "dagger"
+    ],
+    "stats": [
+      "+80 Physical Attack",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Attribute: +15 Physical Penetration\nUnique Passive - Retribution: Dealing damage to the same enemy hero or creep 5 times in a row grants 50% extra Movement Speed that decays over 3 seconds (8 seconds cooldown).",
+    "recipeImage": "images/pages/equipment-page/hunter-strike-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2010,
+      "upgradePrice": 480,
+      "sellPrice": 1206
+    }
+  },
+  {
+    "id": "blade-of-despair",
+    "name": "Blade of Despair",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/blade-of-despair.webp",
+    "subtitle": "Highest Physical Attack",
+    "buildsFrom": [
+      "legion-sword",
+      "legion-sword"
+    ],
+    "stats": [
+      "+160 Physical Attack",
+      "+5% Movement Speed"
+    ],
+    "description": "Unique Passive - Despair: Dealing damage to non-Minion enemies below 50% HP increases Physical Attack by 25% for 2 seconds (takes effect before the damage is dealt).",
+    "recipeImage": "images/pages/equipment-page/blade-of-despair-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 3010,
+      "upgradePrice": 1190,
+      "sellPrice": 1806
+    }
+  },
+  {
+    "id": "blade-of-the-heptaseas",
+    "name": "Blade of the Heptaseas",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/blade-of-the-heptaseas.webp",
+    "subtitle": "Best for Assassins",
+    "buildsFrom": [
+      "fury-hammer",
+      "ogre-tomahawk"
+    ],
+    "stats": [
+      "+70 Physical Attack",
+      "+250 HP"
+    ],
+    "description": "Unique Attribute: +15 Physical Penetration\nUnique Passive - Ambush: If no damage is taken or dealt within 5 seconds (excluding from Minions or Creeps), the next Basic Attack will deal an additional 160 (+40% Total Physical Attack) Physical Damage and slow the target by 40% for 1.5 seconds.",
+    "recipeImage": "images/pages/equipment-page/blade-of-the-heptaseas-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1950,
+      "upgradePrice": 470,
+      "sellPrice": 1170
+    }
+  },
+  {
+    "id": "windtalker",
+    "name": "Windtalker",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/windtalker.webp",
+    "subtitle": "Splash Damage",
+    "buildsFrom": [
+      "rogue-meteor",
+      "knife"
+    ],
+    "stats": [
+      "+35% Attack Speed",
+      "+20% Crit Chance",
+      "+20 Movement Speed"
+    ],
+    "description": "Unique Passive - Typhoon: Every 5–2 seconds (reduced by 0.2 seconds for each Basic Attack), the next Basic Attack will hit up to 3 enemy units for 150–362 Magic Damage. (This attack can Crit and the damage increases to 200% against Minions.)",
+    "recipeImage": "images/pages/equipment-page/windtalker-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1880,
+      "upgradePrice": 700,
+      "sellPrice": 1128
+    }
+  },
+  {
+    "id": "endless-battle",
+    "name": "Endless Battle",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/endless-battle.webp",
+    "subtitle": "Enhanced Basic Attacks",
+    "buildsFrom": [
+      "azure-blade",
+      "iron-hunting-bow",
+      "ogre-tomahawk"
+    ],
+    "stats": [
+      "+60 Physical Attack",
+      "+250 HP",
+      "+10% Cooldown Reduction",
+      "+5% Movement Speed",
+      "+5 Mana Regen"
+    ],
+    "description": "Unique Passive - Divine Justice: After casting a skill, the next Basic Attack within 3 seconds deals (60% Total Physical Attack) extra True Damage and recovers 80 (+40% of Total Physical Attack) HP (1.5 seconds cooldown).",
+    "recipeImage": "images/pages/equipment-page/endless-battle-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2330,
+      "upgradePrice": 630,
+      "sellPrice": 1398
+    }
+  },
+  {
+    "id": "berserker-s-fury",
+    "name": "Berserker's Fury",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/berserker-s-fury.webp",
+    "subtitle": "Crit Chance & Damage",
+    "buildsFrom": [
+      "legion-sword",
+      "javelin",
+      "javelin"
+    ],
+    "stats": [
+      "+65 Physical Attack",
+      "+25% Crit Chance"
+    ],
+    "description": "Unique Attribute: +40% Crit Damage\nUnique Passive - Doom: Critical strikes grant 5% extra Physical Attack for 2 seconds.",
+    "recipeImage": "images/pages/equipment-page/berserker-s-fury-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2390,
+      "upgradePrice": 840,
+      "sellPrice": 1434
+    }
+  },
+  {
+    "id": "haas-claws",
+    "name": "Haas' Claws",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/haas-claws.webp",
+    "subtitle": "Lifesteal",
+    "buildsFrom": [
+      "vampire-mallet",
+      "rogue-meteor",
+      "dagger"
+    ],
+    "stats": [
+      "+40 Physical Attack",
+      "+15% Attack Speed",
+      "+20% Crit Chance"
+    ],
+    "description": "Unique Attribute: +20% Lifesteal\nUnique Passive - Frenzy: Critical strikes grant 20% extra Attack Speed for 2 seconds.",
+    "recipeImage": "images/pages/equipment-page/haas-claws-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2020,
+      "upgradePrice": 470,
+      "sellPrice": 1212
+    }
+  },
+  {
+    "id": "malefic-roar",
+    "name": "Malefic Roar",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/malefic-roar.webp",
+    "subtitle": "High Physical Penetration",
+    "buildsFrom": [
+      "legion-sword"
+    ],
+    "stats": [
+      "+60 Physical Attack"
+    ],
+    "description": "Unique Passive - Armor Buster: Increase Physical Penetration by 30%.\nUnique Passive -  Breaker: When attacking an enemy, gains 0.1% extra Physical Penetration for each point of the enemy's Physical Defense, capped at 30%.",
+    "recipeImage": "images/pages/equipment-page/malefic-roar-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2060,
+      "upgradePrice": 1150,
+      "sellPrice": 1236
+    }
+  },
+  {
+    "id": "winter-crown",
+    "name": "Winter Crown",
+    "category": [
+      "attack", "magic"
+    ],
+    "icon": "images/pages/equipment-page/winter-crown.webp",
+    "subtitle": "Temporary Invincibility",
+    "buildsFrom": [
+      "expert-gloves",
+      "hero-s-ring",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+45 Adaptive Attack",
+      "+400 HP",
+      "+5% Cooldown Reduction"
+    ],
+    "description": "Unique Active - Frozen: Becomes frozen, untarge, and immune to damage for 2 seconds (100 seconds cooldown). Cannot move or cast skills while frozen, but skills already cast won't be interrupted.",
+    "recipeImage": "images/pages/equipment-page/winter-crown-recipe.webp",
+    "inDepth": {
+      "type": "Attack & Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1910,
+      "upgradePrice": 660,
+      "sellPrice": 1146
+    }
+  },
+  {
+    "id": "fleeting-time",
+    "name": "Fleeting Time",
+    "category": [
+      "attack", "magic", "defense"
+    ],
+    "icon": "images/pages/equipment-page/fleeting-time.webp",
+    "subtitle": "Ultimate CD Reduction",
+    "buildsFrom": [
+      "hero-s-ring",
+      "hero-s-ring",
+      "expert-gloves"
+    ],
+    "stats": [
+      "+30 Adaptive Attack",
+      "+600 HP",
+      "+15% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Timestream: Hero kills or assists reduce the Ultimate's current cooldown by 30%.",
+    "recipeImage": "images/pages/equipment-page/fleeting-time-recipe.webp",
+    "inDepth": {
+      "type": "Attack, Magic & Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2050,
+      "upgradePrice": 650,
+      "sellPrice": 1230
+    }
+  },
+  {
+    "id": "sky-piercer",
+    "name": "Sky Piercer",
+    "category": [
+      "attack", "magic"
+    ],
+    "icon": "images/pages/equipment-page/sky-piercer.webp",
+    "subtitle": "Best for Finishers",
+    "buildsFrom": [
+      "expert-gloves",
+      "expert-gloves"
+    ],
+    "stats": [
+      "+60 Adaptive Attack",
+      "+15 Movement Speed"
+    ],
+    "description": "Unique Passive - Lethality: After dealing damage to an enemy hero, executes the hero if their HP is lower than 4%. Gains 10 stack(s) of Lethality for each kill and loses 30% current stack(s) for each death. Each stack of Lethality increases the HP threshold of the execute effect by 0.1%, stacking up 80 times.",
+    "recipeImage": "images/pages/equipment-page/sky-piercer-recipe.webp",
+    "inDepth": {
+      "type": "Attack & Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1500,
+      "upgradePrice": 500,
+      "sellPrice": 900
+    }
+  },
+  {
+    "id": "war-axe",
+    "name": "War Axe",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/war-axe.webp",
+    "subtitle": "Continuous Damage Boost",
+    "buildsFrom": [
+      "ogre-tomahawk",
+      "iron-hunting-bow",
+      "hero-s-ring"
+    ],
+    "stats": [
+      "+35 Physical Attack",
+      "+400 HP",
+      "+10% Cooldown Reduction",
+      "+8% Hybrid Lifesteal"
+    ],
+    "description": "Unique Passive - Fighting Spirit: Attacks grants 12 extra Physical Attack per second for 4 seconds, up to 6 stacks. Deals 10% extra True Damage based on the damage dealt (no damage reduction counted) at full stacks. (Marksmen, Mages, and Supports only receive 50% of these stacked effects.)",
+    "recipeImage": "images/pages/equipment-page/war-axe-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2100,
+      "upgradePrice": 550,
+      "sellPrice": 1260
+    }
+  },
+  {
+    "id": "wind-of-nature",
+    "name": "Wind of Nature",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/wind-of-nature.webp",
+    "subtitle": "Physical Damage Immunity",
+    "buildsFrom": [
+      "regular-spear",
+      "vampire-mallet"
+    ],
+    "stats": [
+      "+30 Physical Attack",
+      "+20% Attack Speed",
+      "+10% Lifesteal"
+    ],
+    "description": "Unique Active - Wind Chant: Become immune to all Physical Damage for 2 seconds (duration is halved if Main Role is not Marksman; 90 seconds cooldown).",
+    "recipeImage": "images/pages/equipment-page/wind-of-nature-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1910,
+      "upgradePrice": 910,
+      "sellPrice": 1146
+    }
+  },
+  {
+    "id": "golden-staff",
+    "name": "Golden Staff",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/golden-staff.webp",
+    "subtitle": "Enhance Attack Effects",
+    "buildsFrom": [
+      "regular-spear",
+      "dagger",
+      "dagger"
+    ],
+    "stats": [
+      "+55 Physical Attack",
+      "+15% Attack Speed"
+    ],
+    "description": "Unique Passive - Swift: Every 1% extra Crit Chance gained is converted into 1% extra Attack Speed.\nUnique Passive -  Endless Strike: After every 2 non-Crit Basic Attacks, the Attack Speed of the next Basic Attack is increased by 80% (and Attack Speed cap is increased to 500%) and triggers Attack Effects an additional 2 time(s).",
+    "recipeImage": "images/pages/equipment-page/golden-staff-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2000,
+      "upgradePrice": 900,
+      "sellPrice": 1200
+    }
+  },
+  {
+    "id": "corrosion-scythe",
+    "name": "Corrosion Scythe",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/corrosion-scythe.webp",
+    "subtitle": "One-Hit Slow",
+    "buildsFrom": [
+      "swift-crossbow",
+      "regular-spear"
+    ],
+    "stats": [
+      "+30 Physical Attack",
+      "+30% Attack Speed",
+      "+5% Movement Speed"
+    ],
+    "description": "Unique Passive - Corrosive: Basic Attacks gain 80 extra Physical Damage and slow the target by 8% (halved for ranged Basic Attacks) for 1.5 seconds. Stacks up to 5 times.\nUnique Passive -  Impulse: Basic Attacks grant 6% extra Attack Speed for 3 seconds, capped at 5 stacks.",
+    "recipeImage": "images/pages/equipment-page/corrosion-scythe-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2050,
+      "upgradePrice": 450,
+      "sellPrice": 1230
+    }
+  },
+  {
+    "id": "demon-hunter-sword",
+    "name": "Demon Hunter Sword",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/demon-hunter-sword.webp",
+    "subtitle": "Tank Killer",
+    "buildsFrom": [
+      "regular-spear",
+      "vampire-mallet",
+      "knife"
+    ],
+    "stats": [
+      "+35 Physical Attack",
+      "+20% Attack Speed"
+    ],
+    "description": "Unique Passive - Engulf: Basic Attacks deal 8% of the target's current HP as extra Physical Damage (capped at 60 against minions).\nUnique Passive -  Devour: Each Basic Attack recovers 10(+4*Hero Level) HP. This effect is halved against minions.",
+    "recipeImage": "images/pages/equipment-page/demon-hunter-sword-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2180,
+      "upgradePrice": 900,
+      "sellPrice": 1308
+    }
+  },
+  {
+    "id": "swift-crossbow",
+    "name": "Swift Crossbow",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/swift-crossbow.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "knife",
+      "knife"
+    ],
+    "stats": [
+      "+20% Attack Speed"
+    ],
+    "description": "Unique Passive - Crossbow: Each Basic Attack deals 40 extra Adaptive Damage.\nUnique Passive -  Impulse: Basic Attacks grant 3% extra Attack Speed for 3 seconds, capped at 5 stacks.",
+    "recipeImage": "images/pages/equipment-page/swift-crossbow-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1000,
+      "upgradePrice": 440,
+      "sellPrice": 600
+    }
+  },
+  {
+    "id": "magic-blade",
+    "name": "Magic Blade",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/magic-blade.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "dagger",
+      "vampire-mallet"
+    ],
+    "stats": [
+      "+35 Physical Attack",
+      "+10% Lifesteal"
+    ],
+    "description": "Unique Passive - Lifeline: When taking damage that reduces HP below 30%, gains a (+60*Hero Level) shield (increases with level) and 50% Movement Speed that rapidly decays over 3 seconds. This effect has a 60 seconds cooldown.",
+    "recipeImage": "images/pages/equipment-page/magic-blade-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1050,
+      "upgradePrice": 400,
+      "sellPrice": 630
+    }
+  },
+  {
+    "id": "fury-hammer",
+    "name": "Fury Hammer",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/fury-hammer.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "dagger"
+    ],
+    "stats": [
+      "+35 Physical Attack"
+    ],
+    "description": "Unique Attribute: +12 Physical Penetration",
+    "recipeImage": "images/pages/equipment-page/fury-hammer-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 830,
+      "upgradePrice": 580,
+      "sellPrice": 498
+    }
+  },
+  {
+    "id": "rogue-meteor",
+    "name": "Rogue Meteor",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/rogue-meteor.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "knife",
+      "javelin"
+    ],
+    "stats": [
+      "+15% Attack Speed",
+      "+10% Crit Chance"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/rogue-meteor-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 900,
+      "upgradePrice": 300,
+      "sellPrice": 540
+    }
+  },
+  {
+    "id": "ogre-tomahawk",
+    "name": "Ogre Tomahawk",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/ogre-tomahawk.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "dagger",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+25 Physical Attack",
+      "+230 HP"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/ogre-tomahawk-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 650,
+      "upgradePrice": 100,
+      "sellPrice": 390
+    }
+  },
+  {
+    "id": "legion-sword",
+    "name": "Legion Sword",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/legion-sword.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "dagger",
+      "dagger"
+    ],
+    "stats": [
+      "+60 Physical Attack"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/legion-sword-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 910,
+      "upgradePrice": 410,
+      "sellPrice": 546
+    }
+  },
+  {
+    "id": "regular-spear",
+    "name": "Regular Spear",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/regular-spear.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "knife",
+      "dagger"
+    ],
+    "stats": [
+      "+20 Physical Attack",
+      "+10% Attack Speed"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/regular-spear-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 600,
+      "upgradePrice": 70,
+      "sellPrice": 360
+    }
+  },
+  {
+    "id": "expert-gloves",
+    "name": "Expert Gloves",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/expert-gloves.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+30 Adaptive Attack"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/expert-gloves-recipe.webp",
+    "inDepth": {
+      "type": "Attack & Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 500,
+      "upgradePrice": 0,
+      "sellPrice": 300
+    }
+  },
+  {
+    "id": "iron-hunting-bow",
+    "name": "Iron Hunting Bow",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/iron-hunting-bow.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+10 Physical Attack",
+      "+5% Cooldown Reduction"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/iron-hunting-bow-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 450,
+      "upgradePrice": 0,
+      "sellPrice": 270
+    }
+  },
+  {
+    "id": "vampire-mallet",
+    "name": "Vampire Mallet",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/vampire-mallet.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+8 Physical Attack",
+      "+8% Lifesteal"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/vampire-mallet-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 400,
+      "upgradePrice": 0,
+      "sellPrice": 240
+    }
+  },
+  {
+    "id": "javelin",
+    "name": "Javelin",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/javelin.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+8% Crit Chance"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/javelin-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 320,
+      "upgradePrice": 0,
+      "sellPrice": 192
+    }
+  },
+  {
+    "id": "knife",
+    "name": "Knife",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/knife.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+10% Attack Speed"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/knife-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 280,
+      "upgradePrice": 0,
+      "sellPrice": 168
+    }
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/dagger.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+15 Physical Attack"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/dagger-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 250,
+      "upgradePrice": 0,
+      "sellPrice": 150
+    }
+  },
+  {
+    "id": "power-potion",
+    "name": "Power Potion",
+    "category": [
+      "attack"
+    ],
+    "icon": "images/pages/equipment-page/power-potion.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Increase Power: Automatically used after purchasing, giving 30 Physical Attack and 15% of Lifesteal for 120s. Can only have one potion effect at a time.",
+    "recipeImage": "images/pages/equipment-page/power-potion-recipe.webp",
+    "inDepth": {
+      "type": "Attack",
+      "sellable": "No",
+      "availableFor": "All heroes",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 1500,
+      "upgradePrice": 0,
+      "sellPrice": 900
+    }
+  },
+  {
+    "id": "wishing-lantern",
+    "name": "Wishing Lantern",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/wishing-lantern.webp",
+    "subtitle": "Counter High HP",
+    "buildsFrom": [
+      "magic-wand",
+      "book-of-sages",
+      "power-crystal"
+    ],
+    "stats": [
+      "+75 Magic Power",
+      "+400 Mana",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Butterfly Goddess: For every 900 Magic Damage dealt to an enemy hero (calculated before Damage Reduction), a Butterfly Goddess is summoned to attack the enemy hero, dealing Magic Damage equal to 8% of their Current HP.",
+    "recipeImage": "images/pages/equipment-page/wishing-lantern-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2250,
+      "upgradePrice": 760,
+      "sellPrice": 1350
+    }
+  },
+  {
+    "id": "flask-of-the-oasis",
+    "name": "Flask of the Oasis",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/flask-of-the-oasis.webp",
+    "subtitle": "Protect Teammates",
+    "buildsFrom": [
+      "magic-wand",
+      "book-of-sages",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+60 Magic Power",
+      "+300 HP",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Attribute: +12% Healing Effect\nUnique Passive - Blessing: When casting a healing or shield skill, if the target's HP is below 35%, or falls below 35% within 3 seconds, they will get a (100*Hero Level) shield that lasts 3 seconds. When this effect triggers, it also reduces the cooldown of the caster's skills by 2 seconds. (This effect can only trigger once every 60 seconds on the same target, and will not trigger on self-only healing and shield skills.)",
+    "recipeImage": "images/pages/equipment-page/flask-of-the-oasis-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1850,
+      "upgradePrice": 280,
+      "sellPrice": 1110
+    }
+  },
+  {
+    "id": "genius-wand",
+    "name": "Genius Wand",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/genius-wand.webp",
+    "subtitle": "Magic Defense Reduction",
+    "buildsFrom": [
+      "exotic-veil",
+      "magic-wand"
+    ],
+    "stats": [
+      "+75 Magic Power",
+      "+5% Movement Speed"
+    ],
+    "description": "Unique Attribute: +10 Magic Penetration\nUnique Passive - Magic: Dealing Magic Damage to enemy heroes will reduce their Magic Defense by 2.5+(0.5*Hero Level) for 2 seconds. Stacks up to 3 times.",
+    "recipeImage": "images/pages/equipment-page/genius-wand-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2000,
+      "upgradePrice": 580,
+      "sellPrice": 1200
+    }
+  },
+  {
+    "id": "lightning-truncheon",
+    "name": "Lightning Truncheon",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/lightning-truncheon.webp",
+    "subtitle": "Splash Damage",
+    "buildsFrom": [
+      "magic-wand",
+      "book-of-sages",
+      "power-crystal"
+    ],
+    "stats": [
+      "+75 Magic Power",
+      "+400 Mana",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Resonate: Every 6 seconds, the next skill echoes, dealing 255 (+85% Magic Power) extra Magic Damage to all enemies in range.",
+    "recipeImage": "images/pages/equipment-page/lightning-truncheon-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2250,
+      "upgradePrice": 760,
+      "sellPrice": 1350
+    }
+  },
+  {
+    "id": "blood-wings",
+    "name": "Blood Wings",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/blood-wings.webp",
+    "subtitle": "Speed Boost Shield",
+    "buildsFrom": [
+      "magic-wand",
+      "magic-wand"
+    ],
+    "stats": [
+      "+90 Magic Power"
+    ],
+    "description": "Unique Passive - Guard: Gains a 800 (+100% Magic Power) Shield that will regenerate 20 seconds after being damaged. The Shield also grants 30 Movement Speed while it lasts and 150 Movement Speed for 1 second after it breaks.",
+    "recipeImage": "images/pages/equipment-page/blood-wings-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2100,
+      "upgradePrice": 460,
+      "sellPrice": 1260
+    }
+  },
+  {
+    "id": "starlium-scythe",
+    "name": "Starlium Scythe",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/starlium-scythe.webp",
+    "subtitle": "Enhanced Basic Attacks",
+    "buildsFrom": [
+      "azure-blade",
+      "book-of-sages",
+      "magic-wand"
+    ],
+    "stats": [
+      "+75 Magic Power",
+      "+10% Cooldown Reduction",
+      "+8% Hybrid Lifesteal",
+      "+6 Mana Regen"
+    ],
+    "description": "Unique Passive - Crisis: After casting a skill, the next Basic Attack within 3 seconds deals 90 (+60% Total Magic Power) extra True Damage and reduces the target's Movement Speed by 15% for 1.5 seconds (1.5 seconds cooldown).",
+    "recipeImage": "images/pages/equipment-page/starlium-scythe-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2120,
+      "upgradePrice": 250,
+      "sellPrice": 1272
+    }
+  },
+  {
+    "id": "glowing-wand",
+    "name": "Glowing Wand",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/glowing-wand.webp",
+    "subtitle": "Healing Reduction",
+    "buildsFrom": [
+      "exotic-veil",
+      "mystery-codex",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+60 Magic Power",
+      "+300 HP",
+      "+5% Movement Speed"
+    ],
+    "description": "Unique Passive - Scorch: Dealing Magic Damage burns the targets for 3 seconds, also dealing extra Magic Damage equal to 1% of the target's Max HP per second.\nUnique Passive -  Lifebane: Dealing damage to the target will reduce the Shield and HP Regen effects on them to 60% of normal for 3 seconds.",
+    "recipeImage": "images/pages/equipment-page/glowing-wand-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2150,
+      "upgradePrice": 950,
+      "sellPrice": 1290
+    }
+  },
+  {
+    "id": "ice-queen-wand",
+    "name": "Ice Queen Wand",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/ice-queen-wand.webp",
+    "subtitle": "Slow on Skill Hit",
+    "buildsFrom": [
+      "mystic-container",
+      "exotic-veil",
+      "mystery-codex"
+    ],
+    "stats": [
+      "+60 Magic Power",
+      "+10% Spell Vamp",
+      "+300 HP",
+      "+7% Movement Speed"
+    ],
+    "description": "Unique Passive - Ice Bound: When a skill deals damage to an enemy hero, it will also slow them by 10% for 2 seconds (stacks up to 3 times). This effect has a 0.4 seconds cooldown.",
+    "recipeImage": "images/pages/equipment-page/ice-queen-wand-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2040,
+      "upgradePrice": 640,
+      "sellPrice": 1224
+    }
+  },
+  {
+    "id": "concentrated-energy",
+    "name": "Concentrated Energy",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/concentrated-energy.webp",
+    "subtitle": "Continuous Damage Boost",
+    "buildsFrom": [
+      "mystic-container",
+      "magic-wand",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+75 Magic Power",
+      "+400 HP"
+    ],
+    "description": "Unique Attribute: +20% Hybrid Lifesteal\nUnique Passive - Recharge: Increases Magic Power by 5 after dealing Magic Damage (this effect stacks up to 6 times and can only gain 1 stack every 0.4 seconds). When reaching full stacks, increases Magic Damage by 12% for 5 seconds.",
+    "recipeImage": "images/pages/equipment-page/concentrated-energy-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2020,
+      "upgradePrice": 400,
+      "sellPrice": 1212
+    }
+  },
+  {
+    "id": "holy-crystal",
+    "name": "Holy Crystal",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/holy-crystal.webp",
+    "subtitle": "Max Magic Power",
+    "buildsFrom": [
+      "magic-wand",
+      "magic-wand",
+      "magic-wand"
+    ],
+    "stats": [
+      "+165 Magic Power"
+    ],
+    "description": "Unique Passive - Mystery: Gains 21%-35% extra Magic Power (scales with level).",
+    "recipeImage": "images/pages/equipment-page/holy-crystal-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 3000,
+      "upgradePrice": 540,
+      "sellPrice": 1800
+    }
+  },
+  {
+    "id": "divine-glaive",
+    "name": "Divine Glaive",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/divine-glaive.webp",
+    "subtitle": "Magic Penetration",
+    "buildsFrom": [
+      "magic-wand"
+    ],
+    "stats": [
+      "+65 Magic Power"
+    ],
+    "description": "Unique Attribute: +40% Magic Penetration\nUnique Passive - Spellbreaker: When attacking an enemy, gains 0.1% extra Magic Penetration for each point of the enemy's Magic Defense, capped at 20%.",
+    "recipeImage": "images/pages/equipment-page/divine-glaive-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1970,
+      "upgradePrice": 1150,
+      "sellPrice": 1182
+    }
+  },
+  {
+    "id": "clock-of-destiny",
+    "name": "Clock of Destiny",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/clock-of-destiny.webp",
+    "subtitle": "For Magic Tanks",
+    "buildsFrom": [
+      "elegant-gem",
+      "book-of-sages",
+      "book-of-sages"
+    ],
+    "stats": [
+      "+45 Magic Power",
+      "+400 HP",
+      "+400 Mana",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Destiny: Gains 4.5(+0.5*Hero Level) Hybrid Defense for 5 seconds when dealing Magic Damage to enemy heroes, stacking up to 6 times (can gain 1 stack every 0.4 seconds).\nUnique Passive -  Gift: When HP drops below 50%, recovers 15% of HP over the next 3 seconds. When Mana drops below 50%, restores 15% of Mana over the next 3 seconds. Cooldown: 60 seconds.",
+    "recipeImage": "images/pages/equipment-page/clock-of-destiny-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2030,
+      "upgradePrice": 430,
+      "sellPrice": 1218
+    }
+  },
+  {
+    "id": "feather-of-heaven",
+    "name": "Feather of Heaven",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/feather-of-heaven.webp",
+    "subtitle": "Magic Basic Attacks",
+    "buildsFrom": [
+      "swift-crossbow",
+      "book-of-sages"
+    ],
+    "stats": [
+      "+60 Magic Power",
+      "+20% Attack Speed",
+      "+10% Lifesteal",
+      "+5% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Affliction: Each Basic Attack deals extra 50 (+30% Total Magic Power) Magic Damage.\nUnique Passive -  Impulse: Basic Attacks grant 6% extra Attack Speed for 3 seconds, capped at 5 stacks.",
+    "recipeImage": "images/pages/equipment-page/feather-of-heaven-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2030,
+      "upgradePrice": 580,
+      "sellPrice": 1218
+    }
+  },
+  {
+    "id": "enchanted-talisman",
+    "name": "Enchanted Talisman",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/enchanted-talisman.webp",
+    "subtitle": "Mana Regen & CD Reduction",
+    "buildsFrom": [
+      "tome-of-evil",
+      "magic-necklace",
+      "magic-wand"
+    ],
+    "stats": [
+      "+70 Magic Power",
+      "+300 HP",
+      "+15% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Mana Spring: Regenerates 15% of Max Mana every 10 seconds.\nUnique Passive -  Magic Mastery: Max Cooldown Reduction is increased by 5%.",
+    "recipeImage": "images/pages/equipment-page/enchanted-talisman-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2070,
+      "upgradePrice": 180,
+      "sellPrice": 1242
+    }
+  },
+  {
+    "id": "elegant-gem",
+    "name": "Elegant Gem",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/elegant-gem.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "power-crystal",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+300 HP",
+      "+380 Mana"
+    ],
+    "description": "Unique Passive - Gift: When HP drops below 50%, recovers 15% of HP over the next 3 seconds. When Mana drops below 50%, restores 15% of Mana over the next 3 seconds. Cooldown: 60 seconds.",
+    "recipeImage": "images/pages/equipment-page/elegant-gem-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 700,
+      "upgradePrice": 180,
+      "sellPrice": 420
+    }
+  },
+  {
+    "id": "exotic-veil",
+    "name": "Exotic Veil",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/exotic-veil.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "mystery-codex"
+    ],
+    "stats": [
+      "+30 Magic Power",
+      "+5% Movement Speed"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/exotic-veil-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 600,
+      "upgradePrice": 300,
+      "sellPrice": 360
+    }
+  },
+  {
+    "id": "azure-blade",
+    "name": "Azure Blade",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/azure-blade.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "magic-necklace",
+      "magic-necklace"
+    ],
+    "stats": [
+      "+5 Mana Regen",
+      "+5% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Judgement: After casting a skill, the next Basic Attack within 3 seconds deals 50 extra True Damage (1.5 seconds cooldown).",
+    "recipeImage": "images/pages/equipment-page/azure-blade-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 600,
+      "upgradePrice": 360,
+      "sellPrice": 360
+    }
+  },
+  {
+    "id": "tome-of-evil",
+    "name": "Tome of Evil",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/tome-of-evil.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "magic-necklace",
+      "book-of-sages"
+    ],
+    "stats": [
+      "+30 Magic Power",
+      "+2 Mana Regen",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/tome-of-evil-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 950,
+      "upgradePrice": 380,
+      "sellPrice": 570
+    }
+  },
+  {
+    "id": "magic-wand",
+    "name": "Magic Wand",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/magic-wand.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "mystery-codex"
+    ],
+    "stats": [
+      "+45 Magic Power"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/magic-wand-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 820,
+      "upgradePrice": 520,
+      "sellPrice": 492
+    }
+  },
+  {
+    "id": "mystic-container",
+    "name": "Mystic Container",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/mystic-container.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "mystery-codex"
+    ],
+    "stats": [
+      "+15 Magic Power",
+      "+8% Spell Vamp"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/mystic-container-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 500,
+      "upgradePrice": 200,
+      "sellPrice": 300
+    }
+  },
+  {
+    "id": "expert-gloves",
+    "name": "Expert Gloves",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/expert-gloves.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+30 Adaptive Attack"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/expert-gloves-recipe.webp",
+    "inDepth": {
+      "type": "Attack & Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 500,
+      "upgradePrice": 0,
+      "sellPrice": 300
+    }
+  },
+  {
+    "id": "book-of-sages",
+    "name": "Book of Sages",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/book-of-sages.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+8 Magic Power",
+      "+5% Cooldown Reduction"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/book-of-sages-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 450,
+      "upgradePrice": 0,
+      "sellPrice": 270
+    }
+  },
+  {
+    "id": "magic-necklace",
+    "name": "Magic Necklace",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/magic-necklace.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+2 Mana Regen"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/magic-necklace-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 120,
+      "upgradePrice": 0,
+      "sellPrice": 72
+    }
+  },
+  {
+    "id": "power-crystal",
+    "name": "Power Crystal",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/power-crystal.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+280 Mana"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/power-crystal-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 220,
+      "upgradePrice": 0,
+      "sellPrice": 132
+    }
+  },
+  {
+    "id": "mystery-codex",
+    "name": "Mystery Codex",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/mystery-codex.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+15 Magic Power"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/mystery-codex-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 300,
+      "upgradePrice": 0,
+      "sellPrice": 180
+    }
+  },
+  {
+    "id": "lantern-of-hope",
+    "name": "Lantern of Hope",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/lantern-of-hope.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+20 Magic Power",
+      "+4% Movement Speed",
+      "+2% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Lantern of Hope: The equipment's attributes scale with hero level.",
+    "recipeImage": "images/pages/equipment-page/lantern-of-hope-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "No",
+      "availableFor": "Floryn",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "flower-of-hope",
+    "name": "Flower of Hope",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/flower-of-hope.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+5% Adaptive Attack"
+    ],
+    "description": "Unique Passive - Flower of Hope: Every 6 seconds, the next skill or Basic Attack deals an additional 60 (+30% Total Physical Attack) (+30% Total Magic Power) Magic Damage.",
+    "recipeImage": "images/pages/equipment-page/flower-of-hope-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "No",
+      "availableFor": "Floryn's allies",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "magic-potion",
+    "name": "Magic Potion",
+    "category": [
+      "magic"
+    ],
+    "icon": "images/pages/equipment-page/magic-potion.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Increase Power: Automatically used after purchasing, increases Magic Power by 30 and Cooldown Reduction by 10% for 120s. Can only have one potion effect at a time.",
+    "recipeImage": "images/pages/equipment-page/magic-potion-recipe.webp",
+    "inDepth": {
+      "type": "Magic",
+      "sellable": "No",
+      "availableFor": "All heroes",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 1500,
+      "upgradePrice": 0,
+      "sellPrice": 900
+    }
+  },
+    {
+    "id": "radiant-armor",
+    "name": "Radiant Armor",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/radiant-armor.webp",
+    "subtitle": "Magic Damage Reduction",
+    "buildsFrom": [
+      "silence-robe",
+      "magic-resist-cloak",
+      "healing-necklace"
+    ],
+    "stats": [
+      "+950 HP",
+      "+40 Magic Defense",
+      "+12 HP Regen"
+    ],
+    "description": "Unique Passive - Holy Blessing: Taking Magic Damage grants 5(+1*Hero Level) Magic Defense for 5 seconds, up to 6 stacks (can only gain 1 stack(s) every 0.4 seconds).",
+    "recipeImage": "images/pages/equipment-page/radiant-armor-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1880,
+      "upgradePrice": 500,
+      "sellPrice": 1128
+    }
+  },
+  {
+    "id": "chastise-pauldron",
+    "name": "Chastise Pauldron",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/chastise-pauldron.webp",
+    "subtitle": "Reduce Enemy Attack Speed",
+    "buildsFrom": [
+      "steel-legplates",
+      "ares-belt"
+    ],
+    "stats": [
+      "+900 HP",
+      "+40 Physical Defense"
+    ],
+    "description": "Unique Passive - Chastise: Taking damage will reduce the Attack Speed and Attack Speed cap of the attacker to 75% of normal for 2 seconds.\nUnique Passive -  Redemption: When incoming damage reduces HP below 30%, recover 20% Max HP over the next 2 seconds. This effect has a 60 seconds cooldown.",
+    "recipeImage": "images/pages/equipment-page/chastise-pauldron-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2100,
+      "upgradePrice": 770,
+      "sellPrice": 1260
+    }
+  },
+  {
+    "id": "brute-force-breastplate",
+    "name": "Brute Force Breastplate",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/brute-force-breastplate.webp",
+    "subtitle": "Attack, Speed Up, CC Reduction",
+    "buildsFrom": [
+      "ares-belt",
+      "hero-s-ring",
+      "leather-jerkin"
+    ],
+    "stats": [
+      "+800 HP",
+      "+20 Physical Defense",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Brute Force: Each second after dealing damage, gain 8 extra Adaptive Attack and 2% extra Movement Speed for 4 seconds, up to 6 stacks. Gain 25% extra Control Duration Reduction at full stacks.",
+    "recipeImage": "images/pages/equipment-page/brute-force-breastplate-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2070,
+      "upgradePrice": 700,
+      "sellPrice": 1242
+    }
+  },
+  {
+    "id": "immortality",
+    "name": "Immortality",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/immortality.webp",
+    "subtitle": "Self-Resurrection",
+    "buildsFrom": [
+      "ares-belt",
+      "vitality-crystal",
+      "leather-jerkin"
+    ],
+    "stats": [
+      "+850 HP",
+      "+15 Physical Defense"
+    ],
+    "description": "Unique Passive - Immortal: Resurrect 2.5 seconds upon death and gets 16% Max HP and a shield that can absorb 150(+70*Hero Level）damage. Shield lasts 3 seconds. This effect has a 210 seconds cooldown.",
+    "recipeImage": "images/pages/equipment-page/immortality-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2120,
+      "upgradePrice": 900,
+      "sellPrice": 1272
+    }
+  },
+  {
+    "id": "dominance-ice",
+    "name": "Dominance Ice",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/dominance-ice.webp",
+    "subtitle": "Healing Reduction",
+    "buildsFrom": [
+      "black-ice-shield",
+      "leather-jerkin",
+      "magic-resist-cloak"
+    ],
+    "stats": [
+      "+40 Physical Defense",
+      "+40 Magic Defense",
+      "+5% Movement Speed"
+    ],
+    "description": "Unique Passive - Fortress Shield: For each enemy hero within 5 units, Hybrid Defense is increased by 8, up to 40.\nUnique Passive -  Lifebane: Reduces Shield and HP Regen effects of nearby enemies within 5 units to 60% of normal for 1 second.",
+    "recipeImage": "images/pages/equipment-page/dominance-ice-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2010,
+      "upgradePrice": 790,
+      "sellPrice": 1206
+    }
+  },
+  {
+    "id": "athena-s-shield",
+    "name": "Athena's Shield",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/athena-s-shield.webp",
+    "subtitle": "Resist Burst Magic Damage",
+    "buildsFrom": [
+      "silence-robe",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+900 HP",
+      "+48 Magic Defense",
+      "+2 HP Regen"
+    ],
+    "description": "Unique Passive - Shield: Upon taking Magic Damage from enemy hero skills or Basic Attacks, reduces Magic Damage taken by 25% for 3 seconds (including the damage that triggers the effect)s. Regains this effect 5 seconds after leaving combat.",
+    "recipeImage": "images/pages/equipment-page/athena-s-shield-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2150,
+      "upgradePrice": 830,
+      "sellPrice": 1290
+    }
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/oracle.webp",
+    "subtitle": "Enhanced Regen",
+    "buildsFrom": [
+      "hero-s-ring",
+      "hero-s-ring",
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+850 HP",
+      "+20 Physical Defense",
+      "+20 Magic Defense",
+      "+10% Cooldown Reduction"
+    ],
+    "description": "Unique Passive - Bless: Received Shield and HP Regen effects are increased by 25%.",
+    "recipeImage": "images/pages/equipment-page/oracle-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1860,
+      "upgradePrice": 660,
+      "sellPrice": 1116
+    }
+  },
+  {
+    "id": "antique-cuirass",
+    "name": "Antique Cuirass",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/antique-cuirass.webp",
+    "subtitle": "Physical Attack Reduction",
+    "buildsFrom": [
+      "dreadnaught-armor",
+      "ares-belt"
+    ],
+    "stats": [
+      "+920 HP",
+      "+40 Physical Defense",
+      "+4 HP Regen"
+    ],
+    "description": "Unique Passive - Deter: When hit by a skill, reduces the attacker's Physical Damage by 6% for 2 seconds (this effect stacks up to 3 times).",
+    "recipeImage": "images/pages/equipment-page/antique-cuirass-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2170,
+      "upgradePrice": 740,
+      "sellPrice": 1302
+    }
+  },
+  {
+    "id": "guardian-helmet",
+    "name": "Guardian Helmet",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/guardian-helmet.webp",
+    "subtitle": "Constant HP Regen",
+    "buildsFrom": [
+      "ares-belt",
+      "ares-belt",
+      "ares-belt"
+    ],
+    "stats": [
+      "+1800 HP",
+      "+20 HP Regen"
+    ],
+    "description": "Unique Passive - Recovery: After 5 seconds out of combat, recover (2.5% Total HP) HP per second.\nUnique Passive -  Defender: Upon taking more than 500 damage in a single instance, recover 30 (+0.3% Total HP)% HP from the excess damage beyond that amount.",
+    "recipeImage": "images/pages/equipment-page/guardian-helmet-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2500,
+      "upgradePrice": 400,
+      "sellPrice": 1500
+    }
+  },
+  {
+    "id": "cursed-helmet",
+    "name": "Cursed Helmet",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/cursed-helmet.webp",
+    "subtitle": "Survivability & Lane Clearing",
+    "buildsFrom": [
+      "molten-essence",
+      "ares-belt",
+      "magic-resist-cloak"
+    ],
+    "stats": [
+      "+1200 HP",
+      "+20 Magic Defense"
+    ],
+    "description": "Unique Passive - Burning Soul: Deals (1.2% Total HP) Magic Damage to nearby enemies per second. This damage is increased by 125(+15*Hero Level)% against creeps and minions.\nUnique Passive -  Curse: Dealing damage with Burning Soul will reduce the target's Hybrid Defense by 3 for 3 seconds. Stacks up to 3 times.",
+    "recipeImage": "images/pages/equipment-page/cursed-helmet-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1910,
+      "upgradePrice": 190,
+      "sellPrice": 1146
+    }
+  },
+  {
+    "id": "thunder-belt",
+    "name": "Thunder Belt",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/thunder-belt.webp",
+    "subtitle": "Damage for Tanks",
+    "buildsFrom": [
+      "ares-belt",
+      "leather-jerkin",
+      "magic-resist-cloak"
+    ],
+    "stats": [
+      "+600 HP",
+      "+15 Physical Defense",
+      "+15 Magic Defense",
+      "+20 Movement Speed"
+    ],
+    "description": "Unique Passive - Thunderbolt: Every 4 seconds, the next Basic Attack deals 50 (+100% Extra Physical Defense) (+100% Extra Magic Defense) extra True Damage to the target and enemies around them, and briefly slows them by 99%. Hybrid Defense permanently increases by 1 each time the attack hits an enemy hero. (This effect is reduced to 50% for Marksmen and Mages)",
+    "recipeImage": "images/pages/equipment-page/thunder-belt-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1820,
+      "upgradePrice": 680,
+      "sellPrice": 1092
+    }
+  },
+  {
+    "id": "queen-s-wings",
+    "name": "Queen's Wings",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/queen-s-wings.webp",
+    "subtitle": "Low-HP Retaliation",
+    "buildsFrom": [
+      "ares-belt",
+      "hero-s-ring",
+      "expert-gloves"
+    ],
+    "stats": [
+      "+750 HP",
+      "+30 Adaptive Attack",
+      "+10% Cooldown Reduction",
+      "+10% Spell Vamp"
+    ],
+    "description": "Unique Passive - Demonize: When HP drops below 40%, gains 30% Damage Reduction for 3 seconds and reduces skill cooldowns by 2 seconds. This effect has a 60 seconds cooldown.\nUnique Passive -  Defiance: For every 1% HP lost, damage is increased by 0.25%, up to 15%.",
+    "recipeImage": "images/pages/equipment-page/queen-s-wings-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 2250,
+      "upgradePrice": 600,
+      "sellPrice": 1350
+    }
+  },
+  {
+    "id": "blade-armor",
+    "name": "Blade Armor",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/blade-armor.webp",
+    "subtitle": "Damage Reflection",
+    "buildsFrom": [
+      "steel-legplates",
+      "leather-jerkin",
+      "leather-jerkin"
+    ],
+    "stats": [
+      "+80 Physical Defense"
+    ],
+    "description": "Unique Attribute: +20% Crit Damage Reduction\nUnique Passive - Bladed Armor: When struck by a Basic Attack, deals Physical Damage equal to 30 (+2% Total Physical Defense)% of the incoming damage (calculated before Damage Reduction) to the attacker and slows them by 15% for 1 second.",
+    "recipeImage": "images/pages/equipment-page/blade-armor-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1910,
+      "upgradePrice": 840,
+      "sellPrice": 1146
+    }
+  },
+  {
+    "id": "steel-legplates",
+    "name": "Steel Legplates",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/steel-legplates.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "leather-jerkin"
+    ],
+    "stats": [
+      "+35 Physical Defense"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/steel-legplates-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 630,
+      "upgradePrice": 410,
+      "sellPrice": 378
+    }
+  },
+  {
+    "id": "dreadnaught-armor",
+    "name": "Dreadnaught Armor",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/dreadnaught-armor.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "leather-jerkin",
+      "leather-jerkin"
+    ],
+    "stats": [
+      "+30 Physical Defense"
+    ],
+    "description": "Unique Passive - Deter: When hit by a skill, reduces the attacker's Physical Damage by 4% for 2 seconds (this effect stacks up to 3 times).",
+    "recipeImage": "images/pages/equipment-page/dreadnaught-armor-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 730,
+      "upgradePrice": 290,
+      "sellPrice": 438
+    }
+  },
+  {
+    "id": "black-ice-shield",
+    "name": "Black Ice Shield",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/black-ice-shield.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "leather-jerkin",
+      "magic-resist-cloak"
+    ],
+    "stats": [
+      "+20 Physical Defense",
+      "+20 Magic Defense"
+    ],
+    "description": "Unique Passive - Fortress Shield: For each enemy hero within 3.55 units, Hybrid Defense is increased by 4, up to 20.",
+    "recipeImage": "images/pages/equipment-page/black-ice-shield-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 780,
+      "upgradePrice": 340,
+      "sellPrice": 468
+    }
+  },
+  {
+    "id": "silence-robe",
+    "name": "Silence Robe",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/silence-robe.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "vitality-crystal",
+      "magic-resist-cloak"
+    ],
+    "stats": [
+      "+540 HP",
+      "+23 Magic Defense"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/silence-robe-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 1020,
+      "upgradePrice": 500,
+      "sellPrice": 612
+    }
+  },
+  {
+    "id": "molten-essence",
+    "name": "Molten Essence",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/molten-essence.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+540 HP"
+    ],
+    "description": "Unique Passive - Burning Soul: Deals (0.6% Total HP) Magic Damage to nearby enemies per second. This damage is increased by 125(+15*Hero Level)% against creeps and minions.",
+    "recipeImage": "images/pages/equipment-page/molten-essence-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 800,
+      "upgradePrice": 500,
+      "sellPrice": 480
+    }
+  },
+  {
+    "id": "ares-belt",
+    "name": "Ares Belt",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/ares-belt.webp",
+    "subtitle": "",
+    "buildsFrom": [
+      "vitality-crystal"
+    ],
+    "stats": [
+      "+600 HP"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/ares-belt-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 700,
+      "upgradePrice": 400,
+      "sellPrice": 420
+    }
+  },
+  {
+    "id": "hero-s-ring",
+    "name": "Hero's Ring",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/hero-s-ring.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+150 HP",
+      "+5% Cooldown Reduction"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/hero-s-ring-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 450,
+      "upgradePrice": 0,
+      "sellPrice": 270
+    }
+  },
+  {
+    "id": "healing-necklace",
+    "name": "Healing Necklace",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/healing-necklace.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+4 HP Regen"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/healing-necklace-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 140,
+      "upgradePrice": 0,
+      "sellPrice": 84
+    }
+  },
+  {
+    "id": "magic-resist-cloak",
+    "name": "Magic Resist Cloak",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/magic-resist-cloak.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+14 Magic Defense"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/magic-resist-cloak-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 220,
+      "upgradePrice": 0,
+      "sellPrice": 132
+    }
+  },
+  {
+    "id": "leather-jerkin",
+    "name": "Leather Jerkin",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/leather-jerkin.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+14 Physical Defense"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/leather-jerkin-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 220,
+      "upgradePrice": 0,
+      "sellPrice": 132
+    }
+  },
+  {
+    "id": "vitality-crystal",
+    "name": "Vitality Crystal",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/vitality-crystal.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+230 HP"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/vitality-crystal-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 300,
+      "upgradePrice": 0,
+      "sellPrice": 180
+    }
+  },
+  {
+    "id": "rock-potion",
+    "name": "Rock Potion",
+    "category": [
+      "defense"
+    ],
+    "icon": "images/pages/equipment-page/rock-potion.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Increase Power: Upon purchase, grants 500 Max HP and 5% Damage Reduction for 120 seconds. Can only have one potion effect at a time.",
+    "recipeImage": "images/pages/equipment-page/rock-potion-recipe.webp",
+    "inDepth": {
+      "type": "Defense",
+      "sellable": "No",
+      "availableFor": "All heroes",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 1500,
+      "upgradePrice": 0,
+      "sellPrice": 900
+    }
+  },
+    {
+    "id": "demon-shoes",
+    "name": "Demon Shoes",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/demon-shoes.webp",
+    "subtitle": "Quick Mana Regen",
+    "buildsFrom": [
+      "boots",
+      "magic-necklace",
+      "magic-necklace"
+    ],
+    "stats": [
+      "+40 Movement Speed",
+      "+10 Mana Regen"
+    ],
+    "description": "Unique Passive - Mysticism: Getting a kill or assist on an enemy Minion will restore 4% Mana. (An assist occurs when a Minion dies within 2 seconds after taking damage from the hero.)",
+    "recipeImage": "images/pages/equipment-page/demon-shoes-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 230,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "rapid-boots",
+    "name": "Rapid Boots",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/rapid-boots.webp",
+    "subtitle": "Movement Speed",
+    "buildsFrom": [
+      "boots",
+      "healing-necklace",
+      "healing-necklace"
+    ],
+    "stats": [
+      "+65 Movement Speed",
+      "+35% Slow Reduction",
+      "+12 HP Regen"
+    ],
+    "description": "Unique Passive - Side Effect: Loses 20 Movement Speed for 5 seconds upon dealing or taking damage.",
+    "recipeImage": "images/pages/equipment-page/rapid-boots-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 190,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "swift-boots",
+    "name": "Swift Boots",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/swift-boots.webp",
+    "subtitle": "Attack Speed",
+    "buildsFrom": [
+      "boots",
+      "knife"
+    ],
+    "stats": [
+      "+40 Movement Speed",
+      "+15% Attack Speed"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/swift-boots-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 190,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "arcane-boots",
+    "name": "Arcane Boots",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/arcane-boots.webp",
+    "subtitle": "Magic Penetration",
+    "buildsFrom": [
+      "boots",
+      "mystery-codex"
+    ],
+    "stats": [
+      "+40 Movement Speed",
+      "+15 Magic Power",
+      "+10 Magic Penetration"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/arcane-boots-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 170,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "magic-shoes",
+    "name": "Magic Shoes",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/magic-shoes.webp",
+    "subtitle": "CD Reduction",
+    "buildsFrom": [
+      "boots",
+      "hero-s-ring"
+    ],
+    "stats": [
+      "+40 Movement Speed",
+      "+10% Cooldown Reduction",
+      "+150 HP"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/magic-shoes-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 20,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "tough-boots",
+    "name": "Tough Boots",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/tough-boots.webp",
+    "subtitle": "CC Duration Reduction",
+    "buildsFrom": [
+      "boots",
+      "magic-resist-cloak"
+    ],
+    "stats": [
+      "+40 Movement Speed",
+      "+18 Magic Defense"
+    ],
+    "description": "Unique Passive - Fortitude: CC and Slow Duration reduced by 25%.",
+    "recipeImage": "images/pages/equipment-page/tough-boots-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 250,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "warrior-boots",
+    "name": "Warrior Boots",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/warrior-boots.webp",
+    "subtitle": "Stackable Physical Defense",
+    "buildsFrom": [
+      "boots",
+      "leather-jerkin"
+    ],
+    "stats": [
+      "+40 Movement Speed",
+      "+18 Physical Defense"
+    ],
+    "description": "Unique Passive - Valor: Gains 4 extra Physical Defense for 3 seconds when taking Physical Damage, up to 20.",
+    "recipeImage": "images/pages/equipment-page/warrior-boots-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 720,
+      "upgradePrice": 250,
+      "sellPrice": 432
+    }
+  },
+  {
+    "id": "boots",
+    "name": "Boots",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/boots.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [
+      "+20 Movement Speed"
+    ],
+    "description": "No available description for this item",
+    "recipeImage": "images/pages/equipment-page/boots-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "Yes",
+      "availableFor": "All heroes",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 250,
+      "upgradePrice": 0,
+      "sellPrice": 150
+    }
+  },
+  {
+    "id": "allow-throw",
+    "name": "Allow Throw",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/allow-throw.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Trust: Allow allied Jawhead to fling you.",
+    "recipeImage": "images/pages/equipment-page/allow-throw-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "No",
+      "availableFor": "Jawhead's allies",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "throw-forbidden",
+    "name": "Throw Forbidden",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/throw-forbidden.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Heavy Mountain: Become immune to allied Jawhead's Ejector in this match.",
+    "recipeImage": "images/pages/equipment-page/throw-forbidden-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "No",
+      "availableFor": "Jawhead's allies",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "broken-heart",
+    "name": "Broken Heart",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/broken-heart.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Heart Broken: Become immune to allied Cecilion's Moonlit Waltz in this match.",
+    "recipeImage": "images/pages/equipment-page/broken-heart-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "No",
+      "availableFor": "Carmilla",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "resonating-heart",
+    "name": "Resonating Heart",
+    "category": [
+      "movement"
+    ],
+    "icon": "images/pages/equipment-page/resonating-heart.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Restore: Allow allied Cecilion to use Moonlit Waltz on the user of this equipment.",
+    "recipeImage": "images/pages/equipment-page/resonating-heart-recipe.webp",
+    "inDepth": {
+      "type": "Movement",
+      "sellable": "No",
+      "availableFor": "Carmilla",
+      "takesSlot": "No"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+    {
+    "id": "flame-retribution",
+    "name": "Flame Retribution",
+    "category": [
+      "jungling"
+    ],
+    "icon": "images/pages/equipment-page/flame-retribution.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Active - Retribution's damage against creeps and minions is increased to 150%. When cast on an enemy hero, deals them 100 True Damage and steals 71-120 Physical Attack and Magic Power (scales with level) from them for 3 seconds. \n Retribution is upgraded when the total number of creep kills, hero kills, and assists reaches 5.",
+    "recipeImage": "images/pages/equipment-page/flame-retribution-recipe.webp",
+    "inDepth": {
+      "type": "Jungling",
+      "sellable": "No",
+      "availableFor": "Heroes who equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "ice-retribution",
+    "name": "Ice Retribution",
+    "category": [
+      "jungling"
+    ],
+    "icon": "images/pages/equipment-page/ice-retribution.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Active - Retribution's damage against creeps and minions is increased to 150%. When cast on an enemy hero, deals them 100 True Damage and steals 52-80 Movement Speed (scales with level) from them for 3 seconds. \n Retribution is upgraded when the total number of creep kills, hero kills, and assists reaches 5.",
+    "recipeImage": "images/pages/equipment-page/ice-retribution-recipe.webp",
+    "inDepth": {
+      "type": "Jungling",
+      "sellable": "No",
+      "availableFor": "Heroes who equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "bloody-retribution",
+    "name": "Bloody Retribution",
+    "category": [
+      "jungling"
+    ],
+    "icon": "images/pages/equipment-page/bloody-retribution.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Active - Retribution's damage against creeps and minions is increased to 150%. When cast on an enemy hero, deals them 100 True Damage and steals HP equal to 300 plus 24% of the caster's extra HP from them for 3 seconds. \n Retribution is upgraded when the total number of creep kills, hero kills, and assists reaches 5.",
+    "recipeImage": "images/pages/equipment-page/bloody-retribution-recipe.webp",
+    "inDepth": {
+      "type": "Jungling",
+      "sellable": "No",
+      "availableFor": "Heroes who equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+    {
+    "id": "active-conceal",
+    "name": "Active - Conceal",
+    "category": [
+      "roaming"
+    ],
+    "icon": "images/pages/equipment-page/active-conceal.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Active - Conceals nearby allied heroes (including self) and grants them 40% extra Movement Speed for 5 seconds, or until they deal or take damage. \n Heroes with this Blessing can gain EXP and Gold by dealing damage to enemy heroes (Cooldown: 15 seconds) or revealing enemies. This skill can only be unlocked after accumulating 1000 Gold from Thriving and Devotion.",
+    "recipeImage": "images/pages/equipment-page/active-conceal-recipe.webp",
+    "inDepth": {
+      "type": "Roaming",
+      "sellable": "No",
+      "availableFor": "All heroes without equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "passive-encourage",
+    "name": "Passive - Encourage",
+    "category": [
+      "roaming"
+    ],
+    "icon": "images/pages/equipment-page/passive-encourage.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Grants nearby allied heroes (including self) 20 extra Hybrid Defense. \n Heroes with this Blessing can gain 35% EXP and Gold from minions and creeps when allied heroes are nearby or by revealing enemies. This skill can only be unlocked after accumulating 1000 Gold from Thriving and Devotion.",
+    "recipeImage": "images/pages/equipment-page/passive-encourage-recipe.webp",
+    "inDepth": {
+      "type": "Roaming",
+      "sellable": "No",
+      "availableFor": "All heroes without equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "passive-favor",
+    "name": "Passive - Favor",
+    "category": [
+      "roaming"
+    ],
+    "icon": "images/pages/equipment-page/passive-favor.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - Every 15 seconds, the next healing or shield skill recovers an 400 HP for the allied hero with the lowest HP (including self) within 5 units. Skills that only take effect on self cannot trigger this effect. \n Heroes with this Blessing can gain 35% EXP and Gold from minions and creeps when allied heroes are nearby or by revealing enemy vision. This skill can only be unlocked after accumulating 1000 Gold from Thriving and Devotion.",
+    "recipeImage": "images/pages/equipment-page/passive-favor-recipe.webp",
+    "inDepth": {
+      "type": "Roaming",
+      "sellable": "No",
+      "availableFor": "All heroes without equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  },
+  {
+    "id": "passive-dire-hit",
+    "name": "Passive - Dire Hit",
+    "category": [
+      "roaming"
+    ],
+    "icon": "images/pages/equipment-page/passive-dire-hit.webp",
+    "subtitle": "",
+    "buildsFrom": [],
+    "stats": [],
+    "description": "Unique Passive - After dealing damage to an enemy hero, mark them for 3 seconds. Allied heroes' sttacks on marked targets deal additional Physical and Magic Damage equal to 12% of the target's Max HP. Cooldown: 15 seconds. \n Heroes with this Blessing can gain EXP and Gold by dealing damage to enemy heroes (Cooldown: 15 seconds) or revealing enemy vision. This skill can only be unlocked after accumulating 1000 Gold from Thriving and Devotion.",
+    "recipeImage": "images/pages/equipment-page/passive-dire-hit-recipe.webp",
+    "inDepth": {
+      "type": "Roaming",
+      "sellable": "No",
+      "availableFor": "All heroes without equipped Retribution",
+      "takesSlot": "Yes"
+    },
+    "pricing": {
+      "price": 0,
+      "upgradePrice": 0,
+      "sellPrice": 0
+    }
+  }
+]
