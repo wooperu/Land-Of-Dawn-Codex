@@ -106,17 +106,6 @@ footer {
 }
 
 /* DIAMOND DIVIDER */
-.divider {
-  display: flex; align-items: center; justify-content: center;
-  padding: 1rem 0;
-}
-.divider::before, .divider::after {
-  content: ''; flex: 1; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border));
-}
-.divider::after {
-  background: linear-gradient(90deg, var(--border), transparent);
-}
 .divider-gem {
   width: 10px; height: 10px; margin: 0 1rem;
   background: var(--gold);
