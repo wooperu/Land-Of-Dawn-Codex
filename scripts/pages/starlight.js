@@ -1,9 +1,0 @@
-initTabs("../data/skins/starlight.json", {
-  basePath      : "../images/pages/skins-page/skins/portrait/",
-  category      : "starlight",
-  subfolder     : "monthly",
-  tabId         : "tabBar",
-  gridId        : "portraitGrid",
-  onRender      : function () { initReveal(); },
-  onEmpty       : function (grid) { grid.innerHTML = ""; }
-});
