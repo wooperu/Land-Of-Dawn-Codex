@@ -381,37 +381,37 @@
 
 /* PER-ROLE COLOR THEMES */
 
-/* Tank — blue */
+/* Tank */
 .role-card--tank { border-color: rgba(96,165,250,0.15); }
 .role-card--tank .role-card-aside { background: rgba(96,165,250,0.07); border-right-color: rgba(96,165,250,0.15); }
 .role-card--tank:hover { border-color: rgba(96,165,250,0.3); }
 .role-tag--tank { background: rgba(96,165,250,0.15); border: 1px solid rgba(96,165,250,0.35); color: #93c5fd; }
 
-/* Fighter — orange */
+/* Fighter */
 .role-card--fighter { border-color: rgba(251,146,60,0.15); }
 .role-card--fighter .role-card-aside { background: rgba(251,146,60,0.07); border-right-color: rgba(251,146,60,0.15); }
 .role-card--fighter:hover { border-color: rgba(251,146,60,0.3); }
 .role-tag--fighter { background: rgba(251,146,60,0.15); border: 1px solid rgba(251,146,60,0.35); color: #fdba74; }
 
-/* Assassin — purple */
+/* Assassin */
 .role-card--assassin { border-color: rgba(167,139,250,0.15); }
 .role-card--assassin .role-card-aside { background: rgba(167,139,250,0.07); border-right-color: rgba(167,139,250,0.15); }
 .role-card--assassin:hover { border-color: rgba(167,139,250,0.3); }
 .role-tag--assassin { background: rgba(167,139,250,0.15); border: 1px solid rgba(167,139,250,0.35); color: #c4b5fd; }
 
-/* Mage — teal */
+/* Mage */
 .role-card--mage { border-color: rgba(45,212,191,0.15); }
 .role-card--mage .role-card-aside { background: rgba(45,212,191,0.07); border-right-color: rgba(45,212,191,0.15); }
 .role-card--mage:hover { border-color: rgba(45,212,191,0.3); }
 .role-tag--mage { background: rgba(45,212,191,0.15); border: 1px solid rgba(45,212,191,0.35); color: #5eead4; }
 
-/* Marksman — gold/yellow */
+/* Marksman */
 .role-card--marksman { border-color: rgba(250,204,21,0.15); }
 .role-card--marksman .role-card-aside { background: rgba(250,204,21,0.07); border-right-color: rgba(250,204,21,0.15); }
 .role-card--marksman:hover { border-color: rgba(250,204,21,0.3); }
 .role-tag--marksman { background: rgba(250,204,21,0.15); border: 1px solid rgba(250,204,21,0.35); color: #fde047; }
 
-/* Support — green */
+/* Support */
 .role-card--support { border-color: rgba(74,222,128,0.15); }
 .role-card--support .role-card-aside { background: rgba(74,222,128,0.07); border-right-color: rgba(74,222,128,0.15); }
 .role-card--support:hover { border-color: rgba(74,222,128,0.3); }
@@ -428,52 +428,6 @@
   display: inline-block;
   flex-shrink: 0;
 }
-
-/* STAT BARS */
-
-.role-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  margin-top: 0.9rem;
-}
-
-.role-stat-row {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.role-stat-label {
-  font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.07em;
-  color: var(--text);
-  opacity: 0.6;
-  text-align: right;
-}
-
-.role-stat-track {
-  height: 5px;
-  background: rgba(255,255,255,0.07);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.role-stat-fill {
-  height: 100%;
-  border-radius: 4px;
-  transition: width 0.6s ease;
-}
-
-/* Stat fill colors per role */
-.role-card--tank    .role-stat-fill { background: #93c5fd; }
-.role-card--fighter .role-stat-fill { background: #fdba74; }
-.role-card--assassin .role-stat-fill { background: #c4b5fd; }
-.role-card--mage    .role-stat-fill { background: #5eead4; }
-.role-card--marksman .role-stat-fill { background: #fde047; }
-.role-card--support  .role-stat-fill { background: #86efac; }
 
 /* LANE ASSIGNMENT TABLE */
 
